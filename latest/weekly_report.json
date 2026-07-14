@@ -1,19 +1,19 @@
 {
   "coverage": {
-    "pending_return_count": 149,
-    "posts_in_window": 149,
+    "pending_return_count": 151,
+    "posts_in_window": 151,
     "unavailable_ticker_count": 0,
     "unique_kols_in_window": 5,
     "unique_tickers_in_window": 52
   },
   "data_quality": {
     "note": "SHADOW_ONLY. Composite score is not expected return.",
-    "pending_return_count": 149,
+    "pending_return_count": 151,
     "previous_window_status": "AVAILABLE",
     "unavailable_tickers": []
   },
   "disclaimer": "Historical analysis only; not investment advice. No investment recommendations, position sizing, or trade instructions.",
-  "generated_at_utc": "2026-07-14T16:02:32Z",
+  "generated_at_utc": "2026-07-14T16:16:43Z",
   "maturity_class": "SHADOW_ONLY",
   "report_window": {
     "previous_window_available": true,
@@ -288,17 +288,17 @@
       },
       {
         "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-14T16:15:43Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2077064508279816585",
+        "ticker": "AAOI"
+      },
+      {
+        "kol": "PhotonBull",
         "posted_at_utc": "2026-07-14T01:12:13Z",
         "reason": "pending_or_unavailable_returns",
         "source_url": "https://x.com/PhotonBull/status/2076837136641229189",
         "ticker": "DRAM"
-      },
-      {
-        "kol": "PhotonBull",
-        "posted_at_utc": "2026-07-14T14:36:45Z",
-        "reason": "pending_or_unavailable_returns",
-        "source_url": "https://x.com/PhotonBull/status/2077039603987460315",
-        "ticker": "AAOI"
       },
       {
         "kol": "PhotonBull",
@@ -633,12 +633,12 @@
         "theme": "unknown"
       },
       {
-        "mentions": 17,
-        "theme": "ai_infra"
+        "mentions": 18,
+        "theme": "photonics"
       },
       {
-        "mentions": 16,
-        "theme": "photonics"
+        "mentions": 17,
+        "theme": "ai_infra"
       },
       {
         "mentions": 8,
@@ -666,7 +666,7 @@
         "historically_reliable": true,
         "insufficient_sample": false,
         "kol_account": "CKCapitalxx",
-        "weekly_signals": 41
+        "weekly_signals": 42
       },
       {
         "confidence_class": "HIGH",
@@ -706,7 +706,7 @@
         "historically_reliable": false,
         "insufficient_sample": false,
         "kol_account": "PhotonBull",
-        "weekly_signals": 71
+        "weekly_signals": 72
       }
     ],
     "multi_kol_convergence": [
@@ -821,10 +821,10 @@
           "PhotonBull"
         ],
         "latest_kol": "PhotonBull",
-        "latest_posted_at_utc": "2026-07-14T14:36:45Z",
-        "latest_signal_id": "realpost-20260714-2077039603987460315-AAOI",
-        "latest_source_url": "https://x.com/PhotonBull/status/2077039603987460315",
-        "mentions": 7,
+        "latest_posted_at_utc": "2026-07-14T16:15:43Z",
+        "latest_signal_id": "realpost-20260714-2077064508279816585-AAOI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2077064508279816585",
+        "mentions": 9,
         "previous_window_mentions": 11,
         "themes": [
           "photonics"
@@ -1558,6 +1558,29 @@
         "ticker": "SNDK"
       },
       {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T16:15:43Z",
+        "latest_signal_id": "realpost-20260714-2077064508279816585-AAOI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2077064508279816585",
+        "mentions": 9,
+        "previous_window_mentions": 11,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "AAOI"
+      },
+      {
         "convergence": false,
         "extreme_return_flag": false,
         "forward_return_30d": null,
@@ -1578,29 +1601,6 @@
           "memory"
         ],
         "ticker": "DRAM"
-      },
-      {
-        "convergence": true,
-        "extreme_return_flag": false,
-        "forward_return_30d": null,
-        "forward_return_7d": null,
-        "is_accelerating": false,
-        "is_new_this_week": false,
-        "kol_count": 2,
-        "kols": [
-          "CKCapitalxx",
-          "PhotonBull"
-        ],
-        "latest_kol": "PhotonBull",
-        "latest_posted_at_utc": "2026-07-14T14:36:45Z",
-        "latest_signal_id": "realpost-20260714-2077039603987460315-AAOI",
-        "latest_source_url": "https://x.com/PhotonBull/status/2077039603987460315",
-        "mentions": 7,
-        "previous_window_mentions": 11,
-        "themes": [
-          "photonics"
-        ],
-        "ticker": "AAOI"
       },
       {
         "convergence": true,
@@ -2235,6 +2235,29 @@
         "ticker": "SNDK"
       },
       {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T16:15:43Z",
+        "latest_signal_id": "realpost-20260714-2077064508279816585-AAOI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2077064508279816585",
+        "mentions": 9,
+        "previous_window_mentions": 11,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "AAOI"
+      },
+      {
         "convergence": false,
         "extreme_return_flag": false,
         "forward_return_30d": null,
@@ -2255,29 +2278,6 @@
           "memory"
         ],
         "ticker": "DRAM"
-      },
-      {
-        "convergence": true,
-        "extreme_return_flag": false,
-        "forward_return_30d": null,
-        "forward_return_7d": null,
-        "is_accelerating": false,
-        "is_new_this_week": false,
-        "kol_count": 2,
-        "kols": [
-          "CKCapitalxx",
-          "PhotonBull"
-        ],
-        "latest_kol": "PhotonBull",
-        "latest_posted_at_utc": "2026-07-14T14:36:45Z",
-        "latest_signal_id": "realpost-20260714-2077039603987460315-AAOI",
-        "latest_source_url": "https://x.com/PhotonBull/status/2077039603987460315",
-        "mentions": 7,
-        "previous_window_mentions": 11,
-        "themes": [
-          "photonics"
-        ],
-        "ticker": "AAOI"
       },
       {
         "convergence": true,
@@ -2598,7 +2598,7 @@
   "source_meta": {
     "earliest_posted_at_utc": "2025-06-30T19:35:30Z",
     "label": "genuine_snscrape_posts",
-    "latest_posted_at_utc": "2026-07-14T15:07:22Z",
-    "signal_count_total": 5408
+    "latest_posted_at_utc": "2026-07-14T16:15:43Z",
+    "signal_count_total": 5410
   }
 }
