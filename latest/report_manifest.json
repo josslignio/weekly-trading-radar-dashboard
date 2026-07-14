@@ -1,5 +1,5 @@
 {
-  "command": "python scripts/weekly_product_report.py --real-signals /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/signals/real_post_signals.jsonl --backtest-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/r5/artifacts/backtest.json --kol-aggregation-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/r5/artifacts/kol_aggregation.json --scores-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/r5/artifacts/scores.json --output-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/report --source-label genuine_snscrape_posts --multi-horizon-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/multi_horizon --run-meta-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T161613Z/run_meta.json --source-health-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-data/source_health",
+  "command": "python scripts/weekly_product_report.py --real-signals /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/signals/real_post_signals.jsonl --backtest-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/r5/artifacts/backtest.json --kol-aggregation-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/r5/artifacts/kol_aggregation.json --scores-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/r5/artifacts/scores.json --output-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/report --source-label genuine_snscrape_posts --multi-horizon-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/multi_horizon --run-meta-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T162627Z/run_meta.json --source-health-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-data/source_health",
   "coverage": {
     "pending_return_count": 151,
     "posts_in_window": 151,
@@ -8,12 +8,12 @@
     "unique_tickers_in_window": 52
   },
   "disclaimer": "Historical analysis only; not investment advice. No investment recommendations, position sizing, or trade instructions.",
-  "generated_at_utc": "2026-07-14T16:16:43Z",
+  "generated_at_utc": "2026-07-14T16:26:52Z",
   "maturity_class": "SHADOW_ONLY",
   "outputs": {
-    "report.html": "98ba5387320cf224593cccb8d7c280ff1e722bf9356449344a60da859521d9df",
-    "weekly_report.json": "b9cf5b8b1cd064ba8aad356e661c720bf4312014aeca35bc7f4409afcd2a1f95",
-    "weekly_report.md": "86d3ffe64d184a6bbd82dc2283a06c71e9500ee687cb738dd92b4d0ea532cd5c"
+    "report.html": "1a7f11607612fd0b781eb8ea9e72c85b9ad0b5d715ead3061e203a04f3f9c17f",
+    "weekly_report.json": "247f0921888ad9a76b4b9a04482eb7c445b749b10b2d3e17822121a80b90b35c",
+    "weekly_report.md": "a3a559f57e03007ab936d2d7e564afaca3494e2ff852753785d615d934120539"
   },
   "report_window": {
     "previous_window_available": true,
