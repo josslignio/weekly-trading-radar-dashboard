@@ -1,0 +1,26 @@
+{
+  "command": "python scripts/weekly_product_report.py --real-signals /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/signals/real_post_signals.jsonl --backtest-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/r5/artifacts/backtest.json --kol-aggregation-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/r5/artifacts/kol_aggregation.json --scores-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/r5/artifacts/scores.json --output-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/report --source-label genuine_snscrape_posts --multi-horizon-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/multi_horizon --run-meta-json /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-runs/20260714T160142Z/run_meta.json --source-health-dir /Users/jocelyngrosjean/.local/share/joss-orchestrator/trading-radar-data/source_health",
+  "coverage": {
+    "pending_return_count": 149,
+    "posts_in_window": 149,
+    "unavailable_ticker_count": 0,
+    "unique_kols_in_window": 5,
+    "unique_tickers_in_window": 52
+  },
+  "disclaimer": "Historical analysis only; not investment advice. No investment recommendations, position sizing, or trade instructions.",
+  "generated_at_utc": "2026-07-14T16:02:32Z",
+  "maturity_class": "SHADOW_ONLY",
+  "outputs": {
+    "report.html": "e862ce804c25624aeadc1c35cbffabc5fba73116e01dbb9a96013190ff0ab7ce",
+    "weekly_report.json": "389901f58cb7cca0e16f8ce60a3eddc9a19315017ee3ba5d2c4e9759b47050c7",
+    "weekly_report.md": "5598e22c25b6151197acb3b01ad67de6eeb2f67f1225b42eec1a320641e1ad33"
+  },
+  "report_window": {
+    "previous_window_available": true,
+    "previous_window_end": "2026-07-07",
+    "previous_window_start": "2026-07-01",
+    "window_days": 7,
+    "window_end": "2026-07-14",
+    "window_start": "2026-07-08"
+  }
+}

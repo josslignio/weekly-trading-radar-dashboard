@@ -1,0 +1,2604 @@
+{
+  "coverage": {
+    "pending_return_count": 149,
+    "posts_in_window": 149,
+    "unavailable_ticker_count": 0,
+    "unique_kols_in_window": 5,
+    "unique_tickers_in_window": 52
+  },
+  "data_quality": {
+    "note": "SHADOW_ONLY. Composite score is not expected return.",
+    "pending_return_count": 149,
+    "previous_window_status": "AVAILABLE",
+    "unavailable_tickers": []
+  },
+  "disclaimer": "Historical analysis only; not investment advice. No investment recommendations, position sizing, or trade instructions.",
+  "generated_at_utc": "2026-07-14T16:02:32Z",
+  "maturity_class": "SHADOW_ONLY",
+  "report_window": {
+    "previous_window_available": true,
+    "previous_window_end": "2026-07-07",
+    "previous_window_start": "2026-07-01",
+    "window_days": 7,
+    "window_end": "2026-07-14",
+    "window_start": "2026-07-08"
+  },
+  "schema_version": 1,
+  "sections": {
+    "accelerating_mentions": [
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "BryzonX",
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T03:39:31Z",
+        "latest_signal_id": "realpost-20260714-2076874204939432195-PENG",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076874204939432195",
+        "mentions": 17,
+        "previous_window_mentions": 10,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "PENG"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T14:48:33Z",
+        "latest_signal_id": "realpost-20260714-2077042573894439363-META",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077042573894439363",
+        "mentions": 15,
+        "previous_window_mentions": 7,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "META"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-SNDK",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 10,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SNDK"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:54:48Z",
+        "latest_signal_id": "realpost-20260714-2076908250541215858-NVDA",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076908250541215858",
+        "mentions": 5,
+        "previous_window_mentions": 2,
+        "themes": [
+          "ai_infra"
+        ],
+        "ticker": "NVDA"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T00:40:14Z",
+        "latest_signal_id": "realpost-20260714-2076829086052135409-CRDO",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076829086052135409",
+        "mentions": 4,
+        "previous_window_mentions": 3,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "CRDO"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-10T20:09:03Z",
+        "latest_signal_id": "realpost-20260710-2075673676679180693-KRKNF",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075673676679180693",
+        "mentions": 3,
+        "previous_window_mentions": 2,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "KRKNF"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-11T01:43:49Z",
+        "latest_signal_id": "realpost-20260711-2075757925365100972-SPCX",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075757925365100972",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "space"
+        ],
+        "ticker": "SPCX"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-08T21:12:27Z",
+        "latest_signal_id": "realpost-20260708-2074964858244636844-FPS",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2074964858244636844",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "FPS"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:42:51Z",
+        "latest_signal_id": "realpost-20260714-2076905241702813879-GOOGL",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076905241702813879",
+        "mentions": 2,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "GOOGL"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-11T21:27:38Z",
+        "latest_signal_id": "realpost-20260711-2076055843364036938-NFLX",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076055843364036938",
+        "mentions": 2,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "NFLX"
+      }
+    ],
+    "early_or_high_risk_signals": [
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-14T03:39:31Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2076874204939432195",
+        "ticker": "PENG"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-14T14:48:33Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2077042573894439363",
+        "ticker": "META"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-14T14:18:10Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2077034925325201481",
+        "ticker": "NBIS"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-13T17:27:54Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "ticker": "SNDK"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-14T01:12:13Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076837136641229189",
+        "ticker": "DRAM"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-14T14:36:45Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2077039603987460315",
+        "ticker": "AAOI"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-13T17:27:54Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "ticker": "MU"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-14T05:54:48Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2076908250541215858",
+        "ticker": "NVDA"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-13T23:59:09Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076818747197628495",
+        "ticker": "ASTS"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-14T00:40:14Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2076829086052135409",
+        "ticker": "CRDO"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-14T15:07:22Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2077047308533788772",
+        "ticker": "IBM"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-10T20:09:03Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2075673676679180693",
+        "ticker": "KRKNF"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-11T01:43:49Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2075757925365100972",
+        "ticker": "SPCX"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-13T16:59:42Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076713189845225957",
+        "ticker": "EOS.AX"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-08T21:12:27Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2074964858244636844",
+        "ticker": "FPS"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-13T17:27:54Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "ticker": "SKHY"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-14T05:42:51Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2076905241702813879",
+        "ticker": "GOOGL"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-12T01:48:10Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2076121408111853708",
+        "ticker": "WYFI"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-11T23:51:16Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076091986851856773",
+        "ticker": "BTC"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-09T18:04:25Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2075279925779599646",
+        "ticker": "HIMS"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-09T17:41:54Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075274260017266918",
+        "ticker": "LITE"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-11T21:27:38Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2076055843364036938",
+        "ticker": "NFLX"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-11T19:53:32Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2076032162306908442",
+        "ticker": "TE"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-10T20:30:47Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075679146433290605",
+        "ticker": "AAPL"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-12T21:08:16Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076413356248801428",
+        "ticker": "AEHR"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-09T16:16:33Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2075252780789342430",
+        "ticker": "AMAT"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-09T21:32:36Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2075332315459322084",
+        "ticker": "APLD"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-12T21:08:16Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076413356248801428",
+        "ticker": "ASML"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-09T02:16:43Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2075041429584298014",
+        "ticker": "BE"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-08T20:24:20Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2074952749473579417",
+        "ticker": "CRWV"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-11T16:57:36Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075987883966521376",
+        "ticker": "ETH"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-09T11:59:05Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075187983733448720",
+        "ticker": "FCEL"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-09T20:39:47Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2075319022371922227",
+        "ticker": "FLNC"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-11T19:53:32Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2076032162306908442",
+        "ticker": "GLW"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-08T00:26:55Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2074651409945935921",
+        "ticker": "HOOD"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-11T16:57:36Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075987883966521376",
+        "ticker": "IBIT"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-09T14:37:13Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075227782280294532",
+        "ticker": "LASR"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-10T21:11:11Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075689312838926724",
+        "ticker": "LLY"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-10T21:11:11Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075689312838926724",
+        "ticker": "MELI"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-10T14:32:21Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2075588942678602179",
+        "ticker": "MRVL"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-11T16:57:36Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075987883966521376",
+        "ticker": "MSTR"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-13T20:26:26Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2076765216315003018",
+        "ticker": "NOK"
+      },
+      {
+        "kol": "Frenchie_",
+        "posted_at_utc": "2026-07-14T13:25:17Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/Frenchie_/status/2077021618421879076",
+        "ticker": "NOW"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-10T21:11:11Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075689312838926724",
+        "ticker": "NVO"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-13T23:59:09Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076818747197628495",
+        "ticker": "ONDS"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-10T15:07:59Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2075597910318682402",
+        "ticker": "PNG.V"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-08T17:09:10Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2074903631178944815",
+        "ticker": "QQQ"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-08T12:31:44Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2074833812442247280",
+        "ticker": "RKLB"
+      },
+      {
+        "kol": "CKCapitalxx",
+        "posted_at_utc": "2026-07-08T21:08:11Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/CKCapitalxx/status/2074963782560854236",
+        "ticker": "SHAZ"
+      },
+      {
+        "kol": "RJCcapital",
+        "posted_at_utc": "2026-07-11T14:05:32Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/RJCcapital/status/2075944585113554960",
+        "ticker": "SIMO"
+      },
+      {
+        "kol": "BryzonX",
+        "posted_at_utc": "2026-07-11T17:43:52Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/BryzonX/status/2075999530190065758",
+        "ticker": "SPY"
+      },
+      {
+        "kol": "PhotonBull",
+        "posted_at_utc": "2026-07-12T21:08:16Z",
+        "reason": "pending_or_unavailable_returns",
+        "source_url": "https://x.com/PhotonBull/status/2076413356248801428",
+        "ticker": "TSM"
+      }
+    ],
+    "emerging_themes": [
+      {
+        "mentions": 48,
+        "theme": "memory"
+      },
+      {
+        "mentions": 48,
+        "theme": "unknown"
+      },
+      {
+        "mentions": 17,
+        "theme": "ai_infra"
+      },
+      {
+        "mentions": 16,
+        "theme": "photonics"
+      },
+      {
+        "mentions": 8,
+        "theme": "space"
+      },
+      {
+        "mentions": 7,
+        "theme": "defense"
+      },
+      {
+        "mentions": 3,
+        "theme": "crypto_finance"
+      },
+      {
+        "mentions": 2,
+        "theme": "materials"
+      }
+    ],
+    "kol_historical_track_record": [
+      {
+        "confidence_class": "HIGH",
+        "historical_7d_hit_rate": 0.5689,
+        "historical_7d_mean_return": 0.035422,
+        "historical_sample_size": 1705,
+        "historically_reliable": true,
+        "insufficient_sample": false,
+        "kol_account": "CKCapitalxx",
+        "weekly_signals": 41
+      },
+      {
+        "confidence_class": "HIGH",
+        "historical_7d_hit_rate": 0.5623,
+        "historical_7d_mean_return": 0.058324,
+        "historical_sample_size": 546,
+        "historically_reliable": true,
+        "insufficient_sample": false,
+        "kol_account": "BryzonX",
+        "weekly_signals": 2
+      },
+      {
+        "confidence_class": "MEDIUM",
+        "historical_7d_hit_rate": 0.4839,
+        "historical_7d_mean_return": 0.011752,
+        "historical_sample_size": 124,
+        "historically_reliable": false,
+        "insufficient_sample": false,
+        "kol_account": "Frenchie_",
+        "weekly_signals": 3
+      },
+      {
+        "confidence_class": "HIGH",
+        "historical_7d_hit_rate": 0.481,
+        "historical_7d_mean_return": -0.002844,
+        "historical_sample_size": 1445,
+        "historically_reliable": false,
+        "insufficient_sample": false,
+        "kol_account": "RJCcapital",
+        "weekly_signals": 32
+      },
+      {
+        "confidence_class": "MEDIUM",
+        "historical_7d_hit_rate": 0.4305,
+        "historical_7d_mean_return": -0.00056,
+        "historical_sample_size": 1201,
+        "historically_reliable": false,
+        "insufficient_sample": false,
+        "kol_account": "PhotonBull",
+        "weekly_signals": 71
+      }
+    ],
+    "multi_kol_convergence": [
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "BryzonX",
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T03:39:31Z",
+        "latest_signal_id": "realpost-20260714-2076874204939432195-PENG",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076874204939432195",
+        "mentions": 17,
+        "previous_window_mentions": 10,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "PENG"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T14:48:33Z",
+        "latest_signal_id": "realpost-20260714-2077042573894439363-META",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077042573894439363",
+        "mentions": 15,
+        "previous_window_mentions": 7,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "META"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "CKCapitalxx",
+          "Frenchie_",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T14:18:10Z",
+        "latest_signal_id": "realpost-20260714-2077034925325201481-NBIS",
+        "latest_source_url": "https://x.com/RJCcapital/status/2077034925325201481",
+        "mentions": 12,
+        "previous_window_mentions": 19,
+        "themes": [
+          "ai_infra"
+        ],
+        "ticker": "NBIS"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-SNDK",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 10,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SNDK"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T14:36:45Z",
+        "latest_signal_id": "realpost-20260714-2077039603987460315-AAOI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2077039603987460315",
+        "mentions": 7,
+        "previous_window_mentions": 11,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "AAOI"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-MU",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 6,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "MU"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "Frenchie_"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T15:07:22Z",
+        "latest_signal_id": "realpost-20260714-2077047308533788772-IBM",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077047308533788772",
+        "mentions": 3,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "IBM"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-10T20:09:03Z",
+        "latest_signal_id": "realpost-20260710-2075673676679180693-KRKNF",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075673676679180693",
+        "mentions": 3,
+        "previous_window_mentions": 2,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "KRKNF"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-11T01:43:49Z",
+        "latest_signal_id": "realpost-20260711-2075757925365100972-SPCX",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075757925365100972",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "space"
+        ],
+        "ticker": "SPCX"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:42:51Z",
+        "latest_signal_id": "realpost-20260714-2076905241702813879-GOOGL",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076905241702813879",
+        "mentions": 2,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "GOOGL"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-12T01:48:10Z",
+        "latest_signal_id": "realpost-20260712-2076121408111853708-WYFI",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076121408111853708",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "WYFI"
+      }
+    ],
+    "new_tickers_this_week": [
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "Frenchie_"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T15:07:22Z",
+        "latest_signal_id": "realpost-20260714-2077047308533788772-IBM",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077047308533788772",
+        "mentions": 3,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "IBM"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-SKHY",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 3,
+        "previous_window_mentions": 0,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SKHY"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-12T01:48:10Z",
+        "latest_signal_id": "realpost-20260712-2076121408111853708-WYFI",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076121408111853708",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "WYFI"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-09T18:04:25Z",
+        "latest_signal_id": "realpost-20260709-2075279925779599646-HIMS",
+        "latest_source_url": "https://x.com/RJCcapital/status/2075279925779599646",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "HIMS"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-09T17:41:54Z",
+        "latest_signal_id": "realpost-20260709-2075274260017266918-LITE",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075274260017266918",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "LITE"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-11T19:53:32Z",
+        "latest_signal_id": "realpost-20260711-2076032162306908442-TE",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076032162306908442",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "TE"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-10T20:30:47Z",
+        "latest_signal_id": "realpost-20260710-2075679146433290605-AAPL",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075679146433290605",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "AAPL"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-12T21:08:16Z",
+        "latest_signal_id": "realpost-20260712-2076413356248801428-AEHR",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076413356248801428",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "AEHR"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-09T16:16:33Z",
+        "latest_signal_id": "realpost-20260709-2075252780789342430-AMAT",
+        "latest_source_url": "https://x.com/RJCcapital/status/2075252780789342430",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "materials"
+        ],
+        "ticker": "AMAT"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-09T21:32:36Z",
+        "latest_signal_id": "realpost-20260709-2075332315459322084-APLD",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075332315459322084",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "APLD"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-09T02:16:43Z",
+        "latest_signal_id": "realpost-20260709-2075041429584298014-BE",
+        "latest_source_url": "https://x.com/RJCcapital/status/2075041429584298014",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "BE"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-11T16:57:36Z",
+        "latest_signal_id": "realpost-20260711-2075987883966521376-ETH",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075987883966521376",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "crypto_finance"
+        ],
+        "ticker": "ETH"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-09T20:39:47Z",
+        "latest_signal_id": "realpost-20260709-2075319022371922227-FLNC",
+        "latest_source_url": "https://x.com/RJCcapital/status/2075319022371922227",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "FLNC"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-11T19:53:32Z",
+        "latest_signal_id": "realpost-20260711-2076032162306908442-GLW",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076032162306908442",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "GLW"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-11T16:57:36Z",
+        "latest_signal_id": "realpost-20260711-2075987883966521376-IBIT",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075987883966521376",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "IBIT"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-09T14:37:13Z",
+        "latest_signal_id": "realpost-20260709-2075227782280294532-LASR",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075227782280294532",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "LASR"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-10T21:11:11Z",
+        "latest_signal_id": "realpost-20260710-2075689312838926724-LLY",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075689312838926724",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "LLY"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-10T21:11:11Z",
+        "latest_signal_id": "realpost-20260710-2075689312838926724-MELI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075689312838926724",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "MELI"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-10T21:11:11Z",
+        "latest_signal_id": "realpost-20260710-2075689312838926724-NVO",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075689312838926724",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "NVO"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-08T12:31:44Z",
+        "latest_signal_id": "realpost-20260708-2074833812442247280-RKLB",
+        "latest_source_url": "https://x.com/PhotonBull/status/2074833812442247280",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "space"
+        ],
+        "ticker": "RKLB"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-11T14:05:32Z",
+        "latest_signal_id": "realpost-20260711-2075944585113554960-SIMO",
+        "latest_source_url": "https://x.com/RJCcapital/status/2075944585113554960",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SIMO"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-12T21:08:16Z",
+        "latest_signal_id": "realpost-20260712-2076413356248801428-TSM",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076413356248801428",
+        "mentions": 1,
+        "previous_window_mentions": 0,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "TSM"
+      }
+    ],
+    "persistent_or_recurrent": [
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "BryzonX",
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T03:39:31Z",
+        "latest_signal_id": "realpost-20260714-2076874204939432195-PENG",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076874204939432195",
+        "mentions": 17,
+        "previous_window_mentions": 10,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "PENG"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T14:48:33Z",
+        "latest_signal_id": "realpost-20260714-2077042573894439363-META",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077042573894439363",
+        "mentions": 15,
+        "previous_window_mentions": 7,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "META"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "CKCapitalxx",
+          "Frenchie_",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T14:18:10Z",
+        "latest_signal_id": "realpost-20260714-2077034925325201481-NBIS",
+        "latest_source_url": "https://x.com/RJCcapital/status/2077034925325201481",
+        "mentions": 12,
+        "previous_window_mentions": 19,
+        "themes": [
+          "ai_infra"
+        ],
+        "ticker": "NBIS"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-SNDK",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 10,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SNDK"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T01:12:13Z",
+        "latest_signal_id": "realpost-20260714-2076837136641229189-DRAM",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076837136641229189",
+        "mentions": 8,
+        "previous_window_mentions": 9,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "DRAM"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T14:36:45Z",
+        "latest_signal_id": "realpost-20260714-2077039603987460315-AAOI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2077039603987460315",
+        "mentions": 7,
+        "previous_window_mentions": 11,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "AAOI"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-MU",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 6,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "MU"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:54:48Z",
+        "latest_signal_id": "realpost-20260714-2076908250541215858-NVDA",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076908250541215858",
+        "mentions": 5,
+        "previous_window_mentions": 2,
+        "themes": [
+          "ai_infra"
+        ],
+        "ticker": "NVDA"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T23:59:09Z",
+        "latest_signal_id": "realpost-20260713-2076818747197628495-ASTS",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076818747197628495",
+        "mentions": 4,
+        "previous_window_mentions": 9,
+        "themes": [
+          "space"
+        ],
+        "ticker": "ASTS"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T00:40:14Z",
+        "latest_signal_id": "realpost-20260714-2076829086052135409-CRDO",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076829086052135409",
+        "mentions": 4,
+        "previous_window_mentions": 3,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "CRDO"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-10T20:09:03Z",
+        "latest_signal_id": "realpost-20260710-2075673676679180693-KRKNF",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075673676679180693",
+        "mentions": 3,
+        "previous_window_mentions": 2,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "KRKNF"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-11T01:43:49Z",
+        "latest_signal_id": "realpost-20260711-2075757925365100972-SPCX",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075757925365100972",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "space"
+        ],
+        "ticker": "SPCX"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T16:59:42Z",
+        "latest_signal_id": "realpost-20260713-2076713189845225957-EOS.AX",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076713189845225957",
+        "mentions": 3,
+        "previous_window_mentions": 4,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "EOS.AX"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-08T21:12:27Z",
+        "latest_signal_id": "realpost-20260708-2074964858244636844-FPS",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2074964858244636844",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "FPS"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:42:51Z",
+        "latest_signal_id": "realpost-20260714-2076905241702813879-GOOGL",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076905241702813879",
+        "mentions": 2,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "GOOGL"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-11T23:51:16Z",
+        "latest_signal_id": "realpost-20260711-2076091986851856773-BTC",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076091986851856773",
+        "mentions": 2,
+        "previous_window_mentions": 2,
+        "themes": [
+          "crypto_finance"
+        ],
+        "ticker": "BTC"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-11T21:27:38Z",
+        "latest_signal_id": "realpost-20260711-2076055843364036938-NFLX",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076055843364036938",
+        "mentions": 2,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "NFLX"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-12T21:08:16Z",
+        "latest_signal_id": "realpost-20260712-2076413356248801428-ASML",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076413356248801428",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "materials"
+        ],
+        "ticker": "ASML"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-08T20:24:20Z",
+        "latest_signal_id": "realpost-20260708-2074952749473579417-CRWV",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2074952749473579417",
+        "mentions": 1,
+        "previous_window_mentions": 3,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "CRWV"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-09T11:59:05Z",
+        "latest_signal_id": "realpost-20260709-2075187983733448720-FCEL",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075187983733448720",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "FCEL"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-08T00:26:55Z",
+        "latest_signal_id": "realpost-20260708-2074651409945935921-HOOD",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2074651409945935921",
+        "mentions": 1,
+        "previous_window_mentions": 2,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "HOOD"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-10T14:32:21Z",
+        "latest_signal_id": "realpost-20260710-2075588942678602179-MRVL",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075588942678602179",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "MRVL"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-11T16:57:36Z",
+        "latest_signal_id": "realpost-20260711-2075987883966521376-MSTR",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075987883966521376",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "MSTR"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-13T20:26:26Z",
+        "latest_signal_id": "realpost-20260713-2076765216315003018-NOK",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076765216315003018",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "NOK"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "Frenchie_"
+        ],
+        "latest_kol": "Frenchie_",
+        "latest_posted_at_utc": "2026-07-14T13:25:17Z",
+        "latest_signal_id": "realpost-20260714-2077021618421879076-NOW",
+        "latest_source_url": "https://x.com/Frenchie_/status/2077021618421879076",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "NOW"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T23:59:09Z",
+        "latest_signal_id": "realpost-20260713-2076818747197628495-ONDS",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076818747197628495",
+        "mentions": 1,
+        "previous_window_mentions": 7,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "ONDS"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-10T15:07:59Z",
+        "latest_signal_id": "realpost-20260710-2075597910318682402-PNG.V",
+        "latest_source_url": "https://x.com/PhotonBull/status/2075597910318682402",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "PNG.V"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-08T17:09:10Z",
+        "latest_signal_id": "realpost-20260708-2074903631178944815-QQQ",
+        "latest_source_url": "https://x.com/PhotonBull/status/2074903631178944815",
+        "mentions": 1,
+        "previous_window_mentions": 2,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "QQQ"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-08T21:08:11Z",
+        "latest_signal_id": "realpost-20260708-2074963782560854236-SHAZ",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2074963782560854236",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "SHAZ"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "BryzonX"
+        ],
+        "latest_kol": "BryzonX",
+        "latest_posted_at_utc": "2026-07-11T17:43:52Z",
+        "latest_signal_id": "realpost-20260711-2075999530190065758-SPY",
+        "latest_source_url": "https://x.com/BryzonX/status/2075999530190065758",
+        "mentions": 1,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "SPY"
+      }
+    ],
+    "top_signals_this_week": [
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "BryzonX",
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T03:39:31Z",
+        "latest_signal_id": "realpost-20260714-2076874204939432195-PENG",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076874204939432195",
+        "mentions": 17,
+        "previous_window_mentions": 10,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "PENG"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T14:48:33Z",
+        "latest_signal_id": "realpost-20260714-2077042573894439363-META",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077042573894439363",
+        "mentions": 15,
+        "previous_window_mentions": 7,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "META"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 4,
+        "kols": [
+          "CKCapitalxx",
+          "Frenchie_",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T14:18:10Z",
+        "latest_signal_id": "realpost-20260714-2077034925325201481-NBIS",
+        "latest_source_url": "https://x.com/RJCcapital/status/2077034925325201481",
+        "mentions": 12,
+        "previous_window_mentions": 19,
+        "themes": [
+          "ai_infra"
+        ],
+        "ticker": "NBIS"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 3,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-SNDK",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 10,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SNDK"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T01:12:13Z",
+        "latest_signal_id": "realpost-20260714-2076837136641229189-DRAM",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076837136641229189",
+        "mentions": 8,
+        "previous_window_mentions": 9,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "DRAM"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-14T14:36:45Z",
+        "latest_signal_id": "realpost-20260714-2077039603987460315-AAOI",
+        "latest_source_url": "https://x.com/PhotonBull/status/2077039603987460315",
+        "mentions": 7,
+        "previous_window_mentions": 11,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "AAOI"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-MU",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 6,
+        "previous_window_mentions": 6,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "MU"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:54:48Z",
+        "latest_signal_id": "realpost-20260714-2076908250541215858-NVDA",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076908250541215858",
+        "mentions": 5,
+        "previous_window_mentions": 2,
+        "themes": [
+          "ai_infra"
+        ],
+        "ticker": "NVDA"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T23:59:09Z",
+        "latest_signal_id": "realpost-20260713-2076818747197628495-ASTS",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076818747197628495",
+        "mentions": 4,
+        "previous_window_mentions": 9,
+        "themes": [
+          "space"
+        ],
+        "ticker": "ASTS"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T00:40:14Z",
+        "latest_signal_id": "realpost-20260714-2076829086052135409-CRDO",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076829086052135409",
+        "mentions": 4,
+        "previous_window_mentions": 3,
+        "themes": [
+          "photonics"
+        ],
+        "ticker": "CRDO"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "Frenchie_"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-14T15:07:22Z",
+        "latest_signal_id": "realpost-20260714-2077047308533788772-IBM",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2077047308533788772",
+        "mentions": 3,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "IBM"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-10T20:09:03Z",
+        "latest_signal_id": "realpost-20260710-2075673676679180693-KRKNF",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075673676679180693",
+        "mentions": 3,
+        "previous_window_mentions": 2,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "KRKNF"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-11T01:43:49Z",
+        "latest_signal_id": "realpost-20260711-2075757925365100972-SPCX",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2075757925365100972",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "space"
+        ],
+        "ticker": "SPCX"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T16:59:42Z",
+        "latest_signal_id": "realpost-20260713-2076713189845225957-EOS.AX",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076713189845225957",
+        "mentions": 3,
+        "previous_window_mentions": 4,
+        "themes": [
+          "defense"
+        ],
+        "ticker": "EOS.AX"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "CKCapitalxx"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-08T21:12:27Z",
+        "latest_signal_id": "realpost-20260708-2074964858244636844-FPS",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2074964858244636844",
+        "mentions": 3,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "FPS"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-13T17:27:54Z",
+        "latest_signal_id": "realpost-20260713-2076720286146101569-SKHY",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076720286146101569",
+        "mentions": 3,
+        "previous_window_mentions": 0,
+        "themes": [
+          "memory"
+        ],
+        "ticker": "SKHY"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": true,
+        "is_new_this_week": false,
+        "kol_count": 2,
+        "kols": [
+          "PhotonBull",
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-14T05:42:51Z",
+        "latest_signal_id": "realpost-20260714-2076905241702813879-GOOGL",
+        "latest_source_url": "https://x.com/RJCcapital/status/2076905241702813879",
+        "mentions": 2,
+        "previous_window_mentions": 1,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "GOOGL"
+      },
+      {
+        "convergence": true,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 2,
+        "kols": [
+          "CKCapitalxx",
+          "PhotonBull"
+        ],
+        "latest_kol": "CKCapitalxx",
+        "latest_posted_at_utc": "2026-07-12T01:48:10Z",
+        "latest_signal_id": "realpost-20260712-2076121408111853708-WYFI",
+        "latest_source_url": "https://x.com/CKCapitalxx/status/2076121408111853708",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "WYFI"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": false,
+        "kol_count": 1,
+        "kols": [
+          "PhotonBull"
+        ],
+        "latest_kol": "PhotonBull",
+        "latest_posted_at_utc": "2026-07-11T23:51:16Z",
+        "latest_signal_id": "realpost-20260711-2076091986851856773-BTC",
+        "latest_source_url": "https://x.com/PhotonBull/status/2076091986851856773",
+        "mentions": 2,
+        "previous_window_mentions": 2,
+        "themes": [
+          "crypto_finance"
+        ],
+        "ticker": "BTC"
+      },
+      {
+        "convergence": false,
+        "extreme_return_flag": false,
+        "forward_return_30d": null,
+        "forward_return_7d": null,
+        "is_accelerating": false,
+        "is_new_this_week": true,
+        "kol_count": 1,
+        "kols": [
+          "RJCcapital"
+        ],
+        "latest_kol": "RJCcapital",
+        "latest_posted_at_utc": "2026-07-09T18:04:25Z",
+        "latest_signal_id": "realpost-20260709-2075279925779599646-HIMS",
+        "latest_source_url": "https://x.com/RJCcapital/status/2075279925779599646",
+        "mentions": 2,
+        "previous_window_mentions": 0,
+        "themes": [
+          "unknown"
+        ],
+        "ticker": "HIMS"
+      }
+    ]
+  },
+  "source_meta": {
+    "earliest_posted_at_utc": "2025-06-30T19:35:30Z",
+    "label": "genuine_snscrape_posts",
+    "latest_posted_at_utc": "2026-07-14T15:07:22Z",
+    "signal_count_total": 5408
+  }
+}
