@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KRMN - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>KRMN</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>Karman Holdings Inc.</strong> &mdash; Karman Holdings Inc., through its subsidiary, engages in designing, testing, manufacturing, and sale of mission-critical systems in the United States. The company offers payload protection and deployment systems, aerodynamic interstage systems, and propulsion systems. It serves its products to hypersonics and strategic missile defense, tactical missile and integrated defense systems, and space and launch markets. The company was incorporated in 2020 and is headquartered in Huntington Beach, California. Karman Holdings Inc. operates as a subsidiary of TCFIII Spaceco SPV LP.</p>
+<p>ai_subindustry=defense_autonomy value_chain_role=downstream_application_layer_defense
+country=United States asset_class=EQUITY</p>
+<p>market_cap=4555183616 trailing_pe=127.29629
+forward_pe=36.32693 price_to_book=10.818381</p>
+<p>revenue=589552000 revenue_growth=0.582
+cash=51741000 debt=875265024 profitability=0.06307</p>
+<p>current_price=34.37 momentum_state=DOWNTREND
+average_volume=3334846</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">NEW_CALL</span> rule=latest open episode age_days=7 &lt;= 7 (fast-loop weekly detection window)
+age_days_vs_as_of=7</p>
+<p>first_call: StonkChris on 2026-09-04
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=2
+pushes_by_account={&#x27;StonkChris&#x27;: 2}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
+<p>data_quality warnings: none</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.4216</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.0063</td><td>0.25</td><td>0.0016</td><td>StonkChris tier=UNRANKED confidence=0.0625</td></tr><tr><td>conviction_recency</td><td>1.0</td><td>0.2</td><td>0.2</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); kol_track_record: StonkChris tier=UNRANKED confidence=0.0625 (score 0.0063)</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>StonkChris</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2026-09-04</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (1 episode(s))</h2>
+<div data-episode-id="2095892822192697496" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=StonkChris</span><span data-field="ticker" style="margin-right:10px">ticker=KRMN</span></div>
+<div>tweet_date=2026-09-04 pushes=2
+closure_state=NOT_EVALUABLE
+<a href="evidence_2095892822192697496.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

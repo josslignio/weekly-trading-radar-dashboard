@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FLNC - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>FLNC</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>Fluence Energy, Inc.</strong> &mdash; Fluence Energy, Inc., through its subsidiaries, provides energy storage and optimization software for renewables and storage applications in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. It sells energy storage products with integrated hardware, software, and digital intelligence. The company&#x27;s energy storage products include Gridstack Pro, a large-scale front-of-the-meter application; Gridstack, a front-of-the-meter application; Ultrastack for critical system requirements of distribution and transmission networks; Smartstack, a split architecture design, incorporating embedded intelligence and higher energy density compared to traditional AC systems. The company also provides operational and maintenance services; and digital applications. It serves independent power producers, developers, conglomerates, utilities/load-serving entities, and commercial and industrial customers. Fluence Energy, Inc. was founded in 2018 and is headquartered in Arlington, Virginia.</p>
+<p>ai_subindustry=energy_cooling_infra value_chain_role=midstream_infrastructure_power
+country=United States asset_class=EQUITY</p>
+<p>market_cap=1881402880 trailing_pe=[FIELD_NOT_PROVIDED]
+forward_pe=79.0934 price_to_book=3.8818564</p>
+<p>revenue=2631864064 revenue_growth=0.079
+cash=339328000 debt=413164992 profitability=-0.03073</p>
+<p>current_price=10.12 momentum_state=DOWNTREND
+average_volume=7878030</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=36 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
+age_days_vs_as_of=36</p>
+<p>first_call: RJCcapital on 2025-10-17
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=22
+pushes_by_account={&#x27;RJCcapital&#x27;: 22, &#x27;italianinvesto&#x27;: 0}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
+<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.5388</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.4</td><td>0.3</td><td>0.12</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>RJCcapital tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Reasons against:</strong> kol_independence: 2 distinct supporting account(s) (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (2 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>22</td><td>2025-10-17</td></tr><tr><td>italianinvesto</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-08-05</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (4 episode(s))</h2>
+<div data-episode-id="1979161191831204307" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=FLNC</span></div>
+<div>tweet_date=2025-10-17 pushes=22
+closure_state=NOT_EVALUABLE
+<a href="evidence_1979161191831204307.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2019168235443351747" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=FLNC</span></div>
+<div>tweet_date=2026-02-04 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2019168235443351747.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2085024718168428785" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=italianinvesto</span><span data-field="ticker" style="margin-right:10px">ticker=FLNC</span></div>
+<div>tweet_date=2026-08-05 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2085024718168428785.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2085357691954774364" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=italianinvesto</span><span data-field="ticker" style="margin-right:10px">ticker=FLNC</span></div>
+<div>tweet_date=2026-08-06 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2085357691954774364.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

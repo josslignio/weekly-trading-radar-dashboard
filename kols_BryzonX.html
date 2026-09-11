@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BryzonX - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>BryzonX</h1>
+<p><a href="kols.html">&larr; back to KOL table</a></p>
+<div class="section">
+<h2>Identity &amp; lifecycle</h2>
+<p>provider_state=OK
+lifecycle=SAMPLED
+owner_root=False
+namesake_user_id=1465115341810376712
+provider_attested=False</p>
+<p>observed_span_days=361
+account_creation_date=<span class="gap">INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS</span></p>
+<p>expertise / AI sub-industry: <span class="gap">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</span></p>
+</div>
+<div class="section">
+<h2>Coverage &amp; activity (data-quality / recency / consistency)</h2>
+<p>observable_months=12
+dense_months=10
+post_count=1317
+status=OK_4M_PLUS
+cadence_posts_per_active_month=109.75</p>
+</div>
+<div class="section">
+<h2>Explainable final score &amp; tier</h2>
+<p><span class="pill">EARLY_EVIDENCE</span> confidence(uncertainty)=1.0</p>
+<p>blocking_reasons=calls=15, dense_months=10</p>
+<p>oos_disclosure=single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
+<table><thead><tr><th>component</th><th>value</th></tr></thead><tbody>
+<tr><td>handle</td><td>BryzonX</td></tr><tr><td>post_count</td><td>1317</td></tr><tr><td>graph_outbound_edges</td><td>10</td></tr><tr><td>engagement_median_likes</td><td>4</td></tr><tr><td>engagement_top_rt</td><td>47</td></tr><tr><td>coverage_dense_months</td><td>10</td></tr><tr><td>coverage_distinct_months</td><td>12</td></tr>
+<tr><td>call_track_record: evaluable_episodes</td><td>15</td></tr>
+<tr><td>call_track_record: mean_market_adjusted_20</td><td>-0.01702</td></tr>
+<tr><td>call_track_record: mean_momentum_adjusted_20</td><td>-0.101439</td></tr>
+<tr><td>call_track_record: std_market_adjusted_20 (uncertainty)</td><td>0.281868</td></tr>
+<tr><td>PSR/DSR/PBO / OOS status</td><td class="gap">OOS_NOT_EVALUATED_V1</td></tr>
+</tbody></table>
+</div>
+<div class="section">
+<h2>Genuine LONG calls: 42</h2>
+<p>tickers covered: AAOI, AES, ALAB, AMD, AMZN, BRKR, BTC, CAKE, CLFD, COHR, DELL, ETH, GEV, GLW, GOOG, HLIT, HOOD, INTC, ITRI, LITE, META, MSFT, MU, MXL, NVDA, OSCR, OSS, OUST, PATH, PENG, POWI, Q, SNDK, SOLS, SPY, SYNA, TSM, VECO</p>
+<p>outcome_split: {&#x27;UNEVALUABLE_TICKER_ABSENT&#x27;: 27, &#x27;GOOD_CALL&#x27;: 14, &#x27;FAILED_CALL&#x27;: 1}</p>
+<p>good_calls=14 failed_calls=1
+unevaluable=27</p>
+</div>
+<div class="section">
+<h2>Originality / lead-lag role (per ticker, from independence records)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>AAOI</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-09</td></tr><tr><td>AES</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2026-02-25</td></tr><tr><td>ALAB</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-21</td></tr><tr><td>AMD</td><td>ORIGINATOR</td><td>1.0</td><td>10</td><td>2025-06-30</td></tr><tr><td>AMZN</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-02-25</td></tr><tr><td>BRKR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-28</td></tr><tr><td>BTC</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-01-19</td></tr><tr><td>CAKE</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-03-08</td></tr><tr><td>CLFD</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-14</td></tr><tr><td>COHR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-06</td></tr><tr><td>DELL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-28</td></tr><tr><td>ETH</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-01-31</td></tr><tr><td>GEV</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-09</td></tr><tr><td>GLW</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-14</td></tr><tr><td>GOOG</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2025-12-03</td></tr><tr><td>HLIT</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-12</td></tr><tr><td>HOOD</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-01-27</td></tr><tr><td>INTC</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-28</td></tr><tr><td>ITRI</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-02-26</td></tr><tr><td>LITE</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-06</td></tr><tr><td>META</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-02-25</td></tr><tr><td>MSFT</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-02-25</td></tr><tr><td>MU</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-05-28</td></tr><tr><td>MXL</td><td>ORIGINATOR</td><td>1.0</td><td>8</td><td>2026-04-23</td></tr><tr><td>NVDA</td><td>FOLLOWER</td><td>0.5</td><td>6</td><td>2025-12-03</td></tr><tr><td>OSCR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-07-03</td></tr><tr><td>OSS</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-12</td></tr><tr><td>OUST</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-01-14</td></tr><tr><td>PATH</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-12-03</td></tr><tr><td>PENG</td><td>ORIGINATOR</td><td>1.0</td><td>13</td><td>2026-04-23</td></tr><tr><td>POWI</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-06</td></tr><tr><td>Q</td><td>ORIGINATOR</td><td>1.0</td><td>3</td><td>2026-04-09</td></tr><tr><td>SKHY</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-07-28</td></tr><tr><td>SNDK</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-04-09</td></tr><tr><td>SOLS</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-09</td></tr><tr><td>SPY</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-04-21</td></tr><tr><td>SYNA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-12</td></tr><tr><td>TSM</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2026-04-28</td></tr><tr><td>VECO</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-05-06</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Full call history / thesis timeline / evidence posts (43 episode(s))</h2>
+<div data-episode-id="1939769783173648715" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=AMD</span></div>
+<div>tweet_date=2025-06-30 pushes=10
+closure_state=NOT_EVALUABLE
+<a href="evidence_1939769783173648715.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="1940823143846953012" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=OSCR</span></div>
+<div>tweet_date=2025-07-03 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_1940823143846953012.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="1944855190701855111" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=OSCR</span></div>
+<div>tweet_date=2025-07-14 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_1944855190701855111.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="1996334664324420031" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=NVDA</span></div>
+<div>tweet_date=2025-12-03 pushes=6
+closure_state=CLOSED_SOLD
+<a href="evidence_1996334664324420031.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.009331</td><td>mfe=0.009331</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.04643</td><td>mfe=0.04643</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.135534</td><td>mfe=0.232489</td><td>mae=0.0</td><td>max_dd=0.078666</td></tr><tr><td>60</td><td>raw=0.110653</td><td>mfe=0.341337</td><td>mae=0.0</td><td>max_dd=0.182343</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="1996334664324420031" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=PATH</span></div>
+<div>tweet_date=2025-12-03 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_1996334664324420031.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="1996334664324420031" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=GOOG</span></div>
+<div>tweet_date=2025-12-03 pushes=2
+closure_state=NOT_EVALUABLE
+<a href="evidence_1996334664324420031.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2011546317512966448" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=OUST</span></div>
+<div>tweet_date=2026-01-14 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2011546317512966448.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2013360304462205360" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=OK</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=BTC</span></div>
+<div>tweet_date=2026-01-19 pushes=1
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2013360304462205360.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.01748</td><td>mfe=0.0</td><td>mae=-0.01748</td><td>max_dd=0.01748</td></tr><tr><td>5</td><td>raw=0.011476</td><td>mfe=0.013269</td><td>mae=-0.01748</td><td>max_dd=0.01748</td></tr><tr><td>20</td><td>raw=0.121539</td><td>mfe=0.13291</td><td>mae=-0.01748</td><td>max_dd=0.042404</td></tr><tr><td>60</td><td>raw=0.080806</td><td>mfe=0.206532</td><td>mae=-0.01748</td><td>max_dd=0.106727</td></tr><tr><td>120</td><td>raw=-0.049256</td><td>mfe=0.206532</td><td>mae=-0.139834</td><td>max_dd=0.287075</td></tr></tbody></table>
+</div><div data-episode-id="2016252016063086785" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=HOOD</span></div>
+<div>tweet_date=2026-01-27 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2016252016063086785.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2017692261954281573" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=OK</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=ETH</span></div>
+<div>tweet_date=2026-01-31 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2017692261954281573.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.038286</td><td>mfe=0.0</td><td>mae=-0.038286</td><td>max_dd=0.038286</td></tr><tr><td>5</td><td>raw=-0.014483</td><td>mfe=0.0</td><td>mae=-0.039908</td><td>max_dd=0.039908</td></tr><tr><td>20</td><td>raw=0.088479</td><td>mfe=0.13201</td><td>mae=-0.039908</td><td>max_dd=0.064498</td></tr><tr><td>60</td><td>raw=-0.062839</td><td>mfe=0.13201</td><td>mae=-0.062839</td><td>max_dd=0.172126</td></tr><tr><td>120</td><td>raw=-0.103502</td><td>mfe=0.13201</td><td>mae=-0.268345</td><td>max_dd=0.353668</td></tr></tbody></table>
+</div><div data-episode-id="2026451079052116445" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=AES</span></div>
+<div>tweet_date=2026-02-25 pushes=2
+closure_state=NOT_EVALUABLE
+<a href="evidence_2026451079052116445.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2026451079052116445" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=META</span></div>
+<div>tweet_date=2026-02-25 pushes=1
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2026451079052116445.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.008235</td><td>mfe=0.0</td><td>mae=-0.008235</td><td>max_dd=0.008235</td></tr><tr><td>5</td><td>raw=0.084871</td><td>mfe=0.084871</td><td>mae=-0.010721</td><td>max_dd=0.010721</td></tr><tr><td>20</td><td>raw=0.05642</td><td>mfe=0.188733</td><td>mae=-0.010721</td><td>max_dd=0.111306</td></tr><tr><td>60</td><td>raw=-0.02781</td><td>mfe=0.188733</td><td>mae=-0.061904</td><td>max_dd=0.210844</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2026451079052116445" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=MSFT</span></div>
+<div>tweet_date=2026-02-25 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2026451079052116445.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.011073</td><td>mfe=0.011073</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.010017</td><td>mfe=0.013428</td><td>mae=0.0</td><td>max_dd=0.003366</td></tr><tr><td>20</td><td>raw=0.103988</td><td>mfe=0.17205</td><td>mae=0.0</td><td>max_dd=0.058071</td></tr><tr><td>60</td><td>raw=-5e-06</td><td>mfe=0.249472</td><td>mae=-0.04271</td><td>max_dd=0.233844</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2026451079052116445" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=AMZN</span></div>
+<div>tweet_date=2026-02-25 pushes=1
+closure_state=CLOSED_SOLD
+<a href="evidence_2026451079052116445.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.003799</td><td>mfe=0.0</td><td>mae=-0.003799</td><td>max_dd=0.003799</td></tr><tr><td>5</td><td>raw=0.109607</td><td>mfe=0.109607</td><td>mae=-0.003799</td><td>max_dd=0.003799</td></tr><tr><td>20</td><td>raw=0.258774</td><td>mfe=0.258774</td><td>mae=-0.003799</td><td>max_dd=0.016251</td></tr><tr><td>60</td><td>raw=0.140428</td><td>mfe=0.305932</td><td>mae=-0.003799</td><td>max_dd=0.174479</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2027043120429633670" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=NVDA</span></div>
+<div>tweet_date=2026-02-26 pushes=0
+closure_state=CLOSED_SOLD
+<a href="evidence_2027043120429633670.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.009331</td><td>mfe=0.009331</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.04643</td><td>mfe=0.04643</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.135534</td><td>mfe=0.232489</td><td>mae=0.0</td><td>max_dd=0.078666</td></tr><tr><td>60</td><td>raw=0.110653</td><td>mfe=0.341337</td><td>mae=0.0</td><td>max_dd=0.182343</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2027043120429633670" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=ITRI</span></div>
+<div>tweet_date=2026-02-26 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2027043120429633670.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2030775240310284759" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=CAKE</span></div>
+<div>tweet_date=2026-03-08 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2030775240310284759.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2042294723696869587" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SOLS</span></div>
+<div>tweet_date=2026-04-09 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2042294723696869587.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2042294723696869587" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=GEV</span></div>
+<div>tweet_date=2026-04-09 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2042294723696869587.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2042294723696869587" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=Q</span></div>
+<div>tweet_date=2026-04-09 pushes=3
+closure_state=NOT_EVALUABLE
+<a href="evidence_2042294723696869587.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2042294723696869587" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SNDK</span></div>
+<div>tweet_date=2026-04-09 pushes=1
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2042294723696869587.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.11826</td><td>mfe=0.11826</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.081266</td><td>mfe=0.11826</td><td>mae=0.0</td><td>max_dd=0.063811</td></tr><tr><td>20</td><td>raw=0.834228</td><td>mfe=0.834228</td><td>mae=0.0</td><td>max_dd=0.063811</td></tr><tr><td>60</td><td>raw=1.027754</td><td>mfe=1.74135</td><td>mae=0.0</td><td>max_dd=0.307195</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2046638216749735937" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
+<div>tweet_date=2026-04-21 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2046638216749735937.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2047126747100152155" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=PENG</span></div>
+<div>tweet_date=2026-04-23 pushes=13
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2047126747100152155.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.053438</td><td>mfe=0.0</td><td>mae=-0.053438</td><td>max_dd=0.053438</td></tr><tr><td>5</td><td>raw=0.017921</td><td>mfe=0.017921</td><td>mae=-0.083741</td><td>max_dd=0.083741</td></tr><tr><td>20</td><td>raw=0.73379</td><td>mfe=0.73379</td><td>mae=-0.083741</td><td>max_dd=0.083741</td></tr><tr><td>60</td><td>raw=0.928967</td><td>mfe=1.652004</td><td>mae=-0.083741</td><td>max_dd=0.345988</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2047421356091019595" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=MXL</span></div>
+<div>tweet_date=2026-04-23 pushes=8
+closure_state=NOT_EVALUABLE
+<a href="evidence_2047421356091019595.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2049266734386024738" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=TSM</span></div>
+<div>tweet_date=2026-04-28 pushes=2
+closure_state=NOT_EVALUABLE
+<a href="evidence_2049266734386024738.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2049533495819796597" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=MXL</span></div>
+<div>tweet_date=2026-04-29 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2049533495819796597.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2051861485501161602" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=COHR</span></div>
+<div>tweet_date=2026-05-06 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2051861485501161602.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.050346</td><td>mfe=0.050346</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.268649</td><td>mfe=0.268649</td><td>mae=0.0</td><td>max_dd=0.01496</td></tr><tr><td>20</td><td>raw=0.181083</td><td>mfe=0.337417</td><td>mae=0.0</td><td>max_dd=0.12671</td></tr><tr><td>60</td><td>raw=0.014224</td><td>mfe=0.337417</td><td>mae=-0.304333</td><td>max_dd=0.479843</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2051861485501161602" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=VECO</span></div>
+<div>tweet_date=2026-05-06 pushes=3
+closure_state=NOT_EVALUABLE
+<a href="evidence_2051861485501161602.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2051861485501161602" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=LITE</span></div>
+<div>tweet_date=2026-05-06 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2051861485501161602.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.01257</td><td>mfe=0.01257</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.122376</td><td>mfe=0.179827</td><td>mae=0.0</td><td>max_dd=0.057659</td></tr><tr><td>20</td><td>raw=-0.0324</td><td>mfe=0.179827</td><td>mae=-0.042147</td><td>max_dd=0.188142</td></tr><tr><td>60</td><td>raw=-0.048298</td><td>mfe=0.179827</td><td>mae=-0.325159</td><td>max_dd=0.428017</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2052134597962690852" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=POWI</span></div>
+<div>tweet_date=2026-05-06 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2052134597962690852.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2054299633946677290" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=OSS</span></div>
+<div>tweet_date=2026-05-12 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2054299633946677290.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2054299633946677290" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=HLIT</span></div>
+<div>tweet_date=2026-05-12 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2054299633946677290.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2054299633946677290" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SYNA</span></div>
+<div>tweet_date=2026-05-12 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2054299633946677290.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2054981755049050572" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=CLFD</span></div>
+<div>tweet_date=2026-05-14 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2054981755049050572.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2054981755049050572" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=GLW</span></div>
+<div>tweet_date=2026-05-14 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2054981755049050572.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.069131</td><td>mfe=0.0</td><td>mae=-0.069131</td><td>max_dd=0.069131</td></tr><tr><td>5</td><td>raw=0.011678</td><td>mfe=0.011678</td><td>mae=-0.083311</td><td>max_dd=0.083311</td></tr><tr><td>20</td><td>raw=-0.018988</td><td>mfe=0.048265</td><td>mae=-0.121903</td><td>max_dd=0.162333</td></tr><tr><td>60</td><td>raw=-0.125715</td><td>mfe=0.335081</td><td>mae=-0.352275</td><td>max_dd=0.514842</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2057296246210199760" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=ALAB</span></div>
+<div>tweet_date=2026-05-21 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2057296246210199760.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2059038662487404945" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=HLIT</span></div>
+<div>tweet_date=2026-05-25 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2059038662487404945.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2060040494739276093" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=BRKR</span></div>
+<div>tweet_date=2026-05-28 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2060040494739276093.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2060040494739276093" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=MU</span></div>
+<div>tweet_date=2026-05-28 pushes=1
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2060040494739276093.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.066426</td><td>mfe=0.066426</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.110185</td><td>mfe=0.111812</td><td>mae=-0.110185</td><td>max_dd=0.199672</td></tr><tr><td>20</td><td>raw=0.179485</td><td>mfe=0.249804</td><td>mae=-0.110185</td><td>max_dd=0.199672</td></tr><tr><td>60</td><td>raw=-0.039018</td><td>mfe=0.249804</td><td>mae=-0.238812</td><td>max_dd=0.390954</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2060040494739276093" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=INTC</span></div>
+<div>tweet_date=2026-05-28 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2060040494739276093.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2060126426427424872" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=DELL</span></div>
+<div>tweet_date=2026-05-28 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2060126426427424872.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.10703</td><td>mfe=0.10703</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.063006</td><td>mfe=0.10703</td><td>mae=-0.063006</td><td>max_dd=0.153597</td></tr><tr><td>20</td><td>raw=-0.014968</td><td>mfe=0.10703</td><td>mae=-0.121356</td><td>max_dd=0.206305</td></tr><tr><td>60</td><td>raw=0.074448</td><td>mfe=0.176801</td><td>mae=-0.121356</td><td>max_dd=0.206305</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2064393373822435815" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=AAOI</span></div>
+<div>tweet_date=2026-06-09 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2064393373822435815.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.013419</td><td>mfe=0.0</td><td>mae=-0.013419</td><td>max_dd=0.013419</td></tr><tr><td>5</td><td>raw=-0.044481</td><td>mfe=0.093759</td><td>mae=-0.044481</td><td>max_dd=0.12639</td></tr><tr><td>20</td><td>raw=-0.315252</td><td>mfe=0.093759</td><td>mae=-0.346714</td><td>max_dd=0.402715</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2082237710488735846" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SKHY</span></div>
+<div>tweet_date=2026-07-28 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2082237710488735846.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

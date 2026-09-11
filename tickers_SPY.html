@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SPY - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>SPY</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>State Street SPDR S&amp;P 500 ETF Trust</strong> &mdash; The trust seeks to achieve its investment objective by holding a portfolio of the common stocks that are included in the index (the “Portfolio”), with the weight of each stock in the Portfolio substantially corresponding to the weight of such stock in the index.</p>
+<p>ai_subindustry=broad_market_etf_index value_chain_role=not_applicable_broad_market_vehicle
+country=[FIELD_NOT_PROVIDED] asset_class=ETF</p>
+<p>market_cap=[FIELD_NOT_PROVIDED] trailing_pe=24.745016
+forward_pe=[FIELD_NOT_PROVIDED] price_to_book=1.7843294</p>
+<p>revenue=[FIELD_NOT_PROVIDED] revenue_growth=[FIELD_NOT_PROVIDED]
+cash=[FIELD_NOT_PROVIDED] debt=[FIELD_NOT_PROVIDED] profitability=[FIELD_NOT_PROVIDED]</p>
+<p>current_price=765.8699 momentum_state=EXTENDED_NEAR_52W_HIGH
+average_volume=47227938</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">NEW_CALL</span> rule=latest open episode age_days=4 &lt;= 7 (fast-loop weekly detection window)
+age_days_vs_as_of=4</p>
+<p>first_call: RJCcapital on 2026-01-24
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=1
+pushes_by_account={&#x27;BryzonX&#x27;: 1, &#x27;CKCapitalxx&#x27;: 0, &#x27;LiebermanAustin&#x27;: 0, &#x27;PhotonBull&#x27;: 0, &#x27;RJCcapital&#x27;: 0}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">SPECULATIVE</span> rule=asset_class==CRYPTO or size_bucket in {MICRO,UNKNOWN} or data_quality&lt;0.4</p>
+<p>data_quality warnings: market_country: FIELD_NOT_PROVIDED, market_cap: FIELD_NOT_PROVIDED, forward_pe: FIELD_NOT_PROVIDED, revenue: FIELD_NOT_PROVIDED, revenue_growth: FIELD_NOT_PROVIDED, cash: FIELD_NOT_PROVIDED, debt: FIELD_NOT_PROVIDED, profitability: FIELD_NOT_PROVIDED</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.705</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>1.0</td><td>0.3</td><td>0.3</td><td>5 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>BryzonX tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>1.0</td><td>0.2</td><td>0.2</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.2</td><td>0.15</td><td>0.03</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>0.5</td><td>0.1</td><td>0.05</td><td>8/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> kol_independence: 5 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0)</p>
+<p><strong>Reasons against:</strong> momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (5 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>BryzonX</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-04-21</td></tr><tr><td>CKCapitalxx</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-20</td></tr><tr><td>LiebermanAustin</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-07</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-15</td></tr><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-01-24</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (5 episode(s))</h2>
+<div data-episode-id="2046638216749735937" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
+<div>tweet_date=2026-04-21 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2046638216749735937.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2057068711740141787" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
+<div>tweet_date=2026-05-20 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2057068711740141787.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2097051795595899281" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=LiebermanAustin</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
+<div>tweet_date=2026-09-07 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2097051795595899281.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2055273675100651861" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
+<div>tweet_date=2026-05-15 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2055273675100651861.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2015187017336750443" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
+<div>tweet_date=2026-01-24 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2015187017336750443.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

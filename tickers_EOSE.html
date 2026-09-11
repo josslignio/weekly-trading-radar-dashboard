@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EOSE - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>EOSE</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>Eos Energy Enterprises, Inc.</strong> &mdash; Eos Energy Enterprises, Inc. designs, develops, manufactures, and markets energy storage solutions for utility-scale, microgrid, and commercial and industrial applications in the United States. The company offers Znyth technology battery energy storage system (BESS), which provides operating flexibility to manage increased grid complexity and price volatility. It also provides the Z3 battery module that provides utilities, independent power producers, renewables developers, and commercial and industrial customers with an alternative to lithium-ion and lead-acid monopolar batteries for critical 3- to 12-hour discharge duration applications; a battery management system, which provides remote asset monitoring capability and service to track the performance and health of BESS and identify future system performance issues through predictive analytics; and project management and commissioning services, as well as long-term maintenance plans. The company also provides Eos Indensity, an energy storage architecture; Eos Cube; and DawnOS, a proprietary U.S.-engineered battery management and analytics platform. Eos Energy Enterprises, Inc. was formerly known as B. Riley Principal Merger Corp. II and changed its name to Eos Energy Enterprises, Inc. in November 2020. The company was founded in 2008 and is headquartered in Pittsburgh, Pennsylvania.</p>
+<p>ai_subindustry=energy_cooling_infra value_chain_role=midstream_infrastructure_power
+country=United States asset_class=EQUITY</p>
+<p>market_cap=1477492736 trailing_pe=[FIELD_NOT_PROVIDED]
+forward_pe=-27.315279 price_to_book=-1.349967</p>
+<p>revenue=214248000 revenue_growth=3.514
+cash=305491008 debt=640825024 profitability=-2.46757</p>
+<p>current_price=4.085 momentum_state=NEUTRAL
+average_volume=26480880</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">NEW_CALL</span> rule=latest open episode age_days=2 &lt;= 7 (fast-loop weekly detection window)
+age_days_vs_as_of=2</p>
+<p>first_call: RJCcapital on 2025-10-18
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=13
+pushes_by_account={&#x27;RJCcapital&#x27;: 13, &#x27;StonkChris&#x27;: 0}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
+<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.6288</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.4</td><td>0.3</td><td>0.12</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>RJCcapital tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>1.0</td><td>0.2</td><td>0.2</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.6</td><td>0.15</td><td>0.09</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0); momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Reasons against:</strong> kol_independence: 2 distinct supporting account(s) (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (2 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>13</td><td>2025-10-18</td></tr><tr><td>StonkChris</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-09</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (2 episode(s))</h2>
+<div data-episode-id="1979599484968698134" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=EOSE</span></div>
+<div>tweet_date=2025-10-18 pushes=13
+closure_state=NOT_EVALUABLE
+<a href="evidence_1979599484968698134.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2097722791273320516" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=StonkChris</span><span data-field="ticker" style="margin-right:10px">ticker=EOSE</span></div>
+<div>tweet_date=2026-09-09 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2097722791273320516.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

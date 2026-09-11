@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ASTS - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>ASTS</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>AST SpaceMobile, Inc.</strong> &mdash; AST SpaceMobile, Inc., together with its subsidiaries, designs and develops the constellation of BlueBird satellites in the United States. The company provides a cellular broadband network in space to be accessible directly by smartphones for commercial use and other applications, as well as for government use. Its SpaceMobile service provides cellular broadband services to end-users who are out of terrestrial cellular coverage. The company was founded in 2017 and is headquartered in Midland, Texas.</p>
+<p>ai_subindustry=defense_autonomy value_chain_role=downstream_application_layer_defense
+country=United States asset_class=EQUITY</p>
+<p>market_cap=23449286656 trailing_pe=[FIELD_NOT_PROVIDED]
+forward_pe=-46.73901 price_to_book=9.535528</p>
+<p>revenue=115299000 revenue_growth=26.266
+cash=2288252928 debt=2993731072 profitability=0.0</p>
+<p>current_price=60.255 momentum_state=DOWNTREND
+average_volume=15728698</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">NEW_CALL</span> rule=latest open episode age_days=1 &lt;= 7 (fast-loop weekly detection window)
+age_days_vs_as_of=1</p>
+<p>first_call: CKCapitalxx on 2026-02-13
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=75
+pushes_by_account={&#x27;CKCapitalxx&#x27;: 42, &#x27;Frenchie&#x27;: 1, &#x27;PhotonBull&#x27;: 31, &#x27;StonkChris&#x27;: 1}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">LOW</span> rule=size_bucket in {LARGE,MEGA} and data_quality&gt;=0.7 and supporting_kol_count&gt;=2</p>
+<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.7188</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.8</td><td>0.3</td><td>0.24</td><td>4 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>1.0</td><td>0.2</td><td>0.2</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> kol_independence: 4 distinct supporting account(s) (score 0.8); conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Reasons against:</strong> momentum_not_overextended: momentum_state=&#x27;DOWNTREND&#x27; (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (4 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>CKCapitalxx</td><td>ORIGINATOR</td><td>1.0</td><td>42</td><td>2026-02-13</td></tr><tr><td>Frenchie</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-02-27</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>31</td><td>2026-03-16</td></tr><tr><td>StonkChris</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-09-10</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (6 episode(s))</h2>
+<div data-episode-id="2022394450077716573" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
+<div>tweet_date=2026-02-13 pushes=30
+closure_state=CLOSED_SOLD
+<a href="evidence_2022394450077716573.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2024801203604095350" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
+<div>tweet_date=2026-02-20 pushes=12
+closure_state=CLOSED_SOLD
+<a href="evidence_2024801203604095350.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2027501570577838322" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
+<div>tweet_date=2026-02-27 pushes=1
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2027501570577838322.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2033574750765682958" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
+<div>tweet_date=2026-03-16 pushes=31
+closure_state=CLOSED_SOLD
+<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2052812189640347903" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
+<div>tweet_date=2026-05-08 pushes=0
+closure_state=CLOSED_SOLD
+<a href="evidence_2052812189640347903.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=-0.116172</td><td>mfe=0.0</td><td>mae=-0.116172</td><td>max_dd=0.116172</td></tr><tr><td>5</td><td>raw=0.051847</td><td>mfe=0.051847</td><td>mae=-0.116172</td><td>max_dd=0.116172</td></tr><tr><td>20</td><td>raw=0.074621</td><td>mfe=0.612235</td><td>mae=-0.116172</td><td>max_dd=0.333459</td></tr><tr><td>60</td><td>raw=-0.18401</td><td>mfe=0.612235</td><td>mae=-0.357601</td><td>max_dd=0.601548</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="2097839429125611895" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=NO_MARKET_DATA_AFTER_TWEET</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=StonkChris</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
+<div>tweet_date=2026-09-10 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2097839429125611895.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

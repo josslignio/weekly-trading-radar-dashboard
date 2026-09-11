@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FIX - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>FIX</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>Comfort Systems USA, Inc.</strong> &mdash; Comfort Systems USA, Inc., together with its subsidiaries, provides mechanical and electrical installation, renovation, maintenance, repair, and replacement services for the mechanical and electrical services industry in the United States. The company operates through two segments: Mechanical and Electrical. It offers heating, ventilation, and air conditioning systems, as well as plumbing, electrical, piping and controls, off-site construction, monitoring, and fire protection. The company is also involved in the design, engineering, integration, installation, and start-up of mechanical, electrical, and plumbing (MEP) and related systems in new buildings; and renovation, expansion, maintenance, monitoring, repair, and replacement of systems in existing buildings. In addition, it provides remote monitoring of power usage, temperature, pressure, humidity and air flow for MEP and other building systems. The company serves building owners and developers, general contractors, architects, consulting engineers, and property managers in the commercial, industrial, and institutional markets. Comfort Systems USA, Inc. was founded in 1917 and is headquartered in Houston, Texas.</p>
+<p>ai_subindustry=UNCLASSIFIED value_chain_role=UNCLASSIFIED
+country=United States asset_class=EQUITY</p>
+<p>market_cap=59603709952 trailing_pe=41.74415
+forward_pe=28.142288 price_to_book=92.26696</p>
+<p>revenue=11228023808 revenue_growth=0.01
+cash=70540000 debt=303920992 profitability=0.12775</p>
+<p>current_price=1693.56 momentum_state=UPTREND
+average_volume=470612</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">OLD_CALL</span> rule=latest open episode age_days=296 &gt; 174, still no explicit closure/invalidation
+age_days_vs_as_of=296</p>
+<p>first_call: RJCcapital on 2025-11-19
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=2
+pushes_by_account={&#x27;RJCcapital&#x27;: 2}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
+<p>data_quality warnings: none</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.465</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>RJCcapital tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.3</td><td>0.2</td><td>0.06</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.8</td><td>0.15</td><td>0.12</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3)</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2025-11-19</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (1 episode(s))</h2>
+<div data-episode-id="1991135914513277209" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=FIX</span></div>
+<div>tweet_date=2025-11-19 pushes=2
+closure_state=NOT_EVALUABLE
+<a href="evidence_1991135914513277209.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

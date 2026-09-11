@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SOFI - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>SOFI</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>SoFi Technologies, Inc.</strong> &mdash; SoFi Technologies, Inc. provides various financial services in the United States, Latin America, Canada, and Hong Kong. The company operates through three segments: Lending, Technology Platform, and Financial Services. It offers lending and financial services and products that allows its members to borrow, save, spend, invest, and protect money; and personal loans, student loans, home loans, and related services. The company also operates Galileo, a technology platform that offers services to financial and non-financial institution; and Technisys, a cloud-native digital and core banking platform that provides software licenses and associated services, including implementation and maintenance. In addition, it provides SoFi Money offers checking and savings accounts, and cash management products; SoFi Invest, a mobile-first investment platform that offers access to trading and advisory solutions, such as investing and robo-advisory; and SoFI Crypto, a new digital asset trading platform. Further, the company offers SoFi Credit Card that provides cash back rewards on every purchase; Sofi Relay, a personal finance management product that allows to track all of their financial accounts comprising credit score and spending behaviors; SoFi Protect which offers insurance product; SoFi Travel, an application that manages travel search and booking experience; SoFi At Work provides financial benefits to employees, including student loan payments made on their employees&#x27; behalf; Lantern Credit, a financial services marketplace platform for seeking alternative products and provide product comparisons; and other lending as a service that offers pre-qualified borrower referrals and offers loans to third-party partner. The company was founded in 2011 and is based in San Francisco, California.</p>
+<p>ai_subindustry=UNCLASSIFIED value_chain_role=UNCLASSIFIED
+country=United States asset_class=EQUITY</p>
+<p>market_cap=22402285568 trailing_pe=35.397957
+forward_pe=20.958445 price_to_book=2.0206199</p>
+<p>revenue=4268439040 revenue_growth=0.426
+cash=3366502912 debt=3415378944 profitability=0.14906</p>
+<p>current_price=17.345 momentum_state=DOWNTREND
+average_volume=67813537</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=135 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
+age_days_vs_as_of=135</p>
+<p>first_call: RJCcapital on 2025-11-30
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=0
+pushes_by_account={&#x27;CKCapitalxx&#x27;: 0, &#x27;RJCcapital&#x27;: 0}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">LOW</span> rule=size_bucket in {LARGE,MEGA} and data_quality&gt;=0.7 and supporting_kol_count&gt;=2</p>
+<p>data_quality warnings: none</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.545</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.4</td><td>0.3</td><td>0.12</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Reasons against:</strong> kol_independence: 2 distinct supporting account(s) (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (2 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>CKCapitalxx</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-29</td></tr><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-11-30</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (2 episode(s))</h2>
+<div data-episode-id="2049549568757395461" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SOFI</span></div>
+<div>tweet_date=2026-04-29 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_2049549568757395461.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.020497</td><td>mfe=0.020497</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.006211</td><td>mfe=0.020497</td><td>mae=-0.006211</td><td>max_dd=0.026172</td></tr><tr><td>20</td><td>raw=0.131677</td><td>mfe=0.131677</td><td>mae=-0.054037</td><td>max_dd=0.073037</td></tr><tr><td>60</td><td>raw=0.039752</td><td>mfe=0.16646</td><td>mae=-0.054037</td><td>max_dd=0.145856</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div><div data-episode-id="1995186487399166262" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=SOFI</span></div>
+<div>tweet_date=2025-11-30 pushes=0
+closure_state=OPEN_AT_WINDOW_END
+<a href="evidence_1995186487399166262.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td>raw=0.014075</td><td>mfe=0.014075</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.040947</td><td>mfe=0.055022</td><td>mae=0.0</td><td>max_dd=0.013341</td></tr><tr><td>20</td><td>raw=0.03007</td><td>mfe=0.247601</td><td>mae=-0.006718</td><td>max_dd=0.203846</td></tr><tr><td>60</td><td>raw=0.163788</td><td>mfe=0.247601</td><td>mae=-0.025592</td><td>max_dd=0.218974</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

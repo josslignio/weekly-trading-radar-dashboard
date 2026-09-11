@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KOL table - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>KOL table</h1>
+<form class="filters" method="get" action="/kols">
+<label>lifecycle:
+<select name="lifecycle" onchange="this.form.submit()">
+<option value="">(all)</option>
+<option value="MONITORED" >MONITORED</option><option value="SAMPLED" >SAMPLED</option>
+</select>
+</label>
+</form>
+<table>
+<thead><tr>
+<th>handle</th><th>lifecycle</th><th>expertise / AI sub-industry</th>
+<th>genuine calls / coverage</th><th>LONG edge (market-adj @20)</th>
+<th>PSR/DSR/PBO / OOS</th><th>tier &amp; confidence</th>
+<th>owner_root</th><th>deletion_evidence</th><th>profile</th>
+</tr></thead>
+<tbody>
+<tr data-row="1">
+<td data-field="handle"><a href="kols_BryzonX.html">BryzonX</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>42 genuine LONG calls / 12 observable mo. (OK_4M_PLUS)</td>
+<td>market-adj@20 mean: -0.01702 (n=15)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_BryzonX.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_CKCapitalxx.html">CKCapitalxx</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>98 genuine LONG calls / 7 observable mo. (OK_4M_PLUS)</td>
+<td>market-adj@20 mean: 0.044188 (n=31)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_CKCapitalxx.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_DeepValueBagger.html">DeepValueBagger</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span1D_dense1M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_DeepValueBagger.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_Frenchie.html">Frenchie</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>61 genuine LONG calls / 12 observable mo. (OK_4M_PLUS)</td>
+<td>market-adj@20 mean: 0.022482 (n=18)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
+<td data-field="owner_root">True</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_Frenchie.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_Gubloinvestor.html">Gubloinvestor</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_Gubloinvestor.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_HyperTechInvest.html">HyperTechInvest</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 0 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_HyperTechInvest.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_LiebermanAustin.html">LiebermanAustin</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 2 observable mo. (SHORTFALL_span16D_dense0M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_LiebermanAustin.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_PhotonBull.html">PhotonBull</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>109 genuine LONG calls / 4 observable mo. (SHORTFALL_span104D_dense4M_TYPED)</td>
+<td>market-adj@20 mean: -0.070883 (n=31)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_PhotonBull.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_RJCcapital.html">RJCcapital</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>78 genuine LONG calls / 10 observable mo. (OK_4M_PLUS)</td>
+<td>market-adj@20 mean: 0.035755 (n=25)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_RJCcapital.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_StonkChris.html">StonkChris</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>1 genuine LONG calls / 1 observable mo. (SHORTFALL_span5D_dense1M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_StonkChris.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_citrini.html">citrini</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span0D_dense1M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_citrini.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_closenberger.html">closenberger</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 0 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_closenberger.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_italianinvesto.html">italianinvesto</a></td>
+<td data-field="lifecycle">SAMPLED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 0 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_italianinvesto.html" data-evidence>profile</a></td>
+</tr><tr data-row="1">
+<td data-field="handle"><a href="kols_zephyr_z9.html">zephyr_z9</a></td>
+<td data-field="lifecycle">MONITORED</td>
+<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
+<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span0D_dense1M_TYPED)</td>
+<td>market-adj@20 mean: &mdash; (n=0)</td>
+<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
+<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
+<td data-field="owner_root">False</td>
+<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
+<td><a href="kols_zephyr_z9.html" data-evidence>profile</a></td>
+</tr>
+</tbody>
+</table>
+<p>14 KOL(s) shown. Universe designed to scale to 200-300 with no contract change.</p>
+</main>
+</body>
+</html>

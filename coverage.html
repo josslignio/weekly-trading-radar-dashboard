@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Historical coverage - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>Historical coverage</h1>
+<p class="gap">An &#x27;empty&#x27; window only confirms that window returned zero posts on the attempt that produced it; it is not evidence the account has no earlier history. A &#x27;truncated&#x27; window hit --limit and could not be split further -- it is not evidence of complete coverage either. Only windows explicitly listed as success/empty are confirmed observations -- everything in `gaps` (truncated, error, or never attempted) is an honest hole in coverage, not assumed complete.</p>
+<table>
+<thead><tr>
+<th>handle</th><th>requested period</th><th>observed span</th>
+<th>windows</th><th>corpus count before &rarr; after</th><th>gaps</th>
+</tr></thead>
+<tbody><tr data-row="1">
+<td data-field="handle">BryzonX</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2024-12-13T18:31:05+00:00 &rarr; 2026-09-03T19:43:42+00:00</td>
+<td>success=18 empty=7
+error=0 pending=0 / 25</td>
+<td>1633 &rarr; 1633 (+0)</td>
+<td><span class="">0 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">CKCapitalxx</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2025-08-19T23:23:04+00:00 &rarr; 2026-09-11T15:23:42+00:00</td>
+<td>success=6 empty=14
+error=5 pending=0 / 25</td>
+<td>2570 &rarr; 2646 (+76)</td>
+<td><span class="gap">5 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">DeepValueBagger</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2025-09-16T18:44:06+00:00 &rarr; 2026-09-11T12:59:41+00:00</td>
+<td>success=0 empty=0
+error=12 pending=13 / 25</td>
+<td>51 &rarr; 51 (+0)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">Gubloinvestor</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-01-14T23:07:58+00:00 &rarr; 2026-09-11T02:44:11+00:00</td>
+<td>success=0 empty=0
+error=6 pending=19 / 25</td>
+<td>63 &rarr; 63 (+0)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">HyperTechInvest</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-01-18T17:32:06+00:00 &rarr; 2026-09-11T11:35:21+00:00</td>
+<td>success=0 empty=0
+error=3 pending=22 / 25</td>
+<td>67 &rarr; 67 (+0)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">LiebermanAustin</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-08-20T22:38:45+00:00 &rarr; 2026-09-11T14:17:10+00:00</td>
+<td>success=0 empty=0
+error=3 pending=22 / 25</td>
+<td>72 &rarr; 72 (+0)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">PhotonBull</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-03-14T20:34:13+00:00 &rarr; 2026-09-11T12:18:00+00:00</td>
+<td>success=0 empty=0
+error=1 pending=24 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">RJCcapital</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2025-08-31T17:08:59+00:00 &rarr; 2026-08-28T03:24:56+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">StonkChris</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-04-19T23:35:37+00:00 &rarr; 2026-09-11T15:07:30+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">citrini</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-01-30T03:17:10+00:00 &rarr; 2026-09-11T02:30:47+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">closenberger</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2025-07-23T02:40:24+00:00 &rarr; 2026-05-06T20:00:42+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">Frenchie_</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2025-09-08T05:22:21+00:00 &rarr; 2026-09-10T18:31:53+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">italianinvesto</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2025-10-09T15:33:23+00:00 &rarr; 2026-09-09T17:25:14+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr><tr data-row="1">
+<td data-field="handle">zephyr_z9</td>
+<td>730d (2024-09-12 &rarr; 2026-09-11)</td>
+<td>2026-08-28T08:10:19+00:00 &rarr; 2026-09-11T13:42:24+00:00</td>
+<td>success=0 empty=0
+error=0 pending=25 / 25</td>
+<td>&mdash; &rarr; &mdash; (+&mdash;)</td>
+<td><span class="gap">25 gap(s)</span></td>
+</tr></tbody>
+</table>
+<h2>Gap detail</h2>
+<div class="section">
+<h3>CKCapitalxx -- 5 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2026-05-05</td><td>2026-06-04</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr></tbody></table>
+</div><div class="section">
+<h3>DeepValueBagger -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>Gubloinvestor -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>HyperTechInvest -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>LiebermanAustin -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>PhotonBull -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>error</td><td>PROVIDER_UNAVAILABLE:TimeoutExpired</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>RJCcapital -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>StonkChris -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>citrini -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>closenberger -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>Frenchie_ -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>italianinvesto -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div><div class="section">
+<h3>zephyr_z9 -- 25 gap(s)</h3>
+<table><thead><tr><th>window start</th><th>window end</th><th>reason</th><th>provider_state</th></tr></thead>
+<tbody><tr><td>2024-09-12</td><td>2024-10-12</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-10-12</td><td>2024-11-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-11-11</td><td>2024-12-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2024-12-11</td><td>2025-01-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-01-10</td><td>2025-02-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-02-09</td><td>2025-03-11</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-03-11</td><td>2025-04-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-04-10</td><td>2025-05-10</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-05-10</td><td>2025-06-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-06-09</td><td>2025-07-09</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-07-09</td><td>2025-08-08</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-08-08</td><td>2025-09-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-09-07</td><td>2025-10-07</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-10-07</td><td>2025-11-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-11-06</td><td>2025-12-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2025-12-06</td><td>2026-01-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-01-05</td><td>2026-02-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-02-04</td><td>2026-03-06</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-03-06</td><td>2026-04-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-04-05</td><td>2026-05-05</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-05-05</td><td>2026-06-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-06-04</td><td>2026-07-04</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-07-04</td><td>2026-08-03</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-08-03</td><td>2026-09-02</td><td>pending</td><td>&mdash;</td></tr><tr><td>2026-09-02</td><td>2026-09-12</td><td>pending</td><td>&mdash;</td></tr></tbody></table>
+</div>
+</main>
+</body>
+</html>

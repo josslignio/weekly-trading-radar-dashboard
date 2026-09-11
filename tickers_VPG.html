@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VPG - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>VPG</h1>
+<p><a href="tickers.html">&larr; back to ticker table</a></p>
+<div class="section">
+<h2>Company snapshot</h2>
+<p><strong>Vishay Precision Group, Inc.</strong> &mdash; Vishay Precision Group, Inc. engages in the precision measurement and sensing technologies business in the United States, Europe, Israel, Asia, and Canada. It operates through three segments: Sensors, Weighing Solutions, and Measurement Systems. The company offers precision resistors, strain gages, load cells and force measurement transducers, vehicle weighing and over-load monitoring systems, and control process weighing products; rolling force measuring load cell systems and pressure transmitters; web tension measurement load cells and systems; optical strip width gages; and laser velocimeters for speed and length measurements and closed-loop crop optimization control systems for optimal strip cuts. The company also offers thermal-mechanical simulation systems for metallurgical research; conditioning, data acquisition, and control systems; and data acquisition systems and sensors for product safety testing, as well as electronic displays, signal processors, micro-electromechanical system sensors, cabling, system software, and communications software/hardware. Its products are used in waste management, bulk hauling, logging, scales manufacturing, engineering systems, pharmaceutical, oil, chemical, steel, paper, and food industries, as well as test and measurement, steel, medical, construction, agricultural, and consumer markets. The company offers its products under the VFR, Alpha Electronics, Powertron, APR, Celtron, Revere, Sensortronics, Tedea-Huntleigh, Stress-tek, Vulcan, BLH Nobel, KELK, Gleeble, DTS, and Pacific Instruments brands. Vishay Precision Group, Inc. was incorporated in 2009 and is headquartered in Malvern, Pennsylvania.</p>
+<p>ai_subindustry=healthcare_biotech_ai value_chain_role=downstream_application_layer_healthcare
+country=United States asset_class=EQUITY</p>
+<p>market_cap=875139264 trailing_pe=219.31665
+forward_pe=36.756985 price_to_book=2.633907</p>
+<p>revenue=328588000 revenue_growth=0.117
+cash=75702000 debt=39253000 profitability=0.01202</p>
+<p>current_price=65.795 momentum_state=NEUTRAL
+average_volume=571401</p>
+</div>
+<div class="section">
+<h2>Lifecycle &amp; consensus evolution</h2>
+<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=117 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
+age_days_vs_as_of=117</p>
+<p>first_call: Frenchie on 2026-05-03
+thesis=LONG_POSITION</p>
+<p>conviction_evolution: total_pushes=1
+pushes_by_account={&#x27;Frenchie&#x27;: 1, &#x27;PhotonBull&#x27;: 0}</p>
+</div>
+<div class="section">
+<h2>Risk &amp; data-quality warnings</h2>
+<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
+<p>data_quality warnings: none</p>
+<p>liquidity warnings: none</p>
+</div>
+<div class="section">
+<h2>Explainable opportunity score: 0.575</h2>
+<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
+<tbody><tr><td>kol_independence</td><td>0.4</td><td>0.3</td><td>0.12</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>Frenchie tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.6</td><td>0.15</td><td>0.09</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Reasons against:</strong> kol_independence: 2 distinct supporting account(s) (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</div>
+<div class="section">
+<h2>Supporting / contradicting KOL graph (2 account(s))</h2>
+<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
+<tbody><tr><td>Frenchie</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-03</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-17</td></tr></tbody></table>
+</div>
+<div class="section">
+<h2>Thesis timeline / original evidence (2 episode(s))</h2>
+<div data-episode-id="2050981295820550448" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=VPG</span></div>
+<div>tweet_date=2026-05-03 pushes=1
+closure_state=NOT_EVALUABLE
+<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div><div data-episode-id="2056141461843050717" class="section">
+<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=VPG</span></div>
+<div>tweet_date=2026-05-17 pushes=0
+closure_state=NOT_EVALUABLE
+<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
+<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
+<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
+</div>
+</div>
+</main>
+</body>
+</html>

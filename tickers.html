@@ -1,0 +1,3021 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ticker table - TR Web Product</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
+  background: #0b0d12; color: #d8dde6; }
+header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
+header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
+main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #171b24; position: sticky; top: 0; }
+tr:nth-child(even) { background: #10131a; }
+a { color: #7aa2f7; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
+  border: 1px solid #2f3646; font-size: 11px; }
+.gap { color: #e0af68; font-style: italic; }
+.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
+  border-radius: 6px; }
+h1, h2, h3 { color: #c0caf5; }
+.filters { margin-bottom: 10px; }
+.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
+code { color: #9ece6a; }
+</style>
+</head>
+<body>
+<header>
+<a href="kols.html">KOL table</a>
+<a href="tickers.html">Ticker table</a>
+<a href="coverage.html">Coverage</a>
+</header>
+<main>
+<h1>Ticker table</h1>
+<form class="filters" method="get" action="/tickers">
+<label>risk tier:
+<select name="risk_tier" onchange="this.form.submit()">
+<option value="">(all)</option>
+<option value="LOW" >LOW</option><option value="MODERATE" >MODERATE</option><option value="HIGH" >HIGH</option><option value="SPECULATIVE" >SPECULATIVE</option>
+</select>
+</label>
+</form>
+<table>
+<thead><tr>
+<th>ticker</th><th>name</th><th>value chain role</th><th>asset class</th>
+<th>risk tier</th><th>lifecycle</th><th>market cap</th>
+<th>price / momentum</th><th>opportunity score</th><th>enrichment</th><th>detail</th>
+</tr></thead>
+<tbody>
+<tr data-row="1">
+<td data-field="ticker"><a href="tickers_AAOI.html">AAOI</a></td>
+<td>Applied Optoelectronics, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>8989453312</td>
+<td>105.875 / NEUTRAL</td>
+<td>opportunity=0.7488</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AAOI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AAPL.html">AAPL</a></td>
+<td>Apple Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>4896918077440</td>
+<td>335.5391 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.635</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AAPL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ABVX.html">ABVX</a></td>
+<td>ABIVAX Société Anonyme</td>
+<td data-field="value_chain_role">downstream_application_layer_healthcare</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>10245341184</td>
+<td>117.42 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ABVX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ADEA.html">ADEA</a></td>
+<td>Adeia Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>2966535936</td>
+<td>26.9 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ADEA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ADTN.html">ADTN</a></td>
+<td>ADTRAN Holdings, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>611517952</td>
+<td>7.505 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ADTN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AEHR.html">AEHR</a></td>
+<td>Aehr Test Systems, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>NEW_CALL</td>
+<td>3204881152</td>
+<td>98.13 / UPTREND</td>
+<td>opportunity=0.7188</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AEHR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AES.html">AES</a></td>
+<td>The AES Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>10566027264</td>
+<td>14.81 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AES.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AGX.html">AGX</a></td>
+<td>Argan, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>5801760768</td>
+<td>413.53 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AGX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AIRJ.html">AIRJ</a></td>
+<td>AirJoule Technologies Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>314652960</td>
+<td>4.2899 / NEUTRAL</td>
+<td>opportunity=0.4963</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AIRJ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AIXA.html">AIXA</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_AIXA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ALAB.html">ALAB</a></td>
+<td>Astera Labs, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>50569170944</td>
+<td>291.49 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ALAB.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ALKAL.html">ALKAL</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_ALKAL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ALMU.html">ALMU</a></td>
+<td>Aeluma, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>247687664</td>
+<td>13.5309 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ALMU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ALPAS.html">ALPAS</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.2878</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_ALPAS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ALRIB.html">ALRIB</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_ALRIB.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMAT.html">AMAT</a></td>
+<td>Applied Materials, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>367614164992</td>
+<td>463.225 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMAT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMBA.html">AMBA</a></td>
+<td>Ambarella, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>2970687488</td>
+<td>67.3 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMBA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMD.html">AMD</a></td>
+<td>Advanced Micro Devices, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>843003265024</td>
+<td>516.3958 / UPTREND</td>
+<td>opportunity=0.785</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMD.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMKR.html">AMKR</a></td>
+<td>Amkor Technology, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>12805240832</td>
+<td>51.54 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMKR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMPG.html">AMPG</a></td>
+<td>AmpliTech Group, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>106054920</td>
+<td>3.53 / NEUTRAL</td>
+<td>opportunity=0.6288</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMPG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMPX.html">AMPX</a></td>
+<td>Amprius Technologies, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>1395800448</td>
+<td>9.555 / DOWNTREND</td>
+<td>opportunity=0.3988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMPX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AMZN.html">AMZN</a></td>
+<td>Amazon.com, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>2764747833344</td>
+<td>256.32 / UPTREND</td>
+<td>opportunity=0.725</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AMZN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ARQQ.html">ARQQ</a></td>
+<td>Arqit Quantum Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>360231680</td>
+<td>20.7001 / UPTREND</td>
+<td>opportunity=0.5388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ARQQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ASML.html">ASML</a></td>
+<td>ASML Holding N.V.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>658631622656</td>
+<td>1714.74 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ASML.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ASS.html">ASS</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">ECNQUOTE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.32</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ASS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ASTER.html">ASTER</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.32</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_ASTER.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ASTI.html">ASTI</a></td>
+<td>Ascent Solar Technologies, Inc</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>2.96 / DOWNTREND</td>
+<td>opportunity=0.4663</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ASTI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ASTS.html">ASTS</a></td>
+<td>AST SpaceMobile, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>23449286656</td>
+<td>60.255 / DOWNTREND</td>
+<td>opportunity=0.7188</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ASTS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AT.html">AT</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_AT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AVAV.html">AVAV</a></td>
+<td>AeroVironment, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>NEW_CALL</td>
+<td>7165211136</td>
+<td>140.99 / DOWNTREND</td>
+<td>opportunity=0.6588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AVAV.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AVEX.html">AVEX</a></td>
+<td>AEVEX Corp.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1154562048</td>
+<td>16.685 / DOWNTREND</td>
+<td>opportunity=0.485</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AVEX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AVGO.html">AVGO</a></td>
+<td>Broadcom Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>1746337005568</td>
+<td>365.83 / NEUTRAL</td>
+<td>opportunity=0.4628</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AVGO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AVNT.html">AVNT</a></td>
+<td>Avient Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>3810488576</td>
+<td>41.545 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AVNT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AXP.html">AXP</a></td>
+<td>American Express Company</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>218618052608</td>
+<td>323.73 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AXP.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_AXTI.html">AXTI</a></td>
+<td>AXT, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>4335045120</td>
+<td>66.11 / UPTREND</td>
+<td>opportunity=0.665</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_AXTI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BB.html">BB</a></td>
+<td>BlackBerry Limited</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>4486598656</td>
+<td>7.655 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BB.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BE.html">BE</a></td>
+<td>Bloom Energy Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>81395580928</td>
+<td>276.36 / UPTREND</td>
+<td>opportunity=0.845</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BITF.html">BITF</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_BITF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BKSY.html">BKSY</a></td>
+<td>BlackSky Technology Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>863923584</td>
+<td>21.11 / DOWNTREND</td>
+<td>opportunity=0.5988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BKSY.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BN.html">BN</a></td>
+<td>Brookfield Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>85376278528</td>
+<td>38.245 / DOWNTREND</td>
+<td>opportunity=0.405</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BRKR.html">BRKR</a></td>
+<td>Bruker Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>8177886208</td>
+<td>53.675 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BRKR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BRUN.html">BRUN</a></td>
+<td>Boost Run, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1361619840</td>
+<td>17.13 / NEUTRAL</td>
+<td>opportunity=0.6288</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BRUN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BRZE.html">BRZE</a></td>
+<td>Braze, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>2691950848</td>
+<td>23.7 / NEUTRAL</td>
+<td>opportunity=0.4454</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BRZE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BTC.html">BTC</a></td>
+<td>Bitcoin USD</td>
+<td data-field="value_chain_role">not_applicable_non_equity_asset</td>
+<td data-field="asset_class">CRYPTO</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>1581179469824</td>
+<td>78677.67 / UPTREND</td>
+<td>opportunity=0.5225</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BTC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_BTQ.html">BTQ</a></td>
+<td>BTQ Technologies Corp.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>422856928</td>
+<td>2.875 / DOWNTREND</td>
+<td>opportunity=0.4725</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_BTQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CAKE.html">CAKE</a></td>
+<td>The Cheesecake Factory Incorporated</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>OLD_CALL</td>
+<td>5041498624</td>
+<td>101.315 / UPTREND</td>
+<td>opportunity=0.525</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CAKE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CBRS.html">CBRS</a></td>
+<td>Cerebras Systems Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>46336868352</td>
+<td>195.05 / DOWNTREND</td>
+<td>opportunity=0.5388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CBRS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CCJ.html">CCJ</a></td>
+<td>Cameco Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>42407849984</td>
+<td>97.37 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CCJ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CEG.html">CEG</a></td>
+<td>Constellation Energy Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>102176940032</td>
+<td>288.385 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CEG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CF.html">CF</a></td>
+<td>CF Industries Holdings, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>20274769920</td>
+<td>133.97 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CIEN.html">CIEN</a></td>
+<td>Ciena Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>CLOSED</td>
+<td>49973325824</td>
+<td>352.4 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CIEN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CIFR.html">CIFR</a></td>
+<td>Cipher Digital Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>NEW_CALL</td>
+<td>7209083904</td>
+<td>17.37 / NEUTRAL</td>
+<td>opportunity=0.8088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CIFR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CLFD.html">CLFD</a></td>
+<td>Clearfield, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>407654496</td>
+<td>30.01 / DOWNTREND</td>
+<td>opportunity=0.485</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CLFD.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_COHR.html">COHR</a></td>
+<td>Coherent Corp.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>59696521216</td>
+<td>304.835 / UPTREND</td>
+<td>opportunity=0.725</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_COHR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CPSH.html">CPSH</a></td>
+<td>CPS Technologies Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>79482352</td>
+<td>4.125 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CPSH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CRCL.html">CRCL</a></td>
+<td>Circle Internet Group</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>25687906304</td>
+<td>94.235 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CRCL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CRDO.html">CRDO</a></td>
+<td>Credo Technology Group Holding Ltd</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>30742620160</td>
+<td>163.5664 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CRDO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CREO.html">CREO</a></td>
+<td>470867</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">MUTUALFUND</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.4125</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CREO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CRWV.html">CRWV</a></td>
+<td>CoreWeave, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>50029883392</td>
+<td>90.74 / NEUTRAL</td>
+<td>opportunity=0.8088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CRWV.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_CSIQ.html">CSIQ</a></td>
+<td>Canadian Solar Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>898273984</td>
+<td>13.23 / DOWNTREND</td>
+<td>opportunity=0.3988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_CSIQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DBRG.html">DBRG</a></td>
+<td>DigitalBridge Group, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>2979300096</td>
+<td>15.89 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.3688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_DBRG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DELIA.html">DELIA</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.2878</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_DELIA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DELL.html">DELL</a></td>
+<td>Dell Technologies Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>356522459136</td>
+<td>560.695 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.635</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_DELL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DGXX.html">DGXX</a></td>
+<td>Digi Power X Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>391715680</td>
+<td>3.8632 / NEUTRAL</td>
+<td>opportunity=0.6225</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_DGXX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DRAM.html">DRAM</a></td>
+<td>Roundhill Memory ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>CLOSED</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>59.31 / UPTREND</td>
+<td>opportunity=0.4088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_DRAM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DRNZ.html">DRNZ</a></td>
+<td>REX Drone ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>20.615 / DOWNTREND</td>
+<td>opportunity=0.4288</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_DRNZ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_DUOL.html">DUOL</a></td>
+<td>Duolingo, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>6798867456</td>
+<td>145.92 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_DUOL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EOS.html">EOS</a></td>
+<td>Eaton Vance Enhanced Equity Income Fund II</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1137230592</td>
+<td>21.33 / DOWNTREND</td>
+<td>opportunity=0.5325</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_EOS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EOSE.html">EOSE</a></td>
+<td>Eos Energy Enterprises, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>1477492736</td>
+<td>4.085 / NEUTRAL</td>
+<td>opportunity=0.6288</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_EOSE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EQR.html">EQR</a></td>
+<td>Equity Residential</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>24611481600</td>
+<td>63.66 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_EQR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ERII.html">ERII</a></td>
+<td>Energy Recovery, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>377732096</td>
+<td>7.4 / DOWNTREND</td>
+<td>opportunity=0.405</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ERII.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ETH.html">ETH</a></td>
+<td>Ethereum USD</td>
+<td data-field="value_chain_role">not_applicable_non_equity_asset</td>
+<td data-field="asset_class">CRYPTO</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>318900076544</td>
+<td>2609.06 / UPTREND</td>
+<td>opportunity=0.4625</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ETH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EWA.html">EWA</a></td>
+<td>iShares MSCI Australia ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>29.31 / NEUTRAL</td>
+<td>opportunity=0.4588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_EWA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EWY.html">EWY</a></td>
+<td>iShares MSCI South Korea ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>189.75 / UPTREND</td>
+<td>opportunity=0.5488</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_EWY.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EXA.html">EXA</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">MUTUALFUND</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.4063</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_EXA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_EXENS.html">EXENS</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_EXENS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_FCEL.html">FCEL</a></td>
+<td>FuelCell Energy, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1301254400</td>
+<td>16.275 / NEUTRAL</td>
+<td>opportunity=0.5688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_FCEL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_FICO.html">FICO</a></td>
+<td>Fair Isaac Corporation</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>20997545984</td>
+<td>972.215 / DOWNTREND</td>
+<td>opportunity=0.3631</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_FICO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_FIX.html">FIX</a></td>
+<td>Comfort Systems USA, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>59603709952</td>
+<td>1693.56 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_FIX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_FLNC.html">FLNC</a></td>
+<td>Fluence Energy, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1881402880</td>
+<td>10.12 / DOWNTREND</td>
+<td>opportunity=0.5388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_FLNC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_FLY.html">FLY</a></td>
+<td>Firefly Aerospace Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3512149248</td>
+<td>20.98 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_FLY.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_FPS.html">FPS</a></td>
+<td>Forgent Power Solutions, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>9449473024</td>
+<td>31.04 / DOWNTREND</td>
+<td>opportunity=0.3728</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_FPS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GEV.html">GEV</a></td>
+<td>GE Vernova Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>253621485568</td>
+<td>952.27 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GEV.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GHH.html">GHH</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">ECNQUOTE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.32</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GHH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GLD.html">GLD</a></td>
+<td>SPDR Gold Shares</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>400.5401 / NEUTRAL</td>
+<td>opportunity=0.3466</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GLD.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GLW.html">GLW</a></td>
+<td>Corning Incorporated</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>144549576704</td>
+<td>167.81 / UPTREND</td>
+<td>opportunity=0.545</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GLW.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GOOG.html">GOOG</a></td>
+<td>Alphabet Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>4143746646016</td>
+<td>338.82 / NEUTRAL</td>
+<td>opportunity=0.635</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GOOG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GOOGL.html">GOOGL</a></td>
+<td>Alphabet Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>4180906082304</td>
+<td>341.8584 / NEUTRAL</td>
+<td>opportunity=0.695</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GOOGL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GRAB.html">GRAB</a></td>
+<td>Grab Holdings Limited</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>12314818560</td>
+<td>3.01 / DOWNTREND</td>
+<td>opportunity=0.4216</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GRAB.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_GSAT.html">GSAT</a></td>
+<td>Globalstar, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>10676023296</td>
+<td>82.4 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_GSAT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HII.html">HII</a></td>
+<td>Huntington Ingalls Industries, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>11048065024</td>
+<td>280.375 / DOWNTREND</td>
+<td>opportunity=0.405</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HII.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HIMS.html">HIMS</a></td>
+<td>Hims &amp; Hers Health, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>CLOSED</td>
+<td>6369455616</td>
+<td>27.3 / NEUTRAL</td>
+<td>opportunity=0.3688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HIMS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HLIT.html">HLIT</a></td>
+<td>Harmonic Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1324066688</td>
+<td>12.14 / NEUTRAL</td>
+<td>opportunity=0.695</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HLIT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HON.html">HON</a></td>
+<td>Honeywell International Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>64218382336</td>
+<td>202.62 / DOWNTREND</td>
+<td>opportunity=0.405</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HON.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HOOD.html">HOOD</a></td>
+<td>Robinhood Markets, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>102756114432</td>
+<td>114.29 / UPTREND</td>
+<td>opportunity=0.725</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HOOD.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HPS.html">HPS</a></td>
+<td>John Hancock Preferred Income Fund III</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>421733728</td>
+<td>13.11 / DOWNTREND</td>
+<td>opportunity=0.3603</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HPS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_HQ.html">HQ</a></td>
+<td>Horizon Quantum Holdings Ltd.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>815248256</td>
+<td>15.105 / NEUTRAL</td>
+<td>opportunity=0.5025</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_HQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_IBKR.html">IBKR</a></td>
+<td>Interactive Brokers Group, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>156137652224</td>
+<td>91.64 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_IBKR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_IBM.html">IBM</a></td>
+<td>International Business Machines Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>224364593152</td>
+<td>238.145 / DOWNTREND</td>
+<td>opportunity=0.405</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_IBM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_INFQ.html">INFQ</a></td>
+<td>Infleqtion, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3000628992</td>
+<td>13.315 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_INFQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_INTC.html">INTC</a></td>
+<td>Intel Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>547640475648</td>
+<td>103.6 / UPTREND</td>
+<td>opportunity=0.7788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_INTC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_IONQ.html">IONQ</a></td>
+<td>IonQ, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>15300839424</td>
+<td>37.7672 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_IONQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_IQE.html">IQE</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">ECNQUOTE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_IQE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_IREN.html">IREN</a></td>
+<td>IREN Limited</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>17472561152</td>
+<td>44.34 / NEUTRAL</td>
+<td>opportunity=0.8088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_IREN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ITA.html">ITA</a></td>
+<td>iShares U.S. Aerospace &amp; Defense ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>218.825 / NEUTRAL</td>
+<td>opportunity=0.4588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ITA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ITECH.html">ITECH</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.2878</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_ITECH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ITRI.html">ITRI</a></td>
+<td>Itron, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>4122960640</td>
+<td>94.16 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ITRI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_IWM.html">IWM</a></td>
+<td>iShares Russell 2000 ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>289.65 / NEUTRAL</td>
+<td>opportunity=0.385</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_IWM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_JNJ.html">JNJ</a></td>
+<td>Johnson &amp; Johnson</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>643045261312</td>
+<td>266.835 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_JNJ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_JPM.html">JPM</a></td>
+<td>JPMorgan Chase &amp; Co.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>947284017152</td>
+<td>356.3648 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.375</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_JPM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KEEL.html">KEEL</a></td>
+<td>Keel Infrastructure Corp.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>2291567104</td>
+<td>3.7106 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KEEL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KLIN.html">KLIN</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.2878</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_KLIN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KO.html">KO</a></td>
+<td>The Coca-Cola Company</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>378839465984</td>
+<td>88.05 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.375</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KORU.html">KORU</a></td>
+<td>Direxion Daily South Korea Bull 3X Shares</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>23.5662 / NEUTRAL</td>
+<td>opportunity=0.4588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KORU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KOSPI.html">KOSPI</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_KOSPI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KRKN.html">KRKN</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.32</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_KRKN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KRKNF.html">KRKNF</a></td>
+<td>Kraken Robotics Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>1259087104</td>
+<td>3.39 / DOWNTREND</td>
+<td>opportunity=0.4525</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KRKNF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KRMN.html">KRMN</a></td>
+<td>Karman Holdings Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>4555183616</td>
+<td>34.37 / DOWNTREND</td>
+<td>opportunity=0.4216</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KRMN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KTOS.html">KTOS</a></td>
+<td>Kratos Defense &amp; Security Solutions, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>NEW_CALL</td>
+<td>8668050432</td>
+<td>46.1751 / DOWNTREND</td>
+<td>opportunity=0.665</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KTOS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_KVHI.html">KVHI</a></td>
+<td>KVH Industries, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>130977744</td>
+<td>7.22 / NEUTRAL</td>
+<td>opportunity=0.3966</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_KVHI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LAES.html">LAES</a></td>
+<td>SEALSQ Corp</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>545774016</td>
+<td>2.4499 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LAES.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LASR.html">LASR</a></td>
+<td>nLIGHT, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>2315107584</td>
+<td>40.13 / NEUTRAL</td>
+<td>opportunity=0.5688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LASR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LDOS.html">LDOS</a></td>
+<td>Leidos Holdings, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>16005276672</td>
+<td>127.54 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LDOS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LEU.html">LEU</a></td>
+<td>Centrus Energy Corp.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3117174528</td>
+<td>156.225 / DOWNTREND</td>
+<td>opportunity=0.485</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LEU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LITE.html">LITE</a></td>
+<td>Lumentum Holdings Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>84297367552</td>
+<td>940.26 / UPTREND</td>
+<td>opportunity=0.7188</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LITE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LMND.html">LMND</a></td>
+<td>Lemonade, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>3825714688</td>
+<td>49.43 / DOWNTREND</td>
+<td>opportunity=0.4154</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LMND.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LMT.html">LMT</a></td>
+<td>Lockheed Martin Corporation</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>120970149888</td>
+<td>524.1551 / DOWNTREND</td>
+<td>opportunity=0.485</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LMT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LPKF.html">LPKF</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_LPKF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LRCX.html">LRCX</a></td>
+<td>Lam Research Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>377229475840</td>
+<td>301.465 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LRCX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LULU.html">LULU</a></td>
+<td>lululemon athletica inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>10788691968</td>
+<td>97.45 / DOWNTREND</td>
+<td>opportunity=0.3728</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LULU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LUNR.html">LUNR</a></td>
+<td>Intuitive Machines, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>2320942592</td>
+<td>14.465 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LUNR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LWLG.html">LWLG</a></td>
+<td>Lightwave Logic, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>808607168</td>
+<td>5.245 / DOWNTREND</td>
+<td>opportunity=0.5325</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LWLG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_LYTE.html">LYTE</a></td>
+<td>Roundhill Photonics &amp; Optics ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>25.3442 / NEUTRAL</td>
+<td>opportunity=0.4588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_LYTE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MDA.html">MDA</a></td>
+<td>MDA Space Ltd.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>4677150208</td>
+<td>28.86 / DOWNTREND</td>
+<td>opportunity=0.4725</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MDA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_META.html">META</a></td>
+<td>Meta Platforms, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>1661394354176</td>
+<td>652.165 / NEUTRAL</td>
+<td>opportunity=0.755</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_META.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MNTS.html">MNTS</a></td>
+<td>Momentus Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>89353696</td>
+<td>4.0683 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MNTS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MP.html">MP</a></td>
+<td>MP Materials Corp.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>9115239424</td>
+<td>51.18 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MP.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MRLN.html">MRLN</a></td>
+<td>Merlin, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>305416736</td>
+<td>3.0219 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MRLN.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MRVL.html">MRVL</a></td>
+<td>Marvell Technology, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>213060403200</td>
+<td>237.075 / UPTREND</td>
+<td>opportunity=0.665</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MRVL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MSFT.html">MSFT</a></td>
+<td>Microsoft Corporation</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>3688788393984</td>
+<td>496.77 / UPTREND</td>
+<td>opportunity=0.785</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MSFT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MSI.html">MSI</a></td>
+<td>Motorola Solutions, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>77519773696</td>
+<td>468.415 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MSI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MU.html">MU</a></td>
+<td>Micron Technology, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>CLOSED</td>
+<td>1107460358144</td>
+<td>980.655 / UPTREND</td>
+<td>opportunity=0.645</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MUU.html">MUU</a></td>
+<td>Direxion Daily MU Bull 2X Shares</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>NEW_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>31.7897 / UPTREND</td>
+<td>opportunity=0.4254</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MUU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MX.html">MX</a></td>
+<td>Magnachip Semiconductor Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>CLOSED</td>
+<td>110990736</td>
+<td>3.04 / DOWNTREND</td>
+<td>opportunity=0.3325</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_MXL.html">MXL</a></td>
+<td>MaxLinear, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>6799268864</td>
+<td>74.97 / UPTREND</td>
+<td>opportunity=0.6588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_MXL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NASA.html">NASA</a></td>
+<td>Tema Space Innovators ETF</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>23.321 / DOWNTREND</td>
+<td>opportunity=0.41</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NASA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NBID.html">NBID</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_NBID.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NBIS.html">NBIS</a></td>
+<td>Nebius Group N.V.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>CLOSED</td>
+<td>62261641216</td>
+<td>229.025 / UPTREND</td>
+<td>opportunity=0.6388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NBIS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NBIX.html">NBIX</a></td>
+<td>Neurocrine Biosciences, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>15927919616</td>
+<td>156.695 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NBIX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NLR.html">NLR</a></td>
+<td>VanEck Uranium and Nuclear ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>NEW_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>115.095 / NEUTRAL</td>
+<td>opportunity=0.3954</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NLR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NNE.html">NNE</a></td>
+<td>NANO Nuclear Energy Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>907009984</td>
+<td>16.8909 / DOWNTREND</td>
+<td>opportunity=0.3925</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NNE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NOK.html">NOK</a></td>
+<td>Nokia Oyj</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>61781045248</td>
+<td>11.035 / UPTREND</td>
+<td>opportunity=0.665</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NOK.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NVDA.html">NVDA</a></td>
+<td>NVIDIA Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>5317168988160</td>
+<td>220.2 / UPTREND</td>
+<td>opportunity=0.845</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NVDA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NVIDIA.html">NVIDIA</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>NEW_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.3478</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_NVIDIA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_NVTS.html">NVTS</a></td>
+<td>Navitas Semiconductor Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3062078208</td>
+<td>11.7279 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_NVTS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OII.html">OII</a></td>
+<td>Oceaneering International, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>5074021376</td>
+<td>50.98 / UPTREND</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_OII.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OKLO.html">OKLO</a></td>
+<td>Oklo Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>6869668864</td>
+<td>36.9302 / DOWNTREND</td>
+<td>opportunity=0.5325</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_OKLO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ONDS.html">ONDS</a></td>
+<td>Ondas Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>4157332736</td>
+<td>7.275 / DOWNTREND</td>
+<td>opportunity=0.5988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ONDS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OPTX.html">OPTX</a></td>
+<td>Syntec Optics Holdings, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>296661312</td>
+<td>7.365 / NEUTRAL</td>
+<td>opportunity=0.5625</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_OPTX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ORCL.html">ORCL</a></td>
+<td>Oracle Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>442209927168</td>
+<td>153.52 / NEUTRAL</td>
+<td>opportunity=0.695</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ORCL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OSCR.html">OSCR</a></td>
+<td>Oscar Health, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_healthcare</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>OLD_CALL</td>
+<td>10135901184</td>
+<td>32.84 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_OSCR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OSS.html">OSS</a></td>
+<td>One Stop Systems, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>232489152</td>
+<td>9.32 / NEUTRAL</td>
+<td>opportunity=0.5688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_OSS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OUST.html">OUST</a></td>
+<td>Ouster, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>2591717376</td>
+<td>35.94 / NEUTRAL</td>
+<td>opportunity=0.6288</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_OUST.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_OUSTER.html">OUSTER</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_OUSTER.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PATH.html">PATH</a></td>
+<td>UiPath, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>7207579648</td>
+<td>13.83 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PATH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PENG.html">PENG</a></td>
+<td>Penguin Solutions, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>2606716160</td>
+<td>50.87 / NEUTRAL</td>
+<td>opportunity=0.695</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PENG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PL.html">PL</a></td>
+<td>Planet Labs PBC</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>6127200256</td>
+<td>16.84 / DOWNTREND</td>
+<td>opportunity=0.5988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PLTR.html">PLTR</a></td>
+<td>Palantir Technologies Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>401202610176</td>
+<td>166.955 / UPTREND</td>
+<td>opportunity=0.605</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PLTR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PNG.html">PNG</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">MUTUALFUND</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.4663</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PNG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_POWI.html">POWI</a></td>
+<td>Power Integrations, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>2954859264</td>
+<td>52.885 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_POWI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PUMP.html">PUMP</a></td>
+<td>ProPetro Holding Corp.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>1427213952</td>
+<td>11.62 / DOWNTREND</td>
+<td>opportunity=0.3988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PUMP.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PURR.html">PURR</a></td>
+<td>Hyperliquid Strategies Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>2403726848</td>
+<td>12.15 / UPTREND</td>
+<td>opportunity=0.5388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PURR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_PVH.html">PVH</a></td>
+<td>PVH Corp.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3244642816</td>
+<td>70.325 / NEUTRAL</td>
+<td>opportunity=0.3966</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_PVH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_Q.html">Q</a></td>
+<td>Qnity Electronics, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>26574714880</td>
+<td>127.025 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_Q.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_QBTS.html">QBTS</a></td>
+<td>D-Wave Quantum Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>6333021696</td>
+<td>17.0 / DOWNTREND</td>
+<td>opportunity=0.5388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_QBTS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_QCLS.html">QCLS</a></td>
+<td>Q/C Technologies, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_healthcare</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>13922725</td>
+<td>1.7 / DOWNTREND</td>
+<td>opportunity=0.38</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_QCLS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_QCOM.html">QCOM</a></td>
+<td>QUALCOMM Incorporated</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>196485742592</td>
+<td>183.965 / UPTREND</td>
+<td>opportunity=0.545</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_QCOM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_QNT.html">QNT</a></td>
+<td>Quantinuum Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>13153700864</td>
+<td>49.51 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_QNT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_QQQ.html">QQQ</a></td>
+<td>Invesco QQQ Trust</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>717.42 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.465</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_QQQ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_QUBT.html">QUBT</a></td>
+<td>Quantum Computing Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1816433536</td>
+<td>8.025 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_QUBT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RCAT.html">RCAT</a></td>
+<td>Red Cat Holdings, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1228800896</td>
+<td>8.0464 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RCAT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RDDT.html">RDDT</a></td>
+<td>Reddit, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>30072535040</td>
+<td>156.305 / DOWNTREND</td>
+<td>opportunity=0.3728</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RDDT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RDW.html">RDW</a></td>
+<td>Redwire Corporation</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>NEW_CALL</td>
+<td>2744268800</td>
+<td>10.9774 / UPTREND</td>
+<td>opportunity=0.6588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RDW.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RGTI.html">RGTI</a></td>
+<td>Rigetti Computing, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>5201685504</td>
+<td>15.5847 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RGTI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RKLB.html">RKLB</a></td>
+<td>Rocket Lab Corporation</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>40487440384</td>
+<td>63.3199 / DOWNTREND</td>
+<td>opportunity=0.7788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RKLB.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RPI.html">RPI</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_RPI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RR.html">RR</a></td>
+<td>Richtech Robotics Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_physical</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>374794720</td>
+<td>1.665 / DOWNTREND</td>
+<td>opportunity=0.5388</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_RTX.html">RTX</a></td>
+<td>RTX Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>265717235712</td>
+<td>197.155 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_RTX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SATL.html">SATL</a></td>
+<td>Satellogic Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>746868416</td>
+<td>4.858 / NEUTRAL</td>
+<td>opportunity=0.4454</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SATL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SATS.html">SATS</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.46</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_SATS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SEDG.html">SEDG</a></td>
+<td>SolarEdge Technologies, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>2234615040</td>
+<td>36.345 / DOWNTREND</td>
+<td>opportunity=0.3988</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SEDG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SEI.html">SEI</a></td>
+<td>Solaris Energy Infrastructure, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>7048877056</td>
+<td>70.05 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SEI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SHLS.html">SHLS</a></td>
+<td>Shoals Technologies Group, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>1238687616</td>
+<td>7.36 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SHLS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SHTCO.html">SHTCO</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.32</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_SHTCO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SILC.html">SILC</a></td>
+<td>Silicom Ltd.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>246572528</td>
+<td>43.1501 / UPTREND</td>
+<td>opportunity=0.4266</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SILC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SIVE.html">SIVE</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">NONE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.52</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SIVE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SIVEF.html">SIVEF</a></td>
+<td>Sivers Semiconductors AB (publ)</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>918751616</td>
+<td>3.11 / DOWNTREND</td>
+<td>opportunity=0.4475</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SIVEF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SK.html">SK</a></td>
+<td>Corgi SK hynix 2x Daily ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>30.865 / NEUTRAL</td>
+<td>opportunity=0.5125</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SK.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SKHY.html">SKHY</a></td>
+<td>SK hynix Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1358307393536</td>
+<td>191.39 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SKHY.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SLNH.html">SLNH</a></td>
+<td>Soluna Holdings, Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>297177568</td>
+<td>1.215 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SLNH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SLOIF.html">SLOIF</a></td>
+<td>Soitec SA</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>5654020608</td>
+<td>158.01 / UPTREND</td>
+<td>opportunity=0.5325</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SLOIF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SNDK.html">SNDK</a></td>
+<td>Sandisk Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>240512253952</td>
+<td>1642.63 / UPTREND</td>
+<td>opportunity=0.845</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SNDK.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SNPS.html">SNPS</a></td>
+<td>Synopsys, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>76773449728</td>
+<td>400.6199 / DOWNTREND</td>
+<td>opportunity=0.485</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SNPS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SOFI.html">SOFI</a></td>
+<td>SoFi Technologies, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>22402285568</td>
+<td>17.345 / DOWNTREND</td>
+<td>opportunity=0.545</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SOFI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SOI.html">SOI</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">NONE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.46</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SOI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SOITEC.html">SOITEC</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_SOITEC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SOLS.html">SOLS</a></td>
+<td>Solstice Advanced Materials, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>9961318400</td>
+<td>62.71 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SOLS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SPCE.html">SPCE</a></td>
+<td>Virgin Galactic Holdings, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>440386112</td>
+<td>2.905 / NEUTRAL</td>
+<td>opportunity=0.5688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SPCE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SPCX.html">SPCX</a></td>
+<td>Space Exploration Technologies Corp.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>NEW_CALL</td>
+<td>1943126278144</td>
+<td>147.41 / NEUTRAL</td>
+<td>opportunity=0.7488</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SPCX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SPY.html">SPY</a></td>
+<td>State Street SPDR S&amp;P 500 ETF Trust</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>NEW_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>765.8699 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.705</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SPY.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_STM.html">STM</a></td>
+<td>STMicroelectronics N.V.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>45992271872</td>
+<td>51.565 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_STM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_STMPA.html">STMPA</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_STMPA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_SYNA.html">SYNA</a></td>
+<td>Synaptics Incorporated</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3838350592</td>
+<td>98.15 / NEUTRAL</td>
+<td>opportunity=0.5088</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_SYNA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_T.html">T</a></td>
+<td>AT&amp;T Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>179498237952</td>
+<td>26.195 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_T.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TE.html">TE</a></td>
+<td>T1 Energy Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>1385749888</td>
+<td>4.705 / DOWNTREND</td>
+<td>opportunity=0.4588</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TE.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TMUS.html">TMUS</a></td>
+<td>T-Mobile US, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>196089724928</td>
+<td>182.805 / NEUTRAL</td>
+<td>opportunity=0.4028</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TMUS.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TRT.html">TRT</a></td>
+<td>Trio-Tech International</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>10.1614 / NEUTRAL</td>
+<td>opportunity=0.6225</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TRT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TSEM.html">TSEM</a></td>
+<td>Tower Semiconductor Ltd.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>23961493504</td>
+<td>211.99 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TSEM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TSLA.html">TSLA</a></td>
+<td>Tesla, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">LOW</span></td>
+<td>ACTIVE_CALL</td>
+<td>1444961714176</td>
+<td>365.855 / NEUTRAL</td>
+<td>opportunity=0.635</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TSLA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TSM.html">TSM</a></td>
+<td>Taiwan Semiconductor Manufacturing Company Limited</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>2254093418496</td>
+<td>434.61 / UPTREND</td>
+<td>opportunity=0.545</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TSM.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_TTD.html">TTD</a></td>
+<td>The Trade Desk, Inc.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>6658202112</td>
+<td>14.17 / DOWNTREND</td>
+<td>opportunity=0.4231</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_TTD.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_UAMY.html">UAMY</a></td>
+<td>United States Antimony Corporation</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>745353472</td>
+<td>4.98 / DOWNTREND</td>
+<td>opportunity=0.2769</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_UAMY.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_UEC.html">UEC</a></td>
+<td>Uranium Energy Corp.</td>
+<td data-field="value_chain_role">UNCLASSIFIED</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>5347096064</td>
+<td>10.805 / DOWNTREND</td>
+<td>opportunity=0.3925</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_UEC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_UNH.html">UNH</a></td>
+<td>UnitedHealth Group Incorporated</td>
+<td data-field="value_chain_role">downstream_application_layer_healthcare</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>340556447744</td>
+<td>379.41 / NEUTRAL</td>
+<td>opportunity=0.435</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_UNH.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_UUUU.html">UUUU</a></td>
+<td>Energy Fuels Inc.</td>
+<td data-field="value_chain_role">upstream_adjacent_materials</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>3500306688</td>
+<td>13.22 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_UUUU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VECO.html">VECO</a></td>
+<td>Veeco Instruments Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">MODERATE</span></td>
+<td>ACTIVE_CALL</td>
+<td>2778244096</td>
+<td>45.52 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VECO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VELO.html">VELO</a></td>
+<td>Velo3D, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>344477792</td>
+<td>10.715 / DOWNTREND</td>
+<td>opportunity=0.4788</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VELO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VICR.html">VICR</a></td>
+<td>Vicor Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>9186766848</td>
+<td>199.25 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VICR.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VIVO.html">VIVO</a></td>
+<td>VivoPower PLC</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>128774064</td>
+<td>4.025 / NEUTRAL</td>
+<td>opportunity=0.5025</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VIVO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VLO.html">VLO</a></td>
+<td>Valero Energy Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure_power</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>114393571328</td>
+<td>397.3 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.375</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VLO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VLX.html">VLX</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">ECNQUOTE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.2878</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VLX.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VNP.html">VNP</a></td>
+<td>FIELD_NOT_PROVIDED</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">ECNQUOTE</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>FIELD_NOT_PROVIDED / FIELD_NOT_PROVIDED</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VNP.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VOO.html">VOO</a></td>
+<td>Vanguard S&amp;P 500 ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>704.0027 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.2785</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VOO.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VOYG.html">VOYG</a></td>
+<td>Voyager Technologies, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_defense</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>NEW_CALL</td>
+<td>2072852096</td>
+<td>33.965 / UPTREND</td>
+<td>opportunity=0.4754</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VOYG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VPG.html">VPG</a></td>
+<td>Vishay Precision Group, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer_healthcare</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>875139264</td>
+<td>65.795 / NEUTRAL</td>
+<td>opportunity=0.575</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VPG.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VRT.html">VRT</a></td>
+<td>Vertiv Holdings Co</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>99398164480</td>
+<td>258.185 / NEUTRAL</td>
+<td>opportunity=0.3947</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VRT.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_VZ.html">VZ</a></td>
+<td>Verizon Communications Inc.</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>210210865152</td>
+<td>50.595 / EXTENDED_NEAR_52W_HIGH</td>
+<td>opportunity=0.455</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_VZ.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_WDC.html">WDC</a></td>
+<td>Western Digital Corporation</td>
+<td data-field="value_chain_role">midstream_infrastructure</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>OLD_CALL</td>
+<td>163240312832</td>
+<td>452.765 / NEUTRAL</td>
+<td>opportunity=0.4288</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_WDC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_WLAC.html">WLAC</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.4</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_WLAC.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_WOLF.html">WOLF</a></td>
+<td>Wolfspeed, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>1387135360</td>
+<td>26.69 / NEUTRAL</td>
+<td>opportunity=0.5688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_WOLF.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_WYFI.html">WYFI</a></td>
+<td>WhiteFiber, Inc.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>757538368</td>
+<td>19.5 / NEUTRAL</td>
+<td>opportunity=0.5688</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_WYFI.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_XFAB.html">XFAB</a></td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td data-field="value_chain_role">&mdash;</td>
+<td data-field="asset_class">&mdash;</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>PROVIDER_UNAVAILABLE</td>
+<td>PROVIDER_UNAVAILABLE / PROVIDER_UNAVAILABLE</td>
+<td>opportunity=0.2878</td>
+<td data-field="enrichment_fetch_state">PROVIDER_UNAVAILABLE</td>
+<td><a href="tickers_XFAB.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_XLU.html">XLU</a></td>
+<td>State Street Utilities Select Sector SPDR ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>42.52 / DOWNTREND</td>
+<td>opportunity=0.355</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_XLU.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_XPL.html">XPL</a></td>
+<td>Solitario Resources Corp.</td>
+<td data-field="value_chain_role">upstream_compute_hardware</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>OLD_CALL</td>
+<td>56820144</td>
+<td>0.6001 / DOWNTREND</td>
+<td>opportunity=0.38</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_XPL.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ZAP.html">ZAP</a></td>
+<td>Global X U.S. Electrification ETF</td>
+<td data-field="value_chain_role">not_applicable_broad_market_vehicle</td>
+<td data-field="asset_class">ETF</td>
+<td data-field="risk_tier"><span class="pill">SPECULATIVE</span></td>
+<td>ACTIVE_CALL</td>
+<td>FIELD_NOT_PROVIDED</td>
+<td>31.865 / NEUTRAL</td>
+<td>opportunity=0.3466</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ZAP.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ZETA.html">ZETA</a></td>
+<td>Zeta Global Holdings Corp.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>7592386560</td>
+<td>30.46 / UPTREND</td>
+<td>opportunity=0.545</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ZETA.html" data-evidence>detail</a></td>
+</tr><tr data-row="1">
+<td data-field="ticker"><a href="tickers_ZM.html">ZM</a></td>
+<td>Zoom Communications, Inc.</td>
+<td data-field="value_chain_role">downstream_application_layer</td>
+<td data-field="asset_class">EQUITY</td>
+<td data-field="risk_tier"><span class="pill">HIGH</span></td>
+<td>ACTIVE_CALL</td>
+<td>27881363456</td>
+<td>95.5549 / NEUTRAL</td>
+<td>opportunity=0.515</td>
+<td data-field="enrichment_fetch_state">OK</td>
+<td><a href="tickers_ZM.html" data-evidence>detail</a></td>
+</tr>
+</tbody>
+</table>
+<p>247 ticker(s) shown.</p>
+</main>
+</body>
+</html>
