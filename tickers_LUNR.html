@@ -1,96 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>LUNR - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUNR — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>LUNR</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Intuitive Machines, Inc.</strong> &mdash; Intuitive Machines, Inc. operates as a space infrastructure and services company in the United States. The company provides delivery services for the transportation and delivery of payloads, such as satellites, scientific instruments, and cargo to various destinations in space, rideshare delivery, and lunar surface access; data transmission services, which include the collection, processing, and interpretation of space-based data, as well as utilizing AI applications, such as command, control, communications, reconnaissance and prospecting; and infrastructure as a service solutions for navigation, maintenance, scientific data collection, and system health monitoring. It also offers Nova-C lunar lander that combines flight-proven with a scalable design to meet the demands of the emerging lunar economy; Micro Nova Hopper develops propulsive drone that is designed to land, deploy, and hop on the company&#x27;s IM-2 mission; and Nova-D developed to transport critical payloads, including infrastructure services, such as fission surface power systems, lunar terrain vehicles, and rovers enabling sustainable lunar exploration and development. In addition, the company provides lunar data network. It serves its products to the U.S. government, which include NASA, national security space, U.S. department of Defense, and state governments; commercial; and international customers. The company was founded in 2013 and is headquartered in Houston, Texas.</p>
-<p>ai_subindustry=enterprise_software value_chain_role=downstream_application_layer
-country=United States asset_class=EQUITY</p>
-<p>market_cap=2320942592 trailing_pe=[FIELD_NOT_PROVIDED]
-forward_pe=-93.32258 price_to_book=-8.439323</p>
-<p>revenue=490120000 revenue_growth=3.098
-cash=367353984 debt=481447008 profitability=-0.26635998</p>
-<p>current_price=14.465 momentum_state=DOWNTREND
-average_volume=10202664</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=142 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=142</p>
-<p>first_call: PhotonBull on 2026-04-08
-thesis=LONG_SWING</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;PhotonBull&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.4788</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>PhotonBull tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>PhotonBull</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-08</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (2 episode(s))</h2>
-<div data-episode-id="2041893201510809700" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LUNR</span></div>
-<div>tweet_date=2026-04-08 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2041893201510809700.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LUNR</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Intuitive Machines, Inc.</strong>
+&mdash; Industrials / enterprise_software</p>
+<p>Intuitive Machines, Inc. operates as a space infrastructure and services company in the United States. The company provides delivery services for the transportation and delivery of payloads, such as satellites, scientific instruments, and cargo to various destinations in space, rideshare delivery, and lunar surface access; data transmission services, which include the collection, processing, and interpretation of space-based data, as well as utilizing AI applications, such as command, control, communications, reconnaissance and prospecting; and infrastructure as a service solutions for navigat</p>
+<p>capitalisation : 2.3 Md$
+&middot; prix actuel : 14.35
+&middot; momentum : <span class="badge badge-neutral">DOWNTREND</span></p>
+<p>risque : <span class="badge badge-neutral">MODERATE</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(114 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="49.1" x2="310" y2="49.1" class="zero-line"/><polyline points="10.0,10.0 60.0,30.6 110.0,54.6 160.0,62.0 210.0,50.1 260.0,56.2 310.0,50.0" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +134.1 %</title></circle><circle cx="60.0" cy="30.6" r="3" fill="#2f8f4e"><title>1 an : +63.4 %</title></circle><circle cx="110.0" cy="54.6" r="3" fill="#b3392c"><title>6 mois : -18.9 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -44.3 %</title></circle><circle cx="210.0" cy="50.1" r="3" fill="#b3392c"><title>2 mois : -3.4 %</title></circle><circle cx="260.0" cy="56.2" r="3" fill="#b3392c"><title>1 mois : -24.5 %</title></circle><circle cx="310.0" cy="50.0" r="3" fill="#b3392c"><title>1 semaine : -3.1 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+134.1 %</td></tr><tr><td>1 an</td><td class="pos">+63.4 %</td></tr><tr><td>6 mois</td><td class="neg">-18.9 %</td></tr><tr><td>3 mois</td><td class="neg">-44.3 %</td></tr><tr><td>2 mois</td><td class="neg">-3.4 %</td></tr><tr><td>1 mois</td><td class="neg">-24.5 %</td></tr><tr><td>1 semaine</td><td class="neg">-3.1 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+134.1 %</td><td>HyperTechInvest opened Long Position on LUNR; PhotonBull opened Long Swing on LUNR; PhotonBull opened Long Position on LUNR; CKCapitalxx opened Long Position on LUNR</td></tr><tr><td>1 an</td><td class="pos">+63.4 %</td><td>PhotonBull opened Long Swing on LUNR; PhotonBull opened Long Position on LUNR; CKCapitalxx opened Long Position on LUNR; Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?</td></tr><tr><td>6 mois</td><td class="neg">-18.9 %</td><td>PhotonBull opened Long Swing on LUNR; PhotonBull opened Long Position on LUNR; CKCapitalxx opened Long Position on LUNR; Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?</td></tr><tr><td>3 mois</td><td class="neg">-44.3 %</td><td>Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?; Boeing vs. Intuitive Machines: Which Aerospace Stock Is a Better Buy in 2026?; SPCX Stock Blasts Past ASTS, RKLB, LUNR, PL — Here’s Everything Shaking Up Space Stocks This Week; Management Reiterates Optimistic FY26 Guidance for Intuitive Machines (LUNR)</td></tr><tr><td>2 mois</td><td class="neg">-3.4 %</td><td>Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?; Boeing vs. Intuitive Machines: Which Aerospace Stock Is a Better Buy in 2026?; SPCX Stock Blasts Past ASTS, RKLB, LUNR, PL — Here’s Everything Shaking Up Space Stocks This Week; Management Reiterates Optimistic FY26 Guidance for Intuitive Machines (LUNR)</td></tr><tr><td>1 mois</td><td class="neg">-24.5 %</td><td>Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?; Boeing vs. Intuitive Machines: Which Aerospace Stock Is a Better Buy in 2026?; SPCX Stock Blasts Past ASTS, RKLB, LUNR, PL — Here’s Everything Shaking Up Space Stocks This Week; Management Reiterates Optimistic FY26 Guidance for Intuitive Machines (LUNR)</td></tr><tr><td>1 semaine</td><td class="neg">-3.1 %</td><td>SpaceX Rises 4% as Pivotal Research Launches Coverage at $220, Intuitive Machines Climbs 5%, Rocket Lab Gains 3%; Trump Declares the Moon Belongs to the U.S. Here Are 5 Space Stocks to Watch; Grounded and Falling: Why One Wall Street Pro Says Rocket Lab Will More Than Double Soon; Trump Administration Reveals SPACE Task Force To Boost Commercial Launches</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2024-10-27</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on LUNR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1850656835000504399" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-08</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Swing on LUNR</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2041893201510809700" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-22</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on LUNR</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2046995228918530081" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-22</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on LUNR</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2057639792805019863" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/lunr-turn-1-8-billion-154300151.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boeing vs. Intuitive Machines: Which Aerospace Stock Is a Better Buy in 2026?</td><td><a href="https://www.fool.com/coverage/better-buy/2026/09/04/boeing-vs-intuitive-machines-which-aerospace-stock-is-a-better-buy-in-2026/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>SPCX Stock Blasts Past ASTS, RKLB, LUNR, PL — Here’s Everything Shaking Up Space Stocks This Week</td><td><a href="https://stocktwits.com/news-articles/markets/equity/spcx-stock-asts-rklb-lunr-pl-everything-space-stocks-this-week/cZswy2ERJwh" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-05</td><td><span class="badge badge-neutral">NEWS</span></td><td>Management Reiterates Optimistic FY26 Guidance for Intuitive Machines (LUNR)</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/management-reiterates-optimistic-fy26-guidance-181230241.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>SpaceX Rises 4% as Pivotal Research Launches Coverage at $220, Intuitive Machines Climbs 5%, Rocket Lab Gains 3%</td><td><a href="https://247wallst.com/investing/2026/09/08/spacex-rises-4-as-pivotal-research-launches-coverage-at-220-intuitive-machines-climbs-5-rocket-lab-gains-3/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Trump Declares the Moon Belongs to the U.S. Here Are 5 Space Stocks to Watch</td><td><a href="https://247wallst.com/investing/2026/09/08/trump-declares-the-moon-belongs-to-the-u-s-here-are-5-space-stocks-to-watch/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Grounded and Falling: Why One Wall Street Pro Says Rocket Lab Will More Than Double Soon</td><td><a href="https://247wallst.com/investing/2026/09/08/grounded-and-falling-why-one-wall-street-pro-says-rocket-lab-will-more-than-double-soon/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Trump Administration Reveals SPACE Task Force To Boost Commercial Launches</td><td><a href="https://www.investors.com/news/space-task-force-us-dot-commercial-space-launches-white-house-trump/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>2 ‘Strong Buy’ Stocks Where the Bears Could Get Burned</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/2-strong-buy-stocks-where-180733292.html" target="_blank" rel="noopener">TipRanks</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>LUNR Stock Rises 75.4% in the Past Year: What Should Investors Do?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/lunr-stock-rises-75-4-162400788.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-11-10</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>LUNR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-10 &middot; LUNR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : HyperTechInvest le 2024-10-27
+(LONG_POSITION)</p>
+<p>relances cumulees : 2
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-08</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">WATCH</span>
+&middot; Pas de signal fort: momentum_state=&#x27;DOWNTREND&#x27;, kol_consensus_trend=&#x27;flat&#x27;</p>
+<p>avertissements donnees : trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.599)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.60</td><td>0.30</td><td>0.180</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.40</td><td>0.15</td><td>0.060</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.94</td><td>0.10</td><td>0.094</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Contre :</strong> momentum_not_overextended: momentum_state=&#x27;DOWNTREND&#x27; (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

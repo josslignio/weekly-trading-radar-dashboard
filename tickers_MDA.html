@@ -1,89 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>MDA - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDA — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>MDA</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>MDA Space Ltd.</strong> &mdash; MDA Space Ltd. provides space technology solutions and services in Canada, the United States, Europe, Asia, the Middle East, and internationally. It offers satellite communications solutions, such as space-based broadband Internet, direct-to-device satellite communication, and IoT connectivity; MDA AURORA, a software-defined digital satellite product line; and autonomous robotics systems and services used to operate in space and on the surfaces of the Moon and Mars. The company also provides robotic systems, robotic interfaces, tooling, robotic ground control stations, and operations services; electro-optic and light detection and ranging sensors, vision and targeting systems, guidance, navigation, and control subsystems and planetary rover locomotion subsystems; MDA SKYMAKER, a suite of scalable and modular space robotics; and Canadarm3, a robotics system. In addition, it offers satellite-generated imagery and data to deliver critical and value-added insights for end users, such as national security, climate change monitoring, and maritime surveillance; collection, processing, and dissemination of Earth imagery data from space; defense command, control, communications, computers, intelligence, surveillance, and reconnaissance solutions, including command and control systems and airborne surveillance solutions; aeronautical navigation information solutions; and long endurance uncrewed aerial vehicle surveillance services. Further, operates as an owner and operator of the RADARSAT-2 Earth observation satellite; and is involved in the operation of MDA CHORUS, an Earth observation mission. It serves governments and space agencies, commercial space companies, and defense and aerospace prime contractors in the space industry. The company was formerly known as MDA Ltd. and changed its name to MDA Space Ltd. in May 2024. MDA Space Ltd. was incorporated in 1969 and is headquartered in Brampton, Canada.</p>
-<p>ai_subindustry=robotics_automation value_chain_role=downstream_application_layer_physical
-country=Canada asset_class=EQUITY</p>
-<p>market_cap=4677150208 trailing_pe=50.63158
-forward_pe=18.417006 price_to_book=3.7408855</p>
-<p>revenue=2098800000 revenue_growth=0.002
-cash=[FIELD_NOT_PROVIDED] debt=[FIELD_NOT_PROVIDED] profitability=0.02244</p>
-<p>current_price=28.86 momentum_state=DOWNTREND
-average_volume=1599104</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=142 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=142</p>
-<p>first_call: PhotonBull on 2026-04-22
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;PhotonBull&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: cash: FIELD_NOT_PROVIDED, debt: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.4725</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>PhotonBull tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.875</td><td>0.1</td><td>0.0875</td><td>14/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 14/16 enrichment fields OK (score 0.875)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>PhotonBull</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-22</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (1 episode(s))</h2>
-<div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MDA</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>MDA Space Ltd.</strong>
+&mdash; Industrials / robotics_automation</p>
+<p>MDA Space Ltd. provides space technology solutions and services in Canada, the United States, Europe, Asia, the Middle East, and internationally. It offers satellite communications solutions, such as space-based broadband Internet, direct-to-device satellite communication, and IoT connectivity; MDA AURORA, a software-defined digital satellite product line; and autonomous robotics systems and services used to operate in space and on the surfaces of the Moon and Mars. The company also provides robotic systems, robotic interfaces, tooling, robotic ground control stations, and operations services;</p>
+<p>capitalisation : 4.7 Md$
+&middot; prix actuel : 28.97
+&middot; momentum : <span class="badge badge-neutral">DOWNTREND</span></p>
+<p>risque : <span class="badge badge-neutral">MODERATE</span>
+&middot; cycle de vie de la these : <span class="badge badge-bad">CLOSED</span>
+(144 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="10.0" x2="310" y2="10.0" class="zero-line"/><polyline points="110.0,26.4 160.0,62.0 210.0,37.7 260.0,48.4 310.0,14.0" class="spark-line"/><circle cx="110.0" cy="26.4" r="3" fill="#b3392c"><title>6 mois : -7.6 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -24.0 %</title></circle><circle cx="210.0" cy="37.7" r="3" fill="#b3392c"><title>2 mois : -12.8 %</title></circle><circle cx="260.0" cy="48.4" r="3" fill="#b3392c"><title>1 mois : -17.7 %</title></circle><circle cx="310.0" cy="14.0" r="3" fill="#b3392c"><title>1 semaine : -1.9 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="neg">n/d</td></tr><tr><td>6 mois</td><td class="neg">-7.6 %</td></tr><tr><td>3 mois</td><td class="neg">-24.0 %</td></tr><tr><td>2 mois</td><td class="neg">-12.8 %</td></tr><tr><td>1 mois</td><td class="neg">-17.7 %</td></tr><tr><td>1 semaine</td><td class="neg">-1.9 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>6 mois</td><td class="neg">-7.6 %</td><td>PhotonBull opened Long Position on MDA; Auto &amp; Transport Roundup: Market Talk; MDA Space Valuation Attractive Amid Space Economy Exposure, RBC Says; What&#x27;s Going On With Rocket Lab Stock Monday?</td></tr><tr><td>3 mois</td><td class="neg">-24.0 %</td><td>Auto &amp; Transport Roundup: Market Talk; MDA Space Valuation Attractive Amid Space Economy Exposure, RBC Says; What&#x27;s Going On With Rocket Lab Stock Monday?; Rocket Lab clears 1st hurdle in its biggest satellite deal</td></tr><tr><td>2 mois</td><td class="neg">-12.8 %</td><td>Auto &amp; Transport Roundup: Market Talk; MDA Space Valuation Attractive Amid Space Economy Exposure, RBC Says; What&#x27;s Going On With Rocket Lab Stock Monday?; Rocket Lab clears 1st hurdle in its biggest satellite deal</td></tr><tr><td>1 mois</td><td class="neg">-17.7 %</td><td>Auto &amp; Transport Roundup: Market Talk; MDA Space Valuation Attractive Amid Space Economy Exposure, RBC Says; What&#x27;s Going On With Rocket Lab Stock Monday?; Rocket Lab clears 1st hurdle in its biggest satellite deal</td></tr><tr><td>1 semaine</td><td class="neg">-1.9 %</td><td>aucun catalyseur associe</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2025-05-05</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on MDA</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1919251137481383999" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-22</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on MDA</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2046995228918530081" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-17</td><td><span class="badge badge-neutral">NEWS</span></td><td>Auto &amp; Transport Roundup: Market Talk</td><td><a href="https://www.wsj.com/business/auto-transport-roundup-market-talk-13394e4d?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">The Wall Street Journal</a></td></tr><tr><td>2026-08-17</td><td><span class="badge badge-neutral">NEWS</span></td><td>MDA Space Valuation Attractive Amid Space Economy Exposure, RBC Says</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/mda-space-valuation-attractive-amid-154938044.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-08-17</td><td><span class="badge badge-neutral">NEWS</span></td><td>What&#x27;s Going On With Rocket Lab Stock Monday?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/whats-going-rocket-lab-stock-095457160.html" target="_blank" rel="noopener">Benzinga</a></td></tr><tr><td>2026-08-18</td><td><span class="badge badge-neutral">NEWS</span></td><td>Rocket Lab clears 1st hurdle in its biggest satellite deal</td><td><a href="https://www.thestreet.com/technology/rocket-lab-mda-space-satellite-launch" target="_blank" rel="noopener">TheStreet</a></td></tr><tr><td>2026-08-19</td><td><span class="badge badge-neutral">NEWS</span></td><td>ASTS, RKLB, LUNR, RDW In Focus: Elon Musk Says Space Boom Will Be ‘Much Bigger’ Than Goldman’s $1.8 Trillion Forecast</td><td><a href="https://stocktwits.com/news-articles/markets/equity/asts-rklb-lunr-rdw-elon-musk-space-boom-bigger-goldman-forecast/cZYdIlWRJkg" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-08-26</td><td><span class="badge badge-neutral">NEWS</span></td><td>Strong Second Quarter Leads to a More Favorable 2026 Guidance for MDA Space (MDA)</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/strong-second-quarter-leads-more-200846542.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-08-31</td><td><span class="badge badge-neutral">NEWS</span></td><td>3 Stocks for Investors Seeking High Quality Value in Infrastructure Metals and Space</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/3-stocks-investors-seeking-high-141743944.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-09-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>3 Automation Stocks With Revenue Growth Up To 30%</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/3-automation-stocks-revenue-growth-221458443.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>Can LUNR Turn Its $1.8 Billion Backlog into Stronger 2026 Results?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/lunr-turn-1-8-billion-154300151.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-05</td><td><span class="badge badge-neutral">NEWS</span></td><td>2 Space Stocks to Buy in September</td><td><a href="https://www.fool.com/investing/2026/09/05/2-space-stocks-to-buy-in-september/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-11-13</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>MDA earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-13 &middot; MDA earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : HyperTechInvest le 2025-05-05
+(LONG_POSITION)</p>
+<p>relances cumulees : 3
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-04-22</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">AVOID</span>
+&middot; lifecycle.state=CLOSED: la these KOL sur MDA a deja ete cloturee par ses auteurs</p>
+<p>avertissements donnees : cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.393)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.40</td><td>0.30</td><td>0.120</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.00</td><td>0.20</td><td>0.000</td><td>lifecycle=&#x27;CLOSED&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.40</td><td>0.15</td><td>0.060</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.88</td><td>0.10</td><td>0.087</td><td>14/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> data_quality: 14/16 enrichment fields OK (score 0.875)</p>
+<p><strong>Contre :</strong> conviction_recency: lifecycle=&#x27;CLOSED&#x27; (score 0.0)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

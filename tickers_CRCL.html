@@ -1,89 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>CRCL - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRCL — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>CRCL</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Circle Internet Group</strong> &mdash; Circle Internet Group, Inc. operates as a platform, network, and market infrastructure for stablecoin and blockchain applications. The company provides various platform including Arc Blockchain and Developer Infrastructure, an open, layer-1 blockchain network purpose-built to bring real world economic activity onchain; Circle Digital Assets and Services, which includes circle digital assets, USDC, EURC, and USYC, as well as circle mint and xreserve, related liquidity, custody, and trust infrastructure; and Circle Applications, which includes circle payments network and stablefx, applications that use circle digital assets to deliver real-world utility on the arc network and across the broader multichain ecosystem. Its stablecoins network comprises circle stablecoins, tokenized funds, liquidity, payments network, and developer services, as well as integration services. The company was founded in 2013 and is based in New York, New York.</p>
-<p>ai_subindustry=UNCLASSIFIED value_chain_role=UNCLASSIFIED
-country=United States asset_class=EQUITY</p>
-<p>market_cap=25687906304 trailing_pe=18.884771
-forward_pe=60.145267 price_to_book=6.787798</p>
-<p>revenue=2905438976 revenue_growth=0.066
-cash=1730125952 debt=15951000 profitability=0.15531999</p>
-<p>current_price=94.235 momentum_state=NEUTRAL
-average_volume=13820312</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">OLD_CALL</span> rule=latest open episode age_days=320 &gt; 174, still no explicit closure/invalidation
-age_days_vs_as_of=320</p>
-<p>first_call: Frenchie on 2025-10-26
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;Frenchie&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: none</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.435</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>Frenchie tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.3</td><td>0.2</td><td>0.06</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.6</td><td>0.15</td><td>0.09</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>Frenchie</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-10-26</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (1 episode(s))</h2>
-<div data-episode-id="1982416071555686705" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=CRCL</span></div>
-<div>tweet_date=2025-10-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1982416071555686705.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Circle Internet Group</strong>
+&mdash; Financial Services / UNCLASSIFIED</p>
+<p>Circle Internet Group, Inc. operates as a platform, network, and market infrastructure for stablecoin and blockchain applications. The company provides various platform including Arc Blockchain and Developer Infrastructure, an open, layer-1 blockchain network purpose-built to bring real world economic activity onchain; Circle Digital Assets and Services, which includes circle digital assets, USDC, EURC, and USYC, as well as circle mint and xreserve, related liquidity, custody, and trust infrastructure; and Circle Applications, which includes circle payments network and stablefx, applications t</p>
+<p>capitalisation : 24.7 Md$
+&middot; prix actuel : 90.60
+&middot; momentum : <span class="badge badge-neutral">NEUTRAL</span></p>
+<p>risque : <span class="badge badge-good">LOW</span>
+&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
+(222 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="39.9" x2="310" y2="39.9" class="zero-line"/><polyline points="60.0,61.8 110.0,62.0 160.0,33.1 210.0,10.0 260.0,19.0 310.0,48.8" class="spark-line"/><circle cx="60.0" cy="61.8" r="3" fill="#b3392c"><title>1 an : -27.7 %</title></circle><circle cx="110.0" cy="62.0" r="3" fill="#b3392c"><title>6 mois : -28.0 %</title></circle><circle cx="160.0" cy="33.1" r="3" fill="#2f8f4e"><title>3 mois : +8.7 %</title></circle><circle cx="210.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 mois : +37.9 %</title></circle><circle cx="260.0" cy="19.0" r="3" fill="#2f8f4e"><title>1 mois : +26.5 %</title></circle><circle cx="310.0" cy="48.8" r="3" fill="#b3392c"><title>1 semaine : -11.2 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="neg">-27.7 %</td></tr><tr><td>6 mois</td><td class="neg">-28.0 %</td></tr><tr><td>3 mois</td><td class="pos">+8.7 %</td></tr><tr><td>2 mois</td><td class="pos">+37.9 %</td></tr><tr><td>1 mois</td><td class="pos">+26.5 %</td></tr><tr><td>1 semaine</td><td class="neg">-11.2 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>1 an</td><td class="neg">-27.7 %</td><td>Frenchie opened Long Position on CRCL; Frenchie_ opened Long Position on CRCL; Gubloinvestor opened Long Position on CRCL; Why Circle Internet Group Slumped by 11% This Week</td></tr><tr><td>6 mois</td><td class="neg">-28.0 %</td><td>Why Circle Internet Group Slumped by 11% This Week; Empowering users but destabilizing nations: Risks of dollar stablecoins; Block Wants to Stop Acting Like a Giant Wallet and Start Acting Like a Bank; MoneyGram Launched a Visa Card That Spends USDC. Ripple’s Former Partner Chose Circle</td></tr><tr><td>3 mois</td><td class="pos">+8.7 %</td><td>Why Circle Internet Group Slumped by 11% This Week; Empowering users but destabilizing nations: Risks of dollar stablecoins; Block Wants to Stop Acting Like a Giant Wallet and Start Acting Like a Bank; MoneyGram Launched a Visa Card That Spends USDC. Ripple’s Former Partner Chose Circle</td></tr><tr><td>2 mois</td><td class="pos">+37.9 %</td><td>Why Circle Internet Group Slumped by 11% This Week; Empowering users but destabilizing nations: Risks of dollar stablecoins; Block Wants to Stop Acting Like a Giant Wallet and Start Acting Like a Bank; MoneyGram Launched a Visa Card That Spends USDC. Ripple’s Former Partner Chose Circle</td></tr><tr><td>1 mois</td><td class="pos">+26.5 %</td><td>Why Circle Internet Group Slumped by 11% This Week; Empowering users but destabilizing nations: Risks of dollar stablecoins; Block Wants to Stop Acting Like a Giant Wallet and Start Acting Like a Bank; MoneyGram Launched a Visa Card That Spends USDC. Ripple’s Former Partner Chose Circle</td></tr><tr><td>1 semaine</td><td class="neg">-11.2 %</td><td>Why Circle Internet Group Slumped by 11% This Week; Empowering users but destabilizing nations: Risks of dollar stablecoins; Block Wants to Stop Acting Like a Giant Wallet and Start Acting Like a Bank; MoneyGram Launched a Visa Card That Spends USDC. Ripple’s Former Partner Chose Circle</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2025-10-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie opened Long Position on CRCL</td><td>Frenchie &middot; <a href="https://x.com/Frenchie/status/1982416071555686705" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-10-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie_ opened Long Position on CRCL</td><td>Frenchie_ &middot; <a href="https://x.com/Frenchie_/status/1982416071555686705" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-02-03</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on CRCL</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2018688445665702338" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Circle Internet Group Slumped by 11% This Week</td><td><a href="https://www.fool.com/investing/2026/09/11/why-circle-internet-group-slumped-by-11-this-week/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Empowering users but destabilizing nations: Risks of dollar stablecoins</td><td><a href="https://finance.yahoo.com/video/empowering-users-destabilizing-nations-risks-203000071.html" target="_blank" rel="noopener">Yahoo Finance Video</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Block Wants to Stop Acting Like a Giant Wallet and Start Acting Like a Bank</td><td><a href="https://finance.yahoo.com/markets/crypto/articles/block-wants-stop-acting-giant-205145568.html" target="_blank" rel="noopener">Forkast News</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>MoneyGram Launched a Visa Card That Spends USDC. Ripple’s Former Partner Chose Circle</td><td><a href="https://247wallst.com/investing/cryptocurrency/2026/09/12/moneygram-launched-a-visa-card-that-spends-usdc-ripples-former-partner-chose-circle/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Circle Faces Back-To-Back Catalysts As Senate Votes On CLARITY Act, And Fed Weighs Rate Hike</td><td><a href="https://stocktwits.com/news-articles/markets/equity/3-catalysts-that-could-move-circle-stock-this-week/cZt1UmqRBby" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>The regulation that helped the US get behind crypto, stablecoins</td><td><a href="https://finance.yahoo.com/video/regulation-helped-us-behind-crypto-000000323.html" target="_blank" rel="noopener">Yahoo Finance Video</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Crypto Rises as Long-Shot US Bill Gains Better Odds of Passage</td><td><a href="https://finance.yahoo.com/markets/crypto/articles/crypto-rises-long-shot-us-140246081.html" target="_blank" rel="noopener">Bloomberg</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Coinbase Expands Stablecoin Reach Through Community Banks</td><td><a href="https://finance.yahoo.com/markets/crypto/articles/coinbase-expands-stablecoin-reach-community-134000349.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>BlackRock and Visa Will Secure Circle&#x27;s Arc. But, Meme Coin Traders Plan to Storm It</td><td><a href="https://beincrypto.com/circle-arc-mainnet-meme-coin-traders/" target="_blank" rel="noopener">BeInCrypto</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>CLARITY Act Faces Tuesday Senate Vote: Senate Republicans Release ‘Final’ Draft With Trump-Backed Ethics Deal</td><td><a href="https://stocktwits.com/news-articles/markets/equity/crcl-coin-clarity-act-final-draft-senate-vote/cZtlzRLRBRk" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-11-11</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>CRCL earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-11 &middot; CRCL earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : Frenchie le 2025-10-26
+(LONG_POSITION)</p>
+<p>relances cumulees : 1
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Frenchie'>Frenchie</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-26</td></tr><tr><td><a href='/kols/Frenchie_'>Frenchie_</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-10-26</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-02-03</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">WATCH</span>
+&middot; Pas de signal fort: momentum_state=&#x27;NEUTRAL&#x27;, kol_consensus_trend=&#x27;flat&#x27;</p>
+<p>avertissements donnees : aucun</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.555)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.60</td><td>0.30</td><td>0.180</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Frenchie tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.60</td><td>0.15</td><td>0.090</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>1.00</td><td>0.10</td><td>0.100</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Contre :</strong> conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

@@ -1,212 +1,274 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>KOL table - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comptes KOL — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
-<h1>KOL table</h1>
-<form class="filters" method="get" action="/kols">
-<label>lifecycle:
-<select name="lifecycle" onchange="this.form.submit()">
-<option value="">(all)</option>
-<option value="MONITORED" >MONITORED</option><option value="SAMPLED" >SAMPLED</option>
-</select>
-</label>
-</form>
-<table>
+<h1>Classement des comptes KOL</h1>
+<p class="muted">Trie par score final decroissant (moyenne des rendements LONG realises, ajustes marche,
+sur les fenetres ou au moins 3 calls sont evaluables). Cliquer un en-tete trie la table cote client.</p>
+<div class="toolbar"><input type="search" placeholder="Filtrer par compte..." data-filter-target="kol-table"></div>
+<table id="kol-table" data-sortable>
 <thead><tr>
-<th>handle</th><th>lifecycle</th><th>expertise / AI sub-industry</th>
-<th>genuine calls / coverage</th><th>LONG edge (market-adj @20)</th>
-<th>PSR/DSR/PBO / OOS</th><th>tier &amp; confidence</th>
-<th>owner_root</th><th>deletion_evidence</th><th>profile</th>
+<th data-key="handle">compte</th><th data-key="lifecycle">suivi</th><th data-key="tier">confiance</th>
+<th data-key="score">score final</th><th data-key="2y">2 ans (2y)</th><th data-key="1y">1 an (1y)</th><th data-key="6m">6 mois (6m)</th><th data-key="3m">3 mois (3m)</th><th data-key="2m">2 mois (2m)</th><th data-key="1m">1 mois (1m)</th><th data-key="1w">1 semaine (1w)</th><th data-key="good">calls gagnants / perdants (2 ans)</th>
 </tr></thead>
 <tbody>
-<tr data-row="1">
-<td data-field="handle"><a href="kols_BryzonX.html">BryzonX</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>42 genuine LONG calls / 12 observable mo. (OK_4M_PLUS)</td>
-<td>market-adj@20 mean: -0.01702 (n=15)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_BryzonX.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_CKCapitalxx.html">CKCapitalxx</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>98 genuine LONG calls / 7 observable mo. (OK_4M_PLUS)</td>
-<td>market-adj@20 mean: 0.044188 (n=31)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_CKCapitalxx.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_DeepValueBagger.html">DeepValueBagger</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span1D_dense1M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_DeepValueBagger.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_Frenchie.html">Frenchie</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>61 genuine LONG calls / 12 observable mo. (OK_4M_PLUS)</td>
-<td>market-adj@20 mean: 0.022482 (n=18)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
-<td data-field="owner_root">True</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_Frenchie.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_Gubloinvestor.html">Gubloinvestor</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_Gubloinvestor.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_HyperTechInvest.html">HyperTechInvest</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 0 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_HyperTechInvest.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_LiebermanAustin.html">LiebermanAustin</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 2 observable mo. (SHORTFALL_span16D_dense0M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_LiebermanAustin.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_PhotonBull.html">PhotonBull</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>109 genuine LONG calls / 4 observable mo. (SHORTFALL_span104D_dense4M_TYPED)</td>
-<td>market-adj@20 mean: -0.070883 (n=31)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_PhotonBull.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_RJCcapital.html">RJCcapital</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>78 genuine LONG calls / 10 observable mo. (OK_4M_PLUS)</td>
-<td>market-adj@20 mean: 0.035755 (n=25)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">EARLY_EVIDENCE</span> confidence=1.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_RJCcapital.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_StonkChris.html">StonkChris</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>1 genuine LONG calls / 1 observable mo. (SHORTFALL_span5D_dense1M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_StonkChris.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_citrini.html">citrini</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span0D_dense1M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_citrini.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_closenberger.html">closenberger</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 0 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_closenberger.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_italianinvesto.html">italianinvesto</a></td>
-<td data-field="lifecycle">SAMPLED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 0 observable mo. (SHORTFALL_span0D_dense0M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_italianinvesto.html" data-evidence>profile</a></td>
-</tr><tr data-row="1">
-<td data-field="handle"><a href="kols_zephyr_z9.html">zephyr_z9</a></td>
-<td data-field="lifecycle">MONITORED</td>
-<td data-field="domains_archetype">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</td>
-<td>0 genuine LONG calls / 1 observable mo. (SHORTFALL_span0D_dense1M_TYPED)</td>
-<td>market-adj@20 mean: &mdash; (n=0)</td>
-<td>PSR/DSR/PBO: <span class="gap">OOS_NOT_EVALUATED_V1</span></td>
-<td><span class="pill">UNRANKED</span> confidence=0.0625</td>
-<td data-field="owner_root">False</td>
-<td data-field="deletion_evidence">NOT_COLLECTED_YET_TR_DELETED_MILESTONE</td>
-<td><a href="kols_zephyr_z9.html" data-evidence>profile</a></td>
+<tr>
+<td data-sort="BryzonX"><a href="kols_BryzonX.html">BryzonX</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="0.07616175">0.076</td>
+<td data-sort="0.23557804" class="pos">+23.6 %</td><td data-sort="0.10353607" class="pos">+10.4 %</td><td data-sort="0.09141418" class="pos">+9.1 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="20">20 / 14</td>
+</tr><tr>
+<td data-sort="LiebermanAustin"><a href="kols_LiebermanAustin.html">LiebermanAustin</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="0.06924478">0.069</td>
+<td data-sort="0.23677348" class="pos">+23.7 %</td><td data-sort="0.11142261" class="pos">+11.1 %</td><td data-sort="0.33936925" class="pos">+33.9 %</td><td data-sort="-0.04437838" class="neg">-4.4 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="23">23 / 19</td>
+</tr><tr>
+<td data-sort="HyperTechInvest"><a href="kols_HyperTechInvest.html">HyperTechInvest</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="0.04229951">0.042</td>
+<td data-sort="0.54220162" class="pos">+54.2 %</td><td data-sort="-0.01677279" class="neg">-1.7 %</td><td data-sort="-0.00787047" class="neg">-0.8 %</td><td data-sort="0.01800895" class="pos">+1.8 %</td><td data-sort="0.04028587" class="pos">+4.0 %</td><td data-sort="-0.01458424" class="neg">-1.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="46">46 / 35</td>
+</tr><tr>
+<td data-sort="DeepValueBagger"><a href="kols_DeepValueBagger.html">DeepValueBagger</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="0.03530543">0.035</td>
+<td data-sort="0.08008703" class="pos">+8.0 %</td><td data-sort="0.08008703" class="pos">+8.0 %</td><td data-sort="0.08008703" class="pos">+8.0 %</td><td data-sort="0.04637379" class="pos">+4.6 %</td><td data-sort="0.02287885" class="pos">+2.3 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="21">21 / 17</td>
+</tr><tr>
+<td data-sort="RJCcapital"><a href="kols_RJCcapital.html">RJCcapital</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="0.01145358">0.011</td>
+<td data-sort="0.24429954" class="pos">+24.4 %</td><td data-sort="0.25967156" class="pos">+26.0 %</td><td data-sort="-0.11563944" class="neg">-11.6 %</td><td data-sort="-0.0351005" class="neg">-3.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="28">28 / 30</td>
+</tr><tr>
+<td data-sort="StonkChris"><a href="kols_StonkChris.html">StonkChris</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="0.0037452">0.004</td>
+<td data-sort="0.36484205" class="pos">+36.5 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="-0.04164654" class="neg">-4.2 %</td><td data-sort="-0.01634245" class="neg">-1.6 %</td>
+<td data-sort="44">44 / 36</td>
+</tr><tr>
+<td data-sort="italianinvesto"><a href="kols_italianinvesto.html">italianinvesto</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="-0.05835716">-0.058</td>
+<td data-sort="0.04868919" class="pos">+4.9 %</td><td data-sort="0.02558772" class="pos">+2.6 %</td><td data-sort="-0.05165685" class="neg">-5.2 %</td><td data-sort="-0.06769334" class="neg">-6.8 %</td><td data-sort="-0.06253391" class="neg">-6.3 %</td><td data-sort="0.0053038" class="pos">+0.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="38">38 / 52</td>
+</tr><tr>
+<td data-sort="Frenchie"><a href="kols_Frenchie.html">Frenchie</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="-0.07700717">-0.077</td>
+<td data-sort="0.00747456" class="pos">+0.7 %</td><td data-sort="0.02483674" class="pos">+2.5 %</td><td data-sort="0.03515299" class="pos">+3.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="20">20 / 16</td>
+</tr><tr>
+<td data-sort="Gubloinvestor"><a href="kols_Gubloinvestor.html">Gubloinvestor</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="-0.07892364">-0.079</td>
+<td data-sort="0.13162048" class="pos">+13.2 %</td><td data-sort="0.00020472" class="pos">+0.0 %</td><td data-sort="-0.01769978" class="neg">-1.8 %</td><td data-sort="-0.1219024" class="neg">-12.2 %</td><td data-sort="-0.08247916" class="neg">-8.2 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="76">76 / 101</td>
+</tr><tr>
+<td data-sort="citrini"><a href="kols_citrini.html">citrini</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="-0.09936722">-0.099</td>
+<td data-sort="0.20016927" class="pos">+20.0 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="5">5 / 3</td>
+</tr><tr>
+<td data-sort="PhotonBull"><a href="kols_PhotonBull.html">PhotonBull</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="-0.10973768">-0.110</td>
+<td data-sort="-0.10711528" class="neg">-10.7 %</td><td data-sort="-0.10711528" class="neg">-10.7 %</td><td data-sort="-0.10915379" class="neg">-10.9 %</td><td data-sort="-0.06947343" class="neg">-6.9 %</td><td data-sort="0.04257689" class="pos">+4.3 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="27">27 / 53</td>
+</tr><tr>
+<td data-sort="CKCapitalxx"><a href="kols_CKCapitalxx.html">CKCapitalxx</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
+<td data-sort="-0.13004352">-0.130</td>
+<td data-sort="-0.01796002" class="neg">-1.8 %</td><td data-sort="-0.01796002" class="neg">-1.8 %</td><td data-sort="-0.07271691" class="neg">-7.3 %</td><td data-sort="-0.17641691" class="neg">-17.6 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="27">27 / 51</td>
+</tr><tr>
+<td data-sort="BoubouSGC"><a href="kols_BoubouSGC.html">BoubouSGC</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="JulienTechInvst"><a href="kols_JulienTechInvst.html">JulienTechInvst</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="LysandreBL"><a href="kols_LysandreBL.html">LysandreBL</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="NighthawkTradez"><a href="kols_NighthawkTradez.html">NighthawkTradez</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="ParadisLabs"><a href="kols_ParadisLabs.html">ParadisLabs</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="ThematicTrader"><a href="kols_ThematicTrader.html">ThematicTrader</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="TristanMacinnes"><a href="kols_TristanMacinnes.html">TristanMacinnes</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="aleabitoreddit"><a href="kols_aleabitoreddit.html">aleabitoreddit</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="closenberger"><a href="kols_closenberger.html">closenberger</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="UNRANKED"><span class="badge badge-neutral">UNRANKED</span></td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 1</td>
+</tr><tr>
+<td data-sort="kevinxu"><a href="kols_kevinxu.html">kevinxu</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="powl_d"><a href="kols_powl_d.html">powl_d</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="thismacapital"><a href="kols_thismacapital.html">thismacapital</a></td>
+<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
+<td data-sort="&mdash;">n/d</td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 0</td>
+</tr><tr>
+<td data-sort="zephyr_z9"><a href="kols_zephyr_z9.html">zephyr_z9</a></td>
+<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
+<td data-sort="UNRANKED"><span class="badge badge-neutral">UNRANKED</span></td>
+<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
+<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
+<td data-sort="0">0 / 1</td>
 </tr>
 </tbody>
 </table>
-<p>14 KOL(s) shown. Universe designed to scale to 200-300 with no contract change.</p>
+<p class="muted">25 compte(s). "n/d" = mois d'observation ou nombre de calls evaluables insuffisant
+sur cette fenetre (moins de 3 calls avec un prix de sortie connu) ; jamais remplace par zero.</p>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

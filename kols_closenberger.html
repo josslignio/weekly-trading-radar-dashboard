@@ -1,95 +1,145 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>closenberger - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>closenberger — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>closenberger</h1>
-<p><a href="kols.html">&larr; back to KOL table</a></p>
-<div class="section">
-<h2>Identity &amp; lifecycle</h2>
-<p>provider_state=OK
-lifecycle=SAMPLED
-owner_root=False
-namesake_user_id=&mdash;
-provider_attested=False</p>
-<p>observed_span_days=0
-account_creation_date=<span class="gap">INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS</span></p>
-<p>expertise / AI sub-industry: <span class="gap">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</span></p>
-</div>
-<div class="section">
-<h2>Coverage &amp; activity (data-quality / recency / consistency)</h2>
-<p>observable_months=0
-dense_months=0
-post_count=0
-status=SHORTFALL_span0D_dense0M_TYPED
-cadence_posts_per_active_month=&mdash;</p>
-</div>
-<div class="section">
-<h2>Explainable final score &amp; tier</h2>
-<p><span class="pill">UNRANKED</span> confidence(uncertainty)=0.0</p>
-<p>blocking_reasons=no call evidence: calls-dependent tiers unreachable (track state WIRED_TO_LEDGER)</p>
-<p>oos_disclosure=single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
-<table><thead><tr><th>component</th><th>value</th></tr></thead><tbody>
-<tr><td>handle</td><td>closenberger</td></tr><tr><td>post_count</td><td>0</td></tr><tr><td>graph_outbound_edges</td><td>0</td></tr><tr><td>engagement_median_likes</td><td>0</td></tr><tr><td>engagement_top_rt</td><td>0</td></tr><tr><td>coverage_dense_months</td><td>0</td></tr><tr><td>coverage_distinct_months</td><td>0</td></tr>
-<tr><td>call_track_record: evaluable_episodes</td><td>0</td></tr>
-<tr><td>call_track_record: mean_market_adjusted_20</td><td>&mdash;</td></tr>
-<tr><td>call_track_record: mean_momentum_adjusted_20</td><td>&mdash;</td></tr>
-<tr><td>call_track_record: std_market_adjusted_20 (uncertainty)</td><td>&mdash;</td></tr>
-<tr><td>PSR/DSR/PBO / OOS status</td><td class="gap">OOS_NOT_EVALUATED_V1</td></tr>
-</tbody></table>
-</div>
-<div class="section">
-<h2>Genuine LONG calls: 0</h2>
-<p>tickers covered: </p>
-<p>outcome_split: {}</p>
-<p>good_calls=0 failed_calls=0
-unevaluable=0</p>
-</div>
-<div class="section">
-<h2>Originality / lead-lag role (per ticker, from independence records)</h2>
-<table><thead><tr><th>ticker</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>UAMY</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-19</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Full call history / thesis timeline / evidence posts (1 episode(s))</h2>
-<div data-episode-id="2034690265844523080" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=closenberger</span><span data-field="ticker" style="margin-right:10px">ticker=UAMY</span></div>
-<div>tweet_date=2026-03-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2034690265844523080.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="kols.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Identite &amp; suivi</h2>
+<p>Identite provider-attested : non
+&middot; suivi : <span class="badge badge-good">MONITORED</span></p>
+<p>Duree observee : 416 jour(s)
+&middot; date de creation du compte : <span title="INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS">non disponible</span></p>
+<p>Expertise / sous-industrie : <span title="INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2">non disponible</span></p>
+<p>Integrite des suppressions : <span title="NOT_COLLECTED_YET_TR_DELETED_MILESTONE">non disponible</span></p>
+<p>Mois observes : 6
+&middot; mois denses : 4
+&middot; posts collectes : 126
+&middot; cadence : 21.0 posts/mois actif</p>
+</section>
+
+<section class="section">
+<h2>Score final &amp; confiance</h2>
+<p class="score-hero">n/d (aucune fenetre evaluable)</p>
+<p>Niveau de confiance : <span class="badge badge-neutral">UNRANKED</span>
+&middot; incertitude : 0.28</p>
+<p class="muted">calls=1, dense_months=4 — below EARLY_EVIDENCE bar or adjusted/OOS proof missing</p>
+<p class="muted">single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
+</section>
+
+<section class="section">
+<h2>Courbe de performance (rendement realise par fenetre)</h2>
+<p class="muted">Historique insuffisant pour tracer une courbe.</p>
+</section>
+
+<section class="section">
+<h2>Track record par fenetre (2 ans &rarr; 1 semaine)</h2>
+<table><thead><tr><th>fenetre</th><th>rendement realise</th>
+<th>rendement ajuste marche</th><th>calls evaluables / total</th><th>taux de reussite</th></tr></thead>
+<tbody><tr><td>2 ans</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 an</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>6 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>3 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>2 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 semaine</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Meilleurs / pires calls</h2>
+<p class='muted'>Aucun meilleur call evaluable.</p>
+<p class='muted'>Aucun pire call evaluable.</p>
+</section>
+
+<section class="section">
+<h2>Calls genuinement LONG</h2>
+<p>1 episode(s) sur 1 ticker(s) :
+UAMY</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score (composants bruts, hors track record)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th></tr></thead><tbody><tr><td>post_count</td><td>126</td></tr><tr><td>graph_outbound_edges</td><td>1</td></tr><tr><td>engagement_median_likes</td><td>13</td></tr><tr><td>engagement_top_rt</td><td>779</td></tr><tr><td>coverage_dense_months</td><td>4</td></tr><tr><td>coverage_distinct_months</td><td>6</td></tr></tbody></table>
+<details class="proofs"><summary>Preuves techniques (score composant call_track_record)</summary><pre>{&#x27;value&#x27;: 1, &#x27;evaluable_episodes&#x27;: 1, &#x27;mean_market_adjusted_20&#x27;: 0.231255, &#x27;mean_momentum_adjusted_20&#x27;: 0.10452, &#x27;uncertainty&#x27;: {&#x27;n&#x27;: 1, &#x27;std_market_adjusted_20&#x27;: None, &#x27;note&#x27;: &#x27;small-sample dispersion disclosed; confidence grows continuously with calls and dense months&#x27;}, &#x27;oos_status&#x27;: &#x27;OOS_NOT_EVALUATED_V1&#x27;, &#x27;oos_disclosure&#x27;: &#x27;single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists&#x27;}</pre></details>
+</section>
+
+<section class="section">
+<h2>Role dans le graphe (originalite / suivisme par ticker)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/tickers/UAMY'>UAMY</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-19</td></tr></tbody></table>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

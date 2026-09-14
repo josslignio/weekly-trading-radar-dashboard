@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NighthawkTradez — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
+</header>
+<main>
+<h1>NighthawkTradez</h1>
+<p><a href="kols.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Identite &amp; suivi</h2>
+<p>Identite provider-attested : non
+&middot; suivi : <span class="badge badge-neutral">SAMPLED</span></p>
+<p>Duree observee : 0 jour(s)
+&middot; date de creation du compte : <span title="INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS">non disponible</span></p>
+<p>Expertise / sous-industrie : <span title="INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2">non disponible</span></p>
+<p>Integrite des suppressions : <span title="NOT_COLLECTED_YET_TR_DELETED_MILESTONE">non disponible</span></p>
+<p>Mois observes : 0
+&middot; mois denses : 0
+&middot; posts collectes : 0
+&middot; cadence : n/d posts/mois actif</p>
+</section>
+
+<section class="section">
+<h2>Score final &amp; confiance</h2>
+<p class="score-hero">n/d (aucune fenetre evaluable)</p>
+<p>Niveau de confiance : n/d
+&middot; incertitude : n/d</p>
+<p class="muted">&mdash;</p>
+<p class="muted">&mdash;</p>
+</section>
+
+<section class="section">
+<h2>Courbe de performance (rendement realise par fenetre)</h2>
+<p class="muted">Historique insuffisant pour tracer une courbe.</p>
+</section>
+
+<section class="section">
+<h2>Track record par fenetre (2 ans &rarr; 1 semaine)</h2>
+<table><thead><tr><th>fenetre</th><th>rendement realise</th>
+<th>rendement ajuste marche</th><th>calls evaluables / total</th><th>taux de reussite</th></tr></thead>
+<tbody><tr><td>2 ans</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 an</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>6 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>3 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>2 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 semaine</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Meilleurs / pires calls</h2>
+<p class='muted'>Aucun meilleur call evaluable.</p>
+<p class='muted'>Aucun pire call evaluable.</p>
+</section>
+
+<section class="section">
+<h2>Calls genuinement LONG</h2>
+<p>0 episode(s) sur 0 ticker(s) :
+n/d</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score (composants bruts, hors track record)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th></tr></thead><tbody></tbody></table>
+
+</section>
+
+<section class="section">
+<h2>Role dans le graphe (originalite / suivisme par ticker)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody></tbody></table>
+</section>
+</main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
+</body>
+</html>

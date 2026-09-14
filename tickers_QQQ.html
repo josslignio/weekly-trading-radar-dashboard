@@ -1,96 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>QQQ - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QQQ — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>QQQ</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Invesco QQQ Trust</strong> &mdash; To maintain the correspondence between the composition and weights of the securities in the trust (the &quot;securities&quot;) and the stocks in the NASDAQ-100 Index®, the adviser adjusts the securities from time to time to conform to periodic changes in the identity and/or relative weights of index securities. The composition and weighting of the securities portion of a portfolio deposit are also adjusted to conform to changes in the index.</p>
-<p>ai_subindustry=broad_market_etf_index value_chain_role=not_applicable_broad_market_vehicle
-country=[FIELD_NOT_PROVIDED] asset_class=ETF</p>
-<p>market_cap=[FIELD_NOT_PROVIDED] trailing_pe=29.241037
-forward_pe=[FIELD_NOT_PROVIDED] price_to_book=2.0052323</p>
-<p>revenue=[FIELD_NOT_PROVIDED] revenue_growth=[FIELD_NOT_PROVIDED]
-cash=[FIELD_NOT_PROVIDED] debt=[FIELD_NOT_PROVIDED] profitability=[FIELD_NOT_PROVIDED]</p>
-<p>current_price=717.42 momentum_state=EXTENDED_NEAR_52W_HIGH
-average_volume=38349982</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=119 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=119</p>
-<p>first_call: RJCcapital on 2026-01-24
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=1
-pushes_by_account={&#x27;PhotonBull&#x27;: 1, &#x27;RJCcapital&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">SPECULATIVE</span> rule=asset_class==CRYPTO or size_bucket in {MICRO,UNKNOWN} or data_quality&lt;0.4</p>
-<p>data_quality warnings: market_country: FIELD_NOT_PROVIDED, market_cap: FIELD_NOT_PROVIDED, forward_pe: FIELD_NOT_PROVIDED, revenue: FIELD_NOT_PROVIDED, revenue_growth: FIELD_NOT_PROVIDED, cash: FIELD_NOT_PROVIDED, debt: FIELD_NOT_PROVIDED, profitability: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.465</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.4</td><td>0.3</td><td>0.12</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>PhotonBull tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.2</td><td>0.15</td><td>0.03</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>0.5</td><td>0.1</td><td>0.05</td><td>8/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Reasons against:</strong> momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (2 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-05-15</td></tr><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-01-24</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (2 episode(s))</h2>
-<div data-episode-id="2055273675100651861" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=QQQ</span></div>
-<div>tweet_date=2026-05-15 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2055273675100651861.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2015187017336750443" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=QQQ</span></div>
-<div>tweet_date=2026-01-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2015187017336750443.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Invesco QQQ Trust</strong>
+&mdash; &mdash; / broad_market_etf_index</p>
+<p>To maintain the correspondence between the composition and weights of the securities in the trust (the &quot;securities&quot;) and the stocks in the NASDAQ-100 Index®, the adviser adjusts the securities from time to time to conform to periodic changes in the identity and/or relative weights of index securities. The composition and weighting of the securities portion of a portfolio deposit are also adjusted to conform to changes in the index.</p>
+<p>capitalisation : n/d
+&middot; prix actuel : 714.88
+&middot; momentum : <span class="badge badge-neutral">EXTENDED_NEAR_52W_HIGH</span></p>
+<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(75 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="58.3" x2="310" y2="58.3" class="zero-line"/><polyline points="10.0,10.0 60.0,37.3 110.0,40.0 160.0,62.0 210.0,58.6 260.0,60.4 310.0,58.8" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +50.4 %</title></circle><circle cx="60.0" cy="37.3" r="3" fill="#2f8f4e"><title>1 an : +21.9 %</title></circle><circle cx="110.0" cy="40.0" r="3" fill="#2f8f4e"><title>6 mois : +19.1 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -3.9 %</title></circle><circle cx="210.0" cy="58.6" r="3" fill="#b3392c"><title>2 mois : -0.4 %</title></circle><circle cx="260.0" cy="60.4" r="3" fill="#b3392c"><title>1 mois : -2.2 %</title></circle><circle cx="310.0" cy="58.8" r="3" fill="#b3392c"><title>1 semaine : -0.6 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+50.4 %</td></tr><tr><td>1 an</td><td class="pos">+21.9 %</td></tr><tr><td>6 mois</td><td class="pos">+19.1 %</td></tr><tr><td>3 mois</td><td class="neg">-3.9 %</td></tr><tr><td>2 mois</td><td class="neg">-0.4 %</td></tr><tr><td>1 mois</td><td class="neg">-2.2 %</td></tr><tr><td>1 semaine</td><td class="neg">-0.6 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+50.4 %</td><td>StonkChris opened Long Position on QQQ; italianinvesto opened Long Position on QQQ; italianinvesto opened Long Swing on QQQ; RJCcapital opened Long Position on QQQ</td></tr><tr><td>1 an</td><td class="pos">+21.9 %</td><td>italianinvesto opened Long Swing on QQQ; RJCcapital opened Long Position on QQQ; CKCapitalxx opened Long Position on QQQ; Gubloinvestor opened Long Position on QQQ</td></tr><tr><td>6 mois</td><td class="pos">+19.1 %</td><td>CKCapitalxx opened Long Swing on QQQ; PhotonBull opened Long Position on QQQ; Gubloinvestor opened Long Swing on QQQ; Frenchie opened Long Position on QQQ</td></tr><tr><td>3 mois</td><td class="neg">-3.9 %</td><td>DeepValueBagger opened Long Position on QQQ; SpaceX weighting in Nasdaq 100 set to more than double - Bloomberg; Cybersecurity Stocks Jump As Anthropic CEO’s AI Slowdown Call Sharpens Focus On Cyber Risks – CRWD, PANW, FTNT Buck Market Selloff; Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models</td></tr><tr><td>2 mois</td><td class="neg">-0.4 %</td><td>SpaceX weighting in Nasdaq 100 set to more than double - Bloomberg; Cybersecurity Stocks Jump As Anthropic CEO’s AI Slowdown Call Sharpens Focus On Cyber Risks – CRWD, PANW, FTNT Buck Market Selloff; Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models; Oracle Slides 5% as Layoff Costs Outweigh Ellison’s Canceled $7.5B Stock Sale; Nebius and CoreWeave Fall 5%</td></tr><tr><td>1 mois</td><td class="neg">-2.2 %</td><td>SpaceX weighting in Nasdaq 100 set to more than double - Bloomberg; Cybersecurity Stocks Jump As Anthropic CEO’s AI Slowdown Call Sharpens Focus On Cyber Risks – CRWD, PANW, FTNT Buck Market Selloff; Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models; Oracle Slides 5% as Layoff Costs Outweigh Ellison’s Canceled $7.5B Stock Sale; Nebius and CoreWeave Fall 5%</td></tr><tr><td>1 semaine</td><td class="neg">-0.6 %</td><td>SpaceX weighting in Nasdaq 100 set to more than double - Bloomberg; Cybersecurity Stocks Jump As Anthropic CEO’s AI Slowdown Call Sharpens Focus On Cyber Risks – CRWD, PANW, FTNT Buck Market Selloff; Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models; Oracle Slides 5% as Layoff Costs Outweigh Ellison’s Canceled $7.5B Stock Sale; Nebius and CoreWeave Fall 5%</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2024-11-01</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>StonkChris opened Long Position on QQQ</td><td>StonkChris &middot; <a href="https://x.com/StonkChris/status/1852407975215788494" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-09-04</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on QQQ</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/1963631839815331919" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-10-13</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Swing on QQQ</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/1977817678502097396" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-01-24</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on QQQ</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/2015187017336750443" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-02-19</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on QQQ</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2024549671708790938" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-13</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on QQQ</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2032562546310271190" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-30</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Swing on QQQ</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2038660493489975469" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-15</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on QQQ</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2055273675100651861" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-24</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Swing on QQQ</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2058659553340973322" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie opened Long Position on QQQ</td><td>Frenchie &middot; <a href="https://x.com/Frenchie/status/2059383620607881426" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie_ opened Long Position on QQQ</td><td>Frenchie_ &middot; <a href="https://x.com/Frenchie_/status/2059383620607881426" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-30</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>DeepValueBagger opened Long Position on QQQ</td><td>DeepValueBagger &middot; <a href="https://x.com/DeepValueBagger/status/2072039181262454989" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>SpaceX weighting in Nasdaq 100 set to more than double - Bloomberg</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/spacex-weighting-nasdaq-100-set-003759068.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Cybersecurity Stocks Jump As Anthropic CEO’s AI Slowdown Call Sharpens Focus On Cyber Risks – CRWD, PANW, FTNT Buck Market Selloff</td><td><a href="https://stocktwits.com/news-articles/markets/equity/cybersecurity-stocks-jump-as-anthropic-ceo-s-ai-slowdown-call-sharpens-focus-on-cyber-risks-crwd-panw-ftnt-buck-market-selloff/cZtm3wlRBRs" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models</td><td><a href="https://247wallst.com/investing/2026/09/14/meta-alphabet-and-microsoft-rise-while-nvidia-falls-after-three-ai-chiefs-call-for-slowing-down-frontier-models/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Oracle Slides 5% as Layoff Costs Outweigh Ellison’s Canceled $7.5B Stock Sale; Nebius and CoreWeave Fall 5%</td><td><a href="https://247wallst.com/investing/2026/09/14/oracle-slides-5-as-layoff-costs-outweigh-ellisons-canceled-7-5b-stock-sale-nebius-and-coreweave-fall-5/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>ServiceNow Climbs 5% as Software Sidesteps AI Selloff; Adobe Gains 4%, Salesforce Ticks Up</td><td><a href="https://247wallst.com/investing/2026/09/14/servicenow-climbs-5-as-software-sidesteps-ai-selloff-adobe-gains-4-salesforce-ticks-up/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Rumble Soars 10% on Report Anthropic Is the $13.7B Compute Customer; CoreWeave and Nebius Drop 9%</td><td><a href="https://247wallst.com/investing/2026/09/14/rumble-soars-10-on-report-anthropic-is-the-13-7b-compute-customer-coreweave-and-nebius-drop-9/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Chip Stocks Tumble as AI Pacing Call Reaches Beyond Memory: Intel Drops 7%, AMD Sinks 6%, NVIDIA Pulls Back</td><td><a href="https://247wallst.com/investing/2026/09/14/chip-stocks-tumble-as-ai-pacing-call-reaches-beyond-memory-intel-drops-7-amd-sinks-6-nvidia-pulls-back/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday Amid AI Pullback</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-132016142.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Memory Stocks Lead AI Selloff as Anthropic and OpenAI Chiefs Urge Slower Development: Micron and SanDisk Sink 6%, SK Hynix Drops 7%</td><td><a href="https://247wallst.com/investing/2026/09/14/memory-stocks-lead-ai-selloff-as-anthropic-and-openai-chiefs-urge-slower-development-micron-and-sandisk-sink-6-sk-hynix-drops-7/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Uber stock took a hit it didn&#x27;t earn over Tesla Cybercab</td><td><a href="https://www.thestreet.com/investing/stocks/uber-stock-drop-tesla-cybercab-austin-launch" target="_blank" rel="noopener">TheStreet</a></td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : StonkChris le 2024-11-01
+(LONG_POSITION)</p>
+<p>relances cumulees : 14
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 1 compte(s)
+(<span class="badge badge-neutral">fading</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-19</td></tr><tr><td><a href='/kols/DeepValueBagger'>DeepValueBagger</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-30</td></tr><tr><td><a href='/kols/Frenchie'>Frenchie</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/kols/Frenchie_'>Frenchie_</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-03-13</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-15</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-24</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2024-11-01</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2025-09-04</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">TOO_EXTENDED</span>
+&middot; momentum_state=EXTENDED_NEAR_52W_HIGH, pct_of_52w_high=95.80787376274871</p>
+<p>avertissements donnees : market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.645)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>9 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.20</td><td>0.15</td><td>0.030</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>0.50</td><td>0.10</td><td>0.050</td><td>8/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 9 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
+<p><strong>Contre :</strong> momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

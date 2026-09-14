@@ -1,103 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>OSCR - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSCR — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>OSCR</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Oscar Health, Inc.</strong> &mdash; Oscar Health, Inc. operates as a healthcare technology company in the United States. The company offers health plans to individuals, families, employees, and small group markets. It also provides +Oscar platform that power others throughout the healthcare system; Campaign Builder platform, an engagement and recommendation platform for providers and payors; and reinsurance products. In addition, the company offers brokerage services and enrollment platform for brokers and consumers to shop, buy, and enroll in medical and supplemental health products. The company was formerly known as Mulberry Health Inc. and changed its name to Oscar Health, Inc. in January 2021. Oscar Health, Inc. was incorporated in 2012 and is headquartered in New York, New York.</p>
-<p>ai_subindustry=healthcare_biotech_ai value_chain_role=downstream_application_layer_healthcare
-country=United States asset_class=EQUITY</p>
-<p>market_cap=10135901184 trailing_pe=25.26154
-forward_pe=17.450449 price_to_book=4.933153</p>
-<p>revenue=15318633472 revenue_growth=0.704
-cash=8555517952 debt=482095008 profitability=0.03595</p>
-<p>current_price=32.84 momentum_state=EXTENDED_NEAR_52W_HIGH
-average_volume=5419256</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">OLD_CALL</span> rule=latest open episode age_days=227 &gt; 174, still no explicit closure/invalidation
-age_days_vs_as_of=227</p>
-<p>first_call: BryzonX on 2025-07-03
-thesis=LONG_SWING</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;BryzonX&#x27;: 0, &#x27;RJCcapital&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">LOW</span> rule=size_bucket in {LARGE,MEGA} and data_quality&gt;=0.7 and supporting_kol_count&gt;=2</p>
-<p>data_quality warnings: none</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.435</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.4</td><td>0.3</td><td>0.12</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>BryzonX tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.3</td><td>0.2</td><td>0.06</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.2</td><td>0.15</td><td>0.03</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> data_quality: 16/16 enrichment fields OK (score 1.0)</p>
-<p><strong>Reasons against:</strong> conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (2 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>BryzonX</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-07-03</td></tr><tr><td>RJCcapital</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-01-27</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (3 episode(s))</h2>
-<div data-episode-id="1940823143846953012" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=OSCR</span></div>
-<div>tweet_date=2025-07-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1940823143846953012.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1944855190701855111" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=OSCR</span></div>
-<div>tweet_date=2025-07-14 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1944855190701855111.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2016284987725676734" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=OSCR</span></div>
-<div>tweet_date=2026-01-27 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2016284987725676734.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Oscar Health, Inc.</strong>
+&mdash; Healthcare / healthcare_biotech_ai</p>
+<p>Oscar Health, Inc. operates as a healthcare technology company in the United States. The company offers health plans to individuals, families, employees, and small group markets. It also provides +Oscar platform that power others throughout the healthcare system; Campaign Builder platform, an engagement and recommendation platform for providers and payors; and reinsurance products. In addition, the company offers brokerage services and enrollment platform for brokers and consumers to shop, buy, and enroll in medical and supplemental health products. The company was formerly known as Mulberry H</p>
+<p>capitalisation : 10.1 Md$
+&middot; prix actuel : 32.77
+&middot; momentum : <span class="badge badge-neutral">EXTENDED_NEAR_52W_HIGH</span></p>
+<p>risque : <span class="badge badge-good">LOW</span>
+&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
+(377 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="62.0" x2="310" y2="62.0" class="zero-line"/><polyline points="10.0,43.7 60.0,37.4 110.0,10.0 160.0,57.6 210.0,59.5 260.0,62.0 310.0,61.4" class="spark-line"/><circle cx="10.0" cy="43.7" r="3" fill="#2f8f4e"><title>2 ans : +51.6 %</title></circle><circle cx="60.0" cy="37.4" r="3" fill="#2f8f4e"><title>1 an : +69.5 %</title></circle><circle cx="110.0" cy="10.0" r="3" fill="#2f8f4e"><title>6 mois : +146.8 %</title></circle><circle cx="160.0" cy="57.6" r="3" fill="#2f8f4e"><title>3 mois : +12.5 %</title></circle><circle cx="210.0" cy="59.5" r="3" fill="#2f8f4e"><title>2 mois : +7.1 %</title></circle><circle cx="260.0" cy="62.0" r="3" fill="#2f8f4e"><title>1 mois : +0.0 %</title></circle><circle cx="310.0" cy="61.4" r="3" fill="#2f8f4e"><title>1 semaine : +1.6 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+51.6 %</td></tr><tr><td>1 an</td><td class="pos">+69.5 %</td></tr><tr><td>6 mois</td><td class="pos">+146.8 %</td></tr><tr><td>3 mois</td><td class="pos">+12.5 %</td></tr><tr><td>2 mois</td><td class="pos">+7.1 %</td></tr><tr><td>1 mois</td><td class="pos">+0.0 %</td></tr><tr><td>1 semaine</td><td class="pos">+1.6 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+51.6 %</td><td>StonkChris opened Long Position on OSCR; HyperTechInvest opened Long Position on OSCR; Gubloinvestor opened Long Position on OSCR; BryzonX opened Long Swing on OSCR</td></tr><tr><td>1 an</td><td class="pos">+69.5 %</td><td>Oscar Health, Inc. (OSCR) Just Overtook the 20-Day Moving Average; Oscar Health, Inc. (OSCR) Just Overtook the 50-Day Moving Average; Best Growth Stocks to Buy for September 4th; CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall</td></tr><tr><td>6 mois</td><td class="pos">+146.8 %</td><td>Oscar Health, Inc. (OSCR) Just Overtook the 20-Day Moving Average; Oscar Health, Inc. (OSCR) Just Overtook the 50-Day Moving Average; Best Growth Stocks to Buy for September 4th; CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall</td></tr><tr><td>3 mois</td><td class="pos">+12.5 %</td><td>Oscar Health, Inc. (OSCR) Just Overtook the 20-Day Moving Average; Oscar Health, Inc. (OSCR) Just Overtook the 50-Day Moving Average; Best Growth Stocks to Buy for September 4th; CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall</td></tr><tr><td>2 mois</td><td class="pos">+7.1 %</td><td>Oscar Health, Inc. (OSCR) Just Overtook the 20-Day Moving Average; Oscar Health, Inc. (OSCR) Just Overtook the 50-Day Moving Average; Best Growth Stocks to Buy for September 4th; CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall</td></tr><tr><td>1 mois</td><td class="pos">+0.0 %</td><td>Oscar Health, Inc. (OSCR) Just Overtook the 20-Day Moving Average; Oscar Health, Inc. (OSCR) Just Overtook the 50-Day Moving Average; Best Growth Stocks to Buy for September 4th; CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall</td></tr><tr><td>1 semaine</td><td class="pos">+1.6 %</td><td>CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall; The Future Looks Bright for Oscar Health Stock; Fed Rate Hike Close To A Lock; Clarity Act Vote Looms: Week Ahead; Apple, Taiwan Semi Lead Five Stocks Near Buy Points</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2025-06-09</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>StonkChris opened Long Position on OSCR</td><td>StonkChris &middot; <a href="https://x.com/StonkChris/status/1932079213785346547" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-06-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on OSCR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1935905523477471547" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-07-02</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on OSCR</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/1940276712740356314" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-07-03</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>BryzonX opened Long Swing on OSCR</td><td>BryzonX &middot; <a href="https://x.com/BryzonX/status/1940823143846953012" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-07-14</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>BryzonX opened Long Position on OSCR</td><td>BryzonX &middot; <a href="https://x.com/BryzonX/status/1944855190701855111" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-07-17</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>StonkChris opened Long Swing on OSCR</td><td>StonkChris &middot; <a href="https://x.com/StonkChris/status/1945899785707278791" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-09-01</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on OSCR</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/1962640619957792867" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Oscar Health, Inc. (OSCR) Just Overtook the 20-Day Moving Average</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/oscar-health-inc-oscr-just-133502350.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Oscar Health, Inc. (OSCR) Just Overtook the 50-Day Moving Average</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/oscar-health-inc-oscr-just-133001094.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Best Growth Stocks to Buy for September 4th</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/best-growth-stocks-buy-september-092000773.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>CVS Still Sees &#x27;High-Trend&#x27; Cost Growth; Oscar, UNH Stock Fall</td><td><a href="https://www.investors.com/news/cvs-health-medical-costs-oscar-unh-hum-hca/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>The Future Looks Bright for Oscar Health Stock</td><td><a href="https://www.barchart.com/story/news/4518143/the-future-looks-bright-for-oscar-health-stock" target="_blank" rel="noopener">Barchart</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Fed Rate Hike Close To A Lock; Clarity Act Vote Looms: Week Ahead</td><td><a href="https://www.investors.com/research/investing-action-plan/federal-reserve-rate-hike-close-to-clarity-act-vote-salesforce-dreamforce/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Apple, Taiwan Semi Lead Five Stocks Near Buy Points</td><td><a href="https://www.investors.com/news/apple-taiwan-semiconductor-lead-5-top-stocks-near-buy-points/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Moderna, 10x Genomics, Oscar Health, and Novavax Shares Are Soaring, What You Need To Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/moderna-10x-genomics-oscar-health-043505539.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>1 Stock Under $50 to Target This Week and 2 We Brush Off</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/1-stock-under-50-target-002705432.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is Oscar Health (OSCR) Outperforming Other Finance Stocks This Year?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/oscar-health-oscr-outperforming-other-134004247.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-11-09</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>OSCR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-09 &middot; OSCR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : StonkChris le 2025-06-09
+(LONG_POSITION)</p>
+<p>relances cumulees : 27
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/BryzonX'>BryzonX</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-07-03</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2025-07-02</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-06-20</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-09-01</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>ORIGINATOR</td><td>1.00</td><td>19</td><td>2025-06-09</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">TOO_EXTENDED</span>
+&middot; momentum_state=EXTENDED_NEAR_52W_HIGH, pct_of_52w_high=99.2729536063589</p>
+<p>avertissements donnees : aucun</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.615)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>5 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>BryzonX tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.20</td><td>0.15</td><td>0.030</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>1.00</td><td>0.10</td><td>0.100</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 5 distinct supporting account(s) (score 1.0); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Contre :</strong> conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

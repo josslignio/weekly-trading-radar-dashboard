@@ -1,515 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Frenchie - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frenchie — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>Frenchie</h1>
-<p><a href="kols.html">&larr; back to KOL table</a></p>
-<div class="section">
-<h2>Identity &amp; lifecycle</h2>
-<p>provider_state=OK
-lifecycle=MONITORED
-owner_root=True
-namesake_user_id=746932803095400452
-provider_attested=False</p>
-<p>observed_span_days=366
-account_creation_date=<span class="gap">INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS</span></p>
-<p>expertise / AI sub-industry: <span class="gap">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</span></p>
-</div>
-<div class="section">
-<h2>Coverage &amp; activity (data-quality / recency / consistency)</h2>
-<p>observable_months=12
-dense_months=11
-post_count=5048
-status=OK_4M_PLUS
-cadence_posts_per_active_month=420.67</p>
-</div>
-<div class="section">
-<h2>Explainable final score &amp; tier</h2>
-<p><span class="pill">EARLY_EVIDENCE</span> confidence(uncertainty)=1.0</p>
-<p>blocking_reasons=calls=18, dense_months=11</p>
-<p>oos_disclosure=single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
-<table><thead><tr><th>component</th><th>value</th></tr></thead><tbody>
-<tr><td>handle</td><td>Frenchie</td></tr><tr><td>post_count</td><td>5048</td></tr><tr><td>graph_outbound_edges</td><td>2</td></tr><tr><td>engagement_median_likes</td><td>6</td></tr><tr><td>engagement_top_rt</td><td>98968</td></tr><tr><td>coverage_dense_months</td><td>11</td></tr><tr><td>coverage_distinct_months</td><td>12</td></tr>
-<tr><td>call_track_record: evaluable_episodes</td><td>18</td></tr>
-<tr><td>call_track_record: mean_market_adjusted_20</td><td>0.022482</td></tr>
-<tr><td>call_track_record: mean_momentum_adjusted_20</td><td>-0.06343</td></tr>
-<tr><td>call_track_record: std_market_adjusted_20 (uncertainty)</td><td>0.244019</td></tr>
-<tr><td>PSR/DSR/PBO / OOS status</td><td class="gap">OOS_NOT_EVALUATED_V1</td></tr>
-</tbody></table>
-</div>
-<div class="section">
-<h2>Genuine LONG calls: 61</h2>
-<p>tickers covered: AAOI, AAPL, AEHR, AIXA, ALKAL, ALRIB, AMD, ASTER, ASTS, AVNT, AXTI, BKSY, BTC, CAKE, CIEN, CIFR, COHR, CRCL, CREO, DBRG, EXA, EXENS, GOOGL, IBKR, INFQ, INTC, IQE, IREN, LITE, MRVL, MSFT, MXL, NBIS, NNE, NVDA, NVTS, OKLO, OPTX, OUSTER, PENG, PUMP, QBTS, QCLS, RDW, RKLB, RPI, RR, SIVE, SK, SNDK, SOI, SOITEC, STMPA, TSLA, UEC, VECO, VPG, WOLF, XLU, XPL</p>
-<p>outcome_split: {&#x27;UNEVALUABLE_TICKER_ABSENT&#x27;: 43, &#x27;GOOD_CALL&#x27;: 18}</p>
-<p>good_calls=18 failed_calls=0
-unevaluable=43</p>
-</div>
-<div class="section">
-<h2>Originality / lead-lag role (per ticker, from independence records)</h2>
-<table><thead><tr><th>ticker</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>AAOI</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-03-26</td></tr><tr><td>AAPL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-10</td></tr><tr><td>AEHR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-30</td></tr><tr><td>AIXA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-01</td></tr><tr><td>ALKAL</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-03</td></tr><tr><td>ALRIB</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-03</td></tr><tr><td>AMD</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2025-11-19</td></tr><tr><td>ASTER</td><td>ORIGINATOR</td><td>1.0</td><td>9</td><td>2025-09-20</td></tr><tr><td>ASTS</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-02-27</td></tr><tr><td>AVNT</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-09-21</td></tr><tr><td>AXTI</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-03-26</td></tr><tr><td>BKSY</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-02-27</td></tr><tr><td>BTC</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-09-23</td></tr><tr><td>CAKE</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-10-08</td></tr><tr><td>CIEN</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-06-18</td></tr><tr><td>CIFR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-11-19</td></tr><tr><td>COHR</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-01</td></tr><tr><td>CRCL</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-10-26</td></tr><tr><td>CREO</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-18</td></tr><tr><td>DBRG</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-10-14</td></tr><tr><td>EXA</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-03-28</td></tr><tr><td>EXENS</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-28</td></tr><tr><td>GOOGL</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2025-11-19</td></tr><tr><td>IBKR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-23</td></tr><tr><td>INFQ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-03</td></tr><tr><td>INTC</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-10</td></tr><tr><td>IQE</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-03-26</td></tr><tr><td>IREN</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2025-11-19</td></tr><tr><td>LITE</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-03-15</td></tr><tr><td>MRVL</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-06-04</td></tr><tr><td>MSFT</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-02-24</td></tr><tr><td>MXL</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-04-24</td></tr><tr><td>NBIS</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-03</td></tr><tr><td>NNE</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-12-03</td></tr><tr><td>NVDA</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2025-11-19</td></tr><tr><td>NVTS</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2026-05-01</td></tr><tr><td>OKLO</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2025-11-19</td></tr><tr><td>OPTX</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-30</td></tr><tr><td>OUSTER</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-26</td></tr><tr><td>PENG</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-30</td></tr><tr><td>PUMP</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-10-02</td></tr><tr><td>QBTS</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-03</td></tr><tr><td>QCLS</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-06</td></tr><tr><td>RDW</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-02-27</td></tr><tr><td>RKLB</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-02-27</td></tr><tr><td>RPI</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-03</td></tr><tr><td>RR</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2025-10-01</td></tr><tr><td>SIVE</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-24</td></tr><tr><td>SK</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-03</td></tr><tr><td>SNDK</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-03</td></tr><tr><td>SOI</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-03-28</td></tr><tr><td>SOITEC</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-30</td></tr><tr><td>STMPA</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-01</td></tr><tr><td>TSLA</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2025-11-19</td></tr><tr><td>UEC</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-12-03</td></tr><tr><td>VECO</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-01</td></tr><tr><td>VPG</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-03</td></tr><tr><td>WOLF</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-24</td></tr><tr><td>XLU</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-02-21</td></tr><tr><td>XPL</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2025-09-28</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Full call history / thesis timeline / evidence posts (61 episode(s))</h2>
-<div data-episode-id="1969348422042890327" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=ASTER</span></div>
-<div>tweet_date=2025-09-20 pushes=4
-closure_state=NOT_EVALUABLE
-<a href="evidence_1969348422042890327.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1969494718753984687" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=ASTER</span></div>
-<div>tweet_date=2025-09-20 pushes=5
-closure_state=NOT_EVALUABLE
-<a href="evidence_1969494718753984687.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1969670670121304358" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AVNT</span></div>
-<div>tweet_date=2025-09-21 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1969670670121304358.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1970510553190695337" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=OK</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=BTC</span></div>
-<div>tweet_date=2025-09-23 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_1970510553190695337.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.01748</td><td>mfe=0.0</td><td>mae=-0.01748</td><td>max_dd=0.01748</td></tr><tr><td>5</td><td>raw=0.011476</td><td>mfe=0.013269</td><td>mae=-0.01748</td><td>max_dd=0.01748</td></tr><tr><td>20</td><td>raw=0.121539</td><td>mfe=0.13291</td><td>mae=-0.01748</td><td>max_dd=0.042404</td></tr><tr><td>60</td><td>raw=0.080806</td><td>mfe=0.206532</td><td>mae=-0.01748</td><td>max_dd=0.106727</td></tr><tr><td>120</td><td>raw=-0.049256</td><td>mfe=0.206532</td><td>mae=-0.139834</td><td>max_dd=0.287075</td></tr></tbody></table>
-</div><div data-episode-id="1972401197282910291" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=XPL</span></div>
-<div>tweet_date=2025-09-28 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1972401197282910291.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1973446500903526684" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=RR</span></div>
-<div>tweet_date=2025-10-01 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_1973446500903526684.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1973793289787625514" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=PUMP</span></div>
-<div>tweet_date=2025-10-02 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1973793289787625514.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1975837802051830264" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=CAKE</span></div>
-<div>tweet_date=2025-10-08 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1975837802051830264.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1978189913083306331" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=DBRG</span></div>
-<div>tweet_date=2025-10-14 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1978189913083306331.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1982416071555686705" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=CRCL</span></div>
-<div>tweet_date=2025-10-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1982416071555686705.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=NVDA</span></div>
-<div>tweet_date=2025-11-19 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.009331</td><td>mfe=0.009331</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.04643</td><td>mfe=0.04643</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.135534</td><td>mfe=0.232489</td><td>mae=0.0</td><td>max_dd=0.078666</td></tr><tr><td>60</td><td>raw=0.110653</td><td>mfe=0.341337</td><td>mae=0.0</td><td>max_dd=0.182343</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AMD</span></div>
-<div>tweet_date=2025-11-19 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=TSLA</span></div>
-<div>tweet_date=2025-11-19 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.054215</td><td>mfe=0.0</td><td>mae=-0.054215</td><td>max_dd=0.054215</td></tr><tr><td>5</td><td>raw=-0.09348</td><td>mfe=0.0</td><td>mae=-0.099696</td><td>max_dd=0.099696</td></tr><tr><td>20</td><td>raw=0.00097</td><td>mfe=0.050779</td><td>mae=-0.099696</td><td>max_dd=0.099696</td></tr><tr><td>60</td><td>raw=0.080208</td><td>mfe=0.167891</td><td>mae=-0.099696</td><td>max_dd=0.157545</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=OKLO</span></div>
-<div>tweet_date=2025-11-19 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=GOOGL</span></div>
-<div>tweet_date=2025-11-19 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.005448</td><td>mfe=0.0</td><td>mae=-0.005448</td><td>max_dd=0.005448</td></tr><tr><td>5</td><td>raw=0.070951</td><td>mfe=0.070951</td><td>mae=-0.005448</td><td>max_dd=0.005448</td></tr><tr><td>20</td><td>raw=0.293924</td><td>mfe=0.293924</td><td>mae=-0.005448</td><td>max_dd=0.027482</td></tr><tr><td>60</td><td>raw=0.189889</td><td>mfe=0.353845</td><td>mae=-0.005448</td><td>max_dd=0.161513</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=CIFR</span></div>
-<div>tweet_date=2025-11-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1991128861904417134" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=IREN</span></div>
-<div>tweet_date=2025-11-19 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_1991128861904417134.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.019947</td><td>mfe=0.019947</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.087122</td><td>mfe=0.087122</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.334996</td><td>mfe=0.525961</td><td>mae=0.0</td><td>max_dd=0.176086</td></tr><tr><td>60</td><td>raw=0.346729</td><td>mfe=0.990026</td><td>mae=0.0</td><td>max_dd=0.323261</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="1996302900994134188" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=UEC</span></div>
-<div>tweet_date=2025-12-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1996302900994134188.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="1996302900994134188" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=NNE</span></div>
-<div>tweet_date=2025-12-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_1996302900994134188.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2025278126826148199" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=XLU</span></div>
-<div>tweet_date=2026-02-21 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2025278126826148199.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2026202299870199854" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=MSFT</span></div>
-<div>tweet_date=2026-02-24 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2026202299870199854.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.011073</td><td>mfe=0.011073</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.010017</td><td>mfe=0.013428</td><td>mae=0.0</td><td>max_dd=0.003366</td></tr><tr><td>20</td><td>raw=0.103988</td><td>mfe=0.17205</td><td>mae=0.0</td><td>max_dd=0.058071</td></tr><tr><td>60</td><td>raw=-5e-06</td><td>mfe=0.249472</td><td>mae=-0.04271</td><td>max_dd=0.233844</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2027501570577838322" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=RKLB</span></div>
-<div>tweet_date=2026-02-27 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2027501570577838322.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.03373</td><td>mfe=0.03373</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.01862</td><td>mfe=0.054335</td><td>mae=0.0</td><td>max_dd=0.033874</td></tr><tr><td>20</td><td>raw=0.25931</td><td>mfe=0.374237</td><td>mae=0.0</td><td>max_dd=0.144602</td></tr><tr><td>60</td><td>raw=0.495879</td><td>mfe=1.292888</td><td>mae=0.0</td><td>max_dd=0.46289</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2027501570577838322" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
-<div>tweet_date=2026-02-27 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2027501570577838322.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2027501570577838322" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=RDW</span></div>
-<div>tweet_date=2026-02-27 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2027501570577838322.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2027501570577838322" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=BKSY</span></div>
-<div>tweet_date=2026-02-27 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2027501570577838322.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2029965578270638480" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=QCLS</span></div>
-<div>tweet_date=2026-03-06 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2029965578270638480.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2033272620997644550" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=LITE</span></div>
-<div>tweet_date=2026-03-15 pushes=3
-closure_state=CLOSED_SOLD
-<a href="evidence_2033272620997644550.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.081384</td><td>mfe=0.081384</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.169332</td><td>mfe=0.171804</td><td>mae=0.0</td><td>max_dd=0.066031</td></tr><tr><td>20</td><td>raw=0.180043</td><td>mfe=0.180043</td><td>mae=0.0</td><td>max_dd=0.118054</td></tr><tr><td>60</td><td>raw=0.113451</td><td>mfe=0.377218</td><td>mae=0.0</td><td>max_dd=0.224207</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2037049545964597684" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AXTI</span></div>
-<div>tweet_date=2026-03-26 pushes=2
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2037049545964597684.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.120916</td><td>mfe=0.120916</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.33899</td><td>mfe=0.33899</td><td>mae=-0.109249</td><td>max_dd=0.205337</td></tr><tr><td>20</td><td>raw=0.680526</td><td>mfe=0.844294</td><td>mae=-0.109249</td><td>max_dd=0.209685</td></tr><tr><td>60</td><td>raw=0.51591</td><td>mfe=1.987484</td><td>mae=-0.109249</td><td>max_dd=0.509622</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2037049545964597684" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=IQE</span></div>
-<div>tweet_date=2026-03-26 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037049545964597684.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2037049545964597684" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AAOI</span></div>
-<div>tweet_date=2026-03-26 pushes=3
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2037049545964597684.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.203358</td><td>mfe=0.203358</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.543717</td><td>mfe=0.543717</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.903416</td><td>mfe=0.903416</td><td>mae=0.0</td><td>max_dd=0.160335</td></tr><tr><td>60</td><td>raw=0.738274</td><td>mfe=1.583671</td><td>mae=0.0</td><td>max_dd=0.391797</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2037800754405122152" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=SOI</span></div>
-<div>tweet_date=2026-03-28 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037800754405122152.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2037800754405122152" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=EXENS</span></div>
-<div>tweet_date=2026-03-28 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037800754405122152.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2037800754405122152" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=EXA</span></div>
-<div>tweet_date=2026-03-28 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037800754405122152.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047244663547912567" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=IBKR</span></div>
-<div>tweet_date=2026-04-23 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047244663547912567.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047589571324465493" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=MXL</span></div>
-<div>tweet_date=2026-04-24 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047589571324465493.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050223013124055242" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=COHR</span></div>
-<div>tweet_date=2026-05-01 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_2050223013124055242.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.017703</td><td>mfe=0.017703</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.150959</td><td>mfe=0.150959</td><td>mae=-0.032435</td><td>max_dd=0.073926</td></tr><tr><td>20</td><td>raw=0.294037</td><td>mfe=0.294037</td><td>mae=-0.032435</td><td>max_dd=0.12671</td></tr><tr><td>60</td><td>raw=-0.245021</td><td>mfe=0.294037</td><td>mae=-0.326897</td><td>max_dd=0.479843</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2050225828768645191" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=VECO</span></div>
-<div>tweet_date=2026-05-01 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050225828768645191.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050225828768645191" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AIXA</span></div>
-<div>tweet_date=2026-05-01 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050225828768645191.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050225828768645191" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=STMPA</span></div>
-<div>tweet_date=2026-05-01 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050225828768645191.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050225828768645191" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=NVTS</span></div>
-<div>tweet_date=2026-05-01 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050225828768645191.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=INFQ</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=ALRIB</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=VPG</span></div>
-<div>tweet_date=2026-05-03 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=ALKAL</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=QBTS</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=SK</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=RPI</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=SNDK</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.119806</td><td>mfe=0.119806</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.232271</td><td>mfe=0.24404</td><td>mae=0.0</td><td>max_dd=0.04966</td></tr><tr><td>20</td><td>raw=0.366681</td><td>mfe=0.402569</td><td>mae=0.0</td><td>max_dd=0.146786</td></tr><tr><td>60</td><td>raw=0.01919</td><td>mfe=0.859284</td><td>mae=-0.19108</td><td>max_dd=0.564929</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2050981295820550448" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=NBIS</span></div>
-<div>tweet_date=2026-05-03 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2050981295820550448.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.002834</td><td>mfe=0.0</td><td>mae=-0.002834</td><td>max_dd=0.002834</td></tr><tr><td>5</td><td>raw=0.054869</td><td>mfe=0.105827</td><td>mae=-0.002834</td><td>max_dd=0.09247</td></tr><tr><td>20</td><td>raw=0.477043</td><td>mfe=0.49932</td><td>mae=-0.002834</td><td>max_dd=0.132625</td></tr><tr><td>60</td><td>raw=0.068076</td><td>mfe=0.625043</td><td>mae=-0.159846</td><td>max_dd=0.482996</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053464971611132387" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AAPL</span></div>
-<div>tweet_date=2026-05-10 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2053464971611132387.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2053464971611132387" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=INTC</span></div>
-<div>tweet_date=2026-05-10 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2053464971611132387.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058456155655958544" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=SIVE</span></div>
-<div>tweet_date=2026-05-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058456155655958544.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058638124008239137" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=WOLF</span></div>
-<div>tweet_date=2026-05-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058638124008239137.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2059366762928607468" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=OUSTER</span></div>
-<div>tweet_date=2026-05-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2059366762928607468.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060698961824874810" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=SOITEC</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060698961824874810.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060698961824874810" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=OPTX</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060698961824874810.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060698961824874810" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AEHR</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2060698961824874810.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.207007</td><td>mfe=0.207007</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.020936</td><td>mfe=0.245247</td><td>mae=0.0</td><td>max_dd=0.180134</td></tr><tr><td>20</td><td>raw=0.026063</td><td>mfe=0.245247</td><td>mae=-0.019333</td><td>max_dd=0.212472</td></tr><tr><td>60</td><td>raw=-0.026704</td><td>mfe=0.55533</td><td>mae=-0.301431</td><td>max_dd=0.439012</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2060698961824874810" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=PENG</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2060698961824874810.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.183219</td><td>mfe=0.183219</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.082398</td><td>mfe=0.195947</td><td>mae=0.0</td><td>max_dd=0.161742</td></tr><tr><td>20</td><td>raw=0.272986</td><td>mfe=0.272986</td><td>mae=-0.01993</td><td>max_dd=0.180507</td></tr><tr><td>60</td><td>raw=-0.131469</td><td>mfe=0.363088</td><td>mae=-0.268129</td><td>max_dd=0.463079</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2062637991101624442" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=MRVL</span></div>
-<div>tweet_date=2026-06-04 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_2062637991101624442.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.09633</td><td>mfe=0.09633</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.061601</td><td>mfe=0.09633</td><td>mae=-0.041295</td><td>max_dd=0.125532</td></tr><tr><td>20</td><td>raw=-0.124378</td><td>mfe=0.178806</td><td>mae=-0.124378</td><td>max_dd=0.257196</td></tr><tr><td>60</td><td>raw=-0.201268</td><td>mfe=0.178806</td><td>mae=-0.379662</td><td>max_dd=0.473758</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2067731024709288423" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=CIEN</span></div>
-<div>tweet_date=2026-06-18 pushes=1
-closure_state=CLOSED_SOLD
-<a href="evidence_2067731024709288423.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.001043</td><td>mfe=0.0</td><td>mae=-0.001043</td><td>max_dd=0.001043</td></tr><tr><td>5</td><td>raw=0.040406</td><td>mfe=0.052919</td><td>mae=-0.001043</td><td>max_dd=0.011884</td></tr><tr><td>20</td><td>raw=-0.112093</td><td>mfe=0.06567</td><td>mae=-0.186649</td><td>max_dd=0.23677</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2067731024709288423" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=CREO</span></div>
-<div>tweet_date=2026-06-18 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2067731024709288423.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="kols.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Identite &amp; suivi</h2>
+<p>Identite provider-attested : non
+&middot; suivi : <span class="badge badge-good">MONITORED</span></p>
+<p>Duree observee : 3 213 jour(s)
+&middot; date de creation du compte : <span title="INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS">non disponible</span></p>
+<p>Expertise / sous-industrie : <span title="INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2">non disponible</span></p>
+<p>Integrite des suppressions : <span title="NOT_COLLECTED_YET_TR_DELETED_MILESTONE">non disponible</span></p>
+<p>Mois observes : 24
+&middot; mois denses : 19
+&middot; posts collectes : 6 430
+&middot; cadence : 267.9 posts/mois actif</p>
+</section>
+
+<section class="section">
+<h2>Score final &amp; confiance</h2>
+<p class="score-hero">-0.077</p>
+<p>Niveau de confiance : <span class="badge badge-good">EARLY_EVIDENCE</span>
+&middot; incertitude : 1.00</p>
+<p class="muted">calls=72, dense_months=19</p>
+<p class="muted">single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
+</section>
+
+<section class="section">
+<h2>Courbe de performance (rendement realise par fenetre)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="62.0" x2="310" y2="62.0" class="zero-line"/><polyline points="10.0,50.9 60.0,25.3 110.0,10.0" class="spark-line"/><circle cx="10.0" cy="50.9" r="3" fill="#2f8f4e"><title>2 ans : +0.7 %</title></circle><circle cx="60.0" cy="25.3" r="3" fill="#2f8f4e"><title>1 an : +2.5 %</title></circle><circle cx="110.0" cy="10.0" r="3" fill="#2f8f4e"><title>6 mois : +3.5 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+</section>
+
+<section class="section">
+<h2>Track record par fenetre (2 ans &rarr; 1 semaine)</h2>
+<table><thead><tr><th>fenetre</th><th>rendement realise</th>
+<th>rendement ajuste marche</th><th>calls evaluables / total</th><th>taux de reussite</th></tr></thead>
+<tbody><tr>
+<td>2 ans</td>
+<td>+0.7 %</td>
+<td>-10.5 %</td>
+<td>36 / 48</td>
+<td>+56 %</td>
+</tr><tr>
+<td>1 an</td>
+<td>+2.5 %</td>
+<td>-8.5 %</td>
+<td>35 / 43</td>
+<td>+57 %</td>
+</tr><tr>
+<td>6 mois</td>
+<td>+3.5 %</td>
+<td>-4.1 %</td>
+<td>13 / 19</td>
+<td>+62 %</td>
+</tr><tr><td>3 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>2 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 semaine</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Meilleurs / pires calls</h2>
+<p>Meilleur call (2 ans) : <a href='/tickers/PUMP'>PUMP</a> <span class='pos'>+113.2 %</span> &middot; <a href="https://x.com/Frenchie/status/1973793289787625514" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (1 an) : <a href='/tickers/PUMP'>PUMP</a> <span class='pos'>+113.2 %</span> &middot; <a href="https://x.com/Frenchie/status/1973793289787625514" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (6 mois) : <a href='/tickers/NOW'>NOW</a> <span class='pos'>+59.7 %</span> &middot; <a href="https://x.com/Frenchie/status/2042620273959067744" target="_blank" rel="noopener">voir le post</a></p>
+<p>Pire call (2 ans) : <a href='/tickers/BYND'>BYND</a> <span class='neg'>-90.5 %</span> &middot; <a href="https://x.com/Frenchie/status/1980966614985007359" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (1 an) : <a href='/tickers/BYND'>BYND</a> <span class='neg'>-90.5 %</span> &middot; <a href="https://x.com/Frenchie/status/1980966614985007359" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (6 mois) : <a href='/tickers/WOLF'>WOLF</a> <span class='neg'>-64.7 %</span> &middot; <a href="https://x.com/Frenchie/status/2058638124008239137" target="_blank" rel="noopener">voir le post</a></p>
+</section>
+
+<section class="section">
+<h2>Calls genuinement LONG</h2>
+<p>94 episode(s) sur 92 ticker(s) :
+AAOI, AAPL, AEHR, AIXA, ALKAL, ALRIB, AMD, AMZN, ANSEM, APP, ASTER, ASTS, AVNT, AXTI, BKSY, BTC, BUNK, BYND, CAKE, CIEN, CIFR, COHR, CRCL, CREO, CRS, DBRG, DELL, DFDV, ETH, EXA, EXENS, FIG, GOOGL, HYPE, IBIT, IBKR, INFQ, INTC, IQE, IREN, IWM, JUP, LITE, LITP, LLD, META, MRVL, MSFT, MSTR, MU, MXL, NBIS, NFLX, NNE, NOW, NVDA, NVTS, OKLO, OPTX, OUSTER, PENG, PL, PUMP, QBTS, QCLS, QCOM, QQQ, RACE, RDW, RKLB, RPI, RR, SEZL, SIVE, SK, SNDK, SOI, SOITEC, SOL, SPY, STMPA, TSLA, TSM, TST, UEC, USDC, VECO, VPG, WDC, WOLF, XLU, XPL</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score (composants bruts, hors track record)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th></tr></thead><tbody><tr><td>post_count</td><td>6430</td></tr><tr><td>graph_outbound_edges</td><td>3</td></tr><tr><td>engagement_median_likes</td><td>6</td></tr><tr><td>engagement_top_rt</td><td>98968</td></tr><tr><td>coverage_dense_months</td><td>19</td></tr><tr><td>coverage_distinct_months</td><td>24</td></tr></tbody></table>
+<details class="proofs"><summary>Preuves techniques (score composant call_track_record)</summary><pre>{&#x27;value&#x27;: 72, &#x27;evaluable_episodes&#x27;: 72, &#x27;mean_market_adjusted_20&#x27;: 0.010883, &#x27;mean_momentum_adjusted_20&#x27;: 0.014389, &#x27;uncertainty&#x27;: {&#x27;n&#x27;: 72, &#x27;std_market_adjusted_20&#x27;: 0.278774, &#x27;note&#x27;: &#x27;small-sample dispersion disclosed; confidence grows continuously with calls and dense months&#x27;}, &#x27;oos_status&#x27;: &#x27;OOS_NOT_EVALUATED_V1&#x27;, &#x27;oos_disclosure&#x27;: &#x27;single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists&#x27;}</pre></details>
+</section>
+
+<section class="section">
+<h2>Role dans le graphe (originalite / suivisme par ticker)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/tickers/AAOI'>AAOI</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/AAPL'>AAPL</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-10</td></tr><tr><td><a href='/tickers/AEHR'>AEHR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/AIXA'>AIXA</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-01</td></tr><tr><td><a href='/tickers/ALKAL'>ALKAL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/ALRIB'>ALRIB</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/AMD'>AMD</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/AMZN'>AMZN</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/ANSEM'>ANSEM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-09-13</td></tr><tr><td><a href='/tickers/APP'>APP</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/ASTER'>ASTER</a></td><td>ORIGINATOR</td><td>1.00</td><td>9</td><td>2025-09-20</td></tr><tr><td><a href='/tickers/ASTS'>ASTS</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-02-27</td></tr><tr><td><a href='/tickers/AVNT'>AVNT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-09-21</td></tr><tr><td><a href='/tickers/AXTI'>AXTI</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/BKSY'>BKSY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-27</td></tr><tr><td><a href='/tickers/BTC'>BTC</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-09-23</td></tr><tr><td><a href='/tickers/BUNK'>BUNK</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-30</td></tr><tr><td><a href='/tickers/BYND'>BYND</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-22</td></tr><tr><td><a href='/tickers/CAKE'>CAKE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-08</td></tr><tr><td><a href='/tickers/CIEN'>CIEN</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-18</td></tr><tr><td><a href='/tickers/CIFR'>CIFR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/COHR'>COHR</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-03-20</td></tr><tr><td><a href='/tickers/CRCL'>CRCL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-26</td></tr><tr><td><a href='/tickers/CREO'>CREO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-18</td></tr><tr><td><a href='/tickers/CRS'>CRS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-05</td></tr><tr><td><a href='/tickers/DBRG'>DBRG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-14</td></tr><tr><td><a href='/tickers/DELL'>DELL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/DFDV'>DFDV</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-06</td></tr><tr><td><a href='/tickers/ETH'>ETH</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-04</td></tr><tr><td><a href='/tickers/EXA'>EXA</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-03-28</td></tr><tr><td><a href='/tickers/EXENS'>EXENS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-28</td></tr><tr><td><a href='/tickers/FIG'>FIG</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-15</td></tr><tr><td><a href='/tickers/GOOGL'>GOOGL</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/HYPE'>HYPE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-04</td></tr><tr><td><a href='/tickers/IBIT'>IBIT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-06</td></tr><tr><td><a href='/tickers/IBKR'>IBKR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-23</td></tr><tr><td><a href='/tickers/INFQ'>INFQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/INTC'>INTC</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-10</td></tr><tr><td><a href='/tickers/IQE'>IQE</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/IREN'>IREN</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/IWM'>IWM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/JUP'>JUP</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/LITE'>LITE</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-03-15</td></tr><tr><td><a href='/tickers/LITP'>LITP</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-16</td></tr><tr><td><a href='/tickers/LLD'>LLD</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2025-02-10</td></tr><tr><td><a href='/tickers/META'>META</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-04</td></tr><tr><td><a href='/tickers/MRVL'>MRVL</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-04</td></tr><tr><td><a href='/tickers/MSFT'>MSFT</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-02-24</td></tr><tr><td><a href='/tickers/MSTR'>MSTR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-09-04</td></tr><tr><td><a href='/tickers/MU'>MU</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/MXL'>MXL</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-04-24</td></tr><tr><td><a href='/tickers/NBIS'>NBIS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/NFLX'>NFLX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-04</td></tr><tr><td><a href='/tickers/NNE'>NNE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-12-03</td></tr><tr><td><a href='/tickers/NOW'>NOW</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-10</td></tr><tr><td><a href='/tickers/NVDA'>NVDA</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/NVTS'>NVTS</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-01</td></tr><tr><td><a href='/tickers/OKLO'>OKLO</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/OPTX'>OPTX</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/OUSTER'>OUSTER</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/PENG'>PENG</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/PL'>PL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/PUMP'>PUMP</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-02</td></tr><tr><td><a href='/tickers/QBTS'>QBTS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/QCLS'>QCLS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-06</td></tr><tr><td><a href='/tickers/QCOM'>QCOM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/QQQ'>QQQ</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/RACE'>RACE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/RDW'>RDW</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-27</td></tr><tr><td><a href='/tickers/RKLB'>RKLB</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-02-27</td></tr><tr><td><a href='/tickers/RPI'>RPI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/RR'>RR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-10-01</td></tr><tr><td><a href='/tickers/SEZL'>SEZL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/SIVE'>SIVE</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-05</td></tr><tr><td><a href='/tickers/SK'>SK</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/SNDK'>SNDK</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/SOI'>SOI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-28</td></tr><tr><td><a href='/tickers/SOITEC'>SOITEC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/SOL'>SOL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-06</td></tr><tr><td><a href='/tickers/SPY'>SPY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/STMPA'>STMPA</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-01</td></tr><tr><td><a href='/tickers/TSLA'>TSLA</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-11-19</td></tr><tr><td><a href='/tickers/TSM'>TSM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/TST'>TST</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-09</td></tr><tr><td><a href='/tickers/UEC'>UEC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-12-03</td></tr><tr><td><a href='/tickers/USDC'>USDC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-04</td></tr><tr><td><a href='/tickers/VECO'>VECO</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-01</td></tr><tr><td><a href='/tickers/VPG'>VPG</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-03</td></tr><tr><td><a href='/tickers/WDC'>WDC</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/WOLF'>WOLF</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-24</td></tr><tr><td><a href='/tickers/XLU'>XLU</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-21</td></tr><tr><td><a href='/tickers/XPL'>XPL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-09-28</td></tr></tbody></table>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

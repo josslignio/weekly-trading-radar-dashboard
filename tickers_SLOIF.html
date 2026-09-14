@@ -1,96 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>SLOIF - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLOIF — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>SLOIF</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Soitec SA</strong> &mdash; Soitec SA develops and manufactures semiconductor materials in Asia, Europe, and the United States. The company offers CONNECT Radio Frequency Silicon-on-Insulator for smartphone front-end modules; CONNECT FD SOI for AI applications; CONNECT Piezoelectric-on-Insulator RF filters for smartphones; photonics and optical sensing solution for the integration of silicon optical components in data centers; and CONNECT RF gallium nitride which increases the frequency system efficiency and power density of next generation sub 6GHz and mmWave-band cellular 5G infrastructures and mobile devices. It also provides Power-SOI products for the automotive and industrial power electronic devices; Auto Smartsic for cost optimization of electric vehicles and industrial applications; and Photonics SOI that integrates photonic components on a silicon-on-insulator (SOI) substrate to enhance optical communication capabilities, as well as AUTO FD-SOI for automotive radar and processors. In addition, the company offers Imager-SOI, a compact solution for high-resolution 3D images and small form factor; PD -SOI offers complex computation capabilities and functionalities in cloud computing and network equipment; FD-SOI technology which provides the optimal balance between digital performance, mixed signal/RF compatibility, and power consumption and cost; and MEMS-SOI, an insulating oxide layer, and a supporting handle layer. It serves mobile communication, automotive, industry, edge AI and Internet of Things, and cloud AI and network infrastructure market. Soitec SA was incorporated in 1992 and is headquartered in Bernin, France.</p>
-<p>ai_subindustry=semiconductors_compute value_chain_role=upstream_compute_hardware
-country=France asset_class=EQUITY</p>
-<p>market_cap=5654020608 trailing_pe=[FIELD_NOT_PROVIDED]
-forward_pe=[FIELD_NOT_PROVIDED] price_to_book=3.6547449</p>
-<p>revenue=592318976 revenue_growth=-0.346
-cash=563052032 debt=620156032 profitability=-0.37146</p>
-<p>current_price=158.01 momentum_state=UPTREND
-average_volume=4327</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=109 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=109</p>
-<p>first_call: PhotonBull on 2026-03-26
-thesis=LONG_SWING</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;PhotonBull&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED, forward_pe: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.5325</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>PhotonBull tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.8</td><td>0.15</td><td>0.12</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.875</td><td>0.1</td><td>0.0875</td><td>14/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 14/16 enrichment fields OK (score 0.875)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>PhotonBull</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-26</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (2 episode(s))</h2>
-<div data-episode-id="2037299305766412660" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SLOIF</span></div>
-<div>tweet_date=2026-03-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037299305766412660.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058986604547469456" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SLOIF</span></div>
-<div>tweet_date=2026-05-25 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058986604547469456.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Soitec SA</strong>
+&mdash; Technology / semiconductors_compute</p>
+<p>Soitec SA develops and manufactures semiconductor materials in Asia, Europe, and the United States. The company offers CONNECT Radio Frequency Silicon-on-Insulator for smartphone front-end modules; CONNECT FD SOI for AI applications; CONNECT Piezoelectric-on-Insulator RF filters for smartphones; photonics and optical sensing solution for the integration of silicon optical components in data centers; and CONNECT RF gallium nitride which increases the frequency system efficiency and power density of next generation sub 6GHz and mmWave-band cellular 5G infrastructures and mobile devices. It also </p>
+<p>capitalisation : 5.8 Md$
+&middot; prix actuel : 161.86
+&middot; momentum : <span class="badge badge-neutral">UPTREND</span></p>
+<p>risque : <span class="badge badge-warn">HIGH</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(111 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="62.0" x2="310" y2="62.0" class="zero-line"/><polyline points="10.0,55.2 60.0,10.0 110.0,42.0 160.0,61.7 210.0,54.5 260.0,60.8 310.0,60.9" class="spark-line"/><circle cx="10.0" cy="55.2" r="3" fill="#2f8f4e"><title>2 ans : +41.4 %</title></circle><circle cx="60.0" cy="10.0" r="3" fill="#2f8f4e"><title>1 an : +317.7 %</title></circle><circle cx="110.0" cy="42.0" r="3" fill="#2f8f4e"><title>6 mois : +122.0 %</title></circle><circle cx="160.0" cy="61.7" r="3" fill="#2f8f4e"><title>3 mois : +1.8 %</title></circle><circle cx="210.0" cy="54.5" r="3" fill="#2f8f4e"><title>2 mois : +45.7 %</title></circle><circle cx="260.0" cy="60.8" r="3" fill="#2f8f4e"><title>1 mois : +7.1 %</title></circle><circle cx="310.0" cy="60.9" r="3" fill="#2f8f4e"><title>1 semaine : +6.8 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+41.4 %</td></tr><tr><td>1 an</td><td class="pos">+317.7 %</td></tr><tr><td>6 mois</td><td class="pos">+122.0 %</td></tr><tr><td>3 mois</td><td class="pos">+1.8 %</td></tr><tr><td>2 mois</td><td class="pos">+45.7 %</td></tr><tr><td>1 mois</td><td class="pos">+7.1 %</td></tr><tr><td>1 semaine</td><td class="pos">+6.8 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+41.4 %</td><td>PhotonBull opened Long Swing on SLOIF; PhotonBull opened Long Position on SLOIF; European semiconductor stocks diverge as investors weigh AI demand, growth expectations; Soitec (ENXTPA:SOI) Stock Looks Fairly Valued On Fresh AI Data Center Demand</td></tr><tr><td>1 an</td><td class="pos">+317.7 %</td><td>PhotonBull opened Long Swing on SLOIF; PhotonBull opened Long Position on SLOIF; European semiconductor stocks diverge as investors weigh AI demand, growth expectations; Soitec (ENXTPA:SOI) Stock Looks Fairly Valued On Fresh AI Data Center Demand</td></tr><tr><td>6 mois</td><td class="pos">+122.0 %</td><td>PhotonBull opened Long Swing on SLOIF; PhotonBull opened Long Position on SLOIF; European semiconductor stocks diverge as investors weigh AI demand, growth expectations; Soitec (ENXTPA:SOI) Stock Looks Fairly Valued On Fresh AI Data Center Demand</td></tr><tr><td>3 mois</td><td class="pos">+1.8 %</td><td>European semiconductor stocks diverge as investors weigh AI demand, growth expectations; Soitec (ENXTPA:SOI) Stock Looks Fairly Valued On Fresh AI Data Center Demand; Soitec (ENXTPA:SOI) Qualifies Singapore Fab For High Volume Photonics SOI; European stocks notch monthly gain on earnings optimism</td></tr><tr><td>2 mois</td><td class="pos">+45.7 %</td><td>European semiconductor stocks diverge as investors weigh AI demand, growth expectations; Soitec (ENXTPA:SOI) Stock Looks Fairly Valued On Fresh AI Data Center Demand; Soitec (ENXTPA:SOI) Qualifies Singapore Fab For High Volume Photonics SOI; European stocks notch monthly gain on earnings optimism</td></tr><tr><td>1 mois</td><td class="pos">+7.1 %</td><td>Soitec shares climb 6% as it locks in customers for AI wafer demand; European stocks recover from one-month lows as bond yields retreat; Easing Bond Yields Undergird European Bourses Midday; Soitec Shares Jump After Guidance Upgrade on Strong AI Demand</td></tr><tr><td>1 semaine</td><td class="pos">+6.8 %</td><td>Tech, Media &amp; Telecom Roundup: Market Talk; European Chip Stocks Follow Asia Lower Amid AI Worries</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2026-03-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Swing on SLOIF</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2037299305766412660" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-25</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on SLOIF</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2058986604547469456" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-07-23</td><td><span class="badge badge-neutral">NEWS</span></td><td>European semiconductor stocks diverge as investors weigh AI demand, growth expectations</td><td><a href="https://finance.yahoo.com/technology/articles/european-semiconductor-stocks-diverge-investors-103600474.html" target="_blank" rel="noopener">Reuters</a></td></tr><tr><td>2026-07-28</td><td><span class="badge badge-neutral">NEWS</span></td><td>Soitec (ENXTPA:SOI) Stock Looks Fairly Valued On Fresh AI Data Center Demand</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/soitec-enxtpa-soi-stock-looks-231543517.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-07-29</td><td><span class="badge badge-neutral">NEWS</span></td><td>Soitec (ENXTPA:SOI) Qualifies Singapore Fab For High Volume Photonics SOI</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/soitec-enxtpa-soi-qualifies-singapore-020744680.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-07-31</td><td><span class="badge badge-neutral">NEWS</span></td><td>European stocks notch monthly gain on earnings optimism</td><td><a href="https://finance.yahoo.com/markets/world-indices/articles/tech-shares-power-europes-stoxx-071854089.html" target="_blank" rel="noopener">Reuters</a></td></tr><tr><td>2026-08-31</td><td><span class="badge badge-neutral">NEWS</span></td><td>Soitec shares climb 6% as it locks in customers for AI wafer demand</td><td><a href="https://finance.yahoo.com/technology/ai/articles/soitec-shares-climb-6-locks-124313266.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>European stocks recover from one-month lows as bond yields retreat</td><td><a href="https://finance.yahoo.com/markets/world-indices/articles/european-stocks-rise-global-bond-083333107.html" target="_blank" rel="noopener">Reuters</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>Easing Bond Yields Undergird European Bourses Midday</td><td><a href="https://finance.yahoo.com/markets/world-indices/articles/easing-bond-yields-undergird-european-115727635.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>Soitec Shares Jump After Guidance Upgrade on Strong AI Demand</td><td><a href="https://www.wsj.com/tech/soitec-shares-jump-after-guidance-upgrade-on-strong-ai-demand-e3a5ebb9?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">The Wall Street Journal</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Tech, Media &amp; Telecom Roundup: Market Talk</td><td><a href="https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-e3a3c244?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">The Wall Street Journal</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>European Chip Stocks Follow Asia Lower Amid AI Worries</td><td><a href="https://www.barrons.com/livecoverage/stock-market-news-today-091426/card/european-chip-stocks-follow-asia-lower-amid-ai-worries-2pYHTE2Uc5H8vXi7DCQ4?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td>2026-11-18</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>SLOIF earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-18 &middot; SLOIF earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : PhotonBull le 2026-03-26
+(LONG_SWING)</p>
+<p>relances cumulees : 0
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">LOW_CONFIDENCE</span>
+&middot; data_quality_fraction=0.875, supporting_kol_count=1 (couverture/qualite de donnees insuffisante pour trancher)</p>
+<p>avertissements donnees : trailing_pe: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.532)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>PhotonBull tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.80</td><td>0.15</td><td>0.120</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.88</td><td>0.10</td><td>0.087</td><td>14/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 14/16 enrichment fields OK (score 0.875)</p>
+<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

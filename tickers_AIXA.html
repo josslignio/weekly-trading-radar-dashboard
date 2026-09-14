@@ -1,89 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>AIXA - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIXA — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>AIXA</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>[PROVIDER_UNAVAILABLE]</strong> &mdash; [PROVIDER_UNAVAILABLE]</p>
-<p>ai_subindustry=[PROVIDER_UNAVAILABLE] value_chain_role=&mdash;
-country=[PROVIDER_UNAVAILABLE] asset_class=&mdash;</p>
-<p>market_cap=[PROVIDER_UNAVAILABLE] trailing_pe=[PROVIDER_UNAVAILABLE]
-forward_pe=[PROVIDER_UNAVAILABLE] price_to_book=[PROVIDER_UNAVAILABLE]</p>
-<p>revenue=[PROVIDER_UNAVAILABLE] revenue_growth=[PROVIDER_UNAVAILABLE]
-cash=[PROVIDER_UNAVAILABLE] debt=[PROVIDER_UNAVAILABLE] profitability=[PROVIDER_UNAVAILABLE]</p>
-<p>current_price=[PROVIDER_UNAVAILABLE] momentum_state=[PROVIDER_UNAVAILABLE]
-average_volume=[PROVIDER_UNAVAILABLE]</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=133 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=133</p>
-<p>first_call: Frenchie on 2026-05-01
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;Frenchie&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">SPECULATIVE</span> rule=asset_class==CRYPTO or size_bucket in {MICRO,UNKNOWN} or data_quality&lt;0.4</p>
-<p>data_quality warnings: company_name: PROVIDER_UNAVAILABLE, description: PROVIDER_UNAVAILABLE, ai_subindustry: PROVIDER_UNAVAILABLE, market_country: PROVIDER_UNAVAILABLE, market_cap: PROVIDER_UNAVAILABLE, trailing_pe: PROVIDER_UNAVAILABLE, forward_pe: PROVIDER_UNAVAILABLE, price_to_book: PROVIDER_UNAVAILABLE, revenue: PROVIDER_UNAVAILABLE, revenue_growth: PROVIDER_UNAVAILABLE, cash: PROVIDER_UNAVAILABLE, debt: PROVIDER_UNAVAILABLE, profitability: PROVIDER_UNAVAILABLE, current_price: PROVIDER_UNAVAILABLE, momentum_state: PROVIDER_UNAVAILABLE, average_volume: PROVIDER_UNAVAILABLE</p>
-<p>liquidity warnings: average trading volume unavailable from provider</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.4</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>Frenchie tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.5</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.0</td><td>0.1</td><td>0.0</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>Frenchie</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-01</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (1 episode(s))</h2>
-<div data-episode-id="2050225828768645191" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=Frenchie</span><span data-field="ticker" style="margin-right:10px">ticker=AIXA</span></div>
-<div>tweet_date=2026-05-01 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050225828768645191.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>AIXA</strong>
+&mdash; &mdash; / &mdash;</p>
+<p></p>
+<p>capitalisation : n/d
+&middot; prix actuel : n/d
+&middot; momentum : n/d</p>
+<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(135 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<p class="muted">Historique insuffisant pour tracer une courbe.</p>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="neg">n/d</td></tr><tr><td>6 mois</td><td class="neg">n/d</td></tr><tr><td>3 mois</td><td class="neg">n/d</td></tr><tr><td>2 mois</td><td class="neg">n/d</td></tr><tr><td>1 mois</td><td class="neg">n/d</td></tr><tr><td>1 semaine</td><td class="neg">n/d</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td colspan='3' class='muted'>pas assez d'historique de prix</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2026-03-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on AIXA</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/2036989915485884886" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-18</td><td><span class="badge badge-neutral">NEWS</span></td><td>A Look At AIXTRON (XTRA:AIXA) Valuation After A Strong Multi‑Period Share Price Run</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/look-aixtron-xtra-aixa-valuation-220602162.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-05-01</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie opened Long Position on AIXA</td><td>Frenchie &middot; <a href="https://x.com/Frenchie/status/2050225828768645191" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-01</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie_ opened Long Position on AIXA</td><td>Frenchie_ &middot; <a href="https://x.com/Frenchie_/status/2050225828768645191" target="_blank" rel="noopener">post</a></td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : HyperTechInvest le 2026-03-26
+(LONG_POSITION)</p>
+<p>relances cumulees : 0
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Frenchie'>Frenchie</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-01</td></tr><tr><td><a href='/kols/Frenchie_'>Frenchie_</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-01</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
+&middot; Donnees insuffisantes pour AIXA: serie_prix=absente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
+<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
+<p>avertissements liquidite : average trading volume unavailable from provider</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.520)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.60</td><td>0.30</td><td>0.180</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Frenchie tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
+<p><strong>Contre :</strong> data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

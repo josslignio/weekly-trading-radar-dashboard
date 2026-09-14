@@ -1,103 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>NOK - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOK — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>NOK</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Nokia Oyj</strong> &mdash; Nokia Oyj, together with its subsidiaries, provides mobile, fixed, and cloud network solutions in North and Latin America, Greater China, India, Asia Pacific, Europe, the Middle East, and Africa. It operates in four segments: Network Infrastructure, Mobile Networks, Cloud and Network Services, and Nokia Technologies. The company offers fixed network solutions, such as fiber and copper technologies, access infrastructure, in-home Wi-Fi solutions, and cloud and virtualization services; IP network solutions, which delivers IP edge routing and data center networking solutions for residential, mobile, enterprise, and cloud applications; and optical networks solutions, which provides optical transport networks for metro, regional, and long-haul applications. It also provides mobile technology products and services for radio access networks and microwave radio links for transport networks; and network management solutions, as well as network planning, optimization, network deployment, and technical support services. In addition, the company offers cloud and network services, including open, secure, automated, and scalable software and solutions; and 5G core, secure autonomous networks, private wireless and industrial edge, and network APIs. Further, it licenses intellectual property, including patents, technologies, and the Nokia brand. The company serves its products and services to defense communications energy and resources, enterprise and industrial campus, private networks, public sector, and transportation industries. Nokia Oyj was founded in 1865 and is headquartered in Espoo, Finland.</p>
-<p>ai_subindustry=cloud_datacenter_network value_chain_role=midstream_infrastructure
-country=Finland asset_class=EQUITY</p>
-<p>market_cap=61781045248 trailing_pe=78.82143
-forward_pe=22.206795 price_to_book=2.4980378</p>
-<p>revenue=20394000384 revenue_growth=0.084
-cash=5129999872 debt=3359000064 profitability=0.03472</p>
-<p>current_price=11.035 momentum_state=UPTREND
-average_volume=85938016</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=130 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=130</p>
-<p>first_call: RJCcapital on 2026-02-09
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=3
-pushes_by_account={&#x27;CKCapitalxx&#x27;: 3, &#x27;PhotonBull&#x27;: 0, &#x27;RJCcapital&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">LOW</span> rule=size_bucket in {LARGE,MEGA} and data_quality&gt;=0.7 and supporting_kol_count&gt;=2</p>
-<p>data_quality warnings: none</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.665</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.6</td><td>0.3</td><td>0.18</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.8</td><td>0.15</td><td>0.12</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
-<p><strong>Reasons against:</strong> kol_track_record: CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (3 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>CKCapitalxx</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-05-01</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-04</td></tr><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-02-09</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (3 episode(s))</h2>
-<div data-episode-id="2050036643847954656" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=NOK</span></div>
-<div>tweet_date=2026-05-01 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050036643847954656.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2051305158038970675" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=NOK</span></div>
-<div>tweet_date=2026-05-04 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2051305158038970675.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2020989346958958816" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=NOK</span></div>
-<div>tweet_date=2026-02-09 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2020989346958958816.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Nokia Oyj</strong>
+&mdash; Technology / cloud_datacenter_network</p>
+<p>Nokia Oyj, together with its subsidiaries, provides mobile, fixed, and cloud network solutions in North and Latin America, Greater China, India, Asia Pacific, Europe, the Middle East, and Africa. It operates in four segments: Network Infrastructure, Mobile Networks, Cloud and Network Services, and Nokia Technologies. The company offers fixed network solutions, such as fiber and copper technologies, access infrastructure, in-home Wi-Fi solutions, and cloud and virtualization services; IP network solutions, which delivers IP edge routing and data center networking solutions for residential, mobi</p>
+<p>capitalisation : 62.3 Md$
+&middot; prix actuel : 11.13
+&middot; momentum : <span class="badge badge-neutral">UPTREND</span></p>
+<p>risque : <span class="badge badge-good">LOW</span>
+&middot; cycle de vie de la these : <span class="badge badge-bad">CLOSED</span>
+(132 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="55.2" x2="310" y2="55.2" class="zero-line"/><polyline points="10.0,10.0 60.0,15.0 110.0,47.3 160.0,62.0 210.0,55.5 260.0,54.2 310.0,52.2" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +165.0 %</title></circle><circle cx="60.0" cy="15.0" r="3" fill="#2f8f4e"><title>1 an : +146.8 %</title></circle><circle cx="110.0" cy="47.3" r="3" fill="#2f8f4e"><title>6 mois : +28.7 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -24.9 %</title></circle><circle cx="210.0" cy="55.5" r="3" fill="#b3392c"><title>2 mois : -1.1 %</title></circle><circle cx="260.0" cy="54.2" r="3" fill="#2f8f4e"><title>1 mois : +3.4 %</title></circle><circle cx="310.0" cy="52.2" r="3" fill="#2f8f4e"><title>1 semaine : +11.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+165.0 %</td></tr><tr><td>1 an</td><td class="pos">+146.8 %</td></tr><tr><td>6 mois</td><td class="pos">+28.7 %</td></tr><tr><td>3 mois</td><td class="neg">-24.9 %</td></tr><tr><td>2 mois</td><td class="neg">-1.1 %</td></tr><tr><td>1 mois</td><td class="pos">+3.4 %</td></tr><tr><td>1 semaine</td><td class="pos">+11.0 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+165.0 %</td><td>RJCcapital opened Long Position on NOK; HyperTechInvest opened Long Position on NOK; Gubloinvestor opened Long Position on NOK; CKCapitalxx opened Long Position on NOK</td></tr><tr><td>1 an</td><td class="pos">+146.8 %</td><td>RJCcapital opened Long Position on NOK; HyperTechInvest opened Long Position on NOK; Gubloinvestor opened Long Position on NOK; CKCapitalxx opened Long Position on NOK</td></tr><tr><td>6 mois</td><td class="pos">+28.7 %</td><td>HyperTechInvest opened Long Position on NOK; Gubloinvestor opened Long Position on NOK; CKCapitalxx opened Long Position on NOK; PhotonBull opened Long Position on NOK</td></tr><tr><td>3 mois</td><td class="neg">-24.9 %</td><td>European Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading; NOK Stock Eyes Third Winning Session Amid Google $15B AI Bet, Euro Stoxx 50 Return; Google plans €13 billion Finland infrastructure investment for 2027-2028; Can Ciena Convert Its $8.5B Backlog Despite Supply Constraints?</td></tr><tr><td>2 mois</td><td class="neg">-1.1 %</td><td>European Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading; NOK Stock Eyes Third Winning Session Amid Google $15B AI Bet, Euro Stoxx 50 Return; Google plans €13 billion Finland infrastructure investment for 2027-2028; Can Ciena Convert Its $8.5B Backlog Despite Supply Constraints?</td></tr><tr><td>1 mois</td><td class="pos">+3.4 %</td><td>European Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading; NOK Stock Eyes Third Winning Session Amid Google $15B AI Bet, Euro Stoxx 50 Return; Google plans €13 billion Finland infrastructure investment for 2027-2028; Can Ciena Convert Its $8.5B Backlog Despite Supply Constraints?</td></tr><tr><td>1 semaine</td><td class="pos">+11.0 %</td><td>European Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading; NOK Stock Eyes Third Winning Session Amid Google $15B AI Bet, Euro Stoxx 50 Return; Google plans €13 billion Finland infrastructure investment for 2027-2028; Can Ciena Convert Its $8.5B Backlog Despite Supply Constraints?</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2026-02-09</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on NOK</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/2020989346958958816" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on NOK</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/2036989915485884886" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-21</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on NOK</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2046396959192146326" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-01</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on NOK</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2050036643847954656" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-04</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on NOK</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2051305158038970675" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>European Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading</td><td><a href="https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-153037230.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>NOK Stock Eyes Third Winning Session Amid Google $15B AI Bet, Euro Stoxx 50 Return</td><td><a href="https://stocktwits.com/news-articles/markets/equity/nok-stock-third-winning-session-google-15-b-ai-bet-euro-stoxx-50-return/cZt7280RJzO" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Google plans €13 billion Finland infrastructure investment for 2027-2028</td><td><a href="https://investorshub.advfn.com/market-news/article/35903/google-plans-e13-billion-finland-infrastructure-investment-for-2027-2028" target="_blank" rel="noopener">InvestorsHub</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Can Ciena Convert Its $8.5B Backlog Despite Supply Constraints?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/ciena-convert-8-5b-backlog-152200638.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>European Equities Traded in the US as American Depositary Receipts Rise in Friday Trading</td><td><a href="https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-151355053.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>AT&amp;T vs. Nokia: Which Telecom Stock Is the Better Buy Now?</td><td><a href="https://finance.yahoo.com/technology/articles/t-vs-nokia-telecom-stock-140100731.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Nscale’s Funding Talks Put Dell and Nokia’s AI Supply Relationships to the Test</td><td><a href="https://finance.yahoo.com/technology/ai/articles/nscale-funding-talks-put-dell-114055829.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>AI stocks fall after Amodei, Altman, and Musk back AI slowdown</td><td><a href="https://qz.com/ai-stocks-sink-amodei-altman-musk-slowdown-091426" target="_blank" rel="noopener">Quartz</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Anthropic CEO Urges AI Industry to Slow Development Pace; Chip Stocks Slide</td><td><a href="https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-urges-ai-industry-101357356.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Retail Traders Couldn’t Take Their Eyes Off These Stocks Last Week: AAPL, NVDA, ORCL, NOK, SPCX</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-retail-traders-couldn-t-take-their-eyes-off-these-stocks-last-week-aapl-nvda-orcl-nok-spcx/cZtlV5NRBRR" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-10-22</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>NOK earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-10-22 &middot; NOK earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : RJCcapital le 2026-02-09
+(LONG_POSITION)</p>
+<p>relances cumulees : 16
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-05-01</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2026-04-21</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-04</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-02-09</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">AVOID</span>
+&middot; lifecycle.state=CLOSED: la these KOL sur NOK a deja ete cloturee par ses auteurs</p>
+<p>avertissements donnees : aucun</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.645)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>5 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.00</td><td>0.20</td><td>0.000</td><td>lifecycle=&#x27;CLOSED&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.80</td><td>0.15</td><td>0.120</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.00</td><td>0.10</td><td>0.100</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 5 distinct supporting account(s) (score 1.0); momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Contre :</strong> conviction_recency: lifecycle=&#x27;CLOSED&#x27; (score 0.0)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

@@ -1,103 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>BRUN - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRUN — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>BRUN</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Boost Run, Inc.</strong> &mdash; Boost Run, Inc. provides artificial intelligence cloud infrastructure and high-performance computing solutions. The company offers a range of graphics processing unit (GPU) servers hosted within datacenter facilities. Its platform provides GPU compute, CPU nodes, manage Kubernetes orchestration, and shared storage. The company was founded in 2023 and is based in Northbrook, Illinois.</p>
-<p>ai_subindustry=semiconductors_compute value_chain_role=upstream_compute_hardware
-country=United States asset_class=EQUITY</p>
-<p>market_cap=1361619840 trailing_pe=[FIELD_NOT_PROVIDED]
-forward_pe=17.84375 price_to_book=13.1465845</p>
-<p>revenue=56418000 revenue_growth=2.697
-cash=120166000 debt=436131008 profitability=-1.73686</p>
-<p>current_price=17.13 momentum_state=NEUTRAL
-average_volume=1960190</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=16 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=16</p>
-<p>first_call: CKCapitalxx on 2026-06-03
-thesis=LONG_SWING</p>
-<p>conviction_evolution: total_pushes=0
-pushes_by_account={&#x27;CKCapitalxx&#x27;: 0, &#x27;PhotonBull&#x27;: 0, &#x27;italianinvesto&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.6288</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.6</td><td>0.3</td><td>0.18</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.6</td><td>0.15</td><td>0.09</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
-<p><strong>Reasons against:</strong> kol_track_record: CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (3 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>CKCapitalxx</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-03</td></tr><tr><td>italianinvesto</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-08-26</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (3 episode(s))</h2>
-<div data-episode-id="2061978954882236710" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BRUN</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2061978954882236710.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062198715863953670" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=BRUN</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062198715863953670.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2092618065338876370" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=italianinvesto</span><span data-field="ticker" style="margin-right:10px">ticker=BRUN</span></div>
-<div>tweet_date=2026-08-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2092618065338876370.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Boost Run, Inc.</strong>
+&mdash; Technology / semiconductors_compute</p>
+<p>Boost Run, Inc. provides artificial intelligence cloud infrastructure and high-performance computing solutions. The company offers a range of graphics processing unit (GPU) servers hosted within datacenter facilities. Its platform provides GPU compute, CPU nodes, manage Kubernetes orchestration, and shared storage. The company was founded in 2023 and is based in Northbrook, Illinois.</p>
+<p>capitalisation : 1.3 Md$
+&middot; prix actuel : 16.63
+&middot; momentum : <span class="badge badge-neutral">NEUTRAL</span></p>
+<p>risque : <span class="badge badge-warn">HIGH</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(18 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="37.3" x2="310" y2="37.3" class="zero-line"/><polyline points="60.0,10.0 110.0,13.9 160.0,62.0 210.0,52.9 260.0,49.5 310.0,39.8" class="spark-line"/><circle cx="60.0" cy="10.0" r="3" fill="#2f8f4e"><title>1 an : +61.5 %</title></circle><circle cx="110.0" cy="13.9" r="3" fill="#2f8f4e"><title>6 mois : +52.6 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -55.6 %</title></circle><circle cx="210.0" cy="52.9" r="3" fill="#b3392c"><title>2 mois : -35.2 %</title></circle><circle cx="260.0" cy="49.5" r="3" fill="#b3392c"><title>1 mois : -27.5 %</title></circle><circle cx="310.0" cy="39.8" r="3" fill="#b3392c"><title>1 semaine : -5.7 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="pos">+61.5 %</td></tr><tr><td>6 mois</td><td class="pos">+52.6 %</td></tr><tr><td>3 mois</td><td class="neg">-55.6 %</td></tr><tr><td>2 mois</td><td class="neg">-35.2 %</td></tr><tr><td>1 mois</td><td class="neg">-27.5 %</td></tr><tr><td>1 semaine</td><td class="neg">-5.7 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>1 an</td><td class="pos">+61.5 %</td><td>Boost Run, Inc. (NASDAQ:BRUN) On The Verge Of Breaking Even; Why Analysts Believe Boost Run’s (BRUN) Growth Story May Still Be Early; Spotlight On May 2026&#x27;s Leading Growth Stocks With Insider Ownership; Jim Cramer on Boost Run: “If You’re Willing to Speculate, I’m Willing to Bless It”</td></tr><tr><td>6 mois</td><td class="pos">+52.6 %</td><td>Boost Run, Inc. (NASDAQ:BRUN) On The Verge Of Breaking Even; Why Analysts Believe Boost Run’s (BRUN) Growth Story May Still Be Early; Spotlight On May 2026&#x27;s Leading Growth Stocks With Insider Ownership; Jim Cramer on Boost Run: “If You’re Willing to Speculate, I’m Willing to Bless It”</td></tr><tr><td>3 mois</td><td class="neg">-55.6 %</td><td>Gubloinvestor opened Long Position on BRUN; BRUN Stock Soars After Securing Long-Term Lease To Expand GPU Compute Capacity — CEO Says &#x27;This Gives Us Strong Visibility Into Recurring Revenue&#x27;; italianinvesto opened Long Position on BRUN</td></tr><tr><td>2 mois</td><td class="neg">-35.2 %</td><td>BRUN Stock Soars After Securing Long-Term Lease To Expand GPU Compute Capacity — CEO Says &#x27;This Gives Us Strong Visibility Into Recurring Revenue&#x27;; italianinvesto opened Long Position on BRUN</td></tr><tr><td>1 mois</td><td class="neg">-27.5 %</td><td>italianinvesto opened Long Position on BRUN</td></tr><tr><td>1 semaine</td><td class="neg">-5.7 %</td><td>aucun catalyseur associe</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2026-05-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boost Run, Inc. (NASDAQ:BRUN) On The Verge Of Breaking Even</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/boost-run-inc-nasdaq-brun-180903562.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-05-19</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Analysts Believe Boost Run’s (BRUN) Growth Story May Still Be Early</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/why-analysts-believe-boost-run-105738446.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-05-27</td><td><span class="badge badge-neutral">NEWS</span></td><td>Spotlight On May 2026&#x27;s Leading Growth Stocks With Insider Ownership</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/spotlight-may-2026s-leading-growth-113544906.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-05-29</td><td><span class="badge badge-neutral">NEWS</span></td><td>Jim Cramer on Boost Run: “If You’re Willing to Speculate, I’m Willing to Bless It”</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/jim-cramer-boost-run-willing-105010825.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-06-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boost Run (BRUN) Soars 42% in Shortened Trading Week Thanks to This Deal</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/boost-run-brun-soars-42-030752379.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-06-03</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Swing on BRUN</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2061978954882236710" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-03</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on BRUN</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2062198715863953670" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boost Run (BRUN) Debuts on Nasdaq With $940M in Backed Contracted Revenue</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/boost-run-brun-debuts-nasdaq-082627496.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-07-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on BRUN</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2074213973432361089" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>BRUN Stock Soars After Securing Long-Term Lease To Expand GPU Compute Capacity — CEO Says &#x27;This Gives Us Strong Visibility Into Recurring Revenue&#x27;</td><td><a href="https://stocktwits.com/news-articles/markets/equity/brun-stock-soars-long-term-lease-expand-gpu-compute-capacity/cZot1QARJ0e" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-08-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on BRUN</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/2092618065338876370" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-11-16</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>BRUN earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-16 &middot; BRUN earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : CKCapitalxx le 2026-06-03
+(LONG_SWING)</p>
+<p>relances cumulees : 0
+&middot; tendance du consensus (30/60/90j) : 1 / 1 / 2 compte(s)
+(<span class="badge badge-neutral">rising</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-06</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-26</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">RESEARCH_NOW</span>
+&middot; kol_consensus_trend=rising et momentum_state=NEUTRAL sur BRUN</p>
+<p>avertissements donnees : trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.689)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.80</td><td>0.30</td><td>0.240</td><td>4 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.60</td><td>0.15</td><td>0.090</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>0.94</td><td>0.10</td><td>0.094</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 4 distinct supporting account(s) (score 0.8); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Contre :</strong> kol_track_record: CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

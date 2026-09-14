@@ -1,851 +1,175 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>PhotonBull - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotonBull — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>PhotonBull</h1>
-<p><a href="kols.html">&larr; back to KOL table</a></p>
-<div class="section">
-<h2>Identity &amp; lifecycle</h2>
-<p>provider_state=OK
-lifecycle=SAMPLED
-owner_root=False
-namesake_user_id=895741161175953411
-provider_attested=False</p>
-<p>observed_span_days=104
-account_creation_date=<span class="gap">INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS</span></p>
-<p>expertise / AI sub-industry: <span class="gap">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</span></p>
-</div>
-<div class="section">
-<h2>Coverage &amp; activity (data-quality / recency / consistency)</h2>
-<p>observable_months=4
-dense_months=4
-post_count=787
-status=SHORTFALL_span104D_dense4M_TYPED
-cadence_posts_per_active_month=196.75</p>
-</div>
-<div class="section">
-<h2>Explainable final score &amp; tier</h2>
-<p><span class="pill">EARLY_EVIDENCE</span> confidence(uncertainty)=1.0</p>
-<p>blocking_reasons=calls=31, dense_months=4</p>
-<p>oos_disclosure=single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
-<table><thead><tr><th>component</th><th>value</th></tr></thead><tbody>
-<tr><td>handle</td><td>PhotonBull</td></tr><tr><td>post_count</td><td>787</td></tr><tr><td>graph_outbound_edges</td><td>1</td></tr><tr><td>engagement_median_likes</td><td>31</td></tr><tr><td>engagement_top_rt</td><td>86</td></tr><tr><td>coverage_dense_months</td><td>4</td></tr><tr><td>coverage_distinct_months</td><td>4</td></tr>
-<tr><td>call_track_record: evaluable_episodes</td><td>31</td></tr>
-<tr><td>call_track_record: mean_market_adjusted_20</td><td>-0.070883</td></tr>
-<tr><td>call_track_record: mean_momentum_adjusted_20</td><td>-0.114824</td></tr>
-<tr><td>call_track_record: std_market_adjusted_20 (uncertainty)</td><td>0.234137</td></tr>
-<tr><td>PSR/DSR/PBO / OOS status</td><td class="gap">OOS_NOT_EVALUATED_V1</td></tr>
-</tbody></table>
-</div>
-<div class="section">
-<h2>Genuine LONG calls: 109</h2>
-<p>tickers covered: AAOI, AAPL, ABVX, AEHR, ALMU, AMBA, AMPG, AMZN, ARQQ, ASTI, ASTS, AVAV, AVEX, AXTI, BB, BE, BRUN, BTQ, CBRS, CIEN, CIFR, CRWV, DELL, DGXX, DRAM, DRNZ, EOS, EQR, EWA, EWY, FCEL, FLY, GHH, GSAT, HLIT, HOOD, HQ, INTC, IONQ, IREN, ITA, KORU, KOSPI, KRKNF, KTOS, LAES, LASR, LITE, LMT, LPKF, LUNR, LWLG, LYTE, MDA, MNTS, MP, MRLN, MRVL, MSFT, MU, NASA, NBIS, NOK, NVDA, ONDS, OUST, PENG, PL, PLTR, PNG, PURR, QBTS, QNT, QQQ, QUBT, RGTI, RKLB, RTX, SATS, SIVE, SIVEF, SLOIF, SNDK, SOI, SPCE, SPCX, SPY, TRT, TSEM, TSLA, VELO, VNP, VPG, WLAC, WOLF, WYFI, ZM</p>
-<p>outcome_split: {&#x27;GOOD_CALL&#x27;: 24, &#x27;UNEVALUABLE_TICKER_ABSENT&#x27;: 78, &#x27;FAILED_CALL&#x27;: 7}</p>
-<p>good_calls=24 failed_calls=7
-unevaluable=78</p>
-</div>
-<div class="section">
-<h2>Originality / lead-lag role (per ticker, from independence records)</h2>
-<table><thead><tr><th>ticker</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>AAOI</td><td>FOLLOWER</td><td>0.5</td><td>10</td><td>2026-03-16</td></tr><tr><td>AAPL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-25</td></tr><tr><td>ABVX</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-01</td></tr><tr><td>AEHR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-23</td></tr><tr><td>ALMU</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-22</td></tr><tr><td>AMBA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-17</td></tr><tr><td>AMPG</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-23</td></tr><tr><td>AMZN</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-10</td></tr><tr><td>ARQQ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>ASTI</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-06-03</td></tr><tr><td>ASTS</td><td>FOLLOWER</td><td>0.5</td><td>31</td><td>2026-03-16</td></tr><tr><td>AVAV</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-24</td></tr><tr><td>AVEX</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-04-20</td></tr><tr><td>AXTI</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-23</td></tr><tr><td>BB</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-04</td></tr><tr><td>BE</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-25</td></tr><tr><td>BRUN</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-03</td></tr><tr><td>BTQ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>CBRS</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-10</td></tr><tr><td>CIEN</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-04</td></tr><tr><td>CIFR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-22</td></tr><tr><td>CRWV</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-10</td></tr><tr><td>DELL</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-28</td></tr><tr><td>DGXX</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-10</td></tr><tr><td>DRAM</td><td>FOLLOWER</td><td>0.5</td><td>12</td><td>2026-05-08</td></tr><tr><td>DRNZ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-11</td></tr><tr><td>EOS</td><td>FOLLOWER</td><td>0.5</td><td>12</td><td>2026-04-24</td></tr><tr><td>EQR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-17</td></tr><tr><td>EWA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-11</td></tr><tr><td>EWY</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-23</td></tr><tr><td>FCEL</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-05-24</td></tr><tr><td>FLY</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-04-08</td></tr><tr><td>GHH</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-16</td></tr><tr><td>GSAT</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-10</td></tr><tr><td>HLIT</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-05-22</td></tr><tr><td>HOOD</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-08</td></tr><tr><td>HQ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>INTC</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-28</td></tr><tr><td>IONQ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>IREN</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-26</td></tr><tr><td>ITA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-11</td></tr><tr><td>KORU</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-23</td></tr><tr><td>KOSPI</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-23</td></tr><tr><td>KRKNF</td><td>FOLLOWER</td><td>0.5</td><td>8</td><td>2026-03-16</td></tr><tr><td>KTOS</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-24</td></tr><tr><td>LAES</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>LASR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-21</td></tr><tr><td>LITE</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-03-26</td></tr><tr><td>LMT</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-24</td></tr><tr><td>LPKF</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-20</td></tr><tr><td>LUNR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-08</td></tr><tr><td>LWLG</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-22</td></tr><tr><td>LYTE</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-23</td></tr><tr><td>MDA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-22</td></tr><tr><td>MNTS</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>MP</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-17</td></tr><tr><td>MRLN</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-06</td></tr><tr><td>MRVL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-18</td></tr><tr><td>MSFT</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-22</td></tr><tr><td>MU</td><td>FOLLOWER</td><td>0.5</td><td>16</td><td>2026-05-08</td></tr><tr><td>NASA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-08</td></tr><tr><td>NBIS</td><td>FOLLOWER</td><td>0.5</td><td>12</td><td>2026-03-16</td></tr><tr><td>NOK</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-04</td></tr><tr><td>NVDA</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-07</td></tr><tr><td>ONDS</td><td>FOLLOWER</td><td>0.5</td><td>7</td><td>2026-04-24</td></tr><tr><td>OUST</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-05-13</td></tr><tr><td>PENG</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-05-24</td></tr><tr><td>PL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-15</td></tr><tr><td>PLTR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-08</td></tr><tr><td>PNG</td><td>FOLLOWER</td><td>0.5</td><td>4</td><td>2026-05-09</td></tr><tr><td>PURR</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-17</td></tr><tr><td>QBTS</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-03</td></tr><tr><td>QNT</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>QQQ</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-05-15</td></tr><tr><td>QUBT</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>RGTI</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>RKLB</td><td>FOLLOWER</td><td>0.5</td><td>5</td><td>2026-04-08</td></tr><tr><td>RTX</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-24</td></tr><tr><td>SATS</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-04-22</td></tr><tr><td>SIVE</td><td>ORIGINATOR</td><td>1.0</td><td>2</td><td>2026-04-20</td></tr><tr><td>SIVEF</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-25</td></tr><tr><td>SLOIF</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-26</td></tr><tr><td>SNDK</td><td>FOLLOWER</td><td>0.5</td><td>15</td><td>2026-05-08</td></tr><tr><td>SOI</td><td>ORIGINATOR</td><td>1.0</td><td>3</td><td>2026-03-16</td></tr><tr><td>SPCE</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-03</td></tr><tr><td>SPCX</td><td>ORIGINATOR</td><td>1.0</td><td>8</td><td>2026-05-17</td></tr><tr><td>SPY</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-15</td></tr><tr><td>TRT</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-17</td></tr><tr><td>TSEM</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-17</td></tr><tr><td>TSLA</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-12</td></tr><tr><td>VELO</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-04-22</td></tr><tr><td>VNP</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-17</td></tr><tr><td>VPG</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-17</td></tr><tr><td>WLAC</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>WOLF</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-24</td></tr><tr><td>WYFI</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-22</td></tr><tr><td>ZM</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-10</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Full call history / thesis timeline / evidence posts (109 episode(s))</h2>
-<div data-episode-id="2033574750765682958" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=GHH</span></div>
-<div>tweet_date=2026-03-16 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2033574750765682958" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
-<div>tweet_date=2026-03-16 pushes=31
-closure_state=CLOSED_SOLD
-<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2033574750765682958" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AAOI</span></div>
-<div>tweet_date=2026-03-16 pushes=10
-closure_state=CLOSED_SOLD
-<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.203358</td><td>mfe=0.203358</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.543717</td><td>mfe=0.543717</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.903416</td><td>mfe=0.903416</td><td>mae=0.0</td><td>max_dd=0.160335</td></tr><tr><td>60</td><td>raw=0.738274</td><td>mfe=1.583671</td><td>mae=0.0</td><td>max_dd=0.391797</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2033574750765682958" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SOI</span></div>
-<div>tweet_date=2026-03-16 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2033574750765682958" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=KRKNF</span></div>
-<div>tweet_date=2026-03-16 pushes=8
-closure_state=NOT_EVALUABLE
-<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2033574750765682958" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=NBIS</span></div>
-<div>tweet_date=2026-03-16 pushes=12
-closure_state=CLOSED_SOLD
-<a href="evidence_2033574750765682958.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.067386</td><td>mfe=0.067386</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.337224</td><td>mfe=0.337224</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.355861</td><td>mfe=0.635802</td><td>mae=0.0</td><td>max_dd=0.187444</td></tr><tr><td>60</td><td>raw=1.56155</td><td>mfe=1.812065</td><td>mae=0.0</td><td>max_dd=0.19969</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2037299305766412660" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SOI</span></div>
-<div>tweet_date=2026-03-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037299305766412660.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2037299305766412660" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LITE</span></div>
-<div>tweet_date=2026-03-26 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2037299305766412660.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.081384</td><td>mfe=0.081384</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.169332</td><td>mfe=0.171804</td><td>mae=0.0</td><td>max_dd=0.066031</td></tr><tr><td>20</td><td>raw=0.180043</td><td>mfe=0.180043</td><td>mae=0.0</td><td>max_dd=0.118054</td></tr><tr><td>60</td><td>raw=0.113451</td><td>mfe=0.377218</td><td>mae=0.0</td><td>max_dd=0.224207</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2037299305766412660" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SLOIF</span></div>
-<div>tweet_date=2026-03-26 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2037299305766412660.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2041893201510809700" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=RKLB</span></div>
-<div>tweet_date=2026-04-08 pushes=1
-closure_state=CLOSED_SOLD
-<a href="evidence_2041893201510809700.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.019628</td><td>mfe=0.019628</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.242583</td><td>mfe=0.242583</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.177405</td><td>mfe=0.349116</td><td>mae=0.0</td><td>max_dd=0.144602</td></tr><tr><td>60</td><td>raw=0.249775</td><td>mfe=1.250974</td><td>mae=0.0</td><td>max_dd=0.46289</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2041893201510809700" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LUNR</span></div>
-<div>tweet_date=2026-04-08 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2041893201510809700.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2041893201510809700" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=FLY</span></div>
-<div>tweet_date=2026-04-08 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2041893201510809700.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2041893201510809700" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=PLTR</span></div>
-<div>tweet_date=2026-04-08 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2041893201510809700.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.018622</td><td>mfe=0.0</td><td>mae=-0.018622</td><td>max_dd=0.018622</td></tr><tr><td>5</td><td>raw=0.09403</td><td>mfe=0.09403</td><td>mae=-0.018622</td><td>max_dd=0.018622</td></tr><tr><td>20</td><td>raw=0.050272</td><td>mfe=0.169592</td><td>mae=-0.018622</td><td>max_dd=0.123378</td></tr><tr><td>60</td><td>raw=0.029734</td><td>mfe=0.231129</td><td>mae=-0.177945</td><td>max_dd=0.332275</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2046239244507656324" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AVEX</span></div>
-<div>tweet_date=2026-04-20 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046239244507656324.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046248555627614611" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SIVE</span></div>
-<div>tweet_date=2026-04-20 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046248555627614611.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046248555627614611" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LPKF</span></div>
-<div>tweet_date=2026-04-20 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046248555627614611.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=FLY</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=VELO</span></div>
-<div>tweet_date=2026-04-22 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=RKLB</span></div>
-<div>tweet_date=2026-04-22 pushes=4
-closure_state=CLOSED_SOLD
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.058156</td><td>mfe=0.0</td><td>mae=-0.058156</td><td>max_dd=0.058156</td></tr><tr><td>5</td><td>raw=-0.024704</td><td>mfe=0.0</td><td>mae=-0.089598</td><td>max_dd=0.089598</td></tr><tr><td>20</td><td>raw=0.482861</td><td>mfe=0.587234</td><td>mae=-0.089598</td><td>max_dd=0.089598</td></tr><tr><td>60</td><td>raw=-0.182979</td><td>mfe=0.775768</td><td>mae=-0.222931</td><td>max_dd=0.562404</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LUNR</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SATS</span></div>
-<div>tweet_date=2026-04-22 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MDA</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047008959073038484" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ALMU</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047008959073038484.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047008959073038484" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LWLG</span></div>
-<div>tweet_date=2026-04-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047008959073038484.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047776456449687787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=EOS</span></div>
-<div>tweet_date=2026-04-24 pushes=12
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047776456449687787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047776456449687787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AVAV</span></div>
-<div>tweet_date=2026-04-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047776456449687787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047776456449687787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=KTOS</span></div>
-<div>tweet_date=2026-04-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047776456449687787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047776456449687787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ONDS</span></div>
-<div>tweet_date=2026-04-24 pushes=7
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047776456449687787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047776456449687787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=RTX</span></div>
-<div>tweet_date=2026-04-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047776456449687787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047776456449687787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LMT</span></div>
-<div>tweet_date=2026-04-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047776456449687787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2051305158038970675" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=CIEN</span></div>
-<div>tweet_date=2026-05-04 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2051305158038970675.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.058816</td><td>mfe=0.058816</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.059477</td><td>mfe=0.067407</td><td>mae=-0.010996</td><td>max_dd=0.065934</td></tr><tr><td>20</td><td>raw=0.138816</td><td>mfe=0.150987</td><td>mae=-0.037118</td><td>max_dd=0.113326</td></tr><tr><td>60</td><td>raw=-0.307848</td><td>mfe=0.150987</td><td>mae=-0.393538</td><td>max_dd=0.473094</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2051305158038970675" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LITE</span></div>
-<div>tweet_date=2026-05-04 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_2051305158038970675.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.050555</td><td>mfe=0.0</td><td>mae=-0.050555</td><td>max_dd=0.050555</td></tr><tr><td>5</td><td>raw=-0.002202</td><td>mfe=0.05885</td><td>mae=-0.102538</td><td>max_dd=0.102538</td></tr><tr><td>20</td><td>raw=-0.056869</td><td>mfe=0.05885</td><td>mae=-0.140364</td><td>max_dd=0.188142</td></tr><tr><td>60</td><td>raw=-0.282155</td><td>mfe=0.05885</td><td>mae=-0.394355</td><td>max_dd=0.428017</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2051305158038970675" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=BB</span></div>
-<div>tweet_date=2026-05-04 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2051305158038970675.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2051305158038970675" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=NOK</span></div>
-<div>tweet_date=2026-05-04 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2051305158038970675.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2052812189640347903" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
-<div>tweet_date=2026-05-08 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2052812189640347903.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.116172</td><td>mfe=0.0</td><td>mae=-0.116172</td><td>max_dd=0.116172</td></tr><tr><td>5</td><td>raw=0.051847</td><td>mfe=0.051847</td><td>mae=-0.116172</td><td>max_dd=0.116172</td></tr><tr><td>20</td><td>raw=0.074621</td><td>mfe=0.612235</td><td>mae=-0.116172</td><td>max_dd=0.333459</td></tr><tr><td>60</td><td>raw=-0.18401</td><td>mfe=0.612235</td><td>mae=-0.357601</td><td>max_dd=0.601548</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2052812189640347903" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=DRAM</span></div>
-<div>tweet_date=2026-05-08 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2052812189640347903.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.068627</td><td>mfe=0.0</td><td>mae=-0.068627</td><td>max_dd=0.068627</td></tr><tr><td>5</td><td>raw=-0.104575</td><td>mfe=0.0</td><td>mae=-0.104575</td><td>max_dd=0.104575</td></tr><tr><td>20</td><td>raw=0.086783</td><td>mfe=0.265614</td><td>mae=-0.104575</td><td>max_dd=0.199684</td></tr><tr><td>60</td><td>raw=-0.066086</td><td>mfe=0.465505</td><td>mae=-0.18573</td><td>max_dd=0.444376</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2052812189640347903" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MU</span></div>
-<div>tweet_date=2026-05-08 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2052812189640347903.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.036148</td><td>mfe=0.0</td><td>mae=-0.036148</td><td>max_dd=0.036148</td></tr><tr><td>5</td><td>raw=-0.143073</td><td>mfe=0.010436</td><td>mae=-0.143073</td><td>max_dd=0.151923</td></tr><tr><td>20</td><td>raw=0.176732</td><td>mfe=0.357386</td><td>mae=-0.143073</td><td>max_dd=0.199672</td></tr><tr><td>60</td><td>raw=0.108478</td><td>mfe=0.525857</td><td>mae=-0.143073</td><td>max_dd=0.390954</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2052812189640347903" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=NASA</span></div>
-<div>tweet_date=2026-05-08 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2052812189640347903.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2052812189640347903" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SNDK</span></div>
-<div>tweet_date=2026-05-08 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2052812189640347903.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.061736</td><td>mfe=0.0</td><td>mae=-0.061736</td><td>max_dd=0.061736</td></tr><tr><td>5</td><td>raw=-0.138638</td><td>mfe=0.0</td><td>mae=-0.138638</td><td>max_dd=0.138638</td></tr><tr><td>20</td><td>raw=0.063959</td><td>mfe=0.183476</td><td>mae=-0.138638</td><td>max_dd=0.14861</td></tr><tr><td>60</td><td>raw=-0.186733</td><td>mfe=0.508827</td><td>mae=-0.343554</td><td>max_dd=0.564929</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053142797604077771" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SNDK</span></div>
-<div>tweet_date=2026-05-09 pushes=15
-closure_state=CLOSED_SOLD
-<a href="evidence_2053142797604077771.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.061736</td><td>mfe=0.0</td><td>mae=-0.061736</td><td>max_dd=0.061736</td></tr><tr><td>5</td><td>raw=-0.138638</td><td>mfe=0.0</td><td>mae=-0.138638</td><td>max_dd=0.138638</td></tr><tr><td>20</td><td>raw=0.063959</td><td>mfe=0.183476</td><td>mae=-0.138638</td><td>max_dd=0.14861</td></tr><tr><td>60</td><td>raw=-0.186733</td><td>mfe=0.508827</td><td>mae=-0.343554</td><td>max_dd=0.564929</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053142797604077771" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=DRAM</span></div>
-<div>tweet_date=2026-05-09 pushes=12
-closure_state=CLOSED_SOLD
-<a href="evidence_2053142797604077771.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.068627</td><td>mfe=0.0</td><td>mae=-0.068627</td><td>max_dd=0.068627</td></tr><tr><td>5</td><td>raw=-0.104575</td><td>mfe=0.0</td><td>mae=-0.104575</td><td>max_dd=0.104575</td></tr><tr><td>20</td><td>raw=0.086783</td><td>mfe=0.265614</td><td>mae=-0.104575</td><td>max_dd=0.199684</td></tr><tr><td>60</td><td>raw=-0.066086</td><td>mfe=0.465505</td><td>mae=-0.18573</td><td>max_dd=0.444376</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053142797604077771" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MU</span></div>
-<div>tweet_date=2026-05-09 pushes=16
-closure_state=CLOSED_SOLD
-<a href="evidence_2053142797604077771.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.036148</td><td>mfe=0.0</td><td>mae=-0.036148</td><td>max_dd=0.036148</td></tr><tr><td>5</td><td>raw=-0.143073</td><td>mfe=0.010436</td><td>mae=-0.143073</td><td>max_dd=0.151923</td></tr><tr><td>20</td><td>raw=0.176732</td><td>mfe=0.357386</td><td>mae=-0.143073</td><td>max_dd=0.199672</td></tr><tr><td>60</td><td>raw=0.108478</td><td>mfe=0.525857</td><td>mae=-0.143073</td><td>max_dd=0.390954</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053165745601663210" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=PNG</span></div>
-<div>tweet_date=2026-05-09 pushes=4
-closure_state=NOT_EVALUABLE
-<a href="evidence_2053165745601663210.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2053554515056410811" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=DGXX</span></div>
-<div>tweet_date=2026-05-10 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2053554515056410811.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2053554515056410811" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=CBRS</span></div>
-<div>tweet_date=2026-05-10 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2053554515056410811.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.100781</td><td>mfe=0.0</td><td>mae=-0.100781</td><td>max_dd=0.100781</td></tr><tr><td>5</td><td>raw=-0.093902</td><td>mfe=0.0</td><td>mae=-0.100781</td><td>max_dd=0.100781</td></tr><tr><td>20</td><td>raw=-0.312052</td><td>mfe=0.0</td><td>mae=-0.353811</td><td>max_dd=0.353811</td></tr><tr><td>60</td><td>raw=-0.245315</td><td>mfe=0.0</td><td>mae=-0.458257</td><td>max_dd=0.458257</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053554515056410811" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=GSAT</span></div>
-<div>tweet_date=2026-05-10 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2053554515056410811.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2053554515056410811" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=CRWV</span></div>
-<div>tweet_date=2026-05-10 pushes=2
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2053554515056410811.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.060593</td><td>mfe=0.0</td><td>mae=-0.060593</td><td>max_dd=0.060593</td></tr><tr><td>5</td><td>raw=-0.095292</td><td>mfe=0.0</td><td>mae=-0.095292</td><td>max_dd=0.095292</td></tr><tr><td>20</td><td>raw=-0.141674</td><td>mfe=0.08823</td><td>mae=-0.141674</td><td>max_dd=0.211264</td></tr><tr><td>60</td><td>raw=-0.256059</td><td>mfe=0.08823</td><td>mae=-0.469747</td><td>max_dd=0.512738</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2053554515056410811" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ZM</span></div>
-<div>tweet_date=2026-05-10 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2053554515056410811.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2053554515056410811" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AMZN</span></div>
-<div>tweet_date=2026-05-10 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2053554515056410811.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.011785</td><td>mfe=0.0</td><td>mae=-0.011785</td><td>max_dd=0.011785</td></tr><tr><td>5</td><td>raw=-0.015354</td><td>mfe=0.004238</td><td>mae=-0.01803</td><td>max_dd=0.022175</td></tr><tr><td>20</td><td>raw=-0.092197</td><td>mfe=0.018625</td><td>mae=-0.092197</td><td>max_dd=0.108796</td></tr><tr><td>60</td><td>raw=0.012157</td><td>mfe=0.055876</td><td>mae=-0.157404</td><td>max_dd=0.17281</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2054355562066854049" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=NASA</span></div>
-<div>tweet_date=2026-05-13 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054355562066854049.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2054679109251269000" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=OUST</span></div>
-<div>tweet_date=2026-05-13 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054679109251269000.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2055273675100651861" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=QQQ</span></div>
-<div>tweet_date=2026-05-15 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2055273675100651861.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2055273675100651861" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-05-15 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2055273675100651861.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056099461118435641" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=PURR</span></div>
-<div>tweet_date=2026-05-17 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056099461118435641.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056099461118435641" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SPCX</span></div>
-<div>tweet_date=2026-05-17 pushes=8
-closure_state=CLOSED_SOLD
-<a href="evidence_2056099461118435641.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.196024</td><td>mfe=0.196024</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.039453</td><td>mfe=0.313389</td><td>mae=-0.039453</td><td>max_dd=0.26865</td></tr><tr><td>20</td><td>raw=-0.15452</td><td>mfe=0.313389</td><td>mae=-0.15452</td><td>max_dd=0.356261</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2056141461843050717" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=VPG</span></div>
-<div>tweet_date=2026-05-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056141461843050717" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MP</span></div>
-<div>tweet_date=2026-05-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056141461843050717" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=VNP</span></div>
-<div>tweet_date=2026-05-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056141461843050717" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=TSEM</span></div>
-<div>tweet_date=2026-05-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056141461843050717" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AMBA</span></div>
-<div>tweet_date=2026-05-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056141461843050717" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=EQR</span></div>
-<div>tweet_date=2026-05-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056141461843050717.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057365876026843148" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LASR</span></div>
-<div>tweet_date=2026-05-21 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057365876026843148.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057909101510697295" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=HLIT</span></div>
-<div>tweet_date=2026-05-22 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057909101510697295.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058234857906446842" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AXTI</span></div>
-<div>tweet_date=2026-05-23 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2058234857906446842.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.074133</td><td>mfe=0.0</td><td>mae=-0.074133</td><td>max_dd=0.074133</td></tr><tr><td>5</td><td>raw=-0.164027</td><td>mfe=0.0</td><td>mae=-0.222021</td><td>max_dd=0.222021</td></tr><tr><td>20</td><td>raw=-0.471041</td><td>mfe=0.0</td><td>mae=-0.471041</td><td>max_dd=0.471041</td></tr><tr><td>60</td><td>raw=-0.448567</td><td>mfe=0.0</td><td>mae=-0.721192</td><td>max_dd=0.721192</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2058284079334748597" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LYTE</span></div>
-<div>tweet_date=2026-05-23 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058284079334748597.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058284079334748597" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=EWY</span></div>
-<div>tweet_date=2026-05-23 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058284079334748597.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058284079334748597" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AEHR</span></div>
-<div>tweet_date=2026-05-23 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2058284079334748597.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.055495</td><td>mfe=0.0</td><td>mae=-0.055495</td><td>max_dd=0.055495</td></tr><tr><td>5</td><td>raw=0.02802</td><td>mfe=0.02802</td><td>mae=-0.160025</td><td>max_dd=0.160025</td></tr><tr><td>20</td><td>raw=-0.133916</td><td>mfe=0.06059</td><td>mae=-0.160025</td><td>max_dd=0.19952</td></tr><tr><td>60</td><td>raw=-0.035935</td><td>mfe=0.324691</td><td>mae=-0.405022</td><td>max_dd=0.439012</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2058302198556381460" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AMPG</span></div>
-<div>tweet_date=2026-05-23 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058302198556381460.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058648727301071265" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=PENG</span></div>
-<div>tweet_date=2026-05-24 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2058648727301071265.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.009281</td><td>mfe=0.0</td><td>mae=-0.009281</td><td>max_dd=0.009281</td></tr><tr><td>5</td><td>raw=0.285714</td><td>mfe=0.285714</td><td>mae=-0.016015</td><td>max_dd=0.016015</td></tr><tr><td>20</td><td>raw=0.177798</td><td>mfe=0.299545</td><td>mae=-0.016015</td><td>max_dd=0.180507</td></tr><tr><td>60</td><td>raw=-0.069336</td><td>mfe=0.481165</td><td>mae=-0.204732</td><td>max_dd=0.463079</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2058648727301071265" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=FCEL</span></div>
-<div>tweet_date=2026-05-24 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058648727301071265.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058659767887831190" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=WOLF</span></div>
-<div>tweet_date=2026-05-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058659767887831190.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058749143804510407" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SIVEF</span></div>
-<div>tweet_date=2026-05-25 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058749143804510407.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2058974303547494840" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-05-25 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2058974303547494840.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.028439</td><td>mfe=0.0</td><td>mae=-0.028439</td><td>max_dd=0.028439</td></tr><tr><td>5</td><td>raw=0.001488</td><td>mfe=0.001488</td><td>mae=-0.095536</td><td>max_dd=0.095536</td></tr><tr><td>20</td><td>raw=0.078671</td><td>mfe=0.143684</td><td>mae=-0.22543</td><td>max_dd=0.226581</td></tr><tr><td>60</td><td>raw=-0.330423</td><td>mfe=0.143684</td><td>mae=-0.458499</td><td>max_dd=0.526529</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2058986604547469456" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SLOIF</span></div>
-<div>tweet_date=2026-05-25 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2058986604547469456.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2059262285642653968" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=IREN</span></div>
-<div>tweet_date=2026-05-26 pushes=2
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2059262285642653968.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.055867</td><td>mfe=0.0</td><td>mae=-0.055867</td><td>max_dd=0.055867</td></tr><tr><td>5</td><td>raw=-0.034788</td><td>mfe=0.0</td><td>mae=-0.063384</td><td>max_dd=0.063384</td></tr><tr><td>20</td><td>raw=-0.296285</td><td>mfe=0.0</td><td>mae=-0.296285</td><td>max_dd=0.296285</td></tr><tr><td>60</td><td>raw=-0.382665</td><td>mfe=0.0</td><td>mae=-0.567954</td><td>max_dd=0.567954</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2060117555805634591" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=INTC</span></div>
-<div>tweet_date=2026-05-28 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060117555805634591.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060117555805634591" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=DELL</span></div>
-<div>tweet_date=2026-05-28 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_2060117555805634591.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.10703</td><td>mfe=0.10703</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.063006</td><td>mfe=0.10703</td><td>mae=-0.063006</td><td>max_dd=0.153597</td></tr><tr><td>20</td><td>raw=-0.014968</td><td>mfe=0.10703</td><td>mae=-0.121356</td><td>max_dd=0.206305</td></tr><tr><td>60</td><td>raw=0.074448</td><td>mfe=0.176801</td><td>mae=-0.121356</td><td>max_dd=0.206305</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2060830860882882953" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=PLTR</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2060830860882882953.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.052786</td><td>mfe=0.0</td><td>mae=-0.052786</td><td>max_dd=0.052786</td></tr><tr><td>5</td><td>raw=-0.150514</td><td>mfe=0.0</td><td>mae=-0.156365</td><td>max_dd=0.156365</td></tr><tr><td>20</td><td>raw=-0.273763</td><td>mfe=0.0</td><td>mae=-0.332275</td><td>max_dd=0.332275</td></tr><tr><td>60</td><td>raw=0.104886</td><td>mfe=0.120075</td><td>mae=-0.332275</td><td>max_dd=0.332275</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2061549431887999207" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ABVX</span></div>
-<div>tweet_date=2026-06-01 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2061549431887999207.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=QBTS</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=LAES</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=QUBT</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=HQ</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SPCE</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=RGTI</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MNTS</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=IONQ</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ASTI</span></div>
-<div>tweet_date=2026-06-03 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=QNT</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=BTQ</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062003085027824050" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ARQQ</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062003085027824050.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062198715863953670" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=BRUN</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062198715863953670.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062198715863953670" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=WLAC</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062198715863953670.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2063166123369984413" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MRLN</span></div>
-<div>tweet_date=2026-06-06 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2063166123369984413.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2063623512208908402" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=NVDA</span></div>
-<div>tweet_date=2026-06-07 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2063623512208908402.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.002157</td><td>mfe=0.0</td><td>mae=-0.002157</td><td>max_dd=0.002157</td></tr><tr><td>5</td><td>raw=0.018261</td><td>mfe=0.018261</td><td>mae=-0.039398</td><td>max_dd=0.039398</td></tr><tr><td>20</td><td>raw=-0.021664</td><td>mfe=0.018261</td><td>mae=-0.077214</td><td>max_dd=0.093763</td></tr><tr><td>60</td><td>raw=0.075585</td><td>mfe=0.092696</td><td>mae=-0.089293</td><td>max_dd=0.105835</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2064113349583880636" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=HOOD</span></div>
-<div>tweet_date=2026-06-08 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2064113349583880636.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2065154977270509994" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=DRNZ</span></div>
-<div>tweet_date=2026-06-11 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2065154977270509994.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2065154977270509994" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=EWA</span></div>
-<div>tweet_date=2026-06-11 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2065154977270509994.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2065154977270509994" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=ITA</span></div>
-<div>tweet_date=2026-06-11 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2065154977270509994.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2065439964574208084" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=TSLA</span></div>
-<div>tweet_date=2026-06-12 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2065439964574208084.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.015785</td><td>mfe=0.0</td><td>mae=-0.015785</td><td>max_dd=0.015785</td></tr><tr><td>5</td><td>raw=-0.071847</td><td>mfe=0.0</td><td>mae=-0.071847</td><td>max_dd=0.071847</td></tr><tr><td>20</td><td>raw=-0.040593</td><td>mfe=0.034416</td><td>mae=-0.087632</td><td>max_dd=0.087632</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2066609350588694588" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=PL</span></div>
-<div>tweet_date=2026-06-15 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2066609350588694588.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2067262843431358776" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=TRT</span></div>
-<div>tweet_date=2026-06-17 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2067262843431358776.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2067750217974173904" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MRVL</span></div>
-<div>tweet_date=2026-06-18 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2067750217974173904.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.093614</td><td>mfe=0.0</td><td>mae=-0.093614</td><td>max_dd=0.093614</td></tr><tr><td>5</td><td>raw=-0.097804</td><td>mfe=0.0</td><td>mae=-0.13347</td><td>max_dd=0.13347</td></tr><tr><td>20</td><td>raw=-0.324332</td><td>mfe=0.0</td><td>mae=-0.388208</td><td>max_dd=0.388208</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2069060564429455606" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=WYFI</span></div>
-<div>tweet_date=2026-06-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2069060564429455606.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2069060564429455606" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=CIFR</span></div>
-<div>tweet_date=2026-06-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2069060564429455606.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2069200328088490340" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=MSFT</span></div>
-<div>tweet_date=2026-06-22 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2069200328088490340.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.022678</td><td>mfe=0.0</td><td>mae=-0.022678</td><td>max_dd=0.022678</td></tr><tr><td>5</td><td>raw=-0.00246</td><td>mfe=0.0</td><td>mae=-0.056453</td><td>max_dd=0.056453</td></tr><tr><td>20</td><td>raw=0.043857</td><td>mfe=0.075814</td><td>mae=-0.056453</td><td>max_dd=0.056453</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2069548624720085487" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=KOSPI</span></div>
-<div>tweet_date=2026-06-23 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2069548624720085487.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2069548624720085487" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=KORU</span></div>
-<div>tweet_date=2026-06-23 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2069548624720085487.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2070147003728724359" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=AAPL</span></div>
-<div>tweet_date=2026-06-25 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2070147003728724359.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="kols.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Identite &amp; suivi</h2>
+<p>Identite provider-attested : non
+&middot; suivi : <span class="badge badge-good">MONITORED</span></p>
+<p>Duree observee : 560 jour(s)
+&middot; date de creation du compte : <span title="INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS">non disponible</span></p>
+<p>Expertise / sous-industrie : <span title="INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2">non disponible</span></p>
+<p>Integrite des suppressions : <span title="NOT_COLLECTED_YET_TR_DELETED_MILESTONE">non disponible</span></p>
+<p>Mois observes : 15
+&middot; mois denses : 11
+&middot; posts collectes : 4 083
+&middot; cadence : 272.2 posts/mois actif</p>
+</section>
+
+<section class="section">
+<h2>Score final &amp; confiance</h2>
+<p class="score-hero">-0.110</p>
+<p>Niveau de confiance : <span class="badge badge-good">EARLY_EVIDENCE</span>
+&middot; incertitude : 1.00</p>
+<p class="muted">calls=148, dense_months=11</p>
+<p class="muted">single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
+</section>
+
+<section class="section">
+<h2>Courbe de performance (rendement realise par fenetre)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="24.6" x2="310" y2="24.6" class="zero-line"/><polyline points="10.0,61.3 60.0,61.3 110.0,62.0 160.0,48.4 210.0,10.0" class="spark-line"/><circle cx="10.0" cy="61.3" r="3" fill="#b3392c"><title>2 ans : -10.7 %</title></circle><circle cx="60.0" cy="61.3" r="3" fill="#b3392c"><title>1 an : -10.7 %</title></circle><circle cx="110.0" cy="62.0" r="3" fill="#b3392c"><title>6 mois : -10.9 %</title></circle><circle cx="160.0" cy="48.4" r="3" fill="#b3392c"><title>3 mois : -6.9 %</title></circle><circle cx="210.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 mois : +4.3 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+</section>
+
+<section class="section">
+<h2>Track record par fenetre (2 ans &rarr; 1 semaine)</h2>
+<table><thead><tr><th>fenetre</th><th>rendement realise</th>
+<th>rendement ajuste marche</th><th>calls evaluables / total</th><th>taux de reussite</th></tr></thead>
+<tbody><tr>
+<td>2 ans</td>
+<td>-10.7 %</td>
+<td>-16.1 %</td>
+<td>80 / 87</td>
+<td>+34 %</td>
+</tr><tr>
+<td>1 an</td>
+<td>-10.7 %</td>
+<td>-16.1 %</td>
+<td>80 / 87</td>
+<td>+34 %</td>
+</tr><tr>
+<td>6 mois</td>
+<td>-10.9 %</td>
+<td>-16.1 %</td>
+<td>78 / 84</td>
+<td>+33 %</td>
+</tr><tr>
+<td>3 mois</td>
+<td>-6.9 %</td>
+<td>-9.2 %</td>
+<td>23 / 23</td>
+<td>+39 %</td>
+</tr><tr>
+<td>2 mois</td>
+<td>+4.3 %</td>
+<td>+2.7 %</td>
+<td>8 / 8</td>
+<td>+50 %</td>
+</tr><tr><td>1 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 semaine</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Meilleurs / pires calls</h2>
+<p>Meilleur call (2 ans) : <a href='/tickers/AEHR'>AEHR</a> <span class='pos'>+81.5 %</span> &middot; <a href="https://x.com/PhotonBull/status/2041079278859665901" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (1 an) : <a href='/tickers/AEHR'>AEHR</a> <span class='pos'>+81.5 %</span> &middot; <a href="https://x.com/PhotonBull/status/2041079278859665901" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (6 mois) : <a href='/tickers/AEHR'>AEHR</a> <span class='pos'>+81.5 %</span> &middot; <a href="https://x.com/PhotonBull/status/2041079278859665901" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (3 mois) : <a href='/tickers/ETH'>ETH</a> <span class='pos'>+41.3 %</span> &middot; <a href="https://x.com/PhotonBull/status/2075986428123894117" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (2 mois) : <a href='/tickers/NOW'>NOW</a> <span class='pos'>+38.8 %</span> &middot; <a href="https://x.com/PhotonBull/status/2080019463080976723" target="_blank" rel="noopener">voir le post</a></p>
+<p>Pire call (2 ans) : <a href='/tickers/SIVEF'>SIVEF</a> <span class='neg'>-67.6 %</span> &middot; <a href="https://x.com/PhotonBull/status/2058749143804510407" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (1 an) : <a href='/tickers/SIVEF'>SIVEF</a> <span class='neg'>-67.6 %</span> &middot; <a href="https://x.com/PhotonBull/status/2058749143804510407" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (6 mois) : <a href='/tickers/SIVEF'>SIVEF</a> <span class='neg'>-67.6 %</span> &middot; <a href="https://x.com/PhotonBull/status/2058749143804510407" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (3 mois) : <a href='/tickers/WYFI'>WYFI</a> <span class='neg'>-57.2 %</span> &middot; <a href="https://x.com/PhotonBull/status/2069060564429455606" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (2 mois) : <a href='/tickers/FLNC'>FLNC</a> <span class='neg'>-30.2 %</span> &middot; <a href="https://x.com/PhotonBull/status/2085024718168428785" target="_blank" rel="noopener">voir le post</a></p>
+</section>
+
+<section class="section">
+<h2>Calls genuinement LONG</h2>
+<p>165 episode(s) sur 141 ticker(s) :
+AAOI, AAPL, ABVX, AEHR, ALMU, AMBA, AMD, AMPG, AMZN, AOSL, ARQQ, ASTI, ASTS, AVAV, AVEX, AXTI, BABA, BB, BE, BRUN, BTC, BTQ, CBRS, CIEN, CIFR, COHR, COIN, CRDO, CRWV, CXMT, DELL, DGXX, DISK, DOCN, DRAM, DRNZ, EOS, EQR, EQRLF, ETH, EWA, EWY, FCEL, FLNC, FLY, GHH, GOOG, GOOGL, GSAT, HIMS, HLIT, HOOD, HQ, HYLN, IBIT, IBM, INTC, IONQ, IQE, IREN, ITA, KEEL, KORU, KOSPI, KRKNF, KTOS, LAES, LASR, LITE, LMT, LPK, LPKF, LUNR, LWLG, LYTE, MDA, META, MNTS, MP, MRLN, MRVL, MSFT, MSTR, MU, NASA, NBIS, NGKIF, NOK, NOW, NUAI, NVDA, NVTS, ONDS, OPTX, OUST, OXIDF, PENG, PL, PLTR, PNG, POET, POWI, PURR, QBTS, QNT, QQQ, QUBT, RDDT, RGTI, RKLB, RR, RSW, RTX, RYCEF, SATS, SIMO, SIVE, SIVEF, SKHY, SLOIF, SNDK, SOI, SONY, SPCE, SPCX, SPY, STX, TRT, TSEM, TSLA, TSM, TTWO, VELO, VNP, VPG, WDC, WLAC, WOLF, WYFI, XFAB, ZM</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score (composants bruts, hors track record)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th></tr></thead><tbody><tr><td>post_count</td><td>4083</td></tr><tr><td>graph_outbound_edges</td><td>9</td></tr><tr><td>engagement_median_likes</td><td>25</td></tr><tr><td>engagement_top_rt</td><td>35794</td></tr><tr><td>coverage_dense_months</td><td>11</td></tr><tr><td>coverage_distinct_months</td><td>15</td></tr></tbody></table>
+<details class="proofs"><summary>Preuves techniques (score composant call_track_record)</summary><pre>{&#x27;value&#x27;: 148, &#x27;evaluable_episodes&#x27;: 148, &#x27;mean_market_adjusted_20&#x27;: -0.038334, &#x27;mean_momentum_adjusted_20&#x27;: 4.9e-05, &#x27;uncertainty&#x27;: {&#x27;n&#x27;: 147, &#x27;std_market_adjusted_20&#x27;: 0.281852, &#x27;note&#x27;: &#x27;small-sample dispersion disclosed; confidence grows continuously with calls and dense months&#x27;}, &#x27;oos_status&#x27;: &#x27;OOS_NOT_EVALUATED_V1&#x27;, &#x27;oos_disclosure&#x27;: &#x27;single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists&#x27;}</pre></details>
+</section>
+
+<section class="section">
+<h2>Role dans le graphe (originalite / suivisme par ticker)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/tickers/AAOI'>AAOI</a></td><td>FOLLOWER</td><td>0.50</td><td>30</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/AAPL'>AAPL</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-06-25</td></tr><tr><td><a href='/tickers/ABVX'>ABVX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-01</td></tr><tr><td><a href='/tickers/AEHR'>AEHR</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-04-06</td></tr><tr><td><a href='/tickers/ALMU'>ALMU</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-13</td></tr><tr><td><a href='/tickers/AMBA'>AMBA</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/AMD'>AMD</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-18</td></tr><tr><td><a href='/tickers/AMPG'>AMPG</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-23</td></tr><tr><td><a href='/tickers/AMZN'>AMZN</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/AOSL'>AOSL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/ARQQ'>ARQQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/ASTI'>ASTI</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/ASTS'>ASTS</a></td><td>FOLLOWER</td><td>0.50</td><td>65</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/AVAV'>AVAV</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-12</td></tr><tr><td><a href='/tickers/AVEX'>AVEX</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-20</td></tr><tr><td><a href='/tickers/AXTI'>AXTI</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/BABA'>BABA</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-19</td></tr><tr><td><a href='/tickers/BB'>BB</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-04</td></tr><tr><td><a href='/tickers/BE'>BE</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-20</td></tr><tr><td><a href='/tickers/BRUN'>BRUN</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/BTC'>BTC</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-06</td></tr><tr><td><a href='/tickers/BTQ'>BTQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/CBRS'>CBRS</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-10</td></tr><tr><td><a href='/tickers/CIEN'>CIEN</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-04</td></tr><tr><td><a href='/tickers/CIFR'>CIFR</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/COHR'>COHR</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/COIN'>COIN</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-11</td></tr><tr><td><a href='/tickers/CRDO'>CRDO</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-20</td></tr><tr><td><a href='/tickers/CRWV'>CRWV</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2026-05-10</td></tr><tr><td><a href='/tickers/CXMT'>CXMT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-07-27</td></tr><tr><td><a href='/tickers/DELL'>DELL</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-28</td></tr><tr><td><a href='/tickers/DGXX'>DGXX</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-10</td></tr><tr><td><a href='/tickers/DISK'>DISK</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-07-27</td></tr><tr><td><a href='/tickers/DOCN'>DOCN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/DRAM'>DRAM</a></td><td>FOLLOWER</td><td>0.50</td><td>26</td><td>2026-05-06</td></tr><tr><td><a href='/tickers/DRNZ'>DRNZ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/EOS'>EOS</a></td><td>FOLLOWER</td><td>0.50</td><td>41</td><td>2026-03-17</td></tr><tr><td><a href='/tickers/EQR'>EQR</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/EQRLF'>EQRLF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-06</td></tr><tr><td><a href='/tickers/ETH'>ETH</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-11</td></tr><tr><td><a href='/tickers/EWA'>EWA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/EWY'>EWY</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-23</td></tr><tr><td><a href='/tickers/FCEL'>FCEL</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-05-20</td></tr><tr><td><a href='/tickers/FLNC'>FLNC</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-05</td></tr><tr><td><a href='/tickers/FLY'>FLY</a></td><td>ORIGINATOR</td><td>1.00</td><td>9</td><td>2026-04-08</td></tr><tr><td><a href='/tickers/GHH'>GHH</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/GOOG'>GOOG</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-07-20</td></tr><tr><td><a href='/tickers/GOOGL'>GOOGL</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-22</td></tr><tr><td><a href='/tickers/GSAT'>GSAT</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-14</td></tr><tr><td><a href='/tickers/HIMS'>HIMS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-10</td></tr><tr><td><a href='/tickers/HLIT'>HLIT</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/HOOD'>HOOD</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-08</td></tr><tr><td><a href='/tickers/HQ'>HQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/HYLN'>HYLN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-25</td></tr><tr><td><a href='/tickers/IBIT'>IBIT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-11</td></tr><tr><td><a href='/tickers/IBM'>IBM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-01</td></tr><tr><td><a href='/tickers/INTC'>INTC</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/IONQ'>IONQ</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/IQE'>IQE</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/IREN'>IREN</a></td><td>FOLLOWER</td><td>0.50</td><td>6</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/ITA'>ITA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/KEEL'>KEEL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-20</td></tr><tr><td><a href='/tickers/KORU'>KORU</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-23</td></tr><tr><td><a href='/tickers/KOSPI'>KOSPI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-23</td></tr><tr><td><a href='/tickers/KRKNF'>KRKNF</a></td><td>ORIGINATOR</td><td>1.00</td><td>45</td><td>2025-10-05</td></tr><tr><td><a href='/tickers/KTOS'>KTOS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-24</td></tr><tr><td><a href='/tickers/LAES'>LAES</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/LASR'>LASR</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/LITE'>LITE</a></td><td>FOLLOWER</td><td>0.50</td><td>10</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/LMT'>LMT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-24</td></tr><tr><td><a href='/tickers/LPK'>LPK</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/LPKF'>LPKF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-20</td></tr><tr><td><a href='/tickers/LUNR'>LUNR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-08</td></tr><tr><td><a href='/tickers/LWLG'>LWLG</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-13</td></tr><tr><td><a href='/tickers/LYTE'>LYTE</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-23</td></tr><tr><td><a href='/tickers/MDA'>MDA</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-04-22</td></tr><tr><td><a href='/tickers/META'>META</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-07-09</td></tr><tr><td><a href='/tickers/MNTS'>MNTS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/MP'>MP</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/MRLN'>MRLN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-06</td></tr><tr><td><a href='/tickers/MRVL'>MRVL</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/MSFT'>MSFT</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-06-22</td></tr><tr><td><a href='/tickers/MSTR'>MSTR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-08</td></tr><tr><td><a href='/tickers/MU'>MU</a></td><td>FOLLOWER</td><td>0.50</td><td>32</td><td>2026-05-08</td></tr><tr><td><a href='/tickers/NASA'>NASA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-08</td></tr><tr><td><a href='/tickers/NBIS'>NBIS</a></td><td>FOLLOWER</td><td>0.50</td><td>38</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/NGKIF'>NGKIF</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/NOK'>NOK</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-04</td></tr><tr><td><a href='/tickers/NOW'>NOW</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-22</td></tr><tr><td><a href='/tickers/NUAI'>NUAI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-15</td></tr><tr><td><a href='/tickers/NVDA'>NVDA</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/NVTS'>NVTS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/ONDS'>ONDS</a></td><td>FOLLOWER</td><td>0.50</td><td>19</td><td>2026-04-14</td></tr><tr><td><a href='/tickers/OPTX'>OPTX</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-27</td></tr><tr><td><a href='/tickers/OUST'>OUST</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-05-13</td></tr><tr><td><a href='/tickers/OXIDF'>OXIDF</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/PENG'>PENG</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-05-12</td></tr><tr><td><a href='/tickers/PL'>PL</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-15</td></tr><tr><td><a href='/tickers/PLTR'>PLTR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-10-08</td></tr><tr><td><a href='/tickers/PNG'>PNG</a></td><td>FOLLOWER</td><td>0.50</td><td>24</td><td>2025-10-05</td></tr><tr><td><a href='/tickers/POET'>POET</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/POWI'>POWI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/PURR'>PURR</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/QBTS'>QBTS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/QNT'>QNT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/QQQ'>QQQ</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-15</td></tr><tr><td><a href='/tickers/QUBT'>QUBT</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/RDDT'>RDDT</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-07-07</td></tr><tr><td><a href='/tickers/RGTI'>RGTI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/RKLB'>RKLB</a></td><td>FOLLOWER</td><td>0.50</td><td>20</td><td>2026-04-08</td></tr><tr><td><a href='/tickers/RR'>RR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/RSW'>RSW</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/RTX'>RTX</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/RYCEF'>RYCEF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/SATS'>SATS</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-04-14</td></tr><tr><td><a href='/tickers/SIMO'>SIMO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-28</td></tr><tr><td><a href='/tickers/SIVE'>SIVE</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-04-20</td></tr><tr><td><a href='/tickers/SIVEF'>SIVEF</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-25</td></tr><tr><td><a href='/tickers/SKHY'>SKHY</a></td><td>FOLLOWER</td><td>0.50</td><td>6</td><td>2026-07-10</td></tr><tr><td><a href='/tickers/SLOIF'>SLOIF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/SNDK'>SNDK</a></td><td>FOLLOWER</td><td>0.50</td><td>32</td><td>2026-05-08</td></tr><tr><td><a href='/tickers/SOI'>SOI</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/SONY'>SONY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-27</td></tr><tr><td><a href='/tickers/SPCE'>SPCE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/SPCX'>SPCX</a></td><td>ORIGINATOR</td><td>1.00</td><td>13</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/SPY'>SPY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-15</td></tr><tr><td><a href='/tickers/STX'>STX</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-28</td></tr><tr><td><a href='/tickers/TRT'>TRT</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-17</td></tr><tr><td><a href='/tickers/TSEM'>TSEM</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-04-06</td></tr><tr><td><a href='/tickers/TSLA'>TSLA</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-12</td></tr><tr><td><a href='/tickers/TSM'>TSM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/TTWO'>TTWO</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-06-27</td></tr><tr><td><a href='/tickers/VELO'>VELO</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-22</td></tr><tr><td><a href='/tickers/VNP'>VNP</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/VPG'>VPG</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/WDC'>WDC</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/WLAC'>WLAC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/WOLF'>WOLF</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/WYFI'>WYFI</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-22</td></tr><tr><td><a href='/tickers/XFAB'>XFAB</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/ZM'>ZM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-10</td></tr></tbody></table>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

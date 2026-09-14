@@ -1,89 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>HIMS - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HIMS — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>HIMS</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Hims &amp; Hers Health, Inc.</strong> &mdash; Hims &amp; Hers Health, Inc. operates as a consumer-first health and wellness platform that connects consumers to licensed healthcare professionals in the United States, the United Kingdom, Canada, Germany, the Republic of Ireland, France, Spain, and internationally. The company offers a range of curated prescription and non-prescription health and wellness products and services available to purchase on its websites and mobile application directly by customers. It also provides personalized health and wellness products; over-the-counter drug and device products, cosmetics, and supplement products primarily focusing on general wellness, skincare, sexual health and wellness, and hair care under the Hims &amp; Hers brand name; and laboratory testing services to measure a set of biomarkers. Additionally, it offers medical consultation, post-consultation support services, and delivery of laboratory testing results services. Further, the company provides treatments and products for various chronic conditions related to hormone health, weight loss, dermatology, and mental health. The company offers its products through retail partnerships, in stores, and online. Hims &amp; Hers Health, Inc. is based in San Francisco, California.</p>
-<p>ai_subindustry=consumer_software value_chain_role=downstream_application_layer
-country=United States asset_class=EQUITY</p>
-<p>market_cap=6369455616 trailing_pe=[FIELD_NOT_PROVIDED]
-forward_pe=33.412888 price_to_book=19.654427</p>
-<p>revenue=2578112000 revenue_growth=0.382
-cash=841048000 debt=1546238976 profitability=-0.05509</p>
-<p>current_price=27.3 momentum_state=NEUTRAL
-average_volume=14477872</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">CLOSED</span> rule=latest-episode-priority: every episode at the ticker&#x27;s most recent tweet_date has closure.state==CLOSED_SOLD, none open, none invalidated
-age_days_vs_as_of=227</p>
-<p>first_call: RJCcapital on 2026-01-27
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=3
-pushes_by_account={&#x27;RJCcapital&#x27;: 3}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.3688</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>RJCcapital tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.0</td><td>0.2</td><td>0.0</td><td>lifecycle=&#x27;CLOSED&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.6</td><td>0.15</td><td>0.09</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;CLOSED&#x27; (score 0.0)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>3</td><td>2026-01-27</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (1 episode(s))</h2>
-<div data-episode-id="2016284987725676734" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=HIMS</span></div>
-<div>tweet_date=2026-01-27 pushes=3
-closure_state=CLOSED_SOLD
-<a href="evidence_2016284987725676734.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.035282</td><td>mfe=0.0</td><td>mae=-0.035282</td><td>max_dd=0.035282</td></tr><tr><td>5</td><td>raw=-0.004536</td><td>mfe=0.024698</td><td>mae=-0.035282</td><td>max_dd=0.046237</td></tr><tr><td>20</td><td>raw=0.369456</td><td>mfe=0.563004</td><td>mae=-0.035282</td><td>max_dd=0.150919</td></tr><tr><td>60</td><td>raw=0.682964</td><td>mfe=0.787802</td><td>mae=-0.035282</td><td>max_dd=0.2812</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Hims &amp; Hers Health, Inc.</strong>
+&mdash; Healthcare / consumer_software</p>
+<p>Hims &amp; Hers Health, Inc. operates as a consumer-first health and wellness platform that connects consumers to licensed healthcare professionals in the United States, the United Kingdom, Canada, Germany, the Republic of Ireland, France, Spain, Australia, and internationally. The company offers a range of curated prescription and non-prescription health and wellness products and services available to purchase on its websites and mobile application directly by customers. It also provides personalized health and wellness products; over-the-counter drug and device products, cosmetics, and supplemen</p>
+<p>capitalisation : 6.4 Md$
+&middot; prix actuel : 27.51
+&middot; momentum : <span class="badge badge-neutral">NEUTRAL</span></p>
+<p>risque : <span class="badge badge-neutral">MODERATE</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(34 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="39.5" x2="310" y2="39.5" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,34.8 160.0,43.4 210.0,51.1 260.0,40.5 310.0,39.8" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +66.0 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -50.4 %</title></circle><circle cx="110.0" cy="34.8" r="3" fill="#2f8f4e"><title>6 mois : +10.6 %</title></circle><circle cx="160.0" cy="43.4" r="3" fill="#b3392c"><title>3 mois : -8.8 %</title></circle><circle cx="210.0" cy="51.1" r="3" fill="#b3392c"><title>2 mois : -26.0 %</title></circle><circle cx="260.0" cy="40.5" r="3" fill="#b3392c"><title>1 mois : -2.3 %</title></circle><circle cx="310.0" cy="39.8" r="3" fill="#b3392c"><title>1 semaine : -0.7 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+66.0 %</td></tr><tr><td>1 an</td><td class="neg">-50.4 %</td></tr><tr><td>6 mois</td><td class="pos">+10.6 %</td></tr><tr><td>3 mois</td><td class="neg">-8.8 %</td></tr><tr><td>2 mois</td><td class="neg">-26.0 %</td></tr><tr><td>1 mois</td><td class="neg">-2.3 %</td></tr><tr><td>1 semaine</td><td class="neg">-0.7 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+66.0 %</td><td>HyperTechInvest opened Long Position on HIMS; RJCcapital opened Long Position on HIMS; StonkChris opened Long Position on HIMS; italianinvesto opened Long Position on HIMS</td></tr><tr><td>1 an</td><td class="neg">-50.4 %</td><td>italianinvesto opened Long Position on HIMS; Gubloinvestor opened Long Position on HIMS; DeepValueBagger opened Long Position on HIMS; PhotonBull opened Long Position on HIMS</td></tr><tr><td>6 mois</td><td class="pos">+10.6 %</td><td>DeepValueBagger opened Long Position on HIMS; PhotonBull opened Long Position on HIMS; Reasons to Retain Hims &amp; Hers Stock in Your Portfolio for Now; HIMS Raises 2026 Revenue Outlook as Q2 Sales Rise 38.2% Despite Loss</td></tr><tr><td>3 mois</td><td class="neg">-8.8 %</td><td>DeepValueBagger opened Long Position on HIMS; PhotonBull opened Long Position on HIMS; Reasons to Retain Hims &amp; Hers Stock in Your Portfolio for Now; HIMS Raises 2026 Revenue Outlook as Q2 Sales Rise 38.2% Despite Loss</td></tr><tr><td>2 mois</td><td class="neg">-26.0 %</td><td>PhotonBull opened Long Position on HIMS; Reasons to Retain Hims &amp; Hers Stock in Your Portfolio for Now; HIMS Raises 2026 Revenue Outlook as Q2 Sales Rise 38.2% Despite Loss; Here&#x27;s Why Teladoc&#x27;s Integrated Care Business Deserves More Attention</td></tr><tr><td>1 mois</td><td class="neg">-2.3 %</td><td>Reasons to Retain Hims &amp; Hers Stock in Your Portfolio for Now; HIMS Raises 2026 Revenue Outlook as Q2 Sales Rise 38.2% Despite Loss; Here&#x27;s Why Teladoc&#x27;s Integrated Care Business Deserves More Attention; Hims &amp; Hers Health, Inc. (HIMS) Gains As Market Dips: What You Should Know</td></tr><tr><td>1 semaine</td><td class="neg">-0.7 %</td><td>Here&#x27;s Why Teladoc&#x27;s Integrated Care Business Deserves More Attention; Hims &amp; Hers Health, Inc. (HIMS) Gains As Market Dips: What You Should Know; Hims &amp; Hers Health, Inc. (HIMS) is Attracting Investor Attention: Here is What You Should Know; Why Is Hims &amp; Hers Health (HIMS) Down 7.7% Since Last Earnings Report?</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2024-09-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on HIMS</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1840150990533599585" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-01-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on HIMS</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/1883392555745989035" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-05-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>StonkChris opened Long Position on HIMS</td><td>StonkChris &middot; <a href="https://x.com/StonkChris/status/1919751880344842292" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-09-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on HIMS</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/1969503227923104004" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-01-07</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on HIMS</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2008961995790561703" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-07-05</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>DeepValueBagger opened Long Position on HIMS</td><td>DeepValueBagger &middot; <a href="https://x.com/DeepValueBagger/status/2073774592531878243" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-10</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on HIMS</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2086912243141091809" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-02</td><td><span class="badge badge-neutral">NEWS</span></td><td>Reasons to Retain Hims &amp; Hers Stock in Your Portfolio for Now</td><td><a href="https://finance.yahoo.com/healthcare/articles/reasons-retain-hims-hers-stock-183000220.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-02</td><td><span class="badge badge-neutral">NEWS</span></td><td>HIMS Raises 2026 Revenue Outlook as Q2 Sales Rise 38.2% Despite Loss</td><td><a href="https://finance.yahoo.com/healthcare/articles/hims-raises-2026-revenue-outlook-183000013.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-07</td><td><span class="badge badge-neutral">NEWS</span></td><td>Here&#x27;s Why Teladoc&#x27;s Integrated Care Business Deserves More Attention</td><td><a href="https://finance.yahoo.com/healthcare/articles/heres-why-teladocs-integrated-care-145100508.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Hims &amp; Hers Health, Inc. (HIMS) Gains As Market Dips: What You Should Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/hims-hers-health-inc-hims-214503468.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Hims &amp; Hers Health, Inc. (HIMS) is Attracting Investor Attention: Here is What You Should Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/hims-hers-health-inc-hims-130002987.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Is Hims &amp; Hers Health (HIMS) Down 7.7% Since Last Earnings Report?</td><td><a href="https://finance.yahoo.com/healthcare/articles/why-hims-hers-health-hims-153005690.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Pump.fun Launches Custom Pairs for Tokenized Stocks</td><td><a href="https://www.bankless.com/read/news/pump-fun-launches-custom-pairs-for-tokenized-stocks" target="_blank" rel="noopener">Bankless</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>JPMorgan Tweaks Hims &amp; Hers Stock Outlook on Key Risk</td><td><a href="https://finance.yahoo.com/healthcare/articles/jpmorgan-tweaks-hims-hers-stock-211214184.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>JPMorgan cautious on Hims &amp; Hers on GLP-1 transition risk</td><td><a href="https://finance.yahoo.com/healthcare/articles/jpmorgan-cautious-hims-hers-glp-131423295.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>I&#x27;m Calling It: Hims &amp; Hers Health Will Soar 56% by the End of 2026</td><td><a href="https://www.fool.com/investing/2026/09/13/im-calling-it-hims-hers-health-soar-56-end-2026/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-11-09</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>HIMS earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-09 &middot; HIMS earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : HyperTechInvest le 2024-09-28
+(LONG_POSITION)</p>
+<p>relances cumulees : 64
+&middot; tendance du consensus (30/60/90j) : 0 / 1 / 2 compte(s)
+(<span class="badge badge-neutral">fading</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/DeepValueBagger'>DeepValueBagger</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-05</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2026-01-07</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>37</td><td>2024-09-28</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-10</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2025-01-26</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2025-05-06</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2025-09-20</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">WATCH</span>
+&middot; Pas de signal fort: momentum_state=&#x27;NEUTRAL&#x27;, kol_consensus_trend=&#x27;fading&#x27;</p>
+<p>avertissements donnees : trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.749)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>7 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>DeepValueBagger tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.60</td><td>0.15</td><td>0.090</td><td>momentum_state=&#x27;NEUTRAL&#x27;</td></tr><tr><td>data_quality</td><td>0.94</td><td>0.10</td><td>0.094</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 7 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); momentum_not_overextended: momentum_state=&#x27;NEUTRAL&#x27; (score 0.6); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Contre :</strong> kol_track_record: DeepValueBagger tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

@@ -1,117 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>SPY - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPY — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>SPY</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>State Street SPDR S&amp;P 500 ETF Trust</strong> &mdash; The trust seeks to achieve its investment objective by holding a portfolio of the common stocks that are included in the index (the “Portfolio”), with the weight of each stock in the Portfolio substantially corresponding to the weight of such stock in the index.</p>
-<p>ai_subindustry=broad_market_etf_index value_chain_role=not_applicable_broad_market_vehicle
-country=[FIELD_NOT_PROVIDED] asset_class=ETF</p>
-<p>market_cap=[FIELD_NOT_PROVIDED] trailing_pe=24.745016
-forward_pe=[FIELD_NOT_PROVIDED] price_to_book=1.7843294</p>
-<p>revenue=[FIELD_NOT_PROVIDED] revenue_growth=[FIELD_NOT_PROVIDED]
-cash=[FIELD_NOT_PROVIDED] debt=[FIELD_NOT_PROVIDED] profitability=[FIELD_NOT_PROVIDED]</p>
-<p>current_price=765.8699 momentum_state=EXTENDED_NEAR_52W_HIGH
-average_volume=47227938</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">NEW_CALL</span> rule=latest open episode age_days=4 &lt;= 7 (fast-loop weekly detection window)
-age_days_vs_as_of=4</p>
-<p>first_call: RJCcapital on 2026-01-24
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=1
-pushes_by_account={&#x27;BryzonX&#x27;: 1, &#x27;CKCapitalxx&#x27;: 0, &#x27;LiebermanAustin&#x27;: 0, &#x27;PhotonBull&#x27;: 0, &#x27;RJCcapital&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">SPECULATIVE</span> rule=asset_class==CRYPTO or size_bucket in {MICRO,UNKNOWN} or data_quality&lt;0.4</p>
-<p>data_quality warnings: market_country: FIELD_NOT_PROVIDED, market_cap: FIELD_NOT_PROVIDED, forward_pe: FIELD_NOT_PROVIDED, revenue: FIELD_NOT_PROVIDED, revenue_growth: FIELD_NOT_PROVIDED, cash: FIELD_NOT_PROVIDED, debt: FIELD_NOT_PROVIDED, profitability: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.705</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>1.0</td><td>0.3</td><td>0.3</td><td>5 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>BryzonX tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>1.0</td><td>0.2</td><td>0.2</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.2</td><td>0.15</td><td>0.03</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>0.5</td><td>0.1</td><td>0.05</td><td>8/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> kol_independence: 5 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0)</p>
-<p><strong>Reasons against:</strong> momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (5 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>BryzonX</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-04-21</td></tr><tr><td>CKCapitalxx</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-20</td></tr><tr><td>LiebermanAustin</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-07</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-15</td></tr><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-01-24</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (5 episode(s))</h2>
-<div data-episode-id="2046638216749735937" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=BryzonX</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-04-21 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046638216749735937.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057068711740141787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-05-20 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057068711740141787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2097051795595899281" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=LiebermanAustin</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-09-07 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2097051795595899281.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2055273675100651861" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-05-15 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2055273675100651861.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2015187017336750443" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-01-24 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2015187017336750443.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>State Street SPDR S&amp;P 500 ETF Trust</strong>
+&mdash; &mdash; / broad_market_etf_index</p>
+<p>The trust seeks to achieve its investment objective by holding a portfolio of the common stocks that are included in the index (the “Portfolio”), with the weight of each stock in the Portfolio substantially corresponding to the weight of such stock in the index.</p>
+<p>capitalisation : n/d
+&middot; prix actuel : 764.29
+&middot; momentum : <span class="badge badge-neutral">EXTENDED_NEAR_52W_HIGH</span></p>
+<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(110 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="59.9" x2="310" y2="59.9" class="zero-line"/><polyline points="10.0,10.0 60.0,37.3 110.0,40.1 160.0,58.1 210.0,58.1 260.0,62.0 310.0,60.9" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +36.0 %</title></circle><circle cx="60.0" cy="37.3" r="3" fill="#2f8f4e"><title>1 an : +16.3 %</title></circle><circle cx="110.0" cy="40.1" r="3" fill="#2f8f4e"><title>6 mois : +14.2 %</title></circle><circle cx="160.0" cy="58.1" r="3" fill="#2f8f4e"><title>3 mois : +1.3 %</title></circle><circle cx="210.0" cy="58.1" r="3" fill="#2f8f4e"><title>2 mois : +1.3 %</title></circle><circle cx="260.0" cy="62.0" r="3" fill="#b3392c"><title>1 mois : -1.6 %</title></circle><circle cx="310.0" cy="60.9" r="3" fill="#b3392c"><title>1 semaine : -0.8 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+36.0 %</td></tr><tr><td>1 an</td><td class="pos">+16.3 %</td></tr><tr><td>6 mois</td><td class="pos">+14.2 %</td></tr><tr><td>3 mois</td><td class="pos">+1.3 %</td></tr><tr><td>2 mois</td><td class="pos">+1.3 %</td></tr><tr><td>1 mois</td><td class="neg">-1.6 %</td></tr><tr><td>1 semaine</td><td class="neg">-0.8 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+36.0 %</td><td>HyperTechInvest opened Long Position on SPY; StonkChris opened Long Position on SPY; Gubloinvestor opened Long Position on SPY; italianinvesto opened Long Position on SPY</td></tr><tr><td>1 an</td><td class="pos">+16.3 %</td><td>italianinvesto opened Long Position on SPY; RJCcapital opened Long Position on SPY; LiebermanAustin opened Long Position on SPY; CKCapitalxx opened Long Swing on SPY</td></tr><tr><td>6 mois</td><td class="pos">+14.2 %</td><td>CKCapitalxx opened Long Swing on SPY; BryzonX opened Long Position on SPY; PhotonBull opened Long Position on SPY; CKCapitalxx opened Long Position on SPY</td></tr><tr><td>3 mois</td><td class="pos">+1.3 %</td><td>Goldman Sachs Says AI Is Driving Half of S&amp;P 500 Earnings Growth. That Number Cuts Both Ways.; ‘Sounds Like a 14 Year Old’: Dave Ramsey Rips Husband Sinking 80% of Pay Into Pokemon Cards; Coinbase Jumps 6% on Compass Point Upgrade Ahead of Senate CLARITY Act Vote; Strategy Climbs 3%, MARA Slips; Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%</td></tr><tr><td>2 mois</td><td class="pos">+1.3 %</td><td>Goldman Sachs Says AI Is Driving Half of S&amp;P 500 Earnings Growth. That Number Cuts Both Ways.; ‘Sounds Like a 14 Year Old’: Dave Ramsey Rips Husband Sinking 80% of Pay Into Pokemon Cards; Coinbase Jumps 6% on Compass Point Upgrade Ahead of Senate CLARITY Act Vote; Strategy Climbs 3%, MARA Slips; Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%</td></tr><tr><td>1 mois</td><td class="neg">-1.6 %</td><td>Goldman Sachs Says AI Is Driving Half of S&amp;P 500 Earnings Growth. That Number Cuts Both Ways.; ‘Sounds Like a 14 Year Old’: Dave Ramsey Rips Husband Sinking 80% of Pay Into Pokemon Cards; Coinbase Jumps 6% on Compass Point Upgrade Ahead of Senate CLARITY Act Vote; Strategy Climbs 3%, MARA Slips; Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%</td></tr><tr><td>1 semaine</td><td class="neg">-0.8 %</td><td>Goldman Sachs Says AI Is Driving Half of S&amp;P 500 Earnings Growth. That Number Cuts Both Ways.; ‘Sounds Like a 14 Year Old’: Dave Ramsey Rips Husband Sinking 80% of Pay Into Pokemon Cards; Coinbase Jumps 6% on Compass Point Upgrade Ahead of Senate CLARITY Act Vote; Strategy Climbs 3%, MARA Slips; Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2024-10-25</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on SPY</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1849956424643723550" target="_blank" rel="noopener">post</a></td></tr><tr><td>2024-11-01</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>StonkChris opened Long Position on SPY</td><td>StonkChris &middot; <a href="https://x.com/StonkChris/status/1852407975215788494" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-07-10</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on SPY</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/1943171723932897330" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-10-11</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on SPY</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/1977071667030770072" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-01-24</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on SPY</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/2015187017336750443" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-13</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>LiebermanAustin opened Long Position on SPY</td><td>LiebermanAustin &middot; <a href="https://x.com/LiebermanAustin/status/2032505835595636894" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-30</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Swing on SPY</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2038660493489975469" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-21</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>BryzonX opened Long Position on SPY</td><td>BryzonX &middot; <a href="https://x.com/BryzonX/status/2046638216749735937" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-15</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on SPY</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2055273675100651861" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on SPY</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2057068711740141787" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie opened Long Position on SPY</td><td>Frenchie &middot; <a href="https://x.com/Frenchie/status/2059383620607881426" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie_ opened Long Position on SPY</td><td>Frenchie_ &middot; <a href="https://x.com/Frenchie_/status/2059383620607881426" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Goldman Sachs Says AI Is Driving Half of S&amp;P 500 Earnings Growth. That Number Cuts Both Ways.</td><td><a href="https://247wallst.com/investing/2026/09/13/goldman-sachs-says-ai-is-driving-half-of-sp-500-earnings-growth-that-number-cuts-both-ways/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>‘Sounds Like a 14 Year Old’: Dave Ramsey Rips Husband Sinking 80% of Pay Into Pokemon Cards</td><td><a href="https://247wallst.com/personal-finance/2026/09/13/sounds-like-a-14-year-old-dave-ramsey-rips-husband-sinking-80-of-pay-into-pokemon-cards/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Coinbase Jumps 6% on Compass Point Upgrade Ahead of Senate CLARITY Act Vote; Strategy Climbs 3%, MARA Slips</td><td><a href="https://247wallst.com/investing/2026/09/14/coinbase-jumps-6-on-compass-point-upgrade-ahead-of-senate-clarity-act-vote-strategy-climbs-3-mara-slips/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Chip Equipment Stocks Slide as AI Pacing Call Reaches Fab Spending: Applied Materials and Lam Research Fall 6%, ASML Sinks 5%</td><td><a href="https://247wallst.com/investing/2026/09/14/chip-equipment-stocks-slide-as-ai-pacing-call-reaches-fab-spending-applied-materials-and-lam-research-fall-6-asml-sinks-5/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Hewlett Packard Enterprise Sinks 9% on Downgrade After Triple-Digit Run; Dell Falls 5%, Super Micro Drops 8%</td><td><a href="https://247wallst.com/investing/2026/09/14/hewlett-packard-enterprise-sinks-9-on-downgrade-after-triple-digit-run-dell-falls-5-super-micro-drops-8/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>AMD Is Sitting at $515. Here Is What Most U.S. Investors Should Actually Do About It.</td><td><a href="https://247wallst.com/investing/2026/09/14/amd-is-sitting-at-515-here-is-what-most-u-s-investors-should-actually-do-about-it/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Seagate Has Real Upside Left. That Does Not Mean It Deserves Your Money Right Now.</td><td><a href="https://247wallst.com/investing/2026/09/14/seagate-has-real-upside-left-that-does-not-mean-it-deserves-your-money-right-now/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>This Analyst Says A Full Reversion to the Mean Would Take the S&amp;P 500 From 7,000 to 2,500</td><td><a href="https://247wallst.com/investing/2026/09/14/this-analyst-says-a-full-reversion-to-the-mean-would-take-the-sp-500-from-7000-to-2500/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday Amid AI Pullback</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-132016142.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Are Nasdaq Futures Tumbling Premarket? MU, AMD, NVDA, ORCL, RUM, TSLA, SPCX Stocks In Focus</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-are-nasdaq-futures-tumbling-premarket-mu-amd-nvda-orcl-rum-tsla-spcx-stocks-in-focus/cZtlxaARBRW" target="_blank" rel="noopener">Stocktwits</a></td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : HyperTechInvest le 2024-10-25
+(LONG_POSITION)</p>
+<p>relances cumulees : 11
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/BryzonX'>BryzonX</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-21</td></tr><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-30</td></tr><tr><td><a href='/kols/Frenchie'>Frenchie</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/kols/Frenchie_'>Frenchie_</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-26</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-07-10</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2024-10-25</td></tr><tr><td><a href='/kols/LiebermanAustin'>LiebermanAustin</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-13</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-15</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-24</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2024-11-01</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-10-11</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">TOO_EXTENDED</span>
+&middot; momentum_state=EXTENDED_NEAR_52W_HIGH, pct_of_52w_high=98.25294043905912</p>
+<p>avertissements donnees : market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.645)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>11 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>BryzonX tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.20</td><td>0.15</td><td>0.030</td><td>momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27;</td></tr><tr><td>data_quality</td><td>0.50</td><td>0.10</td><td>0.050</td><td>8/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 11 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
+<p><strong>Contre :</strong> momentum_not_overextended: momentum_state=&#x27;EXTENDED_NEAR_52W_HIGH&#x27; (score 0.2)</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

@@ -1,130 +1,181 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>HyperTechInvest - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HyperTechInvest — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>HyperTechInvest</h1>
-<p><a href="kols.html">&larr; back to KOL table</a></p>
-<div class="section">
-<h2>Identity &amp; lifecycle</h2>
-<p>provider_state=OK
-lifecycle=SAMPLED
-owner_root=False
-namesake_user_id=&mdash;
-provider_attested=False</p>
-<p>observed_span_days=0
-account_creation_date=<span class="gap">INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS</span></p>
-<p>expertise / AI sub-industry: <span class="gap">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</span></p>
-</div>
-<div class="section">
-<h2>Coverage &amp; activity (data-quality / recency / consistency)</h2>
-<p>observable_months=0
-dense_months=0
-post_count=0
-status=SHORTFALL_span0D_dense0M_TYPED
-cadence_posts_per_active_month=&mdash;</p>
-</div>
-<div class="section">
-<h2>Explainable final score &amp; tier</h2>
-<p><span class="pill">UNRANKED</span> confidence(uncertainty)=0.0</p>
-<p>blocking_reasons=no call evidence: calls-dependent tiers unreachable (track state WIRED_TO_LEDGER)</p>
-<p>oos_disclosure=single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
-<table><thead><tr><th>component</th><th>value</th></tr></thead><tbody>
-<tr><td>handle</td><td>HyperTechInvest</td></tr><tr><td>post_count</td><td>0</td></tr><tr><td>graph_outbound_edges</td><td>0</td></tr><tr><td>engagement_median_likes</td><td>0</td></tr><tr><td>engagement_top_rt</td><td>0</td></tr><tr><td>coverage_dense_months</td><td>0</td></tr><tr><td>coverage_distinct_months</td><td>0</td></tr>
-<tr><td>call_track_record: evaluable_episodes</td><td>0</td></tr>
-<tr><td>call_track_record: mean_market_adjusted_20</td><td>&mdash;</td></tr>
-<tr><td>call_track_record: mean_momentum_adjusted_20</td><td>&mdash;</td></tr>
-<tr><td>call_track_record: std_market_adjusted_20 (uncertainty)</td><td>&mdash;</td></tr>
-<tr><td>PSR/DSR/PBO / OOS status</td><td class="gap">OOS_NOT_EVALUATED_V1</td></tr>
-</tbody></table>
-</div>
-<div class="section">
-<h2>Genuine LONG calls: 0</h2>
-<p>tickers covered: </p>
-<p>outcome_split: {}</p>
-<p>good_calls=0 failed_calls=0
-unevaluable=0</p>
-</div>
-<div class="section">
-<h2>Originality / lead-lag role (per ticker, from independence records)</h2>
-<table><thead><tr><th>ticker</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>CIFR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-05</td></tr><tr><td>GOOG</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-09</td></tr><tr><td>GRAB</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-09-05</td></tr><tr><td>IREN</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-10</td></tr><tr><td>META</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-09</td></tr><tr><td>NVDA</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-10</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Full call history / thesis timeline / evidence posts (6 episode(s))</h2>
-<div data-episode-id="2096200602560987237" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=HyperTechInvest</span><span data-field="ticker" style="margin-right:10px">ticker=GRAB</span></div>
-<div>tweet_date=2026-09-05 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2096200602560987237.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2096361504530456684" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=HyperTechInvest</span><span data-field="ticker" style="margin-right:10px">ticker=CIFR</span></div>
-<div>tweet_date=2026-09-05 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2096361504530456684.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2097729643902304497" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=HyperTechInvest</span><span data-field="ticker" style="margin-right:10px">ticker=GOOG</span></div>
-<div>tweet_date=2026-09-09 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2097729643902304497.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2097729643902304497" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=NO_MARKET_DATA_AFTER_TWEET</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=HyperTechInvest</span><span data-field="ticker" style="margin-right:10px">ticker=META</span></div>
-<div>tweet_date=2026-09-09 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2097729643902304497.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2097921822117560583" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=NO_MARKET_DATA_AFTER_TWEET</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=HyperTechInvest</span><span data-field="ticker" style="margin-right:10px">ticker=IREN</span></div>
-<div>tweet_date=2026-09-10 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2097921822117560583.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2098119749138104718" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=NO_MARKET_DATA_AFTER_TWEET</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=HyperTechInvest</span><span data-field="ticker" style="margin-right:10px">ticker=NVDA</span></div>
-<div>tweet_date=2026-09-10 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2098119749138104718.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="kols.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Identite &amp; suivi</h2>
+<p>Identite provider-attested : non
+&middot; suivi : <span class="badge badge-good">MONITORED</span></p>
+<p>Duree observee : 733 jour(s)
+&middot; date de creation du compte : <span title="INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS">non disponible</span></p>
+<p>Expertise / sous-industrie : <span title="INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2">non disponible</span></p>
+<p>Integrite des suppressions : <span title="NOT_COLLECTED_YET_TR_DELETED_MILESTONE">non disponible</span></p>
+<p>Mois observes : 25
+&middot; mois denses : 25
+&middot; posts collectes : 5 596
+&middot; cadence : 223.8 posts/mois actif</p>
+</section>
+
+<section class="section">
+<h2>Score final &amp; confiance</h2>
+<p class="score-hero">0.042</p>
+<p>Niveau de confiance : <span class="badge badge-good">EARLY_EVIDENCE</span>
+&middot; incertitude : 1.00</p>
+<p class="muted">calls=240, dense_months=25</p>
+<p class="muted">single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
+</section>
+
+<section class="section">
+<h2>Courbe de performance (rendement realise par fenetre)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="60.4" x2="310" y2="60.4" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,61.2 160.0,58.8 210.0,56.7 260.0,61.8" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +54.2 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -1.7 %</title></circle><circle cx="110.0" cy="61.2" r="3" fill="#b3392c"><title>6 mois : -0.8 %</title></circle><circle cx="160.0" cy="58.8" r="3" fill="#2f8f4e"><title>3 mois : +1.8 %</title></circle><circle cx="210.0" cy="56.7" r="3" fill="#2f8f4e"><title>2 mois : +4.0 %</title></circle><circle cx="260.0" cy="61.8" r="3" fill="#b3392c"><title>1 mois : -1.5 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+</section>
+
+<section class="section">
+<h2>Track record par fenetre (2 ans &rarr; 1 semaine)</h2>
+<table><thead><tr><th>fenetre</th><th>rendement realise</th>
+<th>rendement ajuste marche</th><th>calls evaluables / total</th><th>taux de reussite</th></tr></thead>
+<tbody><tr>
+<td>2 ans</td>
+<td>+54.2 %</td>
+<td>+34.0 %</td>
+<td>81 / 96</td>
+<td>+57 %</td>
+</tr><tr>
+<td>1 an</td>
+<td>-1.7 %</td>
+<td>-9.2 %</td>
+<td>33 / 41</td>
+<td>+42 %</td>
+</tr><tr>
+<td>6 mois</td>
+<td>-0.8 %</td>
+<td>-3.8 %</td>
+<td>18 / 23</td>
+<td>+39 %</td>
+</tr><tr>
+<td>3 mois</td>
+<td>+1.8 %</td>
+<td>+0.9 %</td>
+<td>9 / 10</td>
+<td>+56 %</td>
+</tr><tr>
+<td>2 mois</td>
+<td>+4.0 %</td>
+<td>+4.6 %</td>
+<td>6 / 6</td>
+<td>+67 %</td>
+</tr><tr>
+<td>1 mois</td>
+<td>-1.5 %</td>
+<td>-1.3 %</td>
+<td>4 / 4</td>
+<td>+50 %</td>
+</tr><tr><td>1 semaine</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Meilleurs / pires calls</h2>
+<p>Meilleur call (2 ans) : <a href='/tickers/AEHR'>AEHR</a> <span class='pos'>+712.1 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/1878993802511159356" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (1 an) : <a href='/tickers/STM'>STM</a> <span class='pos'>+56.5 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2036989915485884886" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (6 mois) : <a href='/tickers/STM'>STM</a> <span class='pos'>+56.5 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2036989915485884886" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (3 mois) : <a href='/tickers/BE'>BE</a> <span class='pos'>+35.2 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2091260662127407605" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (2 mois) : <a href='/tickers/BE'>BE</a> <span class='pos'>+35.2 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2091260662127407605" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (1 mois) : <a href='/tickers/BE'>BE</a> <span class='pos'>+35.2 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2091260662127407605" target="_blank" rel="noopener">voir le post</a></p>
+<p>Pire call (2 ans) : <a href='/tickers/MTEK'>MTEK</a> <span class='neg'>-76.7 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/1869497585414922335" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (1 an) : <a href='/tickers/FRMI'>FRMI</a> <span class='neg'>-64.9 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/1998098725118365767" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (6 mois) : <a href='/tickers/PSQL'>PSQL</a> <span class='neg'>-34.5 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2095220018229453291" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (3 mois) : <a href='/tickers/PSQL'>PSQL</a> <span class='neg'>-34.5 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2095220018229453291" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (2 mois) : <a href='/tickers/PSQL'>PSQL</a> <span class='neg'>-34.5 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2095220018229453291" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (1 mois) : <a href='/tickers/PSQL'>PSQL</a> <span class='neg'>-34.5 %</span> &middot; <a href="https://x.com/HyperTechInvest/status/2095220018229453291" target="_blank" rel="noopener">voir le post</a></p>
+</section>
+
+<section class="section">
+<h2>Calls genuinement LONG</h2>
+<p>271 episode(s) sur 247 ticker(s) :
+AAOI, AAPL, ABCL, ACHR, ACMR, ADBE, ADYE, AEHR, AFRM, AIXA, ALAB, ALGM, ALMU, AMAT, AMD, AMPS, AMZN, ANET, APLD, ARM, ASM, ASML, ASTS, ASX, ATS, AVAV, AVGO, AWE, AWS, AXTI, BA, BABA, BACQ, BE, BEAM, BESI, BETR, BITF, BKNG, BKSY, BLSH, BMNR, BRK, BTC, BTDR, BULL, CAMT, CBRS, CELH, CIEN, CIFR, CLSK, CMG, COHR, COIN, CORZ, CRBS, CRDO, CRM, CRSP, CRWD, CRWV, CSCO, DAVE, DELL, DGXX, DKNG, DLR, DNA, DRPO, EA, EDIT, EL, ELF, ENPH, EOSE, EQIX, ETH, FERMI, FIX, FN, FORD, FOUR, FRMI, GFS, GLXY, GM, GOEV, GOOG, GOOGL, GRAB, GRAL, HIMS, HITI, HIVE, HOOD, HPE, HUT, HXSCL, IBM, IFNNY, INFQ, INTC, INTR, IONQ, IQE, IREN, JBL, JNPR, JOBY, JPM, KEEL, KLAC, KRE, KRMN, KTOS, KULR, LASR, LFMD, LITE, LKNCY, LMT, LPK, LRCX, LUNR, LWLG, MARA, MDA, META, ML, MQ, MRNA, MRVL, MSFT, MSTR, MTEK, MTSI, MU, MXL, NBIS, NNOX, NOK, NTLA, NU, NUAI, NVDA, NVTS, NXT, OKLO, ON, ONDS, ONTO, ORCL, OSCR, OUST, OVH, OXIG, PACB, PDD, PENG, PL, PLTR, PNG, POET, PRME, PSQL, PYPL, QBTS, QCOM, QMCO, QUBT, RBLX, RCAT, RDW, RELY, RGTI, RIOT, RKLB, ROK, RR, RXRX, SANM, SDIG, SEI, SERV, SHLS, SHMD, SIRI, SITM, SIVE, SKHY, SKM, SKYT, SLNG, SLNH, SMCI, SMH, SMR, SMTC, SNDK, SNPS, SOFI, SOI, SOL, SONY, SOUN, SPCX, SPOT, SPRB, SPY, SQ, SSNLF, STM, STNE, SYM, TDOC, TEM, TER, TJX, TMDX, TOST, TOWCF, TRT, TRUMP, TSEM, TSLA, TSM, TSMC, TTD, TWST, TXN, U, UBER, UMAC, USAR, VECO, VWAGY, WISE, WMT, WRD, WULF, WYFI, XFAB, XPEV, XRP, XYZ, ZETA</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score (composants bruts, hors track record)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th></tr></thead><tbody><tr><td>post_count</td><td>5596</td></tr><tr><td>graph_outbound_edges</td><td>6</td></tr><tr><td>engagement_median_likes</td><td>24</td></tr><tr><td>engagement_top_rt</td><td>160437</td></tr><tr><td>coverage_dense_months</td><td>25</td></tr><tr><td>coverage_distinct_months</td><td>25</td></tr></tbody></table>
+<details class="proofs"><summary>Preuves techniques (score composant call_track_record)</summary><pre>{&#x27;value&#x27;: 240, &#x27;evaluable_episodes&#x27;: 240, &#x27;mean_market_adjusted_20&#x27;: 0.061041, &#x27;mean_momentum_adjusted_20&#x27;: 0.056749, &#x27;uncertainty&#x27;: {&#x27;n&#x27;: 232, &#x27;std_market_adjusted_20&#x27;: 0.56564, &#x27;note&#x27;: &#x27;small-sample dispersion disclosed; confidence grows continuously with calls and dense months&#x27;}, &#x27;oos_status&#x27;: &#x27;OOS_NOT_EVALUATED_V1&#x27;, &#x27;oos_disclosure&#x27;: &#x27;single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists&#x27;}</pre></details>
+</section>
+
+<section class="section">
+<h2>Role dans le graphe (originalite / suivisme par ticker)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/tickers/AAOI'>AAOI</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/AAPL'>AAPL</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2025-02-03</td></tr><tr><td><a href='/tickers/ABCL'>ABCL</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/ACHR'>ACHR</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-12-30</td></tr><tr><td><a href='/tickers/ACMR'>ACMR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/ADBE'>ADBE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-26</td></tr><tr><td><a href='/tickers/ADYE'>ADYE</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/AEHR'>AEHR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-14</td></tr><tr><td><a href='/tickers/AFRM'>AFRM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/AIXA'>AIXA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/ALAB'>ALAB</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/ALGM'>ALGM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-18</td></tr><tr><td><a href='/tickers/ALMU'>ALMU</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/AMAT'>AMAT</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-01-17</td></tr><tr><td><a href='/tickers/AMD'>AMD</a></td><td>ORIGINATOR</td><td>1.00</td><td>135</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/AMPS'>AMPS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/AMZN'>AMZN</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/ANET'>ANET</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/APLD'>APLD</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2025-06-28</td></tr><tr><td><a href='/tickers/ARM'>ARM</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2025-01-17</td></tr><tr><td><a href='/tickers/ASM'>ASM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/ASML'>ASML</a></td><td>ORIGINATOR</td><td>1.00</td><td>18</td><td>2024-11-11</td></tr><tr><td><a href='/tickers/ASTS'>ASTS</a></td><td>ORIGINATOR</td><td>1.00</td><td>6</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/ASX'>ASX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/ATS'>ATS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/AVAV'>AVAV</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-11-15</td></tr><tr><td><a href='/tickers/AVGO'>AVGO</a></td><td>FOLLOWER</td><td>0.50</td><td>10</td><td>2025-01-27</td></tr><tr><td><a href='/tickers/AWE'>AWE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/AWS'>AWS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-03-28</td></tr><tr><td><a href='/tickers/AXTI'>AXTI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/BA'>BA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-26</td></tr><tr><td><a href='/tickers/BABA'>BABA</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/BACQ'>BACQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-11-03</td></tr><tr><td><a href='/tickers/BE'>BE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-20</td></tr><tr><td><a href='/tickers/BEAM'>BEAM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/BESI'>BESI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/BETR'>BETR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/BITF'>BITF</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-09-23</td></tr><tr><td><a href='/tickers/BKNG'>BKNG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/BKSY'>BKSY</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/BLSH'>BLSH</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-07-19</td></tr><tr><td><a href='/tickers/BMNR'>BMNR</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-08-28</td></tr><tr><td><a href='/tickers/BRK'>BRK</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-20</td></tr><tr><td><a href='/tickers/BTC'>BTC</a></td><td>FOLLOWER</td><td>0.50</td><td>17</td><td>2024-11-10</td></tr><tr><td><a href='/tickers/BTDR'>BTDR</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/BULL'>BULL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-19</td></tr><tr><td><a href='/tickers/CAMT'>CAMT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/CBRS'>CBRS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-27</td></tr><tr><td><a href='/tickers/CELH'>CELH</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/CIEN'>CIEN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/CIFR'>CIFR</a></td><td>FOLLOWER</td><td>0.50</td><td>9</td><td>2025-09-23</td></tr><tr><td><a href='/tickers/CLSK'>CLSK</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/CMG'>CMG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/COHR'>COHR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/COIN'>COIN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-24</td></tr><tr><td><a href='/tickers/CORZ'>CORZ</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/CRBS'>CRBS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-14</td></tr><tr><td><a href='/tickers/CRDO'>CRDO</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-12-15</td></tr><tr><td><a href='/tickers/CRM'>CRM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/CRSP'>CRSP</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/CRWD'>CRWD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/CRWV'>CRWV</a></td><td>ORIGINATOR</td><td>1.00</td><td>14</td><td>2025-03-28</td></tr><tr><td><a href='/tickers/CSCO'>CSCO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/DAVE'>DAVE</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-01-22</td></tr><tr><td><a href='/tickers/DELL'>DELL</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2025-01-08</td></tr><tr><td><a href='/tickers/DGXX'>DGXX</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/DKNG'>DKNG</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/DLR'>DLR</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-03-28</td></tr><tr><td><a href='/tickers/DNA'>DNA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/DRPO'>DRPO</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-11-07</td></tr><tr><td><a href='/tickers/EA'>EA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/EDIT'>EDIT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/EL'>EL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/ELF'>ELF</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-01</td></tr><tr><td><a href='/tickers/ENPH'>ENPH</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/EOSE'>EOSE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-11-18</td></tr><tr><td><a href='/tickers/EQIX'>EQIX</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-03-28</td></tr><tr><td><a href='/tickers/ETH'>ETH</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2024-11-13</td></tr><tr><td><a href='/tickers/FERMI'>FERMI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/FIX'>FIX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/FN'>FN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/FORD'>FORD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-11-05</td></tr><tr><td><a href='/tickers/FOUR'>FOUR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/FRMI'>FRMI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-12-08</td></tr><tr><td><a href='/tickers/GFS'>GFS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/GLXY'>GLXY</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2025-11-05</td></tr><tr><td><a href='/tickers/GM'>GM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-26</td></tr><tr><td><a href='/tickers/GOEV'>GOEV</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-31</td></tr><tr><td><a href='/tickers/GOOG'>GOOG</a></td><td>ORIGINATOR</td><td>1.00</td><td>19</td><td>2025-01-27</td></tr><tr><td><a href='/tickers/GOOGL'>GOOGL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-11-30</td></tr><tr><td><a href='/tickers/GRAB'>GRAB</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/GRAL'>GRAL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-29</td></tr><tr><td><a href='/tickers/HIMS'>HIMS</a></td><td>ORIGINATOR</td><td>1.00</td><td>37</td><td>2024-09-28</td></tr><tr><td><a href='/tickers/HITI'>HITI</a></td><td>ORIGINATOR</td><td>1.00</td><td>10</td><td>2024-10-25</td></tr><tr><td><a href='/tickers/HIVE'>HIVE</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-09-23</td></tr><tr><td><a href='/tickers/HOOD'>HOOD</a></td><td>ORIGINATOR</td><td>1.00</td><td>6</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/HPE'>HPE</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-06-16</td></tr><tr><td><a href='/tickers/HUT'>HUT</a></td><td>ORIGINATOR</td><td>1.00</td><td>3</td><td>2025-09-23</td></tr><tr><td><a href='/tickers/HXSCL'>HXSCL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-12-25</td></tr><tr><td><a href='/tickers/IBM'>IBM</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/IFNNY'>IFNNY</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/INFQ'>INFQ</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-19</td></tr><tr><td><a href='/tickers/INTC'>INTC</a></td><td>ORIGINATOR</td><td>1.00</td><td>19</td><td>2024-11-10</td></tr><tr><td><a href='/tickers/INTR'>INTR</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2024-12-18</td></tr><tr><td><a href='/tickers/IONQ'>IONQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>27</td><td>2024-09-17</td></tr><tr><td><a href='/tickers/IQE'>IQE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/IREN'>IREN</a></td><td>ORIGINATOR</td><td>1.00</td><td>26</td><td>2025-03-25</td></tr><tr><td><a href='/tickers/JBL'>JBL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/JNPR'>JNPR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/JOBY'>JOBY</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/JPM'>JPM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/KEEL'>KEEL</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-08-21</td></tr><tr><td><a href='/tickers/KLAC'>KLAC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-17</td></tr><tr><td><a href='/tickers/KRE'>KRE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/KRMN'>KRMN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-11-18</td></tr><tr><td><a href='/tickers/KTOS'>KTOS</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/KULR'>KULR</a></td><td>ORIGINATOR</td><td>1.00</td><td>12</td><td>2024-11-26</td></tr><tr><td><a href='/tickers/LASR'>LASR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-11-18</td></tr><tr><td><a href='/tickers/LFMD'>LFMD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/LITE'>LITE</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/LKNCY'>LKNCY</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/LMT'>LMT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-26</td></tr><tr><td><a href='/tickers/LPK'>LPK</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-02</td></tr><tr><td><a href='/tickers/LRCX'>LRCX</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-01-17</td></tr><tr><td><a href='/tickers/LUNR'>LUNR</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/LWLG'>LWLG</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/MARA'>MARA</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/MDA'>MDA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/META'>META</a></td><td>ORIGINATOR</td><td>1.00</td><td>15</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/ML'>ML</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-22</td></tr><tr><td><a href='/tickers/MQ'>MQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/MRNA'>MRNA</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-01-22</td></tr><tr><td><a href='/tickers/MRVL'>MRVL</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2025-01-27</td></tr><tr><td><a href='/tickers/MSFT'>MSFT</a></td><td>ORIGINATOR</td><td>1.00</td><td>11</td><td>2025-02-03</td></tr><tr><td><a href='/tickers/MSTR'>MSTR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2024-12-30</td></tr><tr><td><a href='/tickers/MTEK'>MTEK</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-18</td></tr><tr><td><a href='/tickers/MTSI'>MTSI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/MU'>MU</a></td><td>ORIGINATOR</td><td>1.00</td><td>58</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/MXL'>MXL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/NBIS'>NBIS</a></td><td>FOLLOWER</td><td>0.50</td><td>76</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/NNOX'>NNOX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/NOK'>NOK</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/NTLA'>NTLA</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/NU'>NU</a></td><td>ORIGINATOR</td><td>1.00</td><td>24</td><td>2024-09-28</td></tr><tr><td><a href='/tickers/NUAI'>NUAI</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/NVDA'>NVDA</a></td><td>ORIGINATOR</td><td>1.00</td><td>62</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/NVTS'>NVTS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/NXT'>NXT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/OKLO'>OKLO</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2024-11-11</td></tr><tr><td><a href='/tickers/ON'>ON</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-18</td></tr><tr><td><a href='/tickers/ONDS'>ONDS</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-11-07</td></tr><tr><td><a href='/tickers/ONTO'>ONTO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/ORCL'>ORCL</a></td><td>ORIGINATOR</td><td>1.00</td><td>6</td><td>2025-03-28</td></tr><tr><td><a href='/tickers/OSCR'>OSCR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-06-20</td></tr><tr><td><a href='/tickers/OUST'>OUST</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-11-07</td></tr><tr><td><a href='/tickers/OVH'>OVH</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-13</td></tr><tr><td><a href='/tickers/OXIG'>OXIG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/PACB'>PACB</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/PDD'>PDD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-15</td></tr><tr><td><a href='/tickers/PENG'>PENG</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-29</td></tr><tr><td><a href='/tickers/PL'>PL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/PLTR'>PLTR</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2024-11-18</td></tr><tr><td><a href='/tickers/PNG'>PNG</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2024-10-18</td></tr><tr><td><a href='/tickers/POET'>POET</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/PRME'>PRME</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-29</td></tr><tr><td><a href='/tickers/PSQL'>PSQL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-09-02</td></tr><tr><td><a href='/tickers/PYPL'>PYPL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-10-13</td></tr><tr><td><a href='/tickers/QBTS'>QBTS</a></td><td>ORIGINATOR</td><td>1.00</td><td>9</td><td>2024-12-19</td></tr><tr><td><a href='/tickers/QCOM'>QCOM</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-01-03</td></tr><tr><td><a href='/tickers/QMCO'>QMCO</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2024-12-19</td></tr><tr><td><a href='/tickers/QUBT'>QUBT</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2024-11-11</td></tr><tr><td><a href='/tickers/RBLX'>RBLX</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/RCAT'>RCAT</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-11-07</td></tr><tr><td><a href='/tickers/RDW'>RDW</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/RELY'>RELY</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-01-22</td></tr><tr><td><a href='/tickers/RGTI'>RGTI</a></td><td>ORIGINATOR</td><td>1.00</td><td>10</td><td>2024-11-11</td></tr><tr><td><a href='/tickers/RIOT'>RIOT</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/RKLB'>RKLB</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2024-10-01</td></tr><tr><td><a href='/tickers/ROK'>ROK</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/RR'>RR</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2024-12-19</td></tr><tr><td><a href='/tickers/RXRX'>RXRX</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/SANM'>SANM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/SDIG'>SDIG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-12-08</td></tr><tr><td><a href='/tickers/SEI'>SEI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/SERV'>SERV</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2024-11-17</td></tr><tr><td><a href='/tickers/SHLS'>SHLS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/SHMD'>SHMD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/SIRI'>SIRI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-20</td></tr><tr><td><a href='/tickers/SITM'>SITM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/SIVE'>SIVE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/SKHY'>SKHY</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-07-02</td></tr><tr><td><a href='/tickers/SKM'>SKM</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-06-08</td></tr><tr><td><a href='/tickers/SKYT'>SKYT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-17</td></tr><tr><td><a href='/tickers/SLNG'>SLNG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-01-18</td></tr><tr><td><a href='/tickers/SLNH'>SLNH</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-09-23</td></tr><tr><td><a href='/tickers/SMCI'>SMCI</a></td><td>ORIGINATOR</td><td>1.00</td><td>7</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/SMH'>SMH</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/SMR'>SMR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-11-11</td></tr><tr><td><a href='/tickers/SMTC'>SMTC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/SNDK'>SNDK</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-13</td></tr><tr><td><a href='/tickers/SNPS'>SNPS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-17</td></tr><tr><td><a href='/tickers/SOFI'>SOFI</a></td><td>ORIGINATOR</td><td>1.00</td><td>26</td><td>2024-09-24</td></tr><tr><td><a href='/tickers/SOI'>SOI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/SOL'>SOL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-01-24</td></tr><tr><td><a href='/tickers/SONY'>SONY</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/SOUN'>SOUN</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/SPCX'>SPCX</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-17</td></tr><tr><td><a href='/tickers/SPOT'>SPOT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-20</td></tr><tr><td><a href='/tickers/SPRB'>SPRB</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-10-06</td></tr><tr><td><a href='/tickers/SPY'>SPY</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2024-10-25</td></tr><tr><td><a href='/tickers/SQ'>SQ</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2024-09-28</td></tr><tr><td><a href='/tickers/SSNLF'>SSNLF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-12-25</td></tr><tr><td><a href='/tickers/STM'>STM</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/STNE'>STNE</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2024-09-28</td></tr><tr><td><a href='/tickers/SYM'>SYM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/TDOC'>TDOC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-24</td></tr><tr><td><a href='/tickers/TEM'>TEM</a></td><td>ORIGINATOR</td><td>1.00</td><td>18</td><td>2025-01-21</td></tr><tr><td><a href='/tickers/TER'>TER</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/TJX'>TJX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/TMDX'>TMDX</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2025-01-01</td></tr><tr><td><a href='/tickers/TOST'>TOST</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-22</td></tr><tr><td><a href='/tickers/TOWCF'>TOWCF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-11</td></tr><tr><td><a href='/tickers/TRT'>TRT</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-04-23</td></tr><tr><td><a href='/tickers/TRUMP'>TRUMP</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-01-19</td></tr><tr><td><a href='/tickers/TSEM'>TSEM</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/TSLA'>TSLA</a></td><td>ORIGINATOR</td><td>1.00</td><td>15</td><td>2024-10-12</td></tr><tr><td><a href='/tickers/TSM'>TSM</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/TSMC'>TSMC</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-22</td></tr><tr><td><a href='/tickers/TTD'>TTD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/TWST'>TWST</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-05-05</td></tr><tr><td><a href='/tickers/TXN'>TXN</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-17</td></tr><tr><td><a href='/tickers/U'>U</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-02-23</td></tr><tr><td><a href='/tickers/UBER'>UBER</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2024-11-17</td></tr><tr><td><a href='/tickers/UMAC'>UMAC</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-11-07</td></tr><tr><td><a href='/tickers/USAR'>USAR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-19</td></tr><tr><td><a href='/tickers/VECO'>VECO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/VWAGY'>VWAGY</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-26</td></tr><tr><td><a href='/tickers/WISE'>WISE</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-01-22</td></tr><tr><td><a href='/tickers/WMT'>WMT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-23</td></tr><tr><td><a href='/tickers/WRD'>WRD</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2025-02-14</td></tr><tr><td><a href='/tickers/WULF'>WULF</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2025-11-09</td></tr><tr><td><a href='/tickers/WYFI'>WYFI</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2025-12-08</td></tr><tr><td><a href='/tickers/XFAB'>XFAB</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/tickers/XPEV'>XPEV</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-10-27</td></tr><tr><td><a href='/tickers/XRP'>XRP</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-01-24</td></tr><tr><td><a href='/tickers/XYZ'>XYZ</a></td><td>ORIGINATOR</td><td>1.00</td><td>20</td><td>2025-01-24</td></tr><tr><td><a href='/tickers/ZETA'>ZETA</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2025-06-28</td></tr></tbody></table>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

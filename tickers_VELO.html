@@ -1,89 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>VELO - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VELO — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>VELO</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Velo3D, Inc.</strong> &mdash; Velo3D, Inc. produces and sells metal additive three-dimensional printers in the Americas, Europe, and internationally. Its printers enable the production of components for space rockets, jet engines, fuel delivery systems, and other metal parts. The company also offers Flow, a proprietary software platform, which scans part designs for geometrical features; Sapphire, Sapphire 1MZ, Sapphire XC, and Sapphire XC 1MZ printers; Assure, a quality assurance software platform; Developer, a new version of print preparation software that turns traditional design files into print files; and Intelligent Fusion, the underlying manufacturing process that binds and facilitates all aspects of the Velo3D fully integrated solution. It serves companies in the space, aviation, defense, automotive, energy, and industrial markets. The company was founded in 2014 and is headquartered in Fremont, California. Velo3D, Inc. operates as a subsidiary of Arrayed Additive inc.</p>
-<p>ai_subindustry=defense_autonomy value_chain_role=downstream_application_layer_defense
-country=United States asset_class=EQUITY</p>
-<p>market_cap=344477792 trailing_pe=[FIELD_NOT_PROVIDED]
-forward_pe=-17.007936 price_to_book=5.450153</p>
-<p>revenue=57561000 revenue_growth=0.523
-cash=91144000 debt=30815000 profitability=-0.89632004</p>
-<p>current_price=10.715 momentum_state=DOWNTREND
-average_volume=2315416</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">ACTIVE_CALL</span> rule=latest open episode age_days=142 &lt;= 174 (120-trading-session frozen evaluation horizon expressed in calendar days)
-age_days_vs_as_of=142</p>
-<p>first_call: PhotonBull on 2026-04-22
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=1
-pushes_by_account={&#x27;PhotonBull&#x27;: 1}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">HIGH</span> rule=size_bucket==SMALL or supporting_kol_count==1 or average_volume degraded</p>
-<p>data_quality warnings: trailing_pe: FIELD_NOT_PROVIDED</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.4788</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>0.2</td><td>0.3</td><td>0.06</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>PhotonBull tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.7</td><td>0.2</td><td>0.14</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.4</td><td>0.15</td><td>0.06</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.9375</td><td>0.1</td><td>0.0938</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
-<p><strong>Reasons against:</strong> kol_independence: 1 distinct supporting account(s) (score 0.2)</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (1 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>PhotonBull</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-04-22</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (1 episode(s))</h2>
-<div data-episode-id="2046995228918530081" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=VELO</span></div>
-<div>tweet_date=2026-04-22 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2046995228918530081.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Velo3D, Inc.</strong>
+&mdash; Technology / defense_autonomy</p>
+<p>Velo3D, Inc. produces and sells metal additive three-dimensional printers in the Americas, Europe, and internationally. Its printers enable the production of components for space rockets, jet engines, fuel delivery systems, and other metal parts. The company also offers Flow, a proprietary software platform, which scans part designs for geometrical features; Sapphire, Sapphire 1MZ, Sapphire XC, and Sapphire XC 1MZ printers; Assure, a quality assurance software platform; Developer, a new version of print preparation software that turns traditional design files into print files; and Intelligent </p>
+<p>capitalisation : 338.5 M$
+&middot; prix actuel : 10.53
+&middot; momentum : <span class="badge badge-neutral">DOWNTREND</span></p>
+<p>risque : <span class="badge badge-warn">HIGH</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
+(114 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="52.2" x2="310" y2="52.2" class="zero-line"/><polyline points="10.0,30.2 60.0,10.0 110.0,57.2 160.0,62.0 210.0,53.3 260.0,58.5 310.0,53.9" class="spark-line"/><circle cx="10.0" cy="30.2" r="3" fill="#2f8f4e"><title>2 ans : +122.9 %</title></circle><circle cx="60.0" cy="10.0" r="3" fill="#2f8f4e"><title>1 an : +235.4 %</title></circle><circle cx="110.0" cy="57.2" r="3" fill="#b3392c"><title>6 mois : -27.6 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -54.4 %</title></circle><circle cx="210.0" cy="53.3" r="3" fill="#b3392c"><title>2 mois : -6.1 %</title></circle><circle cx="260.0" cy="58.5" r="3" fill="#b3392c"><title>1 mois : -34.8 %</title></circle><circle cx="310.0" cy="53.9" r="3" fill="#b3392c"><title>1 semaine : -9.3 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+122.9 %</td></tr><tr><td>1 an</td><td class="pos">+235.4 %</td></tr><tr><td>6 mois</td><td class="neg">-27.6 %</td></tr><tr><td>3 mois</td><td class="neg">-54.4 %</td></tr><tr><td>2 mois</td><td class="neg">-6.1 %</td></tr><tr><td>1 mois</td><td class="neg">-34.8 %</td></tr><tr><td>1 semaine</td><td class="neg">-9.3 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+122.9 %</td><td>RJCcapital opened Long Position on VELO; PhotonBull opened Long Position on VELO; CKCapitalxx opened Long Position on VELO; VELO Stock Heads For Best Week This Year — Yes, It&#x27;s A SpaceX Proxy Trade</td></tr><tr><td>1 an</td><td class="pos">+235.4 %</td><td>RJCcapital opened Long Position on VELO; PhotonBull opened Long Position on VELO; CKCapitalxx opened Long Position on VELO; VELO Stock Heads For Best Week This Year — Yes, It&#x27;s A SpaceX Proxy Trade</td></tr><tr><td>6 mois</td><td class="neg">-27.6 %</td><td>PhotonBull opened Long Position on VELO; CKCapitalxx opened Long Position on VELO; VELO Stock Heads For Best Week This Year — Yes, It&#x27;s A SpaceX Proxy Trade; Velo3D (VELO) Stock Valuation After New Shelf Registration And Board Appointment</td></tr><tr><td>3 mois</td><td class="neg">-54.4 %</td><td>VELO Stock Extends Selloff For Fourth Straight Session As Short Seller Claims SpaceX Relationship Is ‘Virtually Dead’; Velo3D (VELO) Stock Gets Fair Value Boost After Analyst Assumptions Shift; Velo3D CEO Says Space Race Is ‘Pushing the Limits’ on Production as Demand Surges; Velo3D Inc (VELO) (Q2 2026) Earnings Call Highlights: Revenue Surges 52% as Backlog Doubles and ...</td></tr><tr><td>2 mois</td><td class="neg">-6.1 %</td><td>Velo3D (VELO) Stock Gets Fair Value Boost After Analyst Assumptions Shift; Velo3D CEO Says Space Race Is ‘Pushing the Limits’ on Production as Demand Surges; Velo3D Inc (VELO) (Q2 2026) Earnings Call Highlights: Revenue Surges 52% as Backlog Doubles and ...; SpaceX Supplier VELO Stock Jumps 16% Overnight: CEO Says Company Is Entering &#x27;Important Phase Of Growth&#x27;</td></tr><tr><td>1 mois</td><td class="neg">-34.8 %</td><td>Flash in the Pan or Sustained Rally Contender? 3 Momentum Stocks to Watch; Jim Cramer Explains Why Velo3D (VELO) Is Only Worth a Quarter Position Right Now</td></tr><tr><td>1 semaine</td><td class="neg">-9.3 %</td><td>aucun catalyseur associe</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2026-01-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on VELO</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/2008569246654361880" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-22</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on VELO</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2046995228918530081" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-22</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on VELO</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2057639792805019863" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>VELO Stock Heads For Best Week This Year — Yes, It&#x27;s A SpaceX Proxy Trade</td><td><a href="https://stocktwits.com/news-articles/markets/equity/velo-stock-heads-for-best-week-this-year-space-x-proxy-trade/cZK5KvxR7P3" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-06-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Velo3D (VELO) Stock Valuation After New Shelf Registration And Board Appointment</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/velo3d-velo-stock-valuation-shelf-001552483.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-06-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is Velo3D’s (VELO) ESOP Shelf And New Director Appointment Reframing Its Governance Priorities?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/velo3d-velo-esop-shelf-director-141248841.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-06-25</td><td><span class="badge badge-neutral">NEWS</span></td><td>VELO Stock Extends Selloff For Fourth Straight Session As Short Seller Claims SpaceX Relationship Is ‘Virtually Dead’</td><td><a href="https://stocktwits.com/news-articles/markets/equity/velo-stock-extends-selloff-short-seller-spacex-relationship-virtually-dead/cZ1GnhBR7XW" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-07-25</td><td><span class="badge badge-neutral">NEWS</span></td><td>Velo3D (VELO) Stock Gets Fair Value Boost After Analyst Assumptions Shift</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/velo3d-velo-stock-gets-fair-190824770.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-08-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Velo3D CEO Says Space Race Is ‘Pushing the Limits’ on Production as Demand Surges</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/velo3d-ceo-says-space-race-071159226.html" target="_blank" rel="noopener">Benzinga</a></td></tr><tr><td>2026-08-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Velo3D Inc (VELO) (Q2 2026) Earnings Call Highlights: Revenue Surges 52% as Backlog Doubles and ...</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/velo3d-inc-velo-q2-2026-050048967.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-08-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>SpaceX Supplier VELO Stock Jumps 16% Overnight: CEO Says Company Is Entering &#x27;Important Phase Of Growth&#x27;</td><td><a href="https://stocktwits.com/news-articles/markets/equity/space-x-supplier-velo-stock-jumps-16-overnight-ceo-says-company-is-entering-important-phase-of-growth/cZoFn3KRJXA" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-08-22</td><td><span class="badge badge-neutral">NEWS</span></td><td>Flash in the Pan or Sustained Rally Contender? 3 Momentum Stocks to Watch</td><td><a href="https://www.marketbeat.com/articles/flash-in-the-pan-or-sustained-rally-contender-3-momentum-stocks-to-watch/?utm_source=yahoofinance&amp;utm_medium=yahoofinance" target="_blank" rel="noopener">MarketBeat</a></td></tr><tr><td>2026-09-05</td><td><span class="badge badge-neutral">NEWS</span></td><td>Jim Cramer Explains Why Velo3D (VELO) Is Only Worth a Quarter Position Right Now</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/jim-cramer-explains-why-velo3d-145323852.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-11-09</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>VELO earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-11-09 &middot; VELO earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : RJCcapital le 2026-01-06
+(LONG_POSITION)</p>
+<p>relances cumulees : 1
+&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
+(<span class="badge badge-neutral">flat</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-22</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-01-06</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">WATCH</span>
+&middot; Pas de signal fort: momentum_state=&#x27;DOWNTREND&#x27;, kol_consensus_trend=&#x27;flat&#x27;</p>
+<p>avertissements donnees : trailing_pe: FIELD_NOT_PROVIDED</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.599)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.60</td><td>0.30</td><td>0.180</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.40</td><td>0.15</td><td>0.060</td><td>momentum_state=&#x27;DOWNTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.94</td><td>0.10</td><td>0.094</td><td>15/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7); data_quality: 15/16 enrichment fields OK (score 0.9375)</p>
+<p><strong>Contre :</strong> momentum_not_overextended: momentum_state=&#x27;DOWNTREND&#x27; (score 0.4) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

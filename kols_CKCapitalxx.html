@@ -1,774 +1,169 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>CKCapitalxx - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CKCapitalxx — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>CKCapitalxx</h1>
-<p><a href="kols.html">&larr; back to KOL table</a></p>
-<div class="section">
-<h2>Identity &amp; lifecycle</h2>
-<p>provider_state=OK
-lifecycle=MONITORED
-owner_root=False
-namesake_user_id=1264320021481873408
-provider_attested=False</p>
-<p>observed_span_days=228
-account_creation_date=<span class="gap">INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS</span></p>
-<p>expertise / AI sub-industry: <span class="gap">INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2</span></p>
-</div>
-<div class="section">
-<h2>Coverage &amp; activity (data-quality / recency / consistency)</h2>
-<p>observable_months=7
-dense_months=6
-post_count=1950
-status=OK_4M_PLUS
-cadence_posts_per_active_month=278.57</p>
-</div>
-<div class="section">
-<h2>Explainable final score &amp; tier</h2>
-<p><span class="pill">EARLY_EVIDENCE</span> confidence(uncertainty)=1.0</p>
-<p>blocking_reasons=calls=31, dense_months=6</p>
-<p>oos_disclosure=single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
-<table><thead><tr><th>component</th><th>value</th></tr></thead><tbody>
-<tr><td>handle</td><td>CKCapitalxx</td></tr><tr><td>post_count</td><td>1950</td></tr><tr><td>graph_outbound_edges</td><td>7</td></tr><tr><td>engagement_median_likes</td><td>56</td></tr><tr><td>engagement_top_rt</td><td>339</td></tr><tr><td>coverage_dense_months</td><td>6</td></tr><tr><td>coverage_distinct_months</td><td>7</td></tr>
-<tr><td>call_track_record: evaluable_episodes</td><td>31</td></tr>
-<tr><td>call_track_record: mean_market_adjusted_20</td><td>0.044188</td></tr>
-<tr><td>call_track_record: mean_momentum_adjusted_20</td><td>-0.044535</td></tr>
-<tr><td>call_track_record: std_market_adjusted_20 (uncertainty)</td><td>0.343621</td></tr>
-<tr><td>PSR/DSR/PBO / OOS status</td><td class="gap">OOS_NOT_EVALUATED_V1</td></tr>
-</tbody></table>
-</div>
-<div class="section">
-<h2>Genuine LONG calls: 98</h2>
-<p>tickers covered: AAOI, AAPL, ADEA, ADTN, AEHR, AGX, AIRJ, ALAB, AMD, AMPG, AMPX, AMZN, ASTS, AT, BE, BITF, BRUN, CBRS, CCJ, CEG, CIFR, COHR, CPSH, CRDO, CRWV, DELL, DGXX, DRAM, EOS, ERII, EWY, FCEL, GOOGL, GSAT, HLIT, HOOD, IBKR, INTC, IREN, KEEL, KRKNF, LASR, LEU, LITE, LWLG, META, MRVL, MSFT, MU, MX, MXL, NBID, NBIS, NOK, NVDA, OKLO, ONDS, OPTX, OSS, OUST, PENG, PL, PLTR, POWI, QCOM, RKLB, RR, SATS, SK, SLNH, SNDK, SOFI, SPCE, SPY, STM, T, TE, TRT, UUUU, VICR, VIVO, VZ, WYFI, ZETA</p>
-<p>outcome_split: {&#x27;UNEVALUABLE_TICKER_ABSENT&#x27;: 66, &#x27;GOOD_CALL&#x27;: 27, &#x27;FAILED_CALL&#x27;: 4, &#x27;UNEVALUABLE_NO_MARKET_DATA&#x27;: 1}</p>
-<p>good_calls=27 failed_calls=4
-unevaluable=67</p>
-</div>
-<div class="section">
-<h2>Originality / lead-lag role (per ticker, from independence records)</h2>
-<table><thead><tr><th>ticker</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>AAOI</td><td>ORIGINATOR</td><td>1.0</td><td>13</td><td>2026-03-12</td></tr><tr><td>AAPL</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-04-02</td></tr><tr><td>ADEA</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-06-04</td></tr><tr><td>ADTN</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-27</td></tr><tr><td>AEHR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-09</td></tr><tr><td>AGX</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-19</td></tr><tr><td>AIRJ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-19</td></tr><tr><td>ALAB</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-21</td></tr><tr><td>AMD</td><td>FOLLOWER</td><td>0.5</td><td>6</td><td>2026-04-29</td></tr><tr><td>AMPG</td><td>ORIGINATOR</td><td>1.0</td><td>3</td><td>2026-05-19</td></tr><tr><td>AMPX</td><td>ORIGINATOR</td><td>1.0</td><td>5</td><td>2026-02-13</td></tr><tr><td>AMZN</td><td>FOLLOWER</td><td>0.5</td><td>4</td><td>2026-04-02</td></tr><tr><td>ASTS</td><td>ORIGINATOR</td><td>1.0</td><td>42</td><td>2026-02-13</td></tr><tr><td>AT</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-02</td></tr><tr><td>BE</td><td>FOLLOWER</td><td>0.5</td><td>7</td><td>2026-03-12</td></tr><tr><td>BITF</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-23</td></tr><tr><td>BRUN</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-03</td></tr><tr><td>CBRS</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-05-12</td></tr><tr><td>CCJ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-30</td></tr><tr><td>CEG</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-30</td></tr><tr><td>CIFR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-18</td></tr><tr><td>COHR</td><td>ORIGINATOR</td><td>1.0</td><td>8</td><td>2026-03-17</td></tr><tr><td>CPSH</td><td>ORIGINATOR</td><td>1.0</td><td>4</td><td>2026-05-26</td></tr><tr><td>CRDO</td><td>ORIGINATOR</td><td>1.0</td><td>8</td><td>2026-03-29</td></tr><tr><td>CRWV</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-04-29</td></tr><tr><td>DELL</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-16</td></tr><tr><td>DGXX</td><td>FOLLOWER</td><td>0.5</td><td>7</td><td>2026-05-12</td></tr><tr><td>DRAM</td><td>ORIGINATOR</td><td>1.0</td><td>9</td><td>2026-05-04</td></tr><tr><td>EOS</td><td>ORIGINATOR</td><td>1.0</td><td>18</td><td>2026-03-04</td></tr><tr><td>ERII</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-09</td></tr><tr><td>EWY</td><td>ORIGINATOR</td><td>1.0</td><td>4</td><td>2026-02-21</td></tr><tr><td>FCEL</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-18</td></tr><tr><td>GOOGL</td><td>FOLLOWER</td><td>0.5</td><td>1</td><td>2026-04-02</td></tr><tr><td>GSAT</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-04-02</td></tr><tr><td>HLIT</td><td>FOLLOWER</td><td>0.5</td><td>6</td><td>2026-05-22</td></tr><tr><td>HOOD</td><td>FOLLOWER</td><td>0.5</td><td>9</td><td>2026-03-20</td></tr><tr><td>IBKR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-29</td></tr><tr><td>INTC</td><td>ORIGINATOR</td><td>1.0</td><td>3</td><td>2026-04-29</td></tr><tr><td>IREN</td><td>FOLLOWER</td><td>0.5</td><td>4</td><td>2026-04-07</td></tr><tr><td>KEEL</td><td>ORIGINATOR</td><td>1.0</td><td>8</td><td>2026-04-23</td></tr><tr><td>KRKNF</td><td>ORIGINATOR</td><td>1.0</td><td>13</td><td>2026-02-17</td></tr><tr><td>LASR</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-03-12</td></tr><tr><td>LEU</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-30</td></tr><tr><td>LITE</td><td>ORIGINATOR</td><td>1.0</td><td>11</td><td>2026-03-12</td></tr><tr><td>LWLG</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-03-11</td></tr><tr><td>META</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-04-07</td></tr><tr><td>MRVL</td><td>ORIGINATOR</td><td>1.0</td><td>4</td><td>2026-05-15</td></tr><tr><td>MSFT</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-04-02</td></tr><tr><td>MU</td><td>FOLLOWER</td><td>0.5</td><td>7</td><td>2026-02-23</td></tr><tr><td>MX</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-28</td></tr><tr><td>MXL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-21</td></tr><tr><td>NBID</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-13</td></tr><tr><td>NBIS</td><td>FOLLOWER</td><td>0.5</td><td>30</td><td>2026-02-15</td></tr><tr><td>NOK</td><td>FOLLOWER</td><td>0.5</td><td>3</td><td>2026-05-01</td></tr><tr><td>NVDA</td><td>FOLLOWER</td><td>0.5</td><td>12</td><td>2026-02-21</td></tr><tr><td>OKLO</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-30</td></tr><tr><td>ONDS</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-02-18</td></tr><tr><td>OPTX</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-04-13</td></tr><tr><td>OSS</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-02-19</td></tr><tr><td>OUST</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-19</td></tr><tr><td>PENG</td><td>FOLLOWER</td><td>0.5</td><td>11</td><td>2026-05-12</td></tr><tr><td>PL</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-02</td></tr><tr><td>PLTR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-23</td></tr><tr><td>POWI</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-19</td></tr><tr><td>QCOM</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-22</td></tr><tr><td>RKLB</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-03-22</td></tr><tr><td>RR</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-08</td></tr><tr><td>SATS</td><td>ORIGINATOR</td><td>1.0</td><td>4</td><td>2026-03-07</td></tr><tr><td>SK</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-04</td></tr><tr><td>SLNH</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-30</td></tr><tr><td>SNDK</td><td>FOLLOWER</td><td>0.5</td><td>4</td><td>2026-02-23</td></tr><tr><td>SOFI</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-04-29</td></tr><tr><td>SPCE</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-02</td></tr><tr><td>SPY</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-20</td></tr><tr><td>STM</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-06-15</td></tr><tr><td>T</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-11</td></tr><tr><td>TE</td><td>FOLLOWER</td><td>0.5</td><td>2</td><td>2026-02-14</td></tr><tr><td>TRT</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-06-19</td></tr><tr><td>UUUU</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-30</td></tr><tr><td>VICR</td><td>ORIGINATOR</td><td>1.0</td><td>1</td><td>2026-05-14</td></tr><tr><td>VIVO</td><td>ORIGINATOR</td><td>1.0</td><td>4</td><td>2026-05-14</td></tr><tr><td>VZ</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-04-02</td></tr><tr><td>WYFI</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-14</td></tr><tr><td>ZETA</td><td>ORIGINATOR</td><td>1.0</td><td>0</td><td>2026-05-18</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Full call history / thesis timeline / evidence posts (98 episode(s))</h2>
-<div data-episode-id="2022108573992398848" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AMPX</span></div>
-<div>tweet_date=2026-02-13 pushes=5
-closure_state=NOT_EVALUABLE
-<a href="evidence_2022108573992398848.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2022394450077716573" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
-<div>tweet_date=2026-02-13 pushes=30
-closure_state=CLOSED_SOLD
-<a href="evidence_2022394450077716573.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2022817035500089848" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=TE</span></div>
-<div>tweet_date=2026-02-14 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2022817035500089848.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2023152156883214386" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=NBIS</span></div>
-<div>tweet_date=2026-02-15 pushes=27
-closure_state=CLOSED_SOLD
-<a href="evidence_2023152156883214386.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.067386</td><td>mfe=0.067386</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.337224</td><td>mfe=0.337224</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.355861</td><td>mfe=0.635802</td><td>mae=0.0</td><td>max_dd=0.187444</td></tr><tr><td>60</td><td>raw=1.56155</td><td>mfe=1.812065</td><td>mae=0.0</td><td>max_dd=0.19969</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2023842506115334246" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=KRKNF</span></div>
-<div>tweet_date=2026-02-17 pushes=13
-closure_state=NOT_EVALUABLE
-<a href="evidence_2023842506115334246.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2023978515452809328" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ONDS</span></div>
-<div>tweet_date=2026-02-18 pushes=2
-closure_state=NOT_EVALUABLE
-<a href="evidence_2023978515452809328.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2024486514063769668" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=OSS</span></div>
-<div>tweet_date=2026-02-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2024486514063769668.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2024801203604095350" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ASTS</span></div>
-<div>tweet_date=2026-02-20 pushes=12
-closure_state=CLOSED_SOLD
-<a href="evidence_2024801203604095350.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.10275</td><td>mfe=0.10275</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.090725</td><td>mfe=0.14847</td><td>mae=0.0</td><td>max_dd=0.05028</td></tr><tr><td>20</td><td>raw=-0.120133</td><td>mfe=0.178355</td><td>mae=-0.168353</td><td>max_dd=0.294231</td></tr><tr><td>60</td><td>raw=0.033099</td><td>mfe=0.584593</td><td>mae=-0.239552</td><td>max_dd=0.50695</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2025336775565033644" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=EWY</span></div>
-<div>tweet_date=2026-02-21 pushes=4
-closure_state=NOT_EVALUABLE
-<a href="evidence_2025336775565033644.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2025336775565033644" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=NVDA</span></div>
-<div>tweet_date=2026-02-21 pushes=12
-closure_state=CLOSED_SOLD
-<a href="evidence_2025336775565033644.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.009331</td><td>mfe=0.009331</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.04643</td><td>mfe=0.04643</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.135534</td><td>mfe=0.232489</td><td>mae=0.0</td><td>max_dd=0.078666</td></tr><tr><td>60</td><td>raw=0.110653</td><td>mfe=0.341337</td><td>mae=0.0</td><td>max_dd=0.182343</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2025798342643511592" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SNDK</span></div>
-<div>tweet_date=2026-02-23 pushes=4
-closure_state=CLOSED_SOLD
-<a href="evidence_2025798342643511592.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.01279</td><td>mfe=0.01279</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.229296</td><td>mfe=0.229296</td><td>mae=0.0</td><td>max_dd=0.019086</td></tr><tr><td>20</td><td>raw=0.582882</td><td>mfe=0.582882</td><td>mae=0.0</td><td>max_dd=0.063811</td></tr><tr><td>60</td><td>raw=1.959869</td><td>mfe=2.370722</td><td>mae=0.0</td><td>max_dd=0.158009</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2025798342643511592" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=MU</span></div>
-<div>tweet_date=2026-02-23 pushes=7
-closure_state=CLOSED_SOLD
-<a href="evidence_2025798342643511592.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.004377</td><td>mfe=0.0</td><td>mae=-0.004377</td><td>max_dd=0.004377</td></tr><tr><td>5</td><td>raw=0.145875</td><td>mfe=0.145875</td><td>mae=-0.004377</td><td>max_dd=0.004377</td></tr><tr><td>20</td><td>raw=0.405899</td><td>mfe=0.426016</td><td>mae=-0.004377</td><td>max_dd=0.038642</td></tr><tr><td>60</td><td>raw=2.113443</td><td>mfe=2.299062</td><td>mae=-0.004377</td><td>max_dd=0.199672</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2029187975075029045" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=EOS</span></div>
-<div>tweet_date=2026-03-04 pushes=18
-closure_state=NOT_EVALUABLE
-<a href="evidence_2029187975075029045.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2030132030952890610" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SATS</span></div>
-<div>tweet_date=2026-03-07 pushes=4
-closure_state=NOT_EVALUABLE
-<a href="evidence_2030132030952890610.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2031038482286584187" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ERII</span></div>
-<div>tweet_date=2026-03-09 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2031038482286584187.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2031847841891828015" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=LWLG</span></div>
-<div>tweet_date=2026-03-11 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2031847841891828015.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2032098626382581993" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AAOI</span></div>
-<div>tweet_date=2026-03-12 pushes=13
-closure_state=CLOSED_SOLD
-<a href="evidence_2032098626382581993.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.203358</td><td>mfe=0.203358</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.543717</td><td>mfe=0.543717</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.903416</td><td>mfe=0.903416</td><td>mae=0.0</td><td>max_dd=0.160335</td></tr><tr><td>60</td><td>raw=0.738274</td><td>mfe=1.583671</td><td>mae=0.0</td><td>max_dd=0.391797</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2032098626382581993" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-03-12 pushes=7
-closure_state=CLOSED_SOLD
-<a href="evidence_2032098626382581993.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.024009</td><td>mfe=0.024009</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.208985</td><td>mfe=0.208985</td><td>mae=0.0</td><td>max_dd=0.004645</td></tr><tr><td>20</td><td>raw=1.139373</td><td>mfe=1.174179</td><td>mae=0.0</td><td>max_dd=0.050998</td></tr><tr><td>60</td><td>raw=1.076331</td><td>mfe=1.611174</td><td>mae=0.0</td><td>max_dd=0.271303</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2032098626382581993" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=LITE</span></div>
-<div>tweet_date=2026-03-12 pushes=11
-closure_state=CLOSED_SOLD
-<a href="evidence_2032098626382581993.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.081384</td><td>mfe=0.081384</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.169332</td><td>mfe=0.171804</td><td>mae=0.0</td><td>max_dd=0.066031</td></tr><tr><td>20</td><td>raw=0.180043</td><td>mfe=0.180043</td><td>mae=0.0</td><td>max_dd=0.118054</td></tr><tr><td>60</td><td>raw=0.113451</td><td>mfe=0.377218</td><td>mae=0.0</td><td>max_dd=0.224207</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2032231569512079471" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=LASR</span></div>
-<div>tweet_date=2026-03-12 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2032231569512079471.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2034002173739114986" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=COHR</span></div>
-<div>tweet_date=2026-03-17 pushes=8
-closure_state=CLOSED_SOLD
-<a href="evidence_2034002173739114986.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.041808</td><td>mfe=0.041808</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.146772</td><td>mfe=0.146772</td><td>mae=0.0</td><td>max_dd=0.019135</td></tr><tr><td>20</td><td>raw=0.290194</td><td>mfe=0.414326</td><td>mae=0.0</td><td>max_dd=0.132679</td></tr><tr><td>60</td><td>raw=0.578773</td><td>mfe=0.72272</td><td>mae=0.0</td><td>max_dd=0.168943</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2034992958655606968" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=HOOD</span></div>
-<div>tweet_date=2026-03-20 pushes=9
-closure_state=NOT_EVALUABLE
-<a href="evidence_2034992958655606968.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2035739508054843478" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=RKLB</span></div>
-<div>tweet_date=2026-03-22 pushes=2
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2035739508054843478.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.03373</td><td>mfe=0.03373</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.01862</td><td>mfe=0.054335</td><td>mae=0.0</td><td>max_dd=0.033874</td></tr><tr><td>20</td><td>raw=0.25931</td><td>mfe=0.374237</td><td>mae=0.0</td><td>max_dd=0.144602</td></tr><tr><td>60</td><td>raw=0.495879</td><td>mfe=1.292888</td><td>mae=0.0</td><td>max_dd=0.46289</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2038288767539093688" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CRDO</span></div>
-<div>tweet_date=2026-03-29 pushes=8
-closure_state=CLOSED_SOLD
-<a href="evidence_2038288767539093688.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.057652</td><td>mfe=0.057652</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.125209</td><td>mfe=0.148978</td><td>mae=0.0</td><td>max_dd=0.020688</td></tr><tr><td>20</td><td>raw=0.814116</td><td>mfe=1.033361</td><td>mae=0.0</td><td>max_dd=0.149303</td></tr><tr><td>60</td><td>raw=1.561301</td><td>mfe=2.153878</td><td>mae=0.0</td><td>max_dd=0.256636</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2039542167916409219" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=PL</span></div>
-<div>tweet_date=2026-04-02 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2039542167916409219.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=VZ</span></div>
-<div>tweet_date=2026-04-02 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AAPL</span></div>
-<div>tweet_date=2026-04-02 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SPCE</span></div>
-<div>tweet_date=2026-04-02 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=GOOGL</span></div>
-<div>tweet_date=2026-04-02 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.018234</td><td>mfe=0.018234</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.071069</td><td>mfe=0.071069</td><td>mae=0.0</td><td>max_dd=0.003925</td></tr><tr><td>20</td><td>raw=0.277543</td><td>mfe=0.285676</td><td>mae=0.0</td><td>max_dd=0.027482</td></tr><tr><td>60</td><td>raw=0.204793</td><td>mfe=0.342112</td><td>mae=0.0</td><td>max_dd=0.161513</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=GSAT</span></div>
-<div>tweet_date=2026-04-02 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AT</span></div>
-<div>tweet_date=2026-04-02 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=MSFT</span></div>
-<div>tweet_date=2026-04-02 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.001582</td><td>mfe=0.0</td><td>mae=-0.001582</td><td>max_dd=0.001582</td></tr><tr><td>5</td><td>raw=0.030814</td><td>mfe=0.030814</td><td>mae=-0.005391</td><td>max_dd=0.009243</td></tr><tr><td>20</td><td>raw=0.109258</td><td>mfe=0.161017</td><td>mae=-0.005391</td><td>max_dd=0.058071</td></tr><tr><td>60</td><td>raw=0.032805</td><td>mfe=0.23771</td><td>mae=-0.051721</td><td>max_dd=0.233844</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2039781546744226126" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AMZN</span></div>
-<div>tweet_date=2026-04-02 pushes=4
-closure_state=CLOSED_SOLD
-<a href="evidence_2039781546744226126.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.004605</td><td>mfe=0.004605</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.127356</td><td>mfe=0.127356</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.278491</td><td>mfe=0.278491</td><td>mae=0.0</td><td>max_dd=0.016251</td></tr><tr><td>60</td><td>raw=0.135862</td><td>mfe=0.292307</td><td>mae=0.0</td><td>max_dd=0.174479</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2041561293396529485" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=IREN</span></div>
-<div>tweet_date=2026-04-07 pushes=4
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2041561293396529485.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.006245</td><td>mfe=0.006245</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.32555</td><td>mfe=0.32555</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.655715</td><td>mfe=0.655715</td><td>mae=0.0</td><td>max_dd=0.176086</td></tr><tr><td>60</td><td>raw=0.192235</td><td>mfe=0.841977</td><td>mae=0.0</td><td>max_dd=0.427771</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2041602992722350566" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=META</span></div>
-<div>tweet_date=2026-04-07 pushes=3
-closure_state=CLOSED_SOLD
-<a href="evidence_2041602992722350566.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.026077</td><td>mfe=0.026077</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.096601</td><td>mfe=0.096601</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.000751</td><td>mfe=0.12431</td><td>mae=-0.012181</td><td>max_dd=0.1214</td></tr><tr><td>60</td><td>raw=-0.018898</td><td>mfe=0.12431</td><td>mae=-0.112744</td><td>max_dd=0.210844</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2042990020638707886" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=VZ</span></div>
-<div>tweet_date=2026-04-11 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2042990020638707886.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2042990020638707886" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=T</span></div>
-<div>tweet_date=2026-04-11 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2042990020638707886.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2043703241603469441" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=NBID</span></div>
-<div>tweet_date=2026-04-13 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2043703241603469441.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2043749186718576653" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=OPTX</span></div>
-<div>tweet_date=2026-04-13 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2043749186718576653.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047386622258241839" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BITF</span></div>
-<div>tweet_date=2026-04-23 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047386622258241839.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2047386622258241839" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=KEEL</span></div>
-<div>tweet_date=2026-04-23 pushes=8
-closure_state=NOT_EVALUABLE
-<a href="evidence_2047386622258241839.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2049477053947252759" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=IBKR</span></div>
-<div>tweet_date=2026-04-29 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2049477053947252759.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2049549568757395461" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SOFI</span></div>
-<div>tweet_date=2026-04-29 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2049549568757395461.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.020497</td><td>mfe=0.020497</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.006211</td><td>mfe=0.020497</td><td>mae=-0.006211</td><td>max_dd=0.026172</td></tr><tr><td>20</td><td>raw=0.131677</td><td>mfe=0.131677</td><td>mae=-0.054037</td><td>max_dd=0.073037</td></tr><tr><td>60</td><td>raw=0.039752</td><td>mfe=0.16646</td><td>mae=-0.054037</td><td>max_dd=0.145856</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2049549568757395461" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AMD</span></div>
-<div>tweet_date=2026-04-29 pushes=6
-closure_state=NOT_EVALUABLE
-<a href="evidence_2049549568757395461.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2049549568757395461" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CRWV</span></div>
-<div>tweet_date=2026-04-29 pushes=2
-closure_state=CLOSED_SOLD
-<a href="evidence_2049549568757395461.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.066398</td><td>mfe=0.066398</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.15448</td><td>mfe=0.23638</td><td>mae=0.0</td><td>max_dd=0.066241</td></tr><tr><td>20</td><td>raw=-0.018548</td><td>mfe=0.23638</td><td>mae=-0.105645</td><td>max_dd=0.276634</td></tr><tr><td>60</td><td>raw=-0.396953</td><td>mfe=0.23638</td><td>mae=-0.396953</td><td>max_dd=0.512248</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2049549568757395461" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=INTC</span></div>
-<div>tweet_date=2026-04-29 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2049549568757395461.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2049923105896694037" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SLNH</span></div>
-<div>tweet_date=2026-04-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2049923105896694037.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2050036643847954656" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=NOK</span></div>
-<div>tweet_date=2026-05-01 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2050036643847954656.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2051405808030896352" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=DRAM</span></div>
-<div>tweet_date=2026-05-04 pushes=9
-closure_state=CLOSED_SOLD
-<a href="evidence_2051405808030896352.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.051631</td><td>mfe=0.051631</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.108231</td><td>mfe=0.18989</td><td>mae=0.0</td><td>max_dd=0.068627</td></tr><tr><td>20</td><td>raw=0.505941</td><td>mfe=0.505941</td><td>mae=0.0</td><td>max_dd=0.104575</td></tr><tr><td>60</td><td>raw=0.08814</td><td>mfe=0.743789</td><td>mae=-0.031108</td><td>max_dd=0.444376</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2051405808030896352" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SK</span></div>
-<div>tweet_date=2026-05-04 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2051405808030896352.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2054010244406104179" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CBRS</span></div>
-<div>tweet_date=2026-05-12 pushes=2
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2054010244406104179.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.100781</td><td>mfe=0.0</td><td>mae=-0.100781</td><td>max_dd=0.100781</td></tr><tr><td>5</td><td>raw=-0.093902</td><td>mfe=0.0</td><td>mae=-0.100781</td><td>max_dd=0.100781</td></tr><tr><td>20</td><td>raw=-0.312052</td><td>mfe=0.0</td><td>mae=-0.353811</td><td>max_dd=0.353811</td></tr><tr><td>60</td><td>raw=-0.245315</td><td>mfe=0.0</td><td>mae=-0.458257</td><td>max_dd=0.458257</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2054010244406104179" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=DGXX</span></div>
-<div>tweet_date=2026-05-12 pushes=7
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054010244406104179.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2054336478713467251" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=PENG</span></div>
-<div>tweet_date=2026-05-12 pushes=11
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2054336478713467251.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.024239</td><td>mfe=0.024239</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.013259</td><td>mfe=0.024239</td><td>mae=-0.053035</td><td>max_dd=0.075445</td></tr><tr><td>20</td><td>raw=0.332712</td><td>mfe=0.479387</td><td>mae=-0.053035</td><td>max_dd=0.180507</td></tr><tr><td>60</td><td>raw=0.143153</td><td>mfe=0.68614</td><td>mae=-0.094676</td><td>max_dd=0.463079</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2054948068911419406" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CBRS</span></div>
-<div>tweet_date=2026-05-14 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2054948068911419406.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.060525</td><td>mfe=0.060525</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=-0.082011</td><td>mfe=0.085478</td><td>mae=-0.082011</td><td>max_dd=0.1543</td></tr><tr><td>20</td><td>raw=-0.220542</td><td>mfe=0.085478</td><td>mae=-0.281389</td><td>max_dd=0.337977</td></tr><tr><td>60</td><td>raw=-0.063135</td><td>mfe=0.085478</td><td>mae=-0.39754</td><td>max_dd=0.444982</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2054948068911419406" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=DGXX</span></div>
-<div>tweet_date=2026-05-14 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054948068911419406.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2054948068911419406" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=VICR</span></div>
-<div>tweet_date=2026-05-14 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054948068911419406.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2054948068911419406" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=WYFI</span></div>
-<div>tweet_date=2026-05-14 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054948068911419406.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2054961187549233414" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=VIVO</span></div>
-<div>tweet_date=2026-05-14 pushes=4
-closure_state=NOT_EVALUABLE
-<a href="evidence_2054961187549233414.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2055241175833981188" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=VIVO</span></div>
-<div>tweet_date=2026-05-15 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2055241175833981188.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2055241175833981188" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=KEEL</span></div>
-<div>tweet_date=2026-05-15 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2055241175833981188.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2055286271145054469" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=MRVL</span></div>
-<div>tweet_date=2026-05-15 pushes=4
-closure_state=CLOSED_SOLD
-<a href="evidence_2055286271145054469.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.04345</td><td>mfe=0.04345</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.232818</td><td>mfe=0.232818</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>20</td><td>raw=0.649619</td><td>mfe=0.873143</td><td>mae=0.0</td><td>max_dd=0.201751</td></tr><tr><td>60</td><td>raw=0.315544</td><td>mfe=0.873143</td><td>mae=-0.032497</td><td>max_dd=0.483487</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2055666766701834297" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=DELL</span></div>
-<div>tweet_date=2026-05-16 pushes=1
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2055666766701834297.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.011637</td><td>mfe=0.0</td><td>mae=-0.011637</td><td>max_dd=0.011637</td></tr><tr><td>5</td><td>raw=0.281687</td><td>mfe=0.281687</td><td>mae=-0.011637</td><td>max_dd=0.011637</td></tr><tr><td>20</td><td>raw=0.697601</td><td>mfe=0.957569</td><td>mae=-0.011637</td><td>max_dd=0.206305</td></tr><tr><td>60</td><td>raw=1.080944</td><td>mfe=1.080944</td><td>mae=-0.011637</td><td>max_dd=0.206305</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2056377421742371329" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CIFR</span></div>
-<div>tweet_date=2026-05-18 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056377421742371329.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056453686025400764" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=FCEL</span></div>
-<div>tweet_date=2026-05-18 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056453686025400764.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056502592524411299" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ZETA</span></div>
-<div>tweet_date=2026-05-18 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056502592524411299.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2056769476448919946" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AMPG</span></div>
-<div>tweet_date=2026-05-19 pushes=3
-closure_state=NOT_EVALUABLE
-<a href="evidence_2056769476448919946.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057068711740141787" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SPY</span></div>
-<div>tweet_date=2026-05-20 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057068711740141787.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057185862816059417" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-05-20 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2057185862816059417.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.017507</td><td>mfe=0.0</td><td>mae=-0.017507</td><td>max_dd=0.017507</td></tr><tr><td>5</td><td>raw=-0.074315</td><td>mfe=0.0</td><td>mae=-0.074315</td><td>max_dd=0.074315</td></tr><tr><td>20</td><td>raw=0.123327</td><td>mfe=0.123327</td><td>mae=-0.239217</td><td>max_dd=0.239217</td></tr><tr><td>60</td><td>raw=-0.321132</td><td>mfe=0.123327</td><td>mae=-0.468137</td><td>max_dd=0.526529</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2057185862816059417" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=FCEL</span></div>
-<div>tweet_date=2026-05-20 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057185862816059417.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057185862816059417" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=NBIS</span></div>
-<div>tweet_date=2026-05-20 pushes=3
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2057185862816059417.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.023462</td><td>mfe=0.0</td><td>mae=-0.023462</td><td>max_dd=0.023462</td></tr><tr><td>5</td><td>raw=0.050743</td><td>mfe=0.050743</td><td>mae=-0.053972</td><td>max_dd=0.053972</td></tr><tr><td>20</td><td>raw=0.289547</td><td>mfe=0.303551</td><td>mae=-0.053972</td><td>max_dd=0.19969</td></tr><tr><td>60</td><td>raw=0.129587</td><td>mfe=0.303551</td><td>mae=-0.326058</td><td>max_dd=0.482996</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2057638814999277677" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=OPTX</span></div>
-<div>tweet_date=2026-05-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057638814999277677.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057671376006221914" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=EOS</span></div>
-<div>tweet_date=2026-05-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057671376006221914.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2057832705514000553" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=HLIT</span></div>
-<div>tweet_date=2026-05-22 pushes=6
-closure_state=NOT_EVALUABLE
-<a href="evidence_2057832705514000553.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2059279235257192711" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CPSH</span></div>
-<div>tweet_date=2026-05-26 pushes=4
-closure_state=NOT_EVALUABLE
-<a href="evidence_2059279235257192711.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2059720783585222885" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ADTN</span></div>
-<div>tweet_date=2026-05-27 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2059720783585222885.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060033094711705837" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=MX</span></div>
-<div>tweet_date=2026-05-28 pushes=0
-closure_state=CLOSED_SOLD
-<a href="evidence_2060033094711705837.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.110227</td><td>mfe=0.0</td><td>mae=-0.110227</td><td>max_dd=0.110227</td></tr><tr><td>5</td><td>raw=-0.2125</td><td>mfe=0.014773</td><td>mae=-0.2125</td><td>max_dd=0.223964</td></tr><tr><td>20</td><td>raw=-0.475</td><td>mfe=0.014773</td><td>mae=-0.475</td><td>max_dd=0.482643</td></tr><tr><td>60</td><td>raw=-0.628409</td><td>mfe=0.014773</td><td>mae=-0.657955</td><td>max_dd=0.662934</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2060837976398057769" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=LEU</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060837976398057769.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060837976398057769" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CCJ</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060837976398057769.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060837976398057769" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=OKLO</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060837976398057769.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060837976398057769" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=UUUU</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060837976398057769.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2060837976398057769" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=CEG</span></div>
-<div>tweet_date=2026-05-30 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2060837976398057769.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2061978954882236710" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BRUN</span></div>
-<div>tweet_date=2026-06-03 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2061978954882236710.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2062543867266601025" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ADEA</span></div>
-<div>tweet_date=2026-06-04 pushes=1
-closure_state=NOT_EVALUABLE
-<a href="evidence_2062543867266601025.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2063812107292868944" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=RR</span></div>
-<div>tweet_date=2026-06-08 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2063812107292868944.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2066626724763431252" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=STM</span></div>
-<div>tweet_date=2026-06-15 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2066626724763431252.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2066878427760665030" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=OSS</span></div>
-<div>tweet_date=2026-06-16 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2066878427760665030.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068066553149403490" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=OUST</span></div>
-<div>tweet_date=2026-06-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068066553149403490.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068066553149403490" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AGX</span></div>
-<div>tweet_date=2026-06-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068066553149403490.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068066553149403490" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=TRT</span></div>
-<div>tweet_date=2026-06-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068066553149403490.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068066553149403490" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AIRJ</span></div>
-<div>tweet_date=2026-06-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068066553149403490.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068066553149403490" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=POWI</span></div>
-<div>tweet_date=2026-06-19 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068066553149403490.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068426025822814633" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=SNDK</span></div>
-<div>tweet_date=2026-06-20 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2068426025822814633.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.136397</td><td>mfe=0.0</td><td>mae=-0.136397</td><td>max_dd=0.136397</td></tr><tr><td>5</td><td>raw=-0.098226</td><td>mfe=0.026947</td><td>mae=-0.158009</td><td>max_dd=0.158009</td></tr><tr><td>20</td><td>raw=-0.300972</td><td>mfe=0.026947</td><td>mae=-0.404142</td><td>max_dd=0.419777</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2068426025822814633" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=MU</span></div>
-<div>tweet_date=2026-06-20 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2068426025822814633.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.131759</td><td>mfe=0.0</td><td>mae=-0.131759</td><td>max_dd=0.131759</td></tr><tr><td>5</td><td>raw=-0.054566</td><td>mfe=0.0018</td><td>mae=-0.13445</td><td>max_dd=0.13445</td></tr><tr><td>20</td><td>raw=-0.19846</td><td>mfe=0.0018</td><td>mae=-0.29908</td><td>max_dd=0.300339</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2068778150058668316" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=ALAB</span></div>
-<div>tweet_date=2026-06-21 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068778150058668316.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2068795627723501799" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=MXL</span></div>
-<div>tweet_date=2026-06-21 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2068795627723501799.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2069169714153320522" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=QCOM</span></div>
-<div>tweet_date=2026-06-22 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2069169714153320522.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div><div data-episode-id="2069514551113003117" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=PLTR</span></div>
-<div>tweet_date=2026-06-23 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2069514551113003117.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.05489</td><td>mfe=0.0</td><td>mae=-0.05489</td><td>max_dd=0.05489</td></tr><tr><td>5</td><td>raw=0.107753</td><td>mfe=0.107753</td><td>mae=-0.05489</td><td>max_dd=0.05489</td></tr><tr><td>20</td><td>raw=0.08696</td><td>mfe=0.188106</td><td>mae=-0.05489</td><td>max_dd=0.085132</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2097688117201264687" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=NO_MARKET_DATA_AFTER_TWEET</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=AEHR</span></div>
-<div>tweet_date=2026-09-09 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2097688117201264687.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="kols.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Identite &amp; suivi</h2>
+<p>Identite provider-attested : non
+&middot; suivi : <span class="badge badge-good">MONITORED</span></p>
+<p>Duree observee : 390 jour(s)
+&middot; date de creation du compte : <span title="INSUFFICIENT_EVIDENCE_NOT_IN_EXPORTS">non disponible</span></p>
+<p>Expertise / sous-industrie : <span title="INSUFFICIENT_EVIDENCE_PENDING_TR_KOL_V2">non disponible</span></p>
+<p>Integrite des suppressions : <span title="NOT_COLLECTED_YET_TR_DELETED_MILESTONE">non disponible</span></p>
+<p>Mois observes : 9
+&middot; mois denses : 8
+&middot; posts collectes : 2 744
+&middot; cadence : 304.9 posts/mois actif</p>
+</section>
+
+<section class="section">
+<h2>Score final &amp; confiance</h2>
+<p class="score-hero">-0.130</p>
+<p>Niveau de confiance : <span class="badge badge-good">EARLY_EVIDENCE</span>
+&middot; incertitude : 1.00</p>
+<p class="muted">calls=159, dense_months=8</p>
+<p class="muted">single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists</p>
+</section>
+
+<section class="section">
+<h2>Courbe de performance (rendement realise par fenetre)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="10.0" x2="310" y2="10.0" class="zero-line"/><polyline points="10.0,15.3 60.0,15.3 110.0,31.4 160.0,62.0" class="spark-line"/><circle cx="10.0" cy="15.3" r="3" fill="#b3392c"><title>2 ans : -1.8 %</title></circle><circle cx="60.0" cy="15.3" r="3" fill="#b3392c"><title>1 an : -1.8 %</title></circle><circle cx="110.0" cy="31.4" r="3" fill="#b3392c"><title>6 mois : -7.3 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -17.6 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+</section>
+
+<section class="section">
+<h2>Track record par fenetre (2 ans &rarr; 1 semaine)</h2>
+<table><thead><tr><th>fenetre</th><th>rendement realise</th>
+<th>rendement ajuste marche</th><th>calls evaluables / total</th><th>taux de reussite</th></tr></thead>
+<tbody><tr>
+<td>2 ans</td>
+<td>-1.8 %</td>
+<td>-9.4 %</td>
+<td>78 / 87</td>
+<td>+35 %</td>
+</tr><tr>
+<td>1 an</td>
+<td>-1.8 %</td>
+<td>-9.4 %</td>
+<td>78 / 87</td>
+<td>+35 %</td>
+</tr><tr>
+<td>6 mois</td>
+<td>-7.3 %</td>
+<td>-12.8 %</td>
+<td>52 / 59</td>
+<td>+29 %</td>
+</tr><tr>
+<td>3 mois</td>
+<td>-17.6 %</td>
+<td>-20.3 %</td>
+<td>9 / 9</td>
+<td>+11 %</td>
+</tr><tr><td>2 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 mois</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr><tr><td>1 semaine</td><td colspan="4" class="muted" title="INSUFFICIENT_DATA">donnees insuffisantes (moins de 3 calls evaluables)</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Meilleurs / pires calls</h2>
+<p>Meilleur call (2 ans) : <a href='/tickers/NBIS'>NBIS</a> <span class='pos'>+145.5 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2015927466066325720" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (1 an) : <a href='/tickers/NBIS'>NBIS</a> <span class='pos'>+145.5 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2015927466066325720" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (6 mois) : <a href='/tickers/DELL'>DELL</a> <span class='pos'>+138.3 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2055666766701834297" target="_blank" rel="noopener">voir le post</a></p><p>Meilleur call (3 mois) : <a href='/tickers/PLTR'>PLTR</a> <span class='pos'>+43.3 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2069514551113003117" target="_blank" rel="noopener">voir le post</a></p>
+<p>Pire call (2 ans) : <a href='/tickers/CPSH'>CPSH</a> <span class='neg'>-63.3 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2059279235257192711" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (1 an) : <a href='/tickers/CPSH'>CPSH</a> <span class='neg'>-63.3 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2059279235257192711" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (6 mois) : <a href='/tickers/CPSH'>CPSH</a> <span class='neg'>-63.3 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2059279235257192711" target="_blank" rel="noopener">voir le post</a></p><p>Pire call (3 mois) : <a href='/tickers/EOSE'>EOSE</a> <span class='neg'>-48.0 %</span> &middot; <a href="https://x.com/CKCapitalxx/status/2067225971380596858" target="_blank" rel="noopener">voir le post</a></p>
+</section>
+
+<section class="section">
+<h2>Calls genuinement LONG</h2>
+<p>172 episode(s) sur 134 ticker(s) :
+AAOI, AAPL, ADEA, ADTN, AEHR, AEVA, AGX, AIRJ, ALAB, ALM, AMBA, AMD, AMPG, AMPX, AMZN, ANET, APLD, ARM, ASTS, AT, BE, BITF, BKSY, BRUN, CBRS, CCJ, CEG, CIFR, COHR, CORZ, CPSH, CRDO, CRWV, DELL, DGXX, DRAM, DRO, EOS, EOSE, EQR, ERII, EWY, FCEL, FLY, GHH, GOOGL, GSAT, HLIT, HOOD, HUT, IBKR, INFN, INTC, IREN, KEEL, KRKNF, KTOS, LASR, LEU, LITE, LLY, LUNR, LWLG, MARA, META, MRVL, MSFT, MU, MX, MXL, NBID, NBIS, NGKIF, NOK, NVDA, NVO, OKLO, ON, ONDS, OPTX, ORCL, OSS, OUST, OXIDF, PENG, PGY, PL, PLTR, PNG, POET, POWI, QCOM, QQQ, QS, QUBT, RDW, RIOT, RKLB, RR, RSW, RTX, SATL, SATS, SIDU, SIVE, SK, SLNH, SNDK, SOFI, SOI, SPCE, SPCX, SPIR, SPY, STM, STX, T, TE, TRT, UFO, UUUU, VELO, VICR, VIVO, VOYG, VPG, VRT, VSH, VST, VZ, WDC, WULF, WYFI, ZETA</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score (composants bruts, hors track record)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th></tr></thead><tbody><tr><td>post_count</td><td>2744</td></tr><tr><td>graph_outbound_edges</td><td>8</td></tr><tr><td>engagement_median_likes</td><td>65</td></tr><tr><td>engagement_top_rt</td><td>12722</td></tr><tr><td>coverage_dense_months</td><td>8</td></tr><tr><td>coverage_distinct_months</td><td>9</td></tr></tbody></table>
+<details class="proofs"><summary>Preuves techniques (score composant call_track_record)</summary><pre>{&#x27;value&#x27;: 159, &#x27;evaluable_episodes&#x27;: 159, &#x27;mean_market_adjusted_20&#x27;: -0.044739, &#x27;mean_momentum_adjusted_20&#x27;: -0.038955, &#x27;uncertainty&#x27;: {&#x27;n&#x27;: 158, &#x27;std_market_adjusted_20&#x27;: 0.269451, &#x27;note&#x27;: &#x27;small-sample dispersion disclosed; confidence grows continuously with calls and dense months&#x27;}, &#x27;oos_status&#x27;: &#x27;OOS_NOT_EVALUATED_V1&#x27;, &#x27;oos_disclosure&#x27;: &#x27;single-session corpus; no out-of-sample split exists in V1 — SOLID/ELITE remain unreachable until OOS evidence exists&#x27;}</pre></details>
+</section>
+
+<section class="section">
+<h2>Role dans le graphe (originalite / suivisme par ticker)</h2>
+<table><thead><tr><th>ticker</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/tickers/AAOI'>AAOI</a></td><td>ORIGINATOR</td><td>1.00</td><td>26</td><td>2026-03-08</td></tr><tr><td><a href='/tickers/AAPL'>AAPL</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/ADEA'>ADEA</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-06-04</td></tr><tr><td><a href='/tickers/ADTN'>ADTN</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-27</td></tr><tr><td><a href='/tickers/AEHR'>AEHR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-11</td></tr><tr><td><a href='/tickers/AEVA'>AEVA</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/AGX'>AGX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/AIRJ'>AIRJ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/ALAB'>ALAB</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/ALM'>ALM</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-07</td></tr><tr><td><a href='/tickers/AMBA'>AMBA</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/AMD'>AMD</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2026-04-28</td></tr><tr><td><a href='/tickers/AMPG'>AMPG</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2026-05-19</td></tr><tr><td><a href='/tickers/AMPX'>AMPX</a></td><td>ORIGINATOR</td><td>1.00</td><td>5</td><td>2026-02-09</td></tr><tr><td><a href='/tickers/AMZN'>AMZN</a></td><td>FOLLOWER</td><td>0.50</td><td>11</td><td>2026-02-01</td></tr><tr><td><a href='/tickers/ANET'>ANET</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-02</td></tr><tr><td><a href='/tickers/APLD'>APLD</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-09</td></tr><tr><td><a href='/tickers/ARM'>ARM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-28</td></tr><tr><td><a href='/tickers/ASTS'>ASTS</a></td><td>FOLLOWER</td><td>0.50</td><td>82</td><td>2026-01-15</td></tr><tr><td><a href='/tickers/AT'>AT</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/BE'>BE</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2026-02-09</td></tr><tr><td><a href='/tickers/BITF'>BITF</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-23</td></tr><tr><td><a href='/tickers/BKSY'>BKSY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/BRUN'>BRUN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-03</td></tr><tr><td><a href='/tickers/CBRS'>CBRS</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-12</td></tr><tr><td><a href='/tickers/CCJ'>CCJ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/CEG'>CEG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/CIFR'>CIFR</a></td><td>FOLLOWER</td><td>0.50</td><td>6</td><td>2026-02-03</td></tr><tr><td><a href='/tickers/COHR'>COHR</a></td><td>FOLLOWER</td><td>0.50</td><td>13</td><td>2026-03-07</td></tr><tr><td><a href='/tickers/CORZ'>CORZ</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-05</td></tr><tr><td><a href='/tickers/CPSH'>CPSH</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2026-05-26</td></tr><tr><td><a href='/tickers/CRDO'>CRDO</a></td><td>FOLLOWER</td><td>0.50</td><td>10</td><td>2026-03-29</td></tr><tr><td><a href='/tickers/CRWV'>CRWV</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-04-29</td></tr><tr><td><a href='/tickers/DELL'>DELL</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-05-16</td></tr><tr><td><a href='/tickers/DGXX'>DGXX</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2026-05-12</td></tr><tr><td><a href='/tickers/DRAM'>DRAM</a></td><td>FOLLOWER</td><td>0.50</td><td>10</td><td>2026-05-04</td></tr><tr><td><a href='/tickers/DRO'>DRO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-15</td></tr><tr><td><a href='/tickers/EOS'>EOS</a></td><td>ORIGINATOR</td><td>1.00</td><td>32</td><td>2026-03-04</td></tr><tr><td><a href='/tickers/EOSE'>EOSE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-17</td></tr><tr><td><a href='/tickers/EQR'>EQR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-04-07</td></tr><tr><td><a href='/tickers/ERII'>ERII</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-09</td></tr><tr><td><a href='/tickers/EWY'>EWY</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2026-02-21</td></tr><tr><td><a href='/tickers/FCEL'>FCEL</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-18</td></tr><tr><td><a href='/tickers/FLY'>FLY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/GHH'>GHH</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/GOOGL'>GOOGL</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-02-01</td></tr><tr><td><a href='/tickers/GSAT'>GSAT</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/HLIT'>HLIT</a></td><td>FOLLOWER</td><td>0.50</td><td>10</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/HOOD'>HOOD</a></td><td>FOLLOWER</td><td>0.50</td><td>10</td><td>2026-03-20</td></tr><tr><td><a href='/tickers/HUT'>HUT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/IBKR'>IBKR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-29</td></tr><tr><td><a href='/tickers/INFN'>INFN</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-18</td></tr><tr><td><a href='/tickers/INTC'>INTC</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-04-28</td></tr><tr><td><a href='/tickers/IREN'>IREN</a></td><td>FOLLOWER</td><td>0.50</td><td>23</td><td>2026-02-01</td></tr><tr><td><a href='/tickers/KEEL'>KEEL</a></td><td>ORIGINATOR</td><td>1.00</td><td>8</td><td>2026-04-23</td></tr><tr><td><a href='/tickers/KRKNF'>KRKNF</a></td><td>FOLLOWER</td><td>0.50</td><td>40</td><td>2025-11-17</td></tr><tr><td><a href='/tickers/KTOS'>KTOS</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-25</td></tr><tr><td><a href='/tickers/LASR'>LASR</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-12</td></tr><tr><td><a href='/tickers/LEU'>LEU</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/LITE'>LITE</a></td><td>FOLLOWER</td><td>0.50</td><td>18</td><td>2026-03-07</td></tr><tr><td><a href='/tickers/LLY'>LLY</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-14</td></tr><tr><td><a href='/tickers/LUNR'>LUNR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/LWLG'>LWLG</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-03-11</td></tr><tr><td><a href='/tickers/MARA'>MARA</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-05</td></tr><tr><td><a href='/tickers/META'>META</a></td><td>FOLLOWER</td><td>0.50</td><td>4</td><td>2026-02-01</td></tr><tr><td><a href='/tickers/MRVL'>MRVL</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2026-05-12</td></tr><tr><td><a href='/tickers/MSFT'>MSFT</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-02-01</td></tr><tr><td><a href='/tickers/MU'>MU</a></td><td>FOLLOWER</td><td>0.50</td><td>12</td><td>2026-02-23</td></tr><tr><td><a href='/tickers/MX'>MX</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-28</td></tr><tr><td><a href='/tickers/MXL'>MXL</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/NBID'>NBID</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-13</td></tr><tr><td><a href='/tickers/NBIS'>NBIS</a></td><td>FOLLOWER</td><td>0.50</td><td>51</td><td>2026-01-26</td></tr><tr><td><a href='/tickers/NGKIF'>NGKIF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/NOK'>NOK</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-05-01</td></tr><tr><td><a href='/tickers/NVDA'>NVDA</a></td><td>FOLLOWER</td><td>0.50</td><td>15</td><td>2026-02-01</td></tr><tr><td><a href='/tickers/NVO'>NVO</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-14</td></tr><tr><td><a href='/tickers/OKLO'>OKLO</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/ON'>ON</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/ONDS'>ONDS</a></td><td>FOLLOWER</td><td>0.50</td><td>15</td><td>2026-01-16</td></tr><tr><td><a href='/tickers/OPTX'>OPTX</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2026-03-27</td></tr><tr><td><a href='/tickers/ORCL'>ORCL</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-08</td></tr><tr><td><a href='/tickers/OSS'>OSS</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2026-01-12</td></tr><tr><td><a href='/tickers/OUST'>OUST</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/OXIDF'>OXIDF</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/PENG'>PENG</a></td><td>FOLLOWER</td><td>0.50</td><td>14</td><td>2026-05-12</td></tr><tr><td><a href='/tickers/PGY'>PGY</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-20</td></tr><tr><td><a href='/tickers/PL'>PL</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-03-07</td></tr><tr><td><a href='/tickers/PLTR'>PLTR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-25</td></tr><tr><td><a href='/tickers/PNG'>PNG</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-01-13</td></tr><tr><td><a href='/tickers/POET'>POET</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/POWI'>POWI</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/QCOM'>QCOM</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-28</td></tr><tr><td><a href='/tickers/QQQ'>QQQ</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-19</td></tr><tr><td><a href='/tickers/QS'>QS</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-25</td></tr><tr><td><a href='/tickers/QUBT'>QUBT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-19</td></tr><tr><td><a href='/tickers/RDW'>RDW</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/RIOT'>RIOT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-05</td></tr><tr><td><a href='/tickers/RKLB'>RKLB</a></td><td>FOLLOWER</td><td>0.50</td><td>12</td><td>2026-01-22</td></tr><tr><td><a href='/tickers/RR'>RR</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-08</td></tr><tr><td><a href='/tickers/RSW'>RSW</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/RTX'>RTX</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/SATL'>SATL</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/SATS'>SATS</a></td><td>ORIGINATOR</td><td>1.00</td><td>6</td><td>2026-02-09</td></tr><tr><td><a href='/tickers/SIDU'>SIDU</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/SIVE'>SIVE</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/SK'>SK</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-04</td></tr><tr><td><a href='/tickers/SLNH'>SLNH</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-21</td></tr><tr><td><a href='/tickers/SNDK'>SNDK</a></td><td>FOLLOWER</td><td>0.50</td><td>9</td><td>2026-02-23</td></tr><tr><td><a href='/tickers/SOFI'>SOFI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-29</td></tr><tr><td><a href='/tickers/SOI'>SOI</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-16</td></tr><tr><td><a href='/tickers/SPCE'>SPCE</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/SPCX'>SPCX</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-12</td></tr><tr><td><a href='/tickers/SPIR'>SPIR</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/SPY'>SPY</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-03-30</td></tr><tr><td><a href='/tickers/STM'>STM</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-06-15</td></tr><tr><td><a href='/tickers/STX'>STX</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/T'>T</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-11</td></tr><tr><td><a href='/tickers/TE'>TE</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2026-01-20</td></tr><tr><td><a href='/tickers/TRT'>TRT</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/UFO'>UFO</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/UUUU'>UUUU</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-30</td></tr><tr><td><a href='/tickers/VELO'>VELO</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/VICR'>VICR</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-05-14</td></tr><tr><td><a href='/tickers/VIVO'>VIVO</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2026-05-14</td></tr><tr><td><a href='/tickers/VOYG'>VOYG</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-05-22</td></tr><tr><td><a href='/tickers/VPG'>VPG</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/VRT'>VRT</a></td><td>FOLLOWER</td><td>0.50</td><td>1</td><td>2026-02-02</td></tr><tr><td><a href='/tickers/VSH'>VSH</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/VST'>VST</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-02-02</td></tr><tr><td><a href='/tickers/VZ'>VZ</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-04-02</td></tr><tr><td><a href='/tickers/WDC'>WDC</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-19</td></tr><tr><td><a href='/tickers/WULF'>WULF</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-02-05</td></tr><tr><td><a href='/tickers/WYFI'>WYFI</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-14</td></tr><tr><td><a href='/tickers/ZETA'>ZETA</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-18</td></tr></tbody></table>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>

@@ -1,124 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>BE - TR Web Product</title>
-<style>
-body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0;
-  background: #0b0d12; color: #d8dde6; }
-header { padding: 12px 20px; background: #12151c; border-bottom: 1px solid #262b36; }
-header a { color: #7aa2f7; text-decoration: none; margin-right: 16px; font-weight: 600; }
-main { padding: 20px; max-width: 1400px; margin: 0 auto; }
-table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
-th, td { border: 1px solid #262b36; padding: 6px 8px; text-align: left; vertical-align: top; }
-th { background: #171b24; position: sticky; top: 0; }
-tr:nth-child(even) { background: #10131a; }
-a { color: #7aa2f7; }
-.pill { display: inline-block; padding: 1px 8px; border-radius: 10px; background: #1c2230;
-  border: 1px solid #2f3646; font-size: 11px; }
-.gap { color: #e0af68; font-style: italic; }
-.section { margin: 22px 0; padding: 14px; background: #11141b; border: 1px solid #232838;
-  border-radius: 6px; }
-h1, h2, h3 { color: #c0caf5; }
-.filters { margin-bottom: 10px; }
-.filters select { background: #171b24; color: #d8dde6; border: 1px solid #2f3646; padding: 4px; }
-code { color: #9ece6a; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BE — Twitter Radar</title>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header>
-<a href="kols.html">KOL table</a>
-<a href="tickers.html">Ticker table</a>
-<a href="coverage.html">Coverage</a>
+<header class="site-header">
+<a class="brand" href="index.html">Twitter Radar</a>
+<nav>
+<a href="index.html">Brief hebdo</a>
+<a href="kols.html">Comptes KOL</a>
+<a href="tickers.html">Tickers</a>
+<a href="coverage.html">Couverture</a>
+</nav>
 </header>
 <main>
 <h1>BE</h1>
-<p><a href="tickers.html">&larr; back to ticker table</a></p>
-<div class="section">
-<h2>Company snapshot</h2>
-<p><strong>Bloom Energy Corporation</strong> &mdash; Bloom Energy Corporation designs, manufactures, sells, and installs solid oxide fuel cell systems for on-site power generation in the United States and internationally. It offers Bloom Energy Server, an energy server platform to convert fuel, such as natural gas, biogas, hydrogen, or a blend of these fuels, into electricity through a non-combustion electrochemical process. The company also provides Bloom Electrolyzer for producing hydrogen. It sells its products through direct and indirect sales channels to utilities, data centers, retail, healthcare, education, telecom, manufacturing, and other industries. The company was formerly known as Ion America Corp. and changed its name to Bloom Energy Corporation in 2006. Bloom Energy Corporation was incorporated in 2001 and is headquartered in San Jose, California.</p>
-<p>ai_subindustry=cloud_datacenter_network value_chain_role=midstream_infrastructure
-country=United States asset_class=EQUITY</p>
-<p>market_cap=81395580928 trailing_pe=354.30768
-forward_pe=56.169247 price_to_book=50.29299</p>
-<p>revenue=3113149952 revenue_growth=1.655
-cash=2716858880 debt=2815023104 profitability=0.07868</p>
-<p>current_price=276.36 momentum_state=UPTREND
-average_volume=15117611</p>
-</div>
-<div class="section">
-<h2>Lifecycle &amp; consensus evolution</h2>
-<p>state=<span class="pill">NEW_CALL</span> rule=latest open episode age_days=0 &lt;= 7 (fast-loop weekly detection window)
-age_days_vs_as_of=0</p>
-<p>first_call: RJCcapital on 2025-11-19
-thesis=LONG_POSITION</p>
-<p>conviction_evolution: total_pushes=11
-pushes_by_account={&#x27;CKCapitalxx&#x27;: 7, &#x27;DeepValueBagger&#x27;: 0, &#x27;PhotonBull&#x27;: 0, &#x27;RJCcapital&#x27;: 4, &#x27;zephyr_z9&#x27;: 0}</p>
-</div>
-<div class="section">
-<h2>Risk &amp; data-quality warnings</h2>
-<p>risk tier=<span class="pill">LOW</span> rule=size_bucket in {LARGE,MEGA} and data_quality&gt;=0.7 and supporting_kol_count&gt;=2</p>
-<p>data_quality warnings: none</p>
-<p>liquidity warnings: none</p>
-</div>
-<div class="section">
-<h2>Explainable opportunity score: 0.845</h2>
-<table><thead><tr><th>component</th><th>value</th><th>weight</th><th>contribution</th><th>note</th></tr></thead>
-<tbody><tr><td>kol_independence</td><td>1.0</td><td>0.3</td><td>0.3</td><td>5 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.5</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>1.0</td><td>0.2</td><td>0.2</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.8</td><td>0.15</td><td>0.12</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.0</td><td>0.1</td><td>0.1</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Reasons for:</strong> kol_independence: 5 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0); momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
-<p><strong>Reasons against:</strong> kol_track_record: CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
-</div>
-<div class="section">
-<h2>Supporting / contradicting KOL graph (5 account(s))</h2>
-<table><thead><tr><th>account</th><th>role</th><th>weight</th><th>total_pushes</th><th>first_tweet_date</th></tr></thead>
-<tbody><tr><td>CKCapitalxx</td><td>FOLLOWER</td><td>0.5</td><td>7</td><td>2026-03-12</td></tr><tr><td>DeepValueBagger</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-08-31</td></tr><tr><td>PhotonBull</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-05-25</td></tr><tr><td>RJCcapital</td><td>ORIGINATOR</td><td>1.0</td><td>4</td><td>2025-11-19</td></tr><tr><td>zephyr_z9</td><td>FOLLOWER</td><td>0.5</td><td>0</td><td>2026-09-11</td></tr></tbody></table>
-</div>
-<div class="section">
-<h2>Thesis timeline / original evidence (6 episode(s))</h2>
-<div data-episode-id="2032098626382581993" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-03-12 pushes=7
-closure_state=CLOSED_SOLD
-<a href="evidence_2032098626382581993.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.024009</td><td>mfe=0.024009</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.208985</td><td>mfe=0.208985</td><td>mae=0.0</td><td>max_dd=0.004645</td></tr><tr><td>20</td><td>raw=1.139373</td><td>mfe=1.174179</td><td>mae=0.0</td><td>max_dd=0.050998</td></tr><tr><td>60</td><td>raw=1.076331</td><td>mfe=1.611174</td><td>mae=0.0</td><td>max_dd=0.271303</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2057185862816059417" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_SWING</span><span data-field="account" style="margin-right:10px">account=CKCapitalxx</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-05-20 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2057185862816059417.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.017507</td><td>mfe=0.0</td><td>mae=-0.017507</td><td>max_dd=0.017507</td></tr><tr><td>5</td><td>raw=-0.074315</td><td>mfe=0.0</td><td>mae=-0.074315</td><td>max_dd=0.074315</td></tr><tr><td>20</td><td>raw=0.123327</td><td>mfe=0.123327</td><td>mae=-0.239217</td><td>max_dd=0.239217</td></tr><tr><td>60</td><td>raw=-0.321132</td><td>mfe=0.123327</td><td>mae=-0.468137</td><td>max_dd=0.526529</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2094515275320492227" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=DeepValueBagger</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-08-31 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2094515275320492227.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.017086</td><td>mfe=0.017086</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>20</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>60</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2058974303547494840" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=PhotonBull</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-05-25 pushes=0
-closure_state=OPEN_AT_WINDOW_END
-<a href="evidence_2058974303547494840.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=-0.028439</td><td>mfe=0.0</td><td>mae=-0.028439</td><td>max_dd=0.028439</td></tr><tr><td>5</td><td>raw=0.001488</td><td>mfe=0.001488</td><td>mae=-0.095536</td><td>max_dd=0.095536</td></tr><tr><td>20</td><td>raw=0.078671</td><td>mfe=0.143684</td><td>mae=-0.22543</td><td>max_dd=0.226581</td></tr><tr><td>60</td><td>raw=-0.330423</td><td>mfe=0.143684</td><td>mae=-0.458499</td><td>max_dd=0.526529</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="1991135914513277209" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=RJCcapital</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2025-11-19 pushes=4
-closure_state=CLOSED_SOLD
-<a href="evidence_1991135914513277209.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td>raw=0.024009</td><td>mfe=0.024009</td><td>mae=0.0</td><td>max_dd=0.0</td></tr><tr><td>5</td><td>raw=0.208985</td><td>mfe=0.208985</td><td>mae=0.0</td><td>max_dd=0.004645</td></tr><tr><td>20</td><td>raw=1.139373</td><td>mfe=1.174179</td><td>mae=0.0</td><td>max_dd=0.050998</td></tr><tr><td>60</td><td>raw=1.076331</td><td>mfe=1.611174</td><td>mae=0.0</td><td>max_dd=0.271303</td></tr><tr><td>120</td><td colspan='4' class='gap'>HORIZON_TRUNCATED</td></tr></tbody></table>
-</div><div data-episode-id="2098405531165811122" class="section">
-<div><span data-field="outcome" style="margin-right:10px">outcome=NO_MARKET_DATA_AFTER_TWEET</span><span data-field="thesis" style="margin-right:10px">thesis=LONG_POSITION</span><span data-field="account" style="margin-right:10px">account=zephyr_z9</span><span data-field="ticker" style="margin-right:10px">ticker=BE</span></div>
-<div>tweet_date=2026-09-11 pushes=0
-closure_state=NOT_EVALUABLE
-<a href="evidence_2098405531165811122.html" data-evidence>evidence</a></div>
-<table><thead><tr><th>horizon</th><th>return_raw</th><th>MFE</th><th>MAE</th><th>max_drawdown</th></tr></thead>
-<tbody><tr><td>1</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>5</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>20</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>60</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr><tr><td>120</td><td colspan='4' class='gap'>NOT_COMPUTED</td></tr></tbody></table>
-</div>
-</div>
+<p><a href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section">
+<h2>Snapshot</h2>
+<p><strong>Bloom Energy Corporation</strong>
+&mdash; Industrials / cloud_datacenter_network</p>
+<p>Bloom Energy Corporation designs, manufactures, sells, and installs solid oxide fuel cell systems for on-site power generation in the United States and internationally. It offers Bloom Energy Server, an energy server platform to convert fuel, such as natural gas, biogas, hydrogen, or a blend of these fuels, into electricity through a non-combustion electrochemical process. The company also provides Bloom Electrolyzer for producing hydrogen. It sells its products through direct and indirect sales channels to utilities, data centers, retail, healthcare, education, telecom, manufacturing, and oth</p>
+<p>capitalisation : 81.2 Md$
+&middot; prix actuel : 275.75
+&middot; momentum : <span class="badge badge-neutral">UPTREND</span></p>
+<p>risque : <span class="badge badge-good">LOW</span>
+&middot; cycle de vie de la these : <span class="badge badge-good">NEW_CALL</span>
+(2 jour(s) depuis le dernier call)</p>
+</section>
+
+<section class="section">
+<h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="62.0" x2="310" y2="62.0" class="zero-line"/><polyline points="10.0,10.0 60.0,55.8 110.0,60.4 160.0,62.0 210.0,61.7 260.0,61.6 310.0,61.8" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +2603.4 %</title></circle><circle cx="60.0" cy="55.8" r="3" fill="#2f8f4e"><title>1 an : +310.0 %</title></circle><circle cx="110.0" cy="60.4" r="3" fill="#2f8f4e"><title>6 mois : +79.4 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#2f8f4e"><title>3 mois : +0.5 %</title></circle><circle cx="210.0" cy="61.7" r="3" fill="#2f8f4e"><title>2 mois : +15.2 %</title></circle><circle cx="260.0" cy="61.6" r="3" fill="#2f8f4e"><title>1 mois : +19.9 %</title></circle><circle cx="310.0" cy="61.8" r="3" fill="#2f8f4e"><title>1 semaine : +9.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+2603.4 %</td></tr><tr><td>1 an</td><td class="pos">+310.0 %</td></tr><tr><td>6 mois</td><td class="pos">+79.4 %</td></tr><tr><td>3 mois</td><td class="pos">+0.5 %</td></tr><tr><td>2 mois</td><td class="pos">+15.2 %</td></tr><tr><td>1 mois</td><td class="pos">+19.9 %</td></tr><tr><td>1 semaine</td><td class="pos">+9.0 %</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Timeline &mdash; pourquoi ca a bouge</h2>
+<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos">+2603.4 %</td><td>RJCcapital opened Long Position on BE; CKCapitalxx opened Long Swing on BE; CKCapitalxx opened Long Position on BE; HyperTechInvest opened Long Swing on BE</td></tr><tr><td>1 an</td><td class="pos">+310.0 %</td><td>RJCcapital opened Long Position on BE; CKCapitalxx opened Long Swing on BE; CKCapitalxx opened Long Position on BE; HyperTechInvest opened Long Swing on BE</td></tr><tr><td>6 mois</td><td class="pos">+79.4 %</td><td>HyperTechInvest opened Long Swing on BE; PhotonBull opened Long Swing on BE; PhotonBull opened Long Position on BE; Gubloinvestor opened Long Position on BE</td></tr><tr><td>3 mois</td><td class="pos">+0.5 %</td><td>HyperTechInvest opened Long Position on BE; DeepValueBagger opened Long Position on BE; zephyr_z9 opened Long Position on BE; Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout</td></tr><tr><td>2 mois</td><td class="pos">+15.2 %</td><td>HyperTechInvest opened Long Position on BE; DeepValueBagger opened Long Position on BE; zephyr_z9 opened Long Position on BE; Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout</td></tr><tr><td>1 mois</td><td class="pos">+19.9 %</td><td>HyperTechInvest opened Long Position on BE; DeepValueBagger opened Long Position on BE; zephyr_z9 opened Long Position on BE; Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout</td></tr><tr><td>1 semaine</td><td class="pos">+9.0 %</td><td>zephyr_z9 opened Long Position on BE; Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout; Do You Have the Guts to Buy the AI Stocks Right Now?; Stock Of The Day: AI Energy Play Bloom Energy Nears Buy Point, S&amp;P 500 Entry</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Catalyseurs dates</h2>
+<table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
+<tbody><tr><td>2025-11-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on BE</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/1986465823502860400" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-02-09</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Swing on BE</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2020963871641514376" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-12</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on BE</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2032098626382581993" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Swing on BE</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/2057169600412811734" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Swing on BE</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2057106141566423419" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-25</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on BE</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2058974303547494840" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on BE</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2063253916142260703" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-22</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on BE</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/2091260662127407605" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-31</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>DeepValueBagger opened Long Position on BE</td><td>DeepValueBagger &middot; <a href="https://x.com/DeepValueBagger/status/2094515275320492227" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>zephyr_z9 opened Long Position on BE</td><td>zephyr_z9 &middot; <a href="https://x.com/zephyr_z9/status/2098405531165811122" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Former OpenAI Researcher Bets on AI Stocks After $35 Billion Wipeout</td><td><a href="https://beincrypto.com/former-openai-researcher-leopold-aschenbrenner-ai-bet/" target="_blank" rel="noopener">BeInCrypto</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Do You Have the Guts to Buy the AI Stocks Right Now?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/guts-buy-ai-stocks-now-173900651.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Stock Of The Day: AI Energy Play Bloom Energy Nears Buy Point, S&amp;P 500 Entry</td><td><a href="https://www.investors.com/research/ibd-stock-of-the-day/bloom-energy-stock-buy-point-sp-500/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Bloom Energy Climbs 7% as Fuel Cell Bid Spreads Beyond Its S&amp;P 500 Add, FuelCell Energy Rises 4%, Plug Power Inches Higher</td><td><a href="https://247wallst.com/investing/2026/09/11/bloom-energy-climbs-7-as-fuel-cell-bid-spreads-beyond-its-sp-500-add-fuelcell-energy-rises-4-plug-power-inches-higher/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>AMD, BE, CRWV In Focus: Situational Awareness Has Been Reportedly Buying Options Tied To These Stocks</td><td><a href="https://stocktwits.com/news-articles/markets/equity/amd-be-crwv-in-focus-situational-awareness-has-been-reportedly-buying-options-tied-to-these-stocks/cZtXVIiRBbT" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Leopold Aschenbrenner&#x27;s Situational Awareness buying options after collapse</td><td><a href="https://qz.com/situational-awareness-options-amd-coreweave-bloom-energy-091126" target="_blank" rel="noopener">Quartz</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Cramer Asked Who Was Buying Gigantic Bloom Energy Calls. A Pelosi Filing Named Two of the Same Stocks Weeks Earlier.</td><td><a href="https://247wallst.com/investing/2026/09/12/cramer-asked-who-was-buying-gigantic-bloom-energy-calls-a-pelosi-filing-named-two-of-the-same-stocks-weeks-earlier/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Dear Bloom Energy Stock Fans, Mark Your Calendars for September 21</td><td><a href="https://www.barchart.com/story/news/4572910/dear-bloom-energy-stock-fans-mark-your-calendars-for-september-21" target="_blank" rel="noopener">Barchart</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Louis Navellier is buying 3 headline-making stocks, including Google</td><td><a href="https://www.thestreet.com/investing/stocks/louis-navellier-is-buying-3-headline-making-stocks-including-google" target="_blank" rel="noopener">TheStreet</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Zacks Market Edge Highlights:  Broadcom, Bloom Energy, and Sandisk</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/zacks-market-edge-highlights-broadcom-074000199.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-10-27</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>BE earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>A venir</h3>
+<ul><li>2026-10-27 &middot; BE earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+</section>
+
+<section class="section">
+<h2>Consensus KOL</h2>
+<p>premier call : RJCcapital le 2025-11-06
+(LONG_POSITION)</p>
+<p>relances cumulees : 17
+&middot; tendance du consensus (30/60/90j) : 3 / 3 / 3 compte(s)
+(<span class="badge badge-neutral">rising</span>)</p>
+<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>8</td><td>2026-02-09</td></tr><tr><td><a href='/kols/DeepValueBagger'>DeepValueBagger</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-08-31</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-06</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-05-20</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>2</td><td>2026-05-20</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>ORIGINATOR</td><td>1.00</td><td>7</td><td>2025-11-06</td></tr><tr><td><a href='/kols/zephyr_z9'>zephyr_z9</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-09-11</td></tr></tbody></table>
+</section>
+
+<section class="section">
+<h2>Risques</h2>
+<p><span class="badge badge-neutral">RESEARCH_NOW</span>
+&middot; kol_consensus_trend=rising et momentum_state=UPTREND sur BE</p>
+<p>avertissements donnees : aucun</p>
+<p>avertissements liquidite : aucun</p>
+</section>
+
+<section class="section">
+<h2>Decomposition du score d'opportunite (0.845)</h2>
+<table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
+<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>7 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>1.00</td><td>0.20</td><td>0.200</td><td>lifecycle=&#x27;NEW_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.80</td><td>0.15</td><td>0.120</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>1.00</td><td>0.10</td><td>0.100</td><td>16/16 enrichment fields OK</td></tr></tbody></table>
+<p><strong>Pour :</strong> kol_independence: 7 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;NEW_CALL&#x27; (score 1.0); momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8); data_quality: 16/16 enrichment fields OK (score 1.0)</p>
+<p><strong>Contre :</strong> kol_track_record: CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — lowest-scoring factor, no component fell below the &lt;=0.35 bar</p>
+</section>
 </main>
+<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<script>
+(function() {
+  function initSort() {
+    document.querySelectorAll('table[data-sortable]').forEach(function(table) {
+      var thead = table.tHead;
+      if (!thead || !thead.rows.length) return;
+      var ths = thead.rows[0].cells;
+      for (var i = 0; i < ths.length; i++) {
+        (function(idx) {
+          var th = ths[idx];
+          if (!th.hasAttribute('data-key')) return;
+          th.classList.add('sortable');
+          th.addEventListener('click', function() {
+            var tbody = table.tBodies[0];
+            var rows = Array.prototype.slice.call(tbody.rows);
+            var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+            for (var j = 0; j < ths.length; j++) ths[j].removeAttribute('data-dir');
+            th.setAttribute('data-dir', dir);
+            rows.sort(function(a, b) {
+              var av = a.cells[idx] ? (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent.trim()) : '';
+              var bv = b.cells[idx] ? (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent.trim()) : '';
+              var an = parseFloat(av), bn = parseFloat(bv);
+              var cmp;
+              if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') { cmp = an - bn; }
+              else { cmp = av.localeCompare(bv); }
+              return dir === 'asc' ? cmp : -cmp;
+            });
+            rows.forEach(function(r) { tbody.appendChild(r); });
+          });
+        })(i);
+      }
+    });
+  }
+  function initFilters() {
+    document.querySelectorAll('input[data-filter-target]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        var table = document.getElementById(input.getAttribute('data-filter-target'));
+        if (!table) return;
+        var q = input.value.trim().toLowerCase();
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+        });
+      });
+    });
+    document.querySelectorAll('select[data-filter-target]').forEach(function(sel) {
+      sel.addEventListener('change', function() {
+        var table = document.getElementById(sel.getAttribute('data-filter-target'));
+        if (!table) return;
+        var col = parseInt(sel.getAttribute('data-filter-col'), 10);
+        var val = sel.value;
+        Array.prototype.slice.call(table.tBodies[0].rows).forEach(function(r) {
+          var cell = r.cells[col];
+          var cellVal = cell ? (cell.getAttribute('data-sort') || cell.textContent.trim()) : '';
+          r.style.display = (!val || cellVal === val) ? '' : 'none';
+        });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() { initSort(); initFilters(); });
+})();
+</script>
 </body>
 </html>
