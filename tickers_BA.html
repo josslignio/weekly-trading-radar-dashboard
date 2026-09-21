@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>BA</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>BA <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> Boeing fabrique des avions de ligne, des avions militaires et des équipements spatiaux, et assure leur entretien.</p><p><strong>Depuis :</strong> Constituée en 1916, Boeing vend des avions, des satellites, des systèmes de défense et des services d&#x27;entretien.</p><p><strong>L&#x27;argent :</strong> La dette totale atteint 48,4 Md$, et l&#x27;argent restant après les dépenses courantes et les investissements représente 5,6 Md$ sur un an.</p><p><strong>Pourquoi ça bouge :</strong> Les nouvelles sur les livraisons d&#x27;avions et les contrats militaires alimentent les mouvements récents, sans expliquer à elles seules la baisse.</p><p><strong>Edge ou vague :</strong> edge : fabriquer les appareils puis assurer leur entretien est un atout durable, mais la faible marge limite sa portée.</p>
+<p class="muted">confiance : moyenne : l&#x27;activité est bien décrite, mais les titres fournis ne suffisent pas à expliquer la baisse.
+ &middot; sources : faits yfinance &middot; catalyseurs du dossier &middot; variations de prix fournies</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(138 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 86 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:52" role="img" aria-label="score 52 sur 100"><i>52</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par HyperTechInvest le 2024-12-26; 3 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:52%"></span></span>
+<p class="mono muted">score 52 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 86 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+18</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>52</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 3 comptes indépendants soutiennent ce call</li><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="51.0" x2="310" y2="51.0" class="zero-line"/><polyline points="10.0,10.0 60.0,54.1 110.0,52.7 160.0,60.7 210.0,55.2 260.0,62.0 310.0,52.0" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +34.2 %</title></circle><circle cx="60.0" cy="54.1" r="3" fill="#b3392c"><title>1 an : -2.5 %</title></circle><circle cx="110.0" cy="52.7" r="3" fill="#b3392c"><title>6 mois : -1.4 %</title></circle><circle cx="160.0" cy="60.7" r="3" fill="#b3392c"><title>3 mois : -8.1 %</title></circle><circle cx="210.0" cy="55.2" r="3" fill="#b3392c"><title>2 mois : -3.5 %</title></circle><circle cx="260.0" cy="62.0" r="3" fill="#b3392c"><title>1 mois : -9.2 %</title></circle><circle cx="310.0" cy="52.0" r="3" fill="#b3392c"><title>1 semaine : -0.8 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+34.2 %</td></tr><tr><td>1 an</td><td class="neg">-2.5 %</td></tr><tr><td>6 mois</td><td class="neg">-1.4 %</td></tr><tr><td>3 mois</td><td class="neg">-8.1 %</td></tr><tr><td>2 mois</td><td class="neg">-3.5 %</td></tr><tr><td>1 mois</td><td class="neg">-9.2 %</td></tr><tr><td>1 semaine</td><td class="neg">-0.8 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="56.2" x2="310" y2="56.2" class="zero-line"/><polyline points="10.0,10.0 60.0,59.2 110.0,48.7 160.0,62.0 210.0,55.1 260.0,58.3 310.0,56.2" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#3ddc85"><title>2 ans : +37.3 %</title></circle><circle cx="60.0" cy="59.2" r="3" fill="#ff8a8a"><title>1 an : -2.4 %</title></circle><circle cx="110.0" cy="48.7" r="3" fill="#3ddc85"><title>6 mois : +6.1 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#ff8a8a"><title>3 mois : -4.7 %</title></circle><circle cx="210.0" cy="55.1" r="3" fill="#3ddc85"><title>2 mois : +0.9 %</title></circle><circle cx="260.0" cy="58.3" r="3" fill="#ff8a8a"><title>1 mois : -1.8 %</title></circle><circle cx="310.0" cy="56.2" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+37.3 %</td></tr><tr><td>1 an</td><td class="neg mono">-2.4 %</td></tr><tr><td>6 mois</td><td class="pos mono">+6.1 %</td></tr><tr><td>3 mois</td><td class="neg mono">-4.7 %</td></tr><tr><td>2 mois</td><td class="pos mono">+0.9 %</td></tr><tr><td>1 mois</td><td class="neg mono">-1.8 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+34.2 %</td><td>HyperTechInvest opened Long Position on BA; italianinvesto opened Long Swing on BA; AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors</td></tr><tr><td>1 an</td><td class="neg">-2.5 %</td><td>italianinvesto opened Long Swing on BA; AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors; Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know</td></tr><tr><td>6 mois</td><td class="neg">-1.4 %</td><td>italianinvesto opened Long Swing on BA; AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors; Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know</td></tr><tr><td>3 mois</td><td class="neg">-8.1 %</td><td>AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors; Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know; Solid Demand in Commercial Aerospace Drives Howmet: Can It Sustain?</td></tr><tr><td>2 mois</td><td class="neg">-3.5 %</td><td>AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors; Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know; Solid Demand in Commercial Aerospace Drives Howmet: Can It Sustain?</td></tr><tr><td>1 mois</td><td class="neg">-9.2 %</td><td>AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors; Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know; Solid Demand in Commercial Aerospace Drives Howmet: Can It Sustain?</td></tr><tr><td>1 semaine</td><td class="neg">-0.8 %</td><td>AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case; $131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors; Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know; Solid Demand in Commercial Aerospace Drives Howmet: Can It Sustain?</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+37.3 %</td><td>HyperTechInvest opened Long Position on BA; italianinvesto opened Long Swing on BA; StonkChris opened Long Position on BA; NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ</td></tr><tr><td>1 an</td><td class="neg mono">-2.4 %</td><td>italianinvesto opened Long Swing on BA; StonkChris opened Long Position on BA; NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ; NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft</td></tr><tr><td>6 mois</td><td class="pos mono">+6.1 %</td><td>italianinvesto opened Long Swing on BA; StonkChris opened Long Position on BA; NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ; NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft</td></tr><tr><td>3 mois</td><td class="neg mono">-4.7 %</td><td>StonkChris opened Long Position on BA; NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ; NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft; Can A Faster Factory Lift Boeing Stock?</td></tr><tr><td>2 mois</td><td class="pos mono">+0.9 %</td><td>NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ; NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft; Can A Faster Factory Lift Boeing Stock?; Boeing Isn&#x27;t Perfect -- but It&#x27;s Still a Compelling Value Buy Right Now</td></tr><tr><td>1 mois</td><td class="neg mono">-1.8 %</td><td>NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ; NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft; Can A Faster Factory Lift Boeing Stock?; Boeing Isn&#x27;t Perfect -- but It&#x27;s Still a Compelling Value Buy Right Now</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ; NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft; Can A Faster Factory Lift Boeing Stock?; Boeing Isn&#x27;t Perfect -- but It&#x27;s Still a Compelling Value Buy Right Now</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2024-12-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on BA</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1872319743841202586" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Swing on BA</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/2049043526244008100" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>AeroVironment&#x27;s Record Backlog and Earnings Beat Fuel Recovery Case</td><td><a href="https://www.marketbeat.com/articles/aerovironments-record-backlog-and-earnings-beat-fuel-recovery-case/?utm_source=yahoofinance&amp;utm_medium=yahoofinance" target="_blank" rel="noopener">MarketBeat</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>$131.23 Billion on Paper: What The Boeing Company (BA)’s F-15 Ceiling Contract Really Means for Investors</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/131-23-billion-paper-boeing-224145878.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boeing (BA) Beats Stock Market Upswing: What Investors Need to Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/boeing-ba-beats-stock-market-214505242.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Solid Demand in Commercial Aerospace Drives Howmet: Can It Sustain?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/solid-demand-commercial-aerospace-drives-152900894.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>How Top Fidelity Manager Beats The Herd With &#x27;Overanalyzed&#x27; Stocks</td><td><a href="https://www.investors.com/etfs-and-funds/mutual-funds/top-fund-fidelity-manager-beats-the-herd-with-overanalyzed-stocks/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Elon Musk Backs Moving NASA SLS Workforce Elsewhere, Says ‘Better To Repurpose’ Workers As Multibillion-Dollar Rocket Faces Cost Questions</td><td><a href="https://www.yahoo.com/news/science/articles/elon-musk-backs-moving-nasa-094509368.html" target="_blank" rel="noopener">Benzinga</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Amazon’s Aviation Network Faces a Sobering Test after the Miami Crash</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/amazon-aviation-network-faces-sobering-010809550.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boeing Delivered 51 Jets in August. Here&#x27;s Why the Stock is Finally Back Above $200.</td><td><a href="https://www.fool.com/investing/2026/09/13/boeing-delivered-51-jets-in-august-heres-why-the-s/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>If It Delivers Profit, Boeing (BA)’s Defense Franchise Can Buffer Its Commercial Recovery</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/delivers-profit-boeing-ba-defense-000848794.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Boeing Wins $13.4 Billion KC-46 Air Force Contract Amid Defense Awards</td><td><a href="https://www.investors.com/news/boeing-13-4-billion-kc-46-contract-bluehalo-aerovironment-northrop-grumman-ba-avav-noc-defense/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-10-28</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>BA earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-10-28 &middot; BA earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2024-12-26</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on BA</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1872319743841202586" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-04-28</td><td><span class="badge badge-neutral">post de compte</span></td><td>italianinvesto opened Long Swing on BA</td><td>italianinvesto &middot; <a class="a2" href="https://x.com/italianinvesto/status/2049043526244008100" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-23</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on BA</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2069551308730683882" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>NASA weighs more Boeing Starliner missions despite troubled test flight - WSJ</td><td><a href="https://tech.yahoo.com/science/articles/nasa-weighs-more-boeing-starliner-235247164.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>NASA Explores New Missions With Boeing’s Troubled Starliner Spacecraft</td><td><a href="https://www.wsj.com/science/space-astronomy/nasa-in-talks-for-boeings-starliner-to-handle-new-missions-5726e1e5?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">The Wall Street Journal</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Can A Faster Factory Lift Boeing Stock?</td><td><a href="https://www.trefis.com/articles/615836/can-a-faster-factory-lift-boeing-stock/2026-09-18" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Boeing Isn&#x27;t Perfect -- but It&#x27;s Still a Compelling Value Buy Right Now</td><td><a href="https://www.fool.com/investing/2026/09/19/boeing-isnt-perfect-but-its-still-a-compelling-val/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Laser Weapons Are Real Now -- and You Can Invest in Them With AeroVironment Stock</td><td><a href="https://www.fool.com/investing/2026/09/19/laser-weapons-are-real-and-you-can-invest-in-them/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Is Boeing’s (BA) Freighter And Defense Strength Quietly Rebalancing Its 737 And 787 Risk Profile?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/boeing-ba-freighter-defense-strength-071821107.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>Boeing (BA) Completes 13-Satellite O3b mPOWER Constellation — Here’s What It Means for Defense Growth</td><td><a href="https://finance.yahoo.com/technology/articles/boeing-ba-completes-13-satellite-211953360.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>WW International Eyes Cash Flow Turnaround as GLP-1 Care Gains Momentum</td><td><a href="https://www.marketbeat.com/instant-alerts/event-ww-international-eyes-cash-flow-turnaround-as-glp-1-care-gains-momentum-2026-09-20/?utm_source=yahoofinance&amp;utm_medium=yahoofinance" target="_blank" rel="noopener">MarketBeat</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>What to expect from upcoming summit between Presidents Trump and Xi</td><td><a href="https://www.yahoo.com/news/politics/articles/expect-upcoming-summit-between-presidents-092720673.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>Boeing&#x27;s New MQ-25A Stingray Drone Costs $184 Million ... or Less</td><td><a href="https://www.fool.com/investing/2026/09/20/boeings-mq-25a-stingray-drone-costs-184-million/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-10-28</td><td><span class="badge badge-neutral">résultats</span></td><td>BA earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-10-28</span> &middot; BA earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2024-12-26
-(LONG_POSITION)</p>
-<p>relances cumulees : 0
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-12-26</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-04-28</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2024-12-26</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">0</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 1</span> compte(s)
+(<span class="pill b">en perte de vitesse</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>0</td><td class='mono'>2024-12-26</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-06-23</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-04-28</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour BA: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour BA: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.460)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.40</td><td>0.30</td><td>0.120</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.60</td><td class='mono'>0.30</td><td class='mono'>+18</td><td>3 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par HyperTechInvest, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (3) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="1872319743841202586" class="ep-proof"><span class="mono">1872319743841202586</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=BA">ticker=BA</span></div><div data-episode-id="2069551308730683882" class="ep-proof"><span class="mono">2069551308730683882</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=BA">ticker=BA</span></div><div data-episode-id="2049043526244008100" class="ep-proof"><span class="mono">2049043526244008100</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=italianinvesto">account=italianinvesto</span><span data-field="ticker" title="ticker=BA">ticker=BA</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">BA</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 86 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1872319743841202586" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

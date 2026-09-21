@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>OPEN</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>OPEN <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-bad">CLOSED</span>
-(354 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill k">call soldé</span>
+(&middot; 358 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:44" role="img" aria-label="score 44 sur 100"><i>44</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call a été soldé, il faut une nouvelle conviction pour y revenir; 4 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:44%"></span></span>
+<p class="mono muted">score 44 / 100 &middot; risque : risque spéculatif
+&middot; call soldé
+(&middot; 358 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+24</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+0</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>44</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 4 comptes indépendants soutiennent ce call</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>fraîcheur : call soldé</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="22.9" x2="310" y2="22.9" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,49.0 160.0,45.2 210.0,46.2 260.0,36.1 310.0,29.4" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +22.9 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -69.2 %</title></circle><circle cx="110.0" cy="49.0" r="3" fill="#b3392c"><title>6 mois : -46.1 %</title></circle><circle cx="160.0" cy="45.2" r="3" fill="#b3392c"><title>3 mois : -39.5 %</title></circle><circle cx="210.0" cy="46.2" r="3" fill="#b3392c"><title>2 mois : -41.3 %</title></circle><circle cx="260.0" cy="36.1" r="3" fill="#b3392c"><title>1 mois : -23.4 %</title></circle><circle cx="310.0" cy="29.4" r="3" fill="#b3392c"><title>1 semaine : -11.4 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+22.9 %</td></tr><tr><td>1 an</td><td class="neg">-69.2 %</td></tr><tr><td>6 mois</td><td class="neg">-46.1 %</td></tr><tr><td>3 mois</td><td class="neg">-39.5 %</td></tr><tr><td>2 mois</td><td class="neg">-41.3 %</td></tr><tr><td>1 mois</td><td class="neg">-23.4 %</td></tr><tr><td>1 semaine</td><td class="neg">-11.4 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="26.9" x2="310" y2="26.9" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,49.9 160.0,44.2 210.0,44.9 260.0,37.3 310.0,26.9" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#3ddc85"><title>2 ans : +34.1 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -70.8 %</title></circle><circle cx="110.0" cy="49.9" r="3" fill="#ff8a8a"><title>6 mois : -46.4 %</title></circle><circle cx="160.0" cy="44.2" r="3" fill="#ff8a8a"><title>3 mois : -34.8 %</title></circle><circle cx="210.0" cy="44.9" r="3" fill="#ff8a8a"><title>2 mois : -36.3 %</title></circle><circle cx="260.0" cy="37.3" r="3" fill="#ff8a8a"><title>1 mois : -21.0 %</title></circle><circle cx="310.0" cy="26.9" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+34.1 %</td></tr><tr><td>1 an</td><td class="neg mono">-70.8 %</td></tr><tr><td>6 mois</td><td class="neg mono">-46.4 %</td></tr><tr><td>3 mois</td><td class="neg mono">-34.8 %</td></tr><tr><td>2 mois</td><td class="neg mono">-36.3 %</td></tr><tr><td>1 mois</td><td class="neg mono">-21.0 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+22.9 %</td><td>LiebermanAustin opened Long Position on OPEN; Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?; Should You Avoid Opendoor Stock, Even at a 52-Week Low?; Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?</td></tr><tr><td>1 an</td><td class="neg">-69.2 %</td><td>LiebermanAustin opened Long Position on OPEN; Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?; Should You Avoid Opendoor Stock, Even at a 52-Week Low?; Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?</td></tr><tr><td>6 mois</td><td class="neg">-46.1 %</td><td>Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?; Should You Avoid Opendoor Stock, Even at a 52-Week Low?; Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?; Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?</td></tr><tr><td>3 mois</td><td class="neg">-39.5 %</td><td>Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?; Should You Avoid Opendoor Stock, Even at a 52-Week Low?; Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?; Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?</td></tr><tr><td>2 mois</td><td class="neg">-41.3 %</td><td>Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?; Should You Avoid Opendoor Stock, Even at a 52-Week Low?; Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?; Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?</td></tr><tr><td>1 mois</td><td class="neg">-23.4 %</td><td>Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?; Should You Avoid Opendoor Stock, Even at a 52-Week Low?; Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?; Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?</td></tr><tr><td>1 semaine</td><td class="neg">-11.4 %</td><td>OPEN Stock Has Lost 46% Since New CEO Took Over Nearly A Year Ago — Now He Admits He Hasn’t Moved Fast Enough; Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail; OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks; 1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+34.1 %</td><td>StonkChris opened Long Position on OPEN; NighthawkTradez opened Long Position on OPEN; aleabitoreddit opened Long Position on OPEN; LiebermanAustin opened Long Position on OPEN</td></tr><tr><td>1 an</td><td class="neg mono">-70.8 %</td><td>NighthawkTradez opened Long Position on OPEN; aleabitoreddit opened Long Position on OPEN; LiebermanAustin opened Long Position on OPEN; Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail</td></tr><tr><td>6 mois</td><td class="neg mono">-46.4 %</td><td>Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail; OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks; 1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm; Why Did NKE, OPEN, NCLH Stocks Slump To 52-Week Lows Today?</td></tr><tr><td>3 mois</td><td class="neg mono">-34.8 %</td><td>Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail; OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks; 1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm; Why Did NKE, OPEN, NCLH Stocks Slump To 52-Week Lows Today?</td></tr><tr><td>2 mois</td><td class="neg mono">-36.3 %</td><td>Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail; OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks; 1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm; Why Did NKE, OPEN, NCLH Stocks Slump To 52-Week Lows Today?</td></tr><tr><td>1 mois</td><td class="neg mono">-21.0 %</td><td>Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail; OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks; 1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm; Why Did NKE, OPEN, NCLH Stocks Slump To 52-Week Lows Today?</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Why Did OPEN, OKLO, MCD Stocks Plunge To 52-Week Lows?; Rate Hike Jitters Rattle iBuyer Stocks: Opendoor Falls 4%, Zillow Slides 2% but Offerpad Holds Steady; Opendoor’s February Home-Buying Surge Wasn’t Reckless, Eric Jackson Says As Fed Rate Decision Nears; Why Did OPEN, NKE, CCL Stocks Crash To 52-Week Lows Today?</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2025-09-24</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>LiebermanAustin opened Long Position on OPEN</td><td>LiebermanAustin &middot; <a href="https://x.com/LiebermanAustin/status/1970883196461236623" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-31</td><td><span class="badge badge-neutral">NEWS</span></td><td>Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?</td><td><a href="https://247wallst.com/investing/2026/08/31/opendoor-sinks-4-on-modest-market-pullback-is-high-beta-selling-the-whole-story/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>Should You Avoid Opendoor Stock, Even at a 52-Week Low?</td><td><a href="https://www.fool.com/investing/2026/09/01/should-you-avoid-opendoor-stock-52-week-low/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-nio-open-aptv-stocks-drop-to-52-week-lows-today/cZsodv0RJtJ" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-02</td><td><span class="badge badge-neutral">NEWS</span></td><td>Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?</td><td><a href="https://247wallst.com/investing/2026/09/02/offerpad-rallies-7-opendoor-edges-higher-is-rate-relief-reaching-the-ibuyers/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>OPEN Stock Has Lost 46% Since New CEO Took Over Nearly A Year Ago — Now He Admits He Hasn’t Moved Fast Enough</td><td><a href="https://stocktwits.com/news-articles/markets/equity/open-stock-has-lost-46-since-new-ceo-took-over-nearly-a-year-ago-now-he-admits-he-hasn-t-moved-fast-enough/cZt3pAaRJUP" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail</td><td><a href="https://247wallst.com/investing/2026/09/10/opendoor-sinks-7-as-yield-spike-meets-delayed-profit-timeline-offerpad-and-zillow-group-trail/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks</td><td><a href="https://stocktwits.com/news-articles/markets/equity/open-stock-dips-overnight-opendoor-ceo-says-rebuilds-are-bumpy-as-housing-slump-delayed-profit-timeline-by-up-to-eight-weeks/cZt96GORJC9" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/1-russell-2000-stock-consider-213905832.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Did NKE, OPEN, NCLH Stocks Slump To 52-Week Lows Today?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-nke-open-nclh-stocks-slump-to-52-week-lows-today/cZtXPSMRJ6C" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why Did OPEN, OKLO, MCD Stocks Plunge To 52-Week Lows?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-open-oklo-mcd-stocks-plunge-to-52-week-lows/cZtloB3RBRP" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-11-05</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>OPEN earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-05 &middot; OPEN earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2025-09-11</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on OPEN</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/1965972858011615424" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-09-22</td><td><span class="badge badge-neutral">post de compte</span></td><td>NighthawkTradez opened Long Position on OPEN</td><td>NighthawkTradez &middot; <a class="a2" href="https://x.com/NighthawkTradez/status/1970259530916225255" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-09-22</td><td><span class="badge badge-neutral">post de compte</span></td><td>aleabitoreddit opened Long Position on OPEN</td><td>aleabitoreddit &middot; <a class="a2" href="https://x.com/aleabitoreddit/status/1970267588988219546" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-09-24</td><td><span class="badge badge-neutral">post de compte</span></td><td>LiebermanAustin opened Long Position on OPEN</td><td>LiebermanAustin &middot; <a class="a2" href="https://x.com/LiebermanAustin/status/1970883196461236623" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-10</td><td><span class="badge badge-neutral">presse</span></td><td>Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail</td><td><a href="https://247wallst.com/investing/2026/09/10/opendoor-sinks-7-as-yield-spike-meets-delayed-profit-timeline-offerpad-and-zillow-group-trail/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-10</td><td><span class="badge badge-neutral">presse</span></td><td>OPEN Stock Dips Overnight: Opendoor CEO Says &#x27;Rebuilds Are Bumpy&#x27; As Housing Slump Delayed Profit Timeline By Up To Eight Weeks</td><td><a href="https://stocktwits.com/news-articles/markets/equity/open-stock-dips-overnight-opendoor-ceo-says-rebuilds-are-bumpy-as-housing-slump-delayed-profit-timeline-by-up-to-eight-weeks/cZt96GORJC9" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-11</td><td><span class="badge badge-neutral">presse</span></td><td>1 Russell 2000 Stock to Consider Right Now and 2 That Underwhelm</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/1-russell-2000-stock-consider-213905832.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td class='mono'>2026-09-11</td><td><span class="badge badge-neutral">presse</span></td><td>Why Did NKE, OPEN, NCLH Stocks Slump To 52-Week Lows Today?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-nke-open-nclh-stocks-slump-to-52-week-lows-today/cZtXPSMRJ6C" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>Why Did OPEN, OKLO, MCD Stocks Plunge To 52-Week Lows?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-open-oklo-mcd-stocks-plunge-to-52-week-lows/cZtloB3RBRP" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Rate Hike Jitters Rattle iBuyer Stocks: Opendoor Falls 4%, Zillow Slides 2% but Offerpad Holds Steady</td><td><a href="https://247wallst.com/investing/2026/09/15/rate-hike-jitters-rattle-ibuyer-stocks-opendoor-falls-4-zillow-slides-2-but-offerpad-holds-steady/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Opendoor’s February Home-Buying Surge Wasn’t Reckless, Eric Jackson Says As Fed Rate Decision Nears</td><td><a href="https://stocktwits.com/news-articles/markets/equity/opendoor-s-february-home-buying-surge-wasn-t-reckless-eric-jackson-says-as-fed-rate-decision-nears/cZtYaZjRB2Z" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Why Did OPEN, NKE, CCL Stocks Crash To 52-Week Lows Today?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-open-nke-ccl-stocks-crash-to-52-week-lows-today/cZtY2PcRB2d" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Why Did OPEN, STLA, JOBY Stocks Tumble To 52-Week Lows Today?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-open-stla-joby-stocks-tumble-to-52-week-lows-today/cZtrOt5RB5I" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-21</td><td><span class="badge badge-neutral">presse</span></td><td>Why Did NKE, OPEN, MCD Stocks Slip To 52-Week Lows Last Week?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-nke-open-mcd-stocks-slip-to-52-week-lows-last-week/cZMRb6CRB4e" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-11-06</td><td><span class="badge badge-neutral">résultats</span></td><td>OPEN earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-06</span> &middot; OPEN earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : LiebermanAustin le 2025-09-24
-(LONG_POSITION)</p>
-<p>relances cumulees : 6
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/LiebermanAustin'>LiebermanAustin</a></td><td>ORIGINATOR</td><td>1.00</td><td>6</td><td>2025-09-24</td></tr></tbody></table>
+<p>premier call : StonkChris le <span class="mono">2025-09-11</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">11</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/LiebermanAustin'>LiebermanAustin</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>6</td><td class='mono'>2025-09-24</td></tr><tr><td><a href='/kols/NighthawkTradez'>NighthawkTradez</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>2</td><td class='mono'>2025-09-22</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>2</td><td class='mono'>2025-09-11</td></tr><tr><td><a href='/kols/aleabitoreddit'>aleabitoreddit</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>1</td><td class='mono'>2025-09-22</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour OPEN: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour OPEN: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.260)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>LiebermanAustin tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.00</td><td>0.20</td><td>0.000</td><td>lifecycle=&#x27;CLOSED&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: LiebermanAustin tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;CLOSED&#x27; (score 0.0); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.80</td><td class='mono'>0.30</td><td class='mono'>+24</td><td>4 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par LiebermanAustin, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.00</td><td class='mono'>0.20</td><td class='mono'>+0</td><td>call soldé</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (4) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="1970883196461236623" class="ep-proof"><span class="mono">1970883196461236623</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=LiebermanAustin">account=LiebermanAustin</span><span data-field="ticker" title="ticker=OPEN">ticker=OPEN</span></div><div data-episode-id="1970259530916225255" class="ep-proof"><span class="mono">1970259530916225255</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=NighthawkTradez">account=NighthawkTradez</span><span data-field="ticker" title="ticker=OPEN">ticker=OPEN</span></div><div data-episode-id="1965972858011615424" class="ep-proof"><span class="mono">1965972858011615424</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=OPEN">ticker=OPEN</span></div><div data-episode-id="1970267588988219546" class="ep-proof"><span class="mono">1970267588988219546</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=aleabitoreddit">account=aleabitoreddit</span><span data-field="ticker" title="ticker=OPEN">ticker=OPEN</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">OPEN</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; StonkChris</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 358 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/StonkChris/status/1965972858011615424" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

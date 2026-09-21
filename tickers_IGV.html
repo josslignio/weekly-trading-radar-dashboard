@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>IGV</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>IGV <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> IGV est un fonds qui détient des actions surtout dans les logiciels, ainsi que dans les jeux vidéo et les médias interactifs.</p><p><strong>Depuis :</strong> Sa date de création manque au dossier ; il propose des parts donnant accès à un ensemble d’actions.</p><p><strong>L&#x27;argent :</strong> Dette : non disponible ; argent généré par l’activité et argent restant après investissements : non disponibles.</p><p><strong>Pourquoi ça bouge :</strong> Son recul récent accompagne des retraits du fonds et des nouvelles contrastées dans les logiciels, malgré le regain d’intérêt lié à Snowflake.</p><p><strong>Edge ou vague :</strong> surfe sur : IGV suit les entreprises du logiciel et dépend de leur succès, sans avantage propre établi par le dossier.</p>
+<p class="muted">confiance : moyenne : son activité est décrite, mais les données sur sa dette et son argent disponible manquent.
+ &middot; sources : faits yfinance &middot; catalyseurs du dossier &middot; variations fournies</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(157 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 150 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:58" role="img" aria-label="score 58 sur 100"><i>58</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par StonkChris le 2026-01-20; 4 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:58%"></span></span>
+<p class="mono muted">score 58 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 150 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+24</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>58</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 4 comptes indépendants soutiennent ce call</li><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="45.5" x2="310" y2="45.5" class="zero-line"/><polyline points="10.0,15.9 60.0,62.0 110.0,10.0 160.0,28.1 210.0,30.8 260.0,49.9 310.0,50.8" class="spark-line"/><circle cx="10.0" cy="15.9" r="3" fill="#2f8f4e"><title>2 ans : +16.2 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -9.1 %</title></circle><circle cx="110.0" cy="10.0" r="3" fill="#2f8f4e"><title>6 mois : +19.5 %</title></circle><circle cx="160.0" cy="28.1" r="3" fill="#2f8f4e"><title>3 mois : +9.5 %</title></circle><circle cx="210.0" cy="30.8" r="3" fill="#2f8f4e"><title>2 mois : +8.1 %</title></circle><circle cx="260.0" cy="49.9" r="3" fill="#b3392c"><title>1 mois : -2.5 %</title></circle><circle cx="310.0" cy="50.8" r="3" fill="#b3392c"><title>1 semaine : -2.9 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+16.2 %</td></tr><tr><td>1 an</td><td class="neg">-9.1 %</td></tr><tr><td>6 mois</td><td class="pos">+19.5 %</td></tr><tr><td>3 mois</td><td class="pos">+9.5 %</td></tr><tr><td>2 mois</td><td class="pos">+8.1 %</td></tr><tr><td>1 mois</td><td class="neg">-2.5 %</td></tr><tr><td>1 semaine</td><td class="neg">-2.9 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="41.3" x2="310" y2="41.3" class="zero-line"/><polyline points="10.0,19.9 60.0,62.0 110.0,10.0 160.0,16.1 210.0,19.6 260.0,44.1 310.0,41.3" class="spark-line"/><circle cx="10.0" cy="19.9" r="3" fill="#3ddc85"><title>2 ans : +13.8 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -13.4 %</title></circle><circle cx="110.0" cy="10.0" r="3" fill="#3ddc85"><title>6 mois : +20.2 %</title></circle><circle cx="160.0" cy="16.1" r="3" fill="#3ddc85"><title>3 mois : +16.3 %</title></circle><circle cx="210.0" cy="19.6" r="3" fill="#3ddc85"><title>2 mois : +14.0 %</title></circle><circle cx="260.0" cy="44.1" r="3" fill="#ff8a8a"><title>1 mois : -1.8 %</title></circle><circle cx="310.0" cy="41.3" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+13.8 %</td></tr><tr><td>1 an</td><td class="neg mono">-13.4 %</td></tr><tr><td>6 mois</td><td class="pos mono">+20.2 %</td></tr><tr><td>3 mois</td><td class="pos mono">+16.3 %</td></tr><tr><td>2 mois</td><td class="pos mono">+14.0 %</td></tr><tr><td>1 mois</td><td class="neg mono">-1.8 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+16.2 %</td><td>Gubloinvestor opened Long Position on IGV; Chip Stocks Pop Despite Jobs Day Weakness; Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating</td></tr><tr><td>1 an</td><td class="neg">-9.1 %</td><td>Gubloinvestor opened Long Position on IGV; Chip Stocks Pop Despite Jobs Day Weakness; Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating</td></tr><tr><td>6 mois</td><td class="pos">+19.5 %</td><td>Gubloinvestor opened Long Position on IGV; Chip Stocks Pop Despite Jobs Day Weakness; Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating</td></tr><tr><td>3 mois</td><td class="pos">+9.5 %</td><td>Chip Stocks Pop Despite Jobs Day Weakness; Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating; UiPath Slips 3% Despite Citi Buy Initiation and $23 Target, Pegasystems and C3.ai Lag</td></tr><tr><td>2 mois</td><td class="pos">+8.1 %</td><td>Chip Stocks Pop Despite Jobs Day Weakness; Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating; UiPath Slips 3% Despite Citi Buy Initiation and $23 Target, Pegasystems and C3.ai Lag</td></tr><tr><td>1 mois</td><td class="neg">-2.5 %</td><td>Chip Stocks Pop Despite Jobs Day Weakness; Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating; UiPath Slips 3% Despite Citi Buy Initiation and $23 Target, Pegasystems and C3.ai Lag</td></tr><tr><td>1 semaine</td><td class="neg">-2.9 %</td><td>Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software; UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating; UiPath Slips 3% Despite Citi Buy Initiation and $23 Target, Pegasystems and C3.ai Lag; Braze Sinks 12% as Soft Earnings Guide Overshadows Beat and Raise; Klaviyo Advances 3%</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+13.8 %</td><td>StonkChris opened Long Position on IGV; ThematicTrader opened Long Position on IGV; ThematicTrader opened Long Swing on IGV; StonkChris opened Long Swing on IGV</td></tr><tr><td>1 an</td><td class="neg mono">-13.4 %</td><td>StonkChris opened Long Position on IGV; ThematicTrader opened Long Position on IGV; ThematicTrader opened Long Swing on IGV; StonkChris opened Long Swing on IGV</td></tr><tr><td>6 mois</td><td class="pos mono">+20.2 %</td><td>Gubloinvestor opened Long Position on IGV; ParadisLabs opened Long Position on IGV; Salesforce Just Gained 23% in a Month: Take Profits, or Buy More?; Adobe Pulls Back, Then Recovers as CEO Handoff Meets Soft Q4 Outlook; Intuit and ServiceNow Hold Steady</td></tr><tr><td>3 mois</td><td class="pos mono">+16.3 %</td><td>Salesforce Just Gained 23% in a Month: Take Profits, or Buy More?; Adobe Pulls Back, Then Recovers as CEO Handoff Meets Soft Q4 Outlook; Intuit and ServiceNow Hold Steady; AI Stocks Tumble, Software Soars as Doomsday Warnings Ripple Through Market; C3.ai Jumps 7% as Software Rally Lifts Beaten-Down AI Names; UiPath Climbs 8%, SoundHound AI Gains 5%</td></tr><tr><td>2 mois</td><td class="pos mono">+14.0 %</td><td>Salesforce Just Gained 23% in a Month: Take Profits, or Buy More?; Adobe Pulls Back, Then Recovers as CEO Handoff Meets Soft Q4 Outlook; Intuit and ServiceNow Hold Steady; AI Stocks Tumble, Software Soars as Doomsday Warnings Ripple Through Market; C3.ai Jumps 7% as Software Rally Lifts Beaten-Down AI Names; UiPath Climbs 8%, SoundHound AI Gains 5%</td></tr><tr><td>1 mois</td><td class="neg mono">-1.8 %</td><td>Salesforce Just Gained 23% in a Month: Take Profits, or Buy More?; Adobe Pulls Back, Then Recovers as CEO Handoff Meets Soft Q4 Outlook; Intuit and ServiceNow Hold Steady; AI Stocks Tumble, Software Soars as Doomsday Warnings Ripple Through Market; C3.ai Jumps 7% as Software Rally Lifts Beaten-Down AI Names; UiPath Climbs 8%, SoundHound AI Gains 5%</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>AI Stocks Tumble, Software Soars as Doomsday Warnings Ripple Through Market; C3.ai Jumps 7% as Software Rally Lifts Beaten-Down AI Names; UiPath Climbs 8%, SoundHound AI Gains 5%; Most of the Market Is Rising Despite AI Selloff; ServiceNow Climbs 5% as Software Sidesteps AI Selloff; Adobe Gains 4%, Salesforce Ticks Up</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2026-04-09</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on IGV</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2042244957373657504" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Chip Stocks Pop Despite Jobs Day Weakness</td><td><a href="https://www.barrons.com/livecoverage/stock-market-news-today-090426/card/chip-stocks-pop-despite-jobs-day-weakness-0Uyts5V9lRpJO9DFOCmF?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td>2026-09-07</td><td><span class="badge badge-neutral">NEWS</span></td><td>Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software</td><td><a href="https://247wallst.com/investing/etf/2026/09/07/investors-pulled-700-million-from-igv-hours-before-snowflake-reignited-software/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>UiPath and Pegasystems Sink 7% as Price Target Hikes Arrive Without a Single Buy Rating</td><td><a href="https://247wallst.com/investing/2026/09/08/uipath-and-pegasystems-sink-7-as-price-target-hikes-arrive-without-a-single-buy-rating/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>UiPath Slips 3% Despite Citi Buy Initiation and $23 Target, Pegasystems and C3.ai Lag</td><td><a href="https://247wallst.com/investing/2026/09/09/uipath-slips-3-despite-citi-buy-initiation-and-23-target-pegasystems-and-c3-ai-lag/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Braze Sinks 12% as Soft Earnings Guide Overshadows Beat and Raise; Klaviyo Advances 3%</td><td><a href="https://247wallst.com/investing/2026/09/09/braze-sinks-12-as-soft-earnings-guide-overshadows-beat-and-raise-klaviyo-advances-3/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Exchange-Traded Funds, Equity Futures Down Pre-Bell Wednesday as Brent Crude Exceeds $100 a Barrel</td><td><a href="https://finance.yahoo.com/markets/articles/exchange-traded-funds-equity-futures-130653743.html" target="_blank" rel="noopener">MT Newswires</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Salesforce Just Gained 23% in a Month: Take Profits, or Buy More?</td><td><a href="https://247wallst.com/investing/2026/09/10/salesforce-just-gained-23-in-a-month-take-profits-or-buy-more/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Adobe Pulls Back, Then Recovers as CEO Handoff Meets Soft Q4 Outlook; Intuit and ServiceNow Hold Steady</td><td><a href="https://247wallst.com/investing/2026/09/11/adobe-pulls-back-then-recovers-as-ceo-handoff-meets-soft-q4-outlook-intuit-and-servicenow-hold-steady/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Most of the Market Is Rising Despite AI Selloff</td><td><a href="https://www.barrons.com/livecoverage/stock-market-news-today-091426/card/most-of-the-market-is-rising-despite-ai-selloff-mOcgXl4QDzYeqxBQ8Ik4?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>ServiceNow Climbs 5% as Software Sidesteps AI Selloff; Adobe Gains 4%, Salesforce Ticks Up</td><td><a href="https://247wallst.com/investing/2026/09/14/servicenow-climbs-5-as-software-sidesteps-ai-selloff-adobe-gains-4-salesforce-ticks-up/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+<tbody><tr><td class='mono'>2026-01-20</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on IGV</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2013423649609380276" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-02-03</td><td><span class="badge badge-neutral">post de compte</span></td><td>ThematicTrader opened Long Position on IGV</td><td>ThematicTrader &middot; <a class="a2" href="https://x.com/ThematicTrader/status/2018703541037138139" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-02-04</td><td><span class="badge badge-neutral">post de compte</span></td><td>ThematicTrader opened Long Swing on IGV</td><td>ThematicTrader &middot; <a class="a2" href="https://x.com/ThematicTrader/status/2018842656495837600" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-03</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Swing on IGV</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2028673084090142996" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-04-09</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Position on IGV</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2042244957373657504" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-04-20</td><td><span class="badge badge-neutral">post de compte</span></td><td>ParadisLabs opened Long Position on IGV</td><td>ParadisLabs &middot; <a class="a2" href="https://x.com/ParadisLabs/status/2046324685567045727" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-10</td><td><span class="badge badge-neutral">presse</span></td><td>Salesforce Just Gained 23% in a Month: Take Profits, or Buy More?</td><td><a href="https://247wallst.com/investing/2026/09/10/salesforce-just-gained-23-in-a-month-take-profits-or-buy-more/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-11</td><td><span class="badge badge-neutral">presse</span></td><td>Adobe Pulls Back, Then Recovers as CEO Handoff Meets Soft Q4 Outlook; Intuit and ServiceNow Hold Steady</td><td><a href="https://247wallst.com/investing/2026/09/11/adobe-pulls-back-then-recovers-as-ceo-handoff-meets-soft-q4-outlook-intuit-and-servicenow-hold-steady/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>AI Stocks Tumble, Software Soars as Doomsday Warnings Ripple Through Market</td><td><a href="https://www.barrons.com/livecoverage/stock-market-news-today-091426/card/ai-stocks-tumble-software-soars-as-doomsday-warnings-ripple-through-market-MW9Vvmuzl5L8ax9fOsHm?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>C3.ai Jumps 7% as Software Rally Lifts Beaten-Down AI Names; UiPath Climbs 8%, SoundHound AI Gains 5%</td><td><a href="https://247wallst.com/investing/2026/09/14/c3-ai-jumps-7-as-software-rally-lifts-beaten-down-ai-names-uipath-climbs-8-soundhound-ai-gains-5/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>Most of the Market Is Rising Despite AI Selloff</td><td><a href="https://www.barrons.com/livecoverage/stock-market-news-today-091426/card/most-of-the-market-is-rising-despite-ai-selloff-mOcgXl4QDzYeqxBQ8Ik4?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>ServiceNow Climbs 5% as Software Sidesteps AI Selloff; Adobe Gains 4%, Salesforce Ticks Up</td><td><a href="https://247wallst.com/investing/2026/09/14/servicenow-climbs-5-as-software-sidesteps-ai-selloff-adobe-gains-4-salesforce-ticks-up/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>SoundHound AI Drops 4% as Selling Concentrates in Speculative Software Names; UiPath Falls 3%, C3.ai Dips</td><td><a href="https://247wallst.com/investing/2026/09/16/soundhound-ai-drops-4-as-selling-concentrates-in-speculative-software-names-uipath-falls-3-c3-ai-dips/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Bitcoin Holds After Clarity Act Failure. Is It a Quiet Bullish Signal?</td><td><a href="https://www.barrons.com/articles/bitcoin-coinbase-clarity-act-crypto-3f4b9743?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>BlackBerry Climbs 6%, Mobileye Rises 5%: Is the Software-Defined Vehicle Trade Waking Up?</td><td><a href="https://247wallst.com/investing/2026/09/17/blackberry-climbs-6-mobileye-rises-5-is-the-software-defined-vehicle-trade-waking-up/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Swing Trading Focus On Software Stocks Over Semiconductors With IGV</td><td><a href="https://www.investors.com/research/swing-trading/swing-trading-focus-on-software-stocks-over-semiconductors-with-igv/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li class='muted'>aucun catalyseur à venir sourcé</li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : Gubloinvestor le 2026-04-09
-(LONG_POSITION)</p>
-<p>relances cumulees : 1
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2026-04-09</td></tr></tbody></table>
+<p>premier call : StonkChris le <span class="mono">2026-01-20</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">10</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>1</td><td class='mono'>2026-04-09</td></tr><tr><td><a href='/kols/ParadisLabs'>ParadisLabs</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-04-20</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>8</td><td class='mono'>2026-01-20</td></tr><tr><td><a href='/kols/ThematicTrader'>ThematicTrader</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>1</td><td class='mono'>2026-02-03</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour IGV: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour IGV: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.400)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Gubloinvestor tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.80</td><td class='mono'>0.30</td><td class='mono'>+24</td><td>4 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par Gubloinvestor, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (6) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2042244957373657504" class="ep-proof"><span class="mono">2042244957373657504</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=IGV">ticker=IGV</span></div><div data-episode-id="2046324685567045727" class="ep-proof"><span class="mono">2046324685567045727</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=ParadisLabs">account=ParadisLabs</span><span data-field="ticker" title="ticker=IGV">ticker=IGV</span></div><div data-episode-id="2013423649609380276" class="ep-proof"><span class="mono">2013423649609380276</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=IGV">ticker=IGV</span></div><div data-episode-id="2028673084090142996" class="ep-proof"><span class="mono">2028673084090142996</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=IGV">ticker=IGV</span></div><div data-episode-id="2018703541037138139" class="ep-proof"><span class="mono">2018703541037138139</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=ThematicTrader">account=ThematicTrader</span><span data-field="ticker" title="ticker=IGV">ticker=IGV</span></div><div data-episode-id="2018842656495837600" class="ep-proof"><span class="mono">2018842656495837600</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=ThematicTrader">account=ThematicTrader</span><span data-field="ticker" title="ticker=IGV">ticker=IGV</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">IGV</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; StonkChris</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 150 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/StonkChris/status/2013423649609380276" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>SOI</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>SOI <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> L&#x27;activité de l&#x27;entreprise n&#x27;est pas renseignée dans les faits fournis.</p><p><strong>Depuis :</strong> La date de création ou de cotation et les produits vendus ne sont pas renseignés.</p><p><strong>L&#x27;argent :</strong> La dette et l&#x27;argent généré par l&#x27;activité ne sont pas renseignés.</p><p><strong>Pourquoi ça bouge :</strong> Aucune variation de prix ni aucun événement récent n&#x27;est fourni pour expliquer les mouvements de l&#x27;action.</p><p><strong>Edge ou vague :</strong> edge : impossible de savoir si l&#x27;entreprise possède un avantage durable ou profite d&#x27;une tendance.</p>
+<p class="muted">confiance : basse, car les informations sur l&#x27;entreprise et les événements récents manquent.
+ &middot; sources : faits yfinance &middot; catalyseurs du dossier</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(133 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 137 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:64" role="img" aria-label="score 64 sur 100"><i>64</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par CKCapitalxx le 2026-03-16; 7 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:64%"></span></span>
+<p class="mono muted">score 64 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 137 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+30</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>64</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 7 comptes indépendants soutiennent ce call</li><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
 <p class="muted">Historique insuffisant pour tracer une courbe.</p>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="neg">n/d</td></tr><tr><td>6 mois</td><td class="neg">n/d</td></tr><tr><td>3 mois</td><td class="neg">n/d</td></tr><tr><td>2 mois</td><td class="neg">n/d</td></tr><tr><td>1 mois</td><td class="neg">n/d</td></tr><tr><td>1 semaine</td><td class="neg">n/d</td></tr></tbody></table>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">n/d</td></tr><tr><td>1 an</td><td class="neg mono">n/d</td></tr><tr><td>6 mois</td><td class="neg mono">n/d</td></tr><tr><td>3 mois</td><td class="neg mono">n/d</td></tr><tr><td>2 mois</td><td class="neg mono">n/d</td></tr><tr><td>1 mois</td><td class="neg mono">n/d</td></tr><tr><td>1 semaine</td><td class="neg mono">n/d</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
 <tbody><tr><td colspan='3' class='muted'>pas assez d'historique de prix</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2026-03-16</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on SOI</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2033574750765682958" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-16</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on SOI</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2033574750765682958" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on SOI</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/2036989915485884886" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Swing on SOI</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/2037299305766412660" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie opened Long Position on SOI</td><td>Frenchie &middot; <a href="https://x.com/Frenchie/status/2037800754405122152" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Frenchie_ opened Long Position on SOI</td><td>Frenchie_ &middot; <a href="https://x.com/Frenchie_/status/2037800754405122152" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-04-19</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is It Too Late To Consider Soitec (ENXTPA:SOI) After The Recent Share Price Surge?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/too-consider-soitec-enxtpa-soi-170516285.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-05-03</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on SOI</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/2050926779506778380" target="_blank" rel="noopener">post</a></td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+<tbody><tr><td class='mono'>2026-03-16</td><td><span class="badge badge-neutral">post de compte</span></td><td>CKCapitalxx opened Long Position on SOI</td><td>CKCapitalxx &middot; <a class="a2" href="https://x.com/CKCapitalxx/status/2033574750765682958" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-16</td><td><span class="badge badge-neutral">post de compte</span></td><td>PhotonBull opened Long Position on SOI</td><td>PhotonBull &middot; <a class="a2" href="https://x.com/PhotonBull/status/2033574750765682958" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-26</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on SOI</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/2036989915485884886" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-26</td><td><span class="badge badge-neutral">post de compte</span></td><td>PhotonBull opened Long Swing on SOI</td><td>PhotonBull &middot; <a class="a2" href="https://x.com/PhotonBull/status/2037299305766412660" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-28</td><td><span class="badge badge-neutral">post de compte</span></td><td>Frenchie opened Long Position on SOI</td><td>Frenchie &middot; <a class="a2" href="https://x.com/Frenchie/status/2037800754405122152" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-28</td><td><span class="badge badge-neutral">post de compte</span></td><td>Frenchie_ opened Long Position on SOI</td><td>Frenchie_ &middot; <a class="a2" href="https://x.com/Frenchie_/status/2037800754405122152" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-04-12</td><td><span class="badge badge-neutral">post de compte</span></td><td>ParadisLabs opened Long Position on SOI</td><td>ParadisLabs &middot; <a class="a2" href="https://x.com/ParadisLabs/status/2043365877714973174" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-04-19</td><td><span class="badge badge-neutral">presse</span></td><td>Is It Too Late To Consider Soitec (ENXTPA:SOI) After The Recent Share Price Surge?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/too-consider-soitec-enxtpa-soi-170516285.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-05-03</td><td><span class="badge badge-neutral">post de compte</span></td><td>italianinvesto opened Long Position on SOI</td><td>italianinvesto &middot; <a class="a2" href="https://x.com/italianinvesto/status/2050926779506778380" target="_blank" rel="noopener">post</a></td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li class='muted'>aucun catalyseur à venir sourcé</li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : CKCapitalxx le 2026-03-16
-(LONG_POSITION)</p>
-<p>relances cumulees : 10
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-16</td></tr><tr><td><a href='/kols/Frenchie'>Frenchie</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-28</td></tr><tr><td><a href='/kols/Frenchie_'>Frenchie_</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-28</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-03-26</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>7</td><td>2026-03-16</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2026-05-03</td></tr></tbody></table>
+<p>premier call : CKCapitalxx le <span class="mono">2026-03-16</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">15</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>0</td><td class='mono'>2026-03-16</td></tr><tr><td><a href='/kols/Frenchie'>Frenchie</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>1</td><td class='mono'>2026-03-28</td></tr><tr><td><a href='/kols/Frenchie_'>Frenchie_</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>1</td><td class='mono'>2026-03-28</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-03-26</td></tr><tr><td><a href='/kols/ParadisLabs'>ParadisLabs</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>3</td><td class='mono'>2026-04-12</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>7</td><td class='mono'>2026-03-16</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>3</td><td class='mono'>2026-05-03</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour SOI: serie_prix=absente, enrichment_fetch_state=OK</p>
-<p>avertissements donnees : company_name: FIELD_NOT_PROVIDED; description: FIELD_NOT_PROVIDED; ai_subindustry: FIELD_NOT_PROVIDED; market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; trailing_pe: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; price_to_book: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED; current_price: FIELD_NOT_PROVIDED; average_volume: FIELD_NOT_PROVIDED; momentum_state: FIELD_NOT_PROVIDED</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour SOI: absente, complet</p>
+<p>avertissements données : <span title="company_name: FIELD_NOT_PROVIDED; description: FIELD_NOT_PROVIDED; ai_subindustry: FIELD_NOT_PROVIDED; market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; trailing_pe: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; price_to_book: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED; current_price: FIELD_NOT_PROVIDED; average_volume: FIELD_NOT_PROVIDED; momentum_state: FIELD_NOT_PROVIDED">FIELD_NOT_PROVIDED; description: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.640)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>6 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_independence: 6 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>1.00</td><td class='mono'>0.30</td><td class='mono'>+30</td><td>7 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par CKCapitalxx, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (8) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2033574750765682958" class="ep-proof"><span class="mono">2033574750765682958</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=CKCapitalxx">account=CKCapitalxx</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2037800754405122152" class="ep-proof"><span class="mono">2037800754405122152</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Frenchie">account=Frenchie</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2037800754405122152" class="ep-proof"><span class="mono">2037800754405122152</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Frenchie_">account=Frenchie_</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2036989915485884886" class="ep-proof"><span class="mono">2036989915485884886</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2043365877714973174" class="ep-proof"><span class="mono">2043365877714973174</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=ParadisLabs">account=ParadisLabs</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2033574750765682958" class="ep-proof"><span class="mono">2033574750765682958</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=PhotonBull">account=PhotonBull</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2037299305766412660" class="ep-proof"><span class="mono">2037299305766412660</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=PhotonBull">account=PhotonBull</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div><div data-episode-id="2050926779506778380" class="ep-proof"><span class="mono">2050926779506778380</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=italianinvesto">account=italianinvesto</span><span data-field="ticker" title="ticker=SOI">ticker=SOI</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">SOI</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; CKCapitalxx</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 137 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/CKCapitalxx/status/2033574750765682958" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

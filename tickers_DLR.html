@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>DLR</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>DLR <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
-(534 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill o">dernier call déjà ancien</span>
+(&middot; 538 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring bad" style="--p:32" role="img" aria-label="score 32 sur 100"><i>32</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call date déjà de plusieurs semaines; 1 compte indépendant soutient ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar bad"><span style="width:32%"></span></span>
+<p class="mono muted">score 32 / 100 &middot; risque : risque spéculatif
+&middot; dernier call déjà ancien
+(&middot; 538 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+6</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+6</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>32</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>track record : porté surtout par HyperTechInvest, compte encore en phase de premières preuves (le point le plus solide, sans toutefois franchir le seuil d&#x27;un signal net)</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>indépendance des comptes : 1 compte indépendant soutient ce call</li><li>fraîcheur : dernier call déjà ancien</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="49.7" x2="310" y2="49.7" class="zero-line"/><polyline points="10.0,10.0 60.0,31.2 110.0,41.1 160.0,45.5 210.0,34.6 260.0,62.0 310.0,49.5" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +18.7 %</title></circle><circle cx="60.0" cy="31.2" r="3" fill="#2f8f4e"><title>1 an : +8.7 %</title></circle><circle cx="110.0" cy="41.1" r="3" fill="#2f8f4e"><title>6 mois : +4.0 %</title></circle><circle cx="160.0" cy="45.5" r="3" fill="#2f8f4e"><title>3 mois : +2.0 %</title></circle><circle cx="210.0" cy="34.6" r="3" fill="#2f8f4e"><title>2 mois : +7.1 %</title></circle><circle cx="260.0" cy="62.0" r="3" fill="#b3392c"><title>1 mois : -5.8 %</title></circle><circle cx="310.0" cy="49.5" r="3" fill="#2f8f4e"><title>1 semaine : +0.1 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+18.7 %</td></tr><tr><td>1 an</td><td class="pos">+8.7 %</td></tr><tr><td>6 mois</td><td class="pos">+4.0 %</td></tr><tr><td>3 mois</td><td class="pos">+2.0 %</td></tr><tr><td>2 mois</td><td class="pos">+7.1 %</td></tr><tr><td>1 mois</td><td class="neg">-5.8 %</td></tr><tr><td>1 semaine</td><td class="pos">+0.1 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="53.7" x2="310" y2="53.7" class="zero-line"/><polyline points="10.0,10.0 60.0,31.5 110.0,37.8 160.0,62.0 210.0,40.5 260.0,56.2 310.0,53.7" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#3ddc85"><title>2 ans : +18.8 %</title></circle><circle cx="60.0" cy="31.5" r="3" fill="#3ddc85"><title>1 an : +9.6 %</title></circle><circle cx="110.0" cy="37.8" r="3" fill="#3ddc85"><title>6 mois : +6.9 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#ff8a8a"><title>3 mois : -3.6 %</title></circle><circle cx="210.0" cy="40.5" r="3" fill="#3ddc85"><title>2 mois : +5.7 %</title></circle><circle cx="260.0" cy="56.2" r="3" fill="#ff8a8a"><title>1 mois : -1.1 %</title></circle><circle cx="310.0" cy="53.7" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+18.8 %</td></tr><tr><td>1 an</td><td class="pos mono">+9.6 %</td></tr><tr><td>6 mois</td><td class="pos mono">+6.9 %</td></tr><tr><td>3 mois</td><td class="neg mono">-3.6 %</td></tr><tr><td>2 mois</td><td class="pos mono">+5.7 %</td></tr><tr><td>1 mois</td><td class="neg mono">-1.1 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+18.7 %</td><td>HyperTechInvest opened Long Position on DLR; 4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth</td></tr><tr><td>1 an</td><td class="pos">+8.7 %</td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth; How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td></tr><tr><td>6 mois</td><td class="pos">+4.0 %</td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth; How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td></tr><tr><td>3 mois</td><td class="pos">+2.0 %</td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth; How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td></tr><tr><td>2 mois</td><td class="pos">+7.1 %</td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth; How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td></tr><tr><td>1 mois</td><td class="neg">-5.8 %</td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth; How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td></tr><tr><td>1 semaine</td><td class="pos">+0.1 %</td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now; 3 Stocks Built for Higher Rates—And 2 That Could Break; Digital Realty Expands in Singapore as AI Demand Drives Growth; How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+18.8 %</td><td>HyperTechInvest opened Long Position on DLR; Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR)</td></tr><tr><td>1 an</td><td class="pos mono">+9.6 %</td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR); Digital Realty Expands Into Turkiye With Strategic Data Center JV</td></tr><tr><td>6 mois</td><td class="pos mono">+6.9 %</td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR); Digital Realty Expands Into Turkiye With Strategic Data Center JV</td></tr><tr><td>3 mois</td><td class="neg mono">-3.6 %</td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR); Digital Realty Expands Into Turkiye With Strategic Data Center JV</td></tr><tr><td>2 mois</td><td class="pos mono">+5.7 %</td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR); Digital Realty Expands Into Turkiye With Strategic Data Center JV</td></tr><tr><td>1 mois</td><td class="neg mono">-1.1 %</td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR); Digital Realty Expands Into Turkiye With Strategic Data Center JV</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side; CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training; AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR); Digital Realty Expands Into Turkiye With Strategic Data Center JV</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2025-03-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on DLR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1905435853851177240" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-07</td><td><span class="badge badge-neutral">NEWS</span></td><td>4 Reasons to Add Host Hotels Stock to Your Portfolio Now</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/4-reasons-add-host-hotels-165000426.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>3 Stocks Built for Higher Rates—And 2 That Could Break</td><td><a href="https://www.marketbeat.com/articles/3-stocks-built-for-higher-ratesand-2-that-could-break/?utm_source=yahoofinance&amp;utm_medium=yahoofinance" target="_blank" rel="noopener">MarketBeat</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Digital Realty Expands in Singapore as AI Demand Drives Growth</td><td><a href="https://finance.yahoo.com/technology/ai/articles/digital-realty-expands-singapore-ai-142900200.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>How Is Digital Realty Trust&#x27;s Stock Performance Compared to Other Real Estate Stocks</td><td><a href="https://www.barchart.com/story/news/4511540/how-is-digital-realty-trust-s-stock-performance-compared-to-other-real-estate-stocks" target="_blank" rel="noopener">Barchart</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Digital Realty Opens 6.4-MW Nairobi Data Center. Can Network Density Deliver Attractive Returns?</td><td><a href="https://finance.yahoo.com/technology/articles/digital-realty-opens-6-4-205810055.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>SL Green to Sell 110 Greene Street in SoHo for $226 million</td><td><a href="https://finance.yahoo.com/real-estate/articles/sl-green-sell-110-greene-174400535.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is Cipher Digital Stock Expensive, Or Just Early?</td><td><a href="https://www.trefis.com/articles/615062/is-cipher-digital-stock-expensive-or-just-early/2026-09-11" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>NVIDIA and Digital Realty’s Flexible AI Factory Faces a Test That More Funding Alone Can’t Solve</td><td><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-digital-realty-flexible-ai-131211843.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>REIT ETFs Riding High on AI Boom: The Overlooked Way to Play</td><td><a href="https://finance.yahoo.com/real-estate/articles/reit-etfs-riding-high-ai-140900623.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Datacenter stocks: Who are winners and losers if AI development slows</td><td><a href="https://finance.yahoo.com/technology/ai/articles/datacenter-stocks-winners-losers-ai-125606900.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td>2026-10-22</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>DLR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-10-22 &middot; DLR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2025-03-28</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on DLR</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1905435853851177240" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>Texas Put AI Data Centers on Notice. Meta and Digital Realty Already Chose Their Side</td><td><a href="https://finance.yahoo.com/technology/ai/articles/texas-put-ai-data-centers-185557597.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>CoreWeave Shares Sink After Bernstein Warns Of Slower AI Training</td><td><a href="https://finance.yahoo.com/technology/ai/articles/coreweave-shares-sink-bernstein-warns-182553714.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>AI-Focused, Grid-Aware Data Center Push Could Be A Game Changer For Digital Realty Trust (DLR)</td><td><a href="https://finance.yahoo.com/technology/ai/articles/ai-focused-grid-aware-data-161122920.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Digital Realty Expands Into Turkiye With Strategic Data Center JV</td><td><a href="https://finance.yahoo.com/technology/articles/digital-realty-expands-turkiye-strategic-141200903.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Texas and Cape Town Are Tightening the Data-Center Gate. Digital Realty and Equinix Could Still Benefit</td><td><a href="https://finance.yahoo.com/technology/ai/articles/texas-cape-town-tightening-data-095248616.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>How Far Can Cipher Digital Stock Fall While It Waits For Rent?</td><td><a href="https://www.trefis.com/articles/615703/how-far-can-cipher-digital-stock-fall-while-it-waits-for-rent/2026-09-17" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Digital Realty Trust (DLR) Forms Türkiye Venture. Does Secured Power Justify the Commitment?</td><td><a href="https://finance.yahoo.com/real-estate/articles/digital-realty-trust-dlr-forms-185412949.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>What It’s Like to Work in One of America’s Data Centers</td><td><a href="https://www.wsj.com/business/what-its-like-to-work-in-one-of-americas-data-centers-b4358003?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">The Wall Street Journal</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Digital Realty (DLR): Can a Data Center Landlord Become the Control Panel for Enterprise AI?</td><td><a href="https://finance.yahoo.com/technology/ai/articles/digital-realty-dlr-data-center-103118086.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>3 Buy-Rated REITs Collecting Rent From Warehouses, Data Centers and Shopping Centers</td><td><a href="https://247wallst.com/investing/2026/09/20/3-buy-rated-reits-collecting-rent-from-warehouses-data-centers-and-shopping-centers/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-10-23</td><td><span class="badge badge-neutral">résultats</span></td><td>DLR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-10-23</span> &middot; DLR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2025-03-28
-(LONG_POSITION)</p>
-<p>relances cumulees : 1
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2025-03-28</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2025-03-28</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">1</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>1</td><td class='mono'>2025-03-28</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour DLR: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour DLR: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.320)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.20</td><td class='mono'>0.30</td><td class='mono'>+6</td><td>1 compte indépendant soutient ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par HyperTechInvest, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.30</td><td class='mono'>0.20</td><td class='mono'>+6</td><td>dernier call déjà ancien</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (1) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="1905435853851177240" class="ep-proof"><span class="mono">1905435853851177240</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=DLR">ticker=DLR</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">DLR</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 538 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1905435853851177240" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

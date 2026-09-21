@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>SMR</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>SMR <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> NuScale conçoit de petits réacteurs nucléaires et aide à préparer leur construction et leur exploitation.</p><p><strong>Depuis :</strong> Fondée en 2007 selon la description fournie, elle vend une technologie de réacteurs nucléaires et des services associés.</p><p><strong>L&#x27;argent :</strong> Dette totale : 6,7 M$ ; l&#x27;activité consomme de l&#x27;argent, avec un flux de trésorerie de -776,4 M$ et un flux après investissements de -204,6 M$.</p><p><strong>Pourquoi ça bouge :</strong> L&#x27;action recule sur fond de doutes d&#x27;UBS sur les résultats et de ventes d&#x27;actions par le directeur financier, malgré des rebonds cités dans les titres.</p><p><strong>Edge ou vague :</strong> surfe sur : l&#x27;intérêt pour le nucléaire, car les faits fournis ne démontrent pas d&#x27;avantage durable face aux concurrents.</p>
+<p class="muted">confiance : moyenne : l&#x27;activité et les comptes sont décrits, mais les titres seuls expliquent mal les mouvements récents.
+ &middot; sources : faits yfinance &middot; catalyseurs du dossier &middot; variations fournies</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(99 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 87 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:52" role="img" aria-label="score 52 sur 100"><i>52</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par HyperTechInvest le 2024-11-11; 3 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:52%"></span></span>
+<p class="mono muted">score 52 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 87 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+18</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>52</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 3 comptes indépendants soutiennent ce call</li><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="12.0" x2="310" y2="12.0" class="zero-line"/><polyline points="10.0,19.2 60.0,62.0 110.0,30.4 160.0,24.5 210.0,10.0 260.0,17.4 310.0,19.3" class="spark-line"/><circle cx="10.0" cy="19.2" r="3" fill="#b3392c"><title>2 ans : -11.1 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -76.3 %</title></circle><circle cx="110.0" cy="30.4" r="3" fill="#b3392c"><title>6 mois : -28.1 %</title></circle><circle cx="160.0" cy="24.5" r="3" fill="#b3392c"><title>3 mois : -19.1 %</title></circle><circle cx="210.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 mois : +3.0 %</title></circle><circle cx="260.0" cy="17.4" r="3" fill="#b3392c"><title>1 mois : -8.3 %</title></circle><circle cx="310.0" cy="19.3" r="3" fill="#b3392c"><title>1 semaine : -11.2 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">-11.1 %</td></tr><tr><td>1 an</td><td class="neg">-76.3 %</td></tr><tr><td>6 mois</td><td class="neg">-28.1 %</td></tr><tr><td>3 mois</td><td class="neg">-19.1 %</td></tr><tr><td>2 mois</td><td class="pos">+3.0 %</td></tr><tr><td>1 mois</td><td class="neg">-8.3 %</td></tr><tr><td>1 semaine</td><td class="neg">-11.2 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="10.0" x2="310" y2="10.0" class="zero-line"/><polyline points="10.0,22.4 60.0,62.0 110.0,26.8 160.0,24.9 210.0,10.5 260.0,15.4 310.0,10.0" class="spark-line"/><circle cx="10.0" cy="22.4" r="3" fill="#ff8a8a"><title>2 ans : -19.5 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -81.6 %</title></circle><circle cx="110.0" cy="26.8" r="3" fill="#ff8a8a"><title>6 mois : -26.4 %</title></circle><circle cx="160.0" cy="24.9" r="3" fill="#ff8a8a"><title>3 mois : -23.4 %</title></circle><circle cx="210.0" cy="10.5" r="3" fill="#ff8a8a"><title>2 mois : -0.8 %</title></circle><circle cx="260.0" cy="15.4" r="3" fill="#ff8a8a"><title>1 mois : -8.4 %</title></circle><circle cx="310.0" cy="10.0" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">-19.5 %</td></tr><tr><td>1 an</td><td class="neg mono">-81.6 %</td></tr><tr><td>6 mois</td><td class="neg mono">-26.4 %</td></tr><tr><td>3 mois</td><td class="neg mono">-23.4 %</td></tr><tr><td>2 mois</td><td class="neg mono">-0.8 %</td></tr><tr><td>1 mois</td><td class="neg mono">-8.4 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="neg">-11.1 %</td><td>HyperTechInvest opened Long Position on SMR; Gubloinvestor opened Long Position on SMR; NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed</td></tr><tr><td>1 an</td><td class="neg">-76.3 %</td><td>Gubloinvestor opened Long Position on SMR; NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed; Is NuScale Power a Millionaire Maker?</td></tr><tr><td>6 mois</td><td class="neg">-28.1 %</td><td>Gubloinvestor opened Long Position on SMR; NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed; Is NuScale Power a Millionaire Maker?</td></tr><tr><td>3 mois</td><td class="neg">-19.1 %</td><td>NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed; Is NuScale Power a Millionaire Maker?; NuScale Power Stock Jumps 15% in 1 Day. Here&#x27;s How Nuclear Energy Investors Should Respond.</td></tr><tr><td>2 mois</td><td class="pos">+3.0 %</td><td>NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed; Is NuScale Power a Millionaire Maker?; NuScale Power Stock Jumps 15% in 1 Day. Here&#x27;s How Nuclear Energy Investors Should Respond.</td></tr><tr><td>1 mois</td><td class="neg">-8.3 %</td><td>NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed; Is NuScale Power a Millionaire Maker?; NuScale Power Stock Jumps 15% in 1 Day. Here&#x27;s How Nuclear Energy Investors Should Respond.</td></tr><tr><td>1 semaine</td><td class="neg">-11.2 %</td><td>NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap; Why NuScale Power Stock Just Crashed; Is NuScale Power a Millionaire Maker?; NuScale Power Stock Jumps 15% in 1 Day. Here&#x27;s How Nuclear Energy Investors Should Respond.</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="neg mono">-19.5 %</td><td>HyperTechInvest opened Long Position on SMR; StonkChris opened Long Position on SMR; Gubloinvestor opened Long Position on SMR; StonkChris opened Long Swing on SMR</td></tr><tr><td>1 an</td><td class="neg mono">-81.6 %</td><td>StonkChris opened Long Position on SMR; Gubloinvestor opened Long Position on SMR; StonkChris opened Long Swing on SMR; Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.</td></tr><tr><td>6 mois</td><td class="neg mono">-26.4 %</td><td>StonkChris opened Long Position on SMR; Gubloinvestor opened Long Position on SMR; StonkChris opened Long Swing on SMR; Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.</td></tr><tr><td>3 mois</td><td class="neg mono">-23.4 %</td><td>StonkChris opened Long Swing on SMR; Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.; 3 Nuclear Energy Stocks to Buy Before 2026 Ends; NuScale Power Just Solved a Major Engineering Hurdle: Is the Stock a Buy?</td></tr><tr><td>2 mois</td><td class="neg mono">-0.8 %</td><td>Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.; 3 Nuclear Energy Stocks to Buy Before 2026 Ends; NuScale Power Just Solved a Major Engineering Hurdle: Is the Stock a Buy?; Wall Street sounds alarm on nuclear stock with 40% downside</td></tr><tr><td>1 mois</td><td class="neg mono">-8.4 %</td><td>Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.; 3 Nuclear Energy Stocks to Buy Before 2026 Ends; NuScale Power Just Solved a Major Engineering Hurdle: Is the Stock a Buy?; Wall Street sounds alarm on nuclear stock with 40% downside</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.; 3 Nuclear Energy Stocks to Buy Before 2026 Ends; NuScale Power Just Solved a Major Engineering Hurdle: Is the Stock a Buy?; Wall Street sounds alarm on nuclear stock with 40% downside</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2024-11-11</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on SMR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1856009976361202094" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on SMR</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2063253916142260703" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>NuScale Stock Falls 14% as UBS Sees a $95 Million EBITDA Gap</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nuscale-stock-falls-14-ubs-195503018.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why NuScale Power Stock Just Crashed</td><td><a href="https://www.fool.com/investing/2026/09/11/why-nuscale-power-stock-just-crashed/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is NuScale Power a Millionaire Maker?</td><td><a href="https://www.fool.com/investing/2026/09/12/is-nuscale-power-a-millionaire-maker/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>NuScale Power Stock Jumps 15% in 1 Day. Here&#x27;s How Nuclear Energy Investors Should Respond.</td><td><a href="https://www.fool.com/investing/2026/09/12/nuscale-power-stock-jumps-nuclear-energy-invest/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Oklo vs. NuScale vs. TMC: 3 Speculative Bets, Ranked By Which One Pays Off First.</td><td><a href="https://www.fool.com/investing/2026/09/13/oklo-vs-nuscale-vs-tmc-3-speculative-bets-ranked-b/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>NuScale Power&#x27;s CFO Sells 20,000 Company Shares Amid a 74% Stock Decline Over the Trailing 12 Months</td><td><a href="https://www.fool.com/coverage/filings/2026/09/13/nuscale-power-s-cfo-sells-20-000-company-shares-amid-a-74-stock-decline-over-the-trailing-12-months/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>If You&#x27;re Still Holding NuScale, Here&#x27;s 1 Catalyst That Might Make You Sell</td><td><a href="https://www.fool.com/investing/2026/09/14/if-holding-nuscale-stock-catalyst-make-sell-smr/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>NuScale Has One Overlooked Quality Worth Buying Into</td><td><a href="https://www.fool.com/investing/2026/09/13/nuscale-has-one-overlooked-quality-worth-buying-in/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-11-05</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>SMR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-05 &middot; SMR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2024-11-11</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on SMR</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1856009976361202094" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-05-07</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on SMR</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2052486277392408848" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-06</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Position on SMR</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2063253916142260703" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-22</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Swing on SMR</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2069066705578463319" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Europe Bets Big on Small Modular Reactors. Here&#x27;s How NuScale Power and Oklo Will Benefit.</td><td><a href="https://www.fool.com/investing/2026/09/15/europe-bets-big-on-small-modular-reactors-here-s-how-nuscale-power-and-oklo-will-benefit/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>3 Nuclear Energy Stocks to Buy Before 2026 Ends</td><td><a href="https://www.fool.com/investing/2026/09/16/3-nuclear-energy-stocks-to-buy-before-2026-ends/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>NuScale Power Just Solved a Major Engineering Hurdle: Is the Stock a Buy?</td><td><a href="https://www.fool.com/investing/2026/09/16/nuscale-power-just-solved-a-major-engineering-hurd/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Wall Street sounds alarm on nuclear stock with 40% downside</td><td><a href="https://www.thestreet.com/investing/wall-street-sounds-alarm-on-nuclear-stock-with-40-downside" target="_blank" rel="noopener">TheStreet</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Is NuScale Power (SMR) Facing A Bigger Threat From Costs And Customer Delays?</td><td><a href="https://finance.yahoo.com/energy/articles/nuscale-power-smr-facing-bigger-091209183.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>SMR Developer Holtec Just Cancelled Its IPO. Should NuScale Power and Oklo Investors Panic?</td><td><a href="https://www.fool.com/investing/2026/09/17/smr-developer-holtec-just-cancelled-its-ipo-should-nuscale-power-and-oklo-investors-panic/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Oklo Jumps 13%, NuScale Power Climbs 10%: Does the House Data Center Power Vote Reach Nuclear?</td><td><a href="https://247wallst.com/investing/2026/09/17/oklo-jumps-13-nuscale-power-climbs-10-does-the-house-data-center-power-vote-reach-nuclear/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Stock Market Midday, Sept. 18: Stocks Slip, Crypto Gains</td><td><a href="https://www.fool.com/coverage/stock-market-today/2026/09/18/stock-market-midday-sept-18-stocks-slip-crypto-gains/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>NuScale Power Drops 7% as Nuclear Stocks Hand Back the Vote Rally; Oklo Falls 5%, Centrus Energy Slides 3%</td><td><a href="https://247wallst.com/investing/2026/09/18/nuscale-power-drops-7-as-nuclear-stocks-hand-back-the-vote-rally-oklo-falls-5-centrus-energy-slides-3/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Why Did Nuclear Stocks OKLO, SMR, NNE, LEU, XE Jump On Thursday?</td><td><a href="https://stocktwits.com/news-articles/markets/equity/why-did-nuclear-stocks-oklo-smr-nne-leu-xe-jump-on-thursday/cZtuW2xRBdu" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-11-06</td><td><span class="badge badge-neutral">résultats</span></td><td>SMR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-06</span> &middot; SMR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2024-11-11
-(LONG_POSITION)</p>
-<p>relances cumulees : 0
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-06</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2024-11-11</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2024-11-11</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">5</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-06-06</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>0</td><td class='mono'>2024-11-11</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>5</td><td class='mono'>2026-05-07</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour SMR: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour SMR: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.460)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.40</td><td>0.30</td><td>0.120</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Gubloinvestor tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.60</td><td class='mono'>0.30</td><td class='mono'>+18</td><td>3 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par Gubloinvestor, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (4) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2063253916142260703" class="ep-proof"><span class="mono">2063253916142260703</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=SMR">ticker=SMR</span></div><div data-episode-id="1856009976361202094" class="ep-proof"><span class="mono">1856009976361202094</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=SMR">ticker=SMR</span></div><div data-episode-id="2052486277392408848" class="ep-proof"><span class="mono">2052486277392408848</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=SMR">ticker=SMR</span></div><div data-episode-id="2069066705578463319" class="ep-proof"><span class="mono">2069066705578463319</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=SMR">ticker=SMR</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">SMR</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 87 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1856009976361202094" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

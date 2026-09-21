@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>ACHR</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>ACHR <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
-(622 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 95 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:46" role="img" aria-label="score 46 sur 100"><i>46</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par HyperTechInvest le 2024-12-30; 2 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:46%"></span></span>
+<p class="mono muted">score 46 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 95 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+12</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>46</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="44.0" x2="310" y2="44.0" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,48.4 160.0,43.8 210.0,35.7 260.0,51.8 310.0,45.2" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +68.6 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -36.2 %</title></circle><circle cx="110.0" cy="48.4" r="3" fill="#b3392c"><title>6 mois : -8.8 %</title></circle><circle cx="160.0" cy="43.8" r="3" fill="#2f8f4e"><title>3 mois : +0.5 %</title></circle><circle cx="210.0" cy="35.7" r="3" fill="#2f8f4e"><title>2 mois : +16.7 %</title></circle><circle cx="260.0" cy="51.8" r="3" fill="#b3392c"><title>1 mois : -15.7 %</title></circle><circle cx="310.0" cy="45.2" r="3" fill="#b3392c"><title>1 semaine : -2.3 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+68.6 %</td></tr><tr><td>1 an</td><td class="neg">-36.2 %</td></tr><tr><td>6 mois</td><td class="neg">-8.8 %</td></tr><tr><td>3 mois</td><td class="pos">+0.5 %</td></tr><tr><td>2 mois</td><td class="pos">+16.7 %</td></tr><tr><td>1 mois</td><td class="neg">-15.7 %</td></tr><tr><td>1 semaine</td><td class="neg">-2.3 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="44.1" x2="310" y2="44.1" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,46.2 160.0,42.9 210.0,40.9 260.0,48.8 310.0,44.1" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#3ddc85"><title>2 ans : +82.4 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -43.4 %</title></circle><circle cx="110.0" cy="46.2" r="3" fill="#ff8a8a"><title>6 mois : -5.3 %</title></circle><circle cx="160.0" cy="42.9" r="3" fill="#3ddc85"><title>3 mois : +2.8 %</title></circle><circle cx="210.0" cy="40.9" r="3" fill="#3ddc85"><title>2 mois : +7.7 %</title></circle><circle cx="260.0" cy="48.8" r="3" fill="#ff8a8a"><title>1 mois : -11.4 %</title></circle><circle cx="310.0" cy="44.1" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+82.4 %</td></tr><tr><td>1 an</td><td class="neg mono">-43.4 %</td></tr><tr><td>6 mois</td><td class="neg mono">-5.3 %</td></tr><tr><td>3 mois</td><td class="pos mono">+2.8 %</td></tr><tr><td>2 mois</td><td class="pos mono">+7.7 %</td></tr><tr><td>1 mois</td><td class="neg mono">-11.4 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+68.6 %</td><td>HyperTechInvest opened Long Position on ACHR; Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?</td></tr><tr><td>1 an</td><td class="neg">-36.2 %</td><td>Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?; Should You Buy Archer Aviation Below $6?</td></tr><tr><td>6 mois</td><td class="neg">-8.8 %</td><td>Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?; Should You Buy Archer Aviation Below $6?</td></tr><tr><td>3 mois</td><td class="pos">+0.5 %</td><td>Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?; Should You Buy Archer Aviation Below $6?</td></tr><tr><td>2 mois</td><td class="pos">+16.7 %</td><td>Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?; Should You Buy Archer Aviation Below $6?</td></tr><tr><td>1 mois</td><td class="neg">-15.7 %</td><td>Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?; Should You Buy Archer Aviation Below $6?</td></tr><tr><td>1 semaine</td><td class="neg">-2.3 %</td><td>Is Joby Stock Priced For The Wrong Business?; Cathie Wood Is Buying Archer While Trimming Palantir; How Far Could Boeing Stock Fall If The Market Turns?; Should You Buy Archer Aviation Below $6?</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+82.4 %</td><td>HyperTechInvest opened Long Position on ACHR; StonkChris opened Long Position on ACHR; StonkChris opened Long Swing on ACHR; Can Archer&#x27;s Component Strategy Support Production Scaling?</td></tr><tr><td>1 an</td><td class="neg mono">-43.4 %</td><td>StonkChris opened Long Position on ACHR; StonkChris opened Long Swing on ACHR; Can Archer&#x27;s Component Strategy Support Production Scaling?; $10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.</td></tr><tr><td>6 mois</td><td class="neg mono">-5.3 %</td><td>StonkChris opened Long Swing on ACHR; Can Archer&#x27;s Component Strategy Support Production Scaling?; $10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.; Joby Slips and Is Down 53% This Year as the eVTOL Trade Keeps Unwinding; Archer Dips, EHang Eases</td></tr><tr><td>3 mois</td><td class="pos mono">+2.8 %</td><td>Can Archer&#x27;s Component Strategy Support Production Scaling?; $10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.; Joby Slips and Is Down 53% This Year as the eVTOL Trade Keeps Unwinding; Archer Dips, EHang Eases; Should You Buy Joby Stock For The Flights It Already Sells?</td></tr><tr><td>2 mois</td><td class="pos mono">+7.7 %</td><td>Can Archer&#x27;s Component Strategy Support Production Scaling?; $10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.; Joby Slips and Is Down 53% This Year as the eVTOL Trade Keeps Unwinding; Archer Dips, EHang Eases; Should You Buy Joby Stock For The Flights It Already Sells?</td></tr><tr><td>1 mois</td><td class="neg mono">-11.4 %</td><td>Can Archer&#x27;s Component Strategy Support Production Scaling?; $10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.; Joby Slips and Is Down 53% This Year as the eVTOL Trade Keeps Unwinding; Archer Dips, EHang Eases; Should You Buy Joby Stock For The Flights It Already Sells?</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Can Archer&#x27;s Component Strategy Support Production Scaling?; $10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.; Joby Slips and Is Down 53% This Year as the eVTOL Trade Keeps Unwinding; Archer Dips, EHang Eases; Should You Buy Joby Stock For The Flights It Already Sells?</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2024-12-30</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on ACHR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1873858812991668345" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is Joby Stock Priced For The Wrong Business?</td><td><a href="https://www.trefis.com/articles/614725/is-joby-stock-priced-for-the-wrong-business/2026-09-09" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Cathie Wood Is Buying Archer While Trimming Palantir</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buying-archer-while-163533472.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>How Far Could Boeing Stock Fall If The Market Turns?</td><td><a href="https://www.trefis.com/articles/614907/how-far-could-boeing-stock-fall-if-the-market-turns/2026-09-10" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Should You Buy Archer Aviation Below $6?</td><td><a href="https://www.fool.com/investing/2026/09/10/should-you-buy-archer-aviation-below-6/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Better eVTOL Stock: Archer Aviation vs. Joby Aviation</td><td><a href="https://www.fool.com/investing/2026/09/09/better-evtol-stock-archer-aviation-vs-joby-aviatio/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Should You Buy Archer Aviation Stock While It&#x27;s Below $6?</td><td><a href="https://www.fool.com/investing/2026/09/12/should-you-buy-archer-aviation-stock-while-its-bel/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Where Will Archer Aviation Be by This Time Next Year?</td><td><a href="https://www.fool.com/investing/2026/09/13/where-will-archer-be-by-this-time-next-year/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Can Archer&#x27;s Component Strategy Support Production Scaling?</td><td><a href="https://finance.yahoo.com/technology/articles/archers-component-strategy-support-production-145800779.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>$10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.</td><td><a href="https://www.fool.com/investing/2026/09/14/usd10-000-in-archer-aviation-at-last-year-s-high-is-about-usd3-840-now-here-s-what-gets-it-back/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Archer Aviation vs. Joby Aviation: This 1 eVTOL Stock Has The Better Balance Sheet</td><td><a href="https://www.fool.com/investing/2026/09/14/archer-aviation-vs-joby-aviation-this-1-evtol-stoc/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-11-05</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>ACHR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-05 &middot; ACHR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2024-12-30</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on ACHR</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1873858812991668345" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-10-19</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on ACHR</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/1980019692514549844" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-14</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Swing on ACHR</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2066297207838380215" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>Can Archer&#x27;s Component Strategy Support Production Scaling?</td><td><a href="https://finance.yahoo.com/technology/articles/archers-component-strategy-support-production-145800779.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>$10,000 in Archer Aviation at Last Year&#x27;s High Is About $3,840 Now. Here&#x27;s What Gets It Back.</td><td><a href="https://www.fool.com/investing/2026/09/14/usd10-000-in-archer-aviation-at-last-year-s-high-is-about-usd3-840-now-here-s-what-gets-it-back/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Joby Slips and Is Down 53% This Year as the eVTOL Trade Keeps Unwinding; Archer Dips, EHang Eases</td><td><a href="https://247wallst.com/investing/2026/09/15/joby-slips-and-is-down-53-this-year-as-the-evtol-trade-keeps-unwinding-archer-dips-ehang-eases/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Should You Buy Joby Stock For The Flights It Already Sells?</td><td><a href="https://www.trefis.com/articles/615400/should-you-buy-joby-stock-for-the-flights-it-already-sells/2026-09-15" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>The 1 Metric That Separates Joby From Archer in the Race to FAA Certification</td><td><a href="https://www.fool.com/investing/2026/09/16/the-x-metric-that-separates-joby-from-archer-in-th/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Joby Aviation Just Dropped 20% in a Month. Is It Time to Sell?</td><td><a href="https://247wallst.com/investing/2026/09/18/joby-aviation-just-dropped-20-in-a-month-is-it-time-to-sell/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Joby Is Still Early. That’s Exactly Why the Stock Is So Interesting</td><td><a href="https://247wallst.com/investing/2026/09/18/joby-is-still-early-thats-exactly-why-the-stock-is-so-interesting/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Cathie Wood Sold Palantir and AMD, Then Poured $3.35 Million Into Archer Aviation. Is ARK Betting Big on Flying Taxis?</td><td><a href="https://www.fool.com/investing/2026/09/19/cathie-wood-sold-palantir-and-amd-then-poured-335/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>Archer Aviation Trades Near $5. Could a $5,000 Investment Set You Up for Life?</td><td><a href="https://www.fool.com/investing/2026/09/20/archer-aviation-trades-near-5-could-a-5000-investm/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>Archer Aviation (ACHR) Completed Midnight’s First City To City Roundtrip Flight</td><td><a href="https://finance.yahoo.com/technology/articles/archer-aviation-achr-completed-midnight-080834988.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-11-06</td><td><span class="badge badge-neutral">résultats</span></td><td>ACHR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-06</span> &middot; ACHR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2024-12-30
-(LONG_POSITION)</p>
-<p>relances cumulees : 1
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>1</td><td>2024-12-30</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2024-12-30</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">2</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>1</td><td class='mono'>2024-12-30</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>1</td><td class='mono'>2025-10-19</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour ACHR: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour ACHR: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.320)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.40</td><td class='mono'>0.30</td><td class='mono'>+12</td><td>2 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par HyperTechInvest, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (3) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="1873858812991668345" class="ep-proof"><span class="mono">1873858812991668345</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=ACHR">ticker=ACHR</span></div><div data-episode-id="1980019692514549844" class="ep-proof"><span class="mono">1980019692514549844</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=ACHR">ticker=ACHR</span></div><div data-episode-id="2066297207838380215" class="ep-proof"><span class="mono">2066297207838380215</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=ACHR">ticker=ACHR</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">ACHR</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 95 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1873858812991668345" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

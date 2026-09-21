@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>NRXS</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>NRXS <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
-(180 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill o">dernier call déjà ancien</span>
+(&middot; 184 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring bad" style="--p:32" role="img" aria-label="score 32 sur 100"><i>32</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call date déjà de plusieurs semaines; 1 compte indépendant soutient ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar bad"><span style="width:32%"></span></span>
+<p class="mono muted">score 32 / 100 &middot; risque : risque spéculatif
+&middot; dernier call déjà ancien
+(&middot; 184 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+6</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+6</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>32</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>track record : porté surtout par italianinvesto, compte encore en phase de premières preuves (le point le plus solide, sans toutefois franchir le seuil d&#x27;un signal net)</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>indépendance des comptes : 1 compte indépendant soutient ce call</li><li>fraîcheur : dernier call déjà ancien</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="55.8" x2="310" y2="55.8" class="zero-line"/><polyline points="10.0,24.7 60.0,10.0 110.0,62.0 160.0,61.0 210.0,61.7 260.0,58.8 310.0,57.0" class="spark-line"/><circle cx="10.0" cy="24.7" r="3" fill="#2f8f4e"><title>2 ans : +93.3 %</title></circle><circle cx="60.0" cy="10.0" r="3" fill="#2f8f4e"><title>1 an : +137.2 %</title></circle><circle cx="110.0" cy="62.0" r="3" fill="#b3392c"><title>6 mois : -18.6 %</title></circle><circle cx="160.0" cy="61.0" r="3" fill="#b3392c"><title>3 mois : -15.6 %</title></circle><circle cx="210.0" cy="61.7" r="3" fill="#b3392c"><title>2 mois : -17.8 %</title></circle><circle cx="260.0" cy="58.8" r="3" fill="#b3392c"><title>1 mois : -8.9 %</title></circle><circle cx="310.0" cy="57.0" r="3" fill="#b3392c"><title>1 semaine : -3.7 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+93.3 %</td></tr><tr><td>1 an</td><td class="pos">+137.2 %</td></tr><tr><td>6 mois</td><td class="neg">-18.6 %</td></tr><tr><td>3 mois</td><td class="neg">-15.6 %</td></tr><tr><td>2 mois</td><td class="neg">-17.8 %</td></tr><tr><td>1 mois</td><td class="neg">-8.9 %</td></tr><tr><td>1 semaine</td><td class="neg">-3.7 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="54.4" x2="310" y2="54.4" class="zero-line"/><polyline points="10.0,11.8 60.0,10.0 110.0,62.0 160.0,61.4 210.0,60.2 260.0,56.8 310.0,54.4" class="spark-line"/><circle cx="10.0" cy="11.8" r="3" fill="#3ddc85"><title>2 ans : +120.8 %</title></circle><circle cx="60.0" cy="10.0" r="3" fill="#3ddc85"><title>1 an : +126.0 %</title></circle><circle cx="110.0" cy="62.0" r="3" fill="#ff8a8a"><title>6 mois : -21.5 %</title></circle><circle cx="160.0" cy="61.4" r="3" fill="#ff8a8a"><title>3 mois : -19.8 %</title></circle><circle cx="210.0" cy="60.2" r="3" fill="#ff8a8a"><title>2 mois : -16.4 %</title></circle><circle cx="260.0" cy="56.8" r="3" fill="#ff8a8a"><title>1 mois : -6.7 %</title></circle><circle cx="310.0" cy="54.4" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+120.8 %</td></tr><tr><td>1 an</td><td class="pos mono">+126.0 %</td></tr><tr><td>6 mois</td><td class="neg mono">-21.5 %</td></tr><tr><td>3 mois</td><td class="neg mono">-19.8 %</td></tr><tr><td>2 mois</td><td class="neg mono">-16.4 %</td></tr><tr><td>1 mois</td><td class="neg mono">-6.7 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+93.3 %</td><td>italianinvesto opened Long Position on NRXS; Top Stock Reports for Alphabet, Walmart &amp; Micron; The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis; Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges</td></tr><tr><td>1 an</td><td class="pos">+137.2 %</td><td>italianinvesto opened Long Position on NRXS; Top Stock Reports for Alphabet, Walmart &amp; Micron; The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis; Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges</td></tr><tr><td>6 mois</td><td class="neg">-18.6 %</td><td>italianinvesto opened Long Position on NRXS; Top Stock Reports for Alphabet, Walmart &amp; Micron; The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis; Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges</td></tr><tr><td>3 mois</td><td class="neg">-15.6 %</td><td>Neuraxis Inc (NRXS) (Q2 2026) Earnings Call Highlights: Revenue Surges 116% as Payer Coverage ...; NeurAxis, Inc. Q2 2026 Earnings Call Summary; NRXS Stock Dips Post Q2 Earnings Despite Revenue Surge, Gross Margin Up; Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td></tr><tr><td>2 mois</td><td class="neg">-17.8 %</td><td>Neuraxis Inc (NRXS) (Q2 2026) Earnings Call Highlights: Revenue Surges 116% as Payer Coverage ...; NeurAxis, Inc. Q2 2026 Earnings Call Summary; NRXS Stock Dips Post Q2 Earnings Despite Revenue Surge, Gross Margin Up; Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td></tr><tr><td>1 mois</td><td class="neg">-8.9 %</td><td>Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td></tr><tr><td>1 semaine</td><td class="neg">-3.7 %</td><td>Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+120.8 %</td><td>italianinvesto opened Long Position on NRXS; The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis; Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges; NeurAxis, Inc. Q1 2026 Earnings Call Summary</td></tr><tr><td>1 an</td><td class="pos mono">+126.0 %</td><td>italianinvesto opened Long Position on NRXS; The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis; Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges; NeurAxis, Inc. Q1 2026 Earnings Call Summary</td></tr><tr><td>6 mois</td><td class="neg mono">-21.5 %</td><td>The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis; Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges; NeurAxis, Inc. Q1 2026 Earnings Call Summary; NeurAxis Stock Gains Post Q1 Earnings, Revenues and Margin Surge Y/Y</td></tr><tr><td>3 mois</td><td class="neg mono">-19.8 %</td><td>Neuraxis Inc (NRXS) (Q2 2026) Earnings Call Highlights: Revenue Surges 116% as Payer Coverage ...; NeurAxis, Inc. Q2 2026 Earnings Call Summary; NRXS Stock Dips Post Q2 Earnings Despite Revenue Surge, Gross Margin Up; Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td></tr><tr><td>2 mois</td><td class="neg mono">-16.4 %</td><td>Neuraxis Inc (NRXS) (Q2 2026) Earnings Call Highlights: Revenue Surges 116% as Payer Coverage ...; NeurAxis, Inc. Q2 2026 Earnings Call Summary; NRXS Stock Dips Post Q2 Earnings Despite Revenue Surge, Gross Margin Up; Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td></tr><tr><td>1 mois</td><td class="neg mono">-6.7 %</td><td>Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.; Neuraxis Gains Nearly 137% in a Year: What&#x27;s Driving the Stock?</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Neuraxis Gains Nearly 137% in a Year: What&#x27;s Driving the Stock?</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2026-03-17</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on NRXS</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/2033944499341164703" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Top Stock Reports for Alphabet, Walmart &amp; Micron</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/top-stock-reports-alphabet-walmart-201100777.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-05-05</td><td><span class="badge badge-neutral">NEWS</span></td><td>The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-alphabet-103400686.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-05-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges</td><td><a href="https://finance.yahoo.com/news/neuraxis-inc-nrxs-q1-2026-230158253.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-05-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>NeurAxis, Inc. Q1 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-neuraxis-inc-q1-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td>2026-05-15</td><td><span class="badge badge-neutral">NEWS</span></td><td>NeurAxis Stock Gains Post Q1 Earnings, Revenues and Margin Surge Y/Y</td><td><a href="https://finance.yahoo.com/sectors/healthcare/articles/neuraxis-stock-gains-post-q1-162300872.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-05-18</td><td><span class="badge badge-neutral">NEWS</span></td><td>NeurAxis (NRXS) Climbs on Reimbursement and Guideline Momentum</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/neuraxis-nrxs-climbs-reimbursement-guideline-124753222.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-08-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Neuraxis Inc (NRXS) (Q2 2026) Earnings Call Highlights: Revenue Surges 116% as Payer Coverage ...</td><td><a href="https://finance.yahoo.com/healthcare/articles/neuraxis-inc-nrxs-q2-2026-210033296.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-08-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>NeurAxis, Inc. Q2 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-neuraxis-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td>2026-08-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>NRXS Stock Dips Post Q2 Earnings Despite Revenue Surge, Gross Margin Up</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nrxs-stock-dips-post-q2-154200952.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kodak-having-kodak-moment-2-055100311.html" target="_blank" rel="noopener">Zacks</a></td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+<tbody><tr><td class='mono'>2026-03-17</td><td><span class="badge badge-neutral">post de compte</span></td><td>italianinvesto opened Long Position on NRXS</td><td>italianinvesto &middot; <a class="a2" href="https://x.com/italianinvesto/status/2033944499341164703" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-05-05</td><td><span class="badge badge-neutral">presse</span></td><td>The Zacks Analyst Blog Highlights Alphabet, Walmart, Micron Technology and NeurAxis</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-alphabet-103400686.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-05-12</td><td><span class="badge badge-neutral">presse</span></td><td>Neuraxis Inc (NRXS) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Coverage Challenges</td><td><a href="https://finance.yahoo.com/news/neuraxis-inc-nrxs-q1-2026-230158253.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td class='mono'>2026-05-13</td><td><span class="badge badge-neutral">presse</span></td><td>NeurAxis, Inc. Q1 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-neuraxis-inc-q1-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td class='mono'>2026-05-15</td><td><span class="badge badge-neutral">presse</span></td><td>NeurAxis Stock Gains Post Q1 Earnings, Revenues and Margin Surge Y/Y</td><td><a href="https://finance.yahoo.com/sectors/healthcare/articles/neuraxis-stock-gains-post-q1-162300872.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-05-18</td><td><span class="badge badge-neutral">presse</span></td><td>NeurAxis (NRXS) Climbs on Reimbursement and Guideline Momentum</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/neuraxis-nrxs-climbs-reimbursement-guideline-124753222.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-08-11</td><td><span class="badge badge-neutral">presse</span></td><td>Neuraxis Inc (NRXS) (Q2 2026) Earnings Call Highlights: Revenue Surges 116% as Payer Coverage ...</td><td><a href="https://finance.yahoo.com/healthcare/articles/neuraxis-inc-nrxs-q2-2026-210033296.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td class='mono'>2026-08-12</td><td><span class="badge badge-neutral">presse</span></td><td>NeurAxis, Inc. Q2 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-neuraxis-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td class='mono'>2026-08-14</td><td><span class="badge badge-neutral">presse</span></td><td>NRXS Stock Dips Post Q2 Earnings Despite Revenue Surge, Gross Margin Up</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nrxs-stock-dips-post-q2-154200952.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-12</td><td><span class="badge badge-neutral">presse</span></td><td>Is Kodak having a &quot;Kodak moment?&quot; 2 watchlist stocks.</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kodak-having-kodak-moment-2-055100311.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Neuraxis Gains Nearly 137% in a Year: What&#x27;s Driving the Stock?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/neuraxis-gains-nearly-137-whats-151100118.html" target="_blank" rel="noopener">Zacks</a></td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li class='muted'>aucun catalyseur à venir sourcé</li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : italianinvesto le 2026-03-17
-(LONG_POSITION)</p>
-<p>relances cumulees : 0
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-03-17</td></tr></tbody></table>
+<p>premier call : italianinvesto le <span class="mono">2026-03-17</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">0</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>0</td><td class='mono'>2026-03-17</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour NRXS: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour NRXS: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.320)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>italianinvesto tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: italianinvesto tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.20</td><td class='mono'>0.30</td><td class='mono'>+6</td><td>1 compte indépendant soutient ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par italianinvesto, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.30</td><td class='mono'>0.20</td><td class='mono'>+6</td><td>dernier call déjà ancien</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (1) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2033944499341164703" class="ep-proof"><span class="mono">2033944499341164703</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=italianinvesto">account=italianinvesto</span><span data-field="ticker" title="ticker=NRXS">ticker=NRXS</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">NRXS</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; italianinvesto</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 184 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/italianinvesto/status/2033944499341164703" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

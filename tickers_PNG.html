@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>PNG</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>PNG <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> L&#x27;activité de l&#x27;entreprise associée au ticker PNG n&#x27;est pas précisée dans les faits fournis.</p><p><strong>Depuis :</strong> La date de création ou de cotation et les produits vendus ne sont pas renseignés.</p><p><strong>L&#x27;argent :</strong> Dette et argent généré par l&#x27;activité : non renseignés dans les faits fournis.</p><p><strong>Pourquoi ça bouge :</strong> Aucune variation de prix ni aucun événement récent n&#x27;est fourni pour expliquer un mouvement de l&#x27;action.</p><p><strong>Edge ou vague :</strong> edge : impossible de confirmer un avantage durable ou un effet de mode avec les informations fournies.</p>
+<p class="muted">confiance : basse, car les faits fournis ne permettent pas de décrire l&#x27;entreprise.
+ &middot; sources : faits yfinance &middot; dossier sans catalyseurs</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / broad_market_etf_index</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(48 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 52 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:65" role="img" aria-label="score 65 sur 100"><i>65</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par HyperTechInvest le 2024-10-18; 5 comptes indépendants soutiennent ce call.</b></p>
+<span class="bar warn"><span style="width:65%"></span></span>
+<p class="mono muted">score 65 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 52 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+30</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+1</b> = <b>65</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 5 comptes indépendants soutiennent ce call</li><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : 1 informations vérifiées sur 16</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
 <p class="muted">Historique insuffisant pour tracer une courbe.</p>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="neg">n/d</td></tr><tr><td>6 mois</td><td class="neg">n/d</td></tr><tr><td>3 mois</td><td class="neg">n/d</td></tr><tr><td>2 mois</td><td class="neg">n/d</td></tr><tr><td>1 mois</td><td class="neg">n/d</td></tr><tr><td>1 semaine</td><td class="neg">n/d</td></tr></tbody></table>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">n/d</td></tr><tr><td>1 an</td><td class="neg mono">n/d</td></tr><tr><td>6 mois</td><td class="neg mono">n/d</td></tr><tr><td>3 mois</td><td class="neg mono">n/d</td></tr><tr><td>2 mois</td><td class="neg mono">n/d</td></tr><tr><td>1 mois</td><td class="neg mono">n/d</td></tr><tr><td>1 semaine</td><td class="neg mono">n/d</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
 <tbody><tr><td colspan='3' class='muted'>pas assez d'historique de prix</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2024-10-18</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on PNG</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1847101488080080985" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-10-05</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Position on PNG</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/1974893626225476033" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-11-09</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>PhotonBull opened Long Swing on PNG</td><td>PhotonBull &middot; <a href="https://x.com/PhotonBull/status/1987625610701852828" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-01-13</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on PNG</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2011055793437647071" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-01-27</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>RJCcapital opened Long Position on PNG</td><td>RJCcapital &middot; <a href="https://x.com/RJCcapital/status/2016121733623726143" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-03-17</td><td><span class="badge badge-neutral">NEWS</span></td><td>A Look At Kraken Robotics (TSXV:PNG) Valuation After Strong Recent Share Price Momentum</td><td><a href="https://finance.yahoo.com/news/look-kraken-robotics-tsxv-png-191255635.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-03-17</td><td><span class="badge badge-neutral">NEWS</span></td><td>Kraken Robotics Order Wins And Covelya Deal Reshape Subsea Ambitions</td><td><a href="https://finance.yahoo.com/news/kraken-robotics-order-wins-covelya-181214820.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-04-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>Assessing Kraken Robotics (TSXV:PNG) Valuation After Strong Multi-Year Returns And Premium P/S Multiple</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/assessing-kraken-robotics-tsxv-png-221052734.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-04-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Kraken Robotics Showcases Autonomous Tech And Plans Covelya Deal For Growth</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kraken-robotics-showcases-autonomous-tech-110731488.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-04-16</td><td><span class="badge badge-neutral">NEWS</span></td><td>Undiscovered Gems in Canada to Explore This April 2026</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/undiscovered-gems-canada-explore-april-123256032.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-04-18</td><td><span class="badge badge-neutral">NEWS</span></td><td>Kraken Robotics (TSXV:PNG) Is Up 7.8% After 2025 Results, New Orders And Chairman Appointment – What&#x27;s Changed</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kraken-robotics-tsxv-png-7-210605315.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-07-27</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>italianinvesto opened Long Position on PNG</td><td>italianinvesto &middot; <a href="https://x.com/italianinvesto/status/2081825398619570448" target="_blank" rel="noopener">post</a></td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+<tbody><tr><td class='mono'>2024-10-18</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on PNG</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1847101488080080985" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-10-05</td><td><span class="badge badge-neutral">post de compte</span></td><td>PhotonBull opened Long Position on PNG</td><td>PhotonBull &middot; <a class="a2" href="https://x.com/PhotonBull/status/1974893626225476033" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-11-09</td><td><span class="badge badge-neutral">post de compte</span></td><td>PhotonBull opened Long Swing on PNG</td><td>PhotonBull &middot; <a class="a2" href="https://x.com/PhotonBull/status/1987625610701852828" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-01-13</td><td><span class="badge badge-neutral">post de compte</span></td><td>CKCapitalxx opened Long Position on PNG</td><td>CKCapitalxx &middot; <a class="a2" href="https://x.com/CKCapitalxx/status/2011055793437647071" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-01-27</td><td><span class="badge badge-neutral">post de compte</span></td><td>RJCcapital opened Long Position on PNG</td><td>RJCcapital &middot; <a class="a2" href="https://x.com/RJCcapital/status/2016121733623726143" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-03-17</td><td><span class="badge badge-neutral">presse</span></td><td>A Look At Kraken Robotics (TSXV:PNG) Valuation After Strong Recent Share Price Momentum</td><td><a href="https://finance.yahoo.com/news/look-kraken-robotics-tsxv-png-191255635.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-03-17</td><td><span class="badge badge-neutral">presse</span></td><td>Kraken Robotics Order Wins And Covelya Deal Reshape Subsea Ambitions</td><td><a href="https://finance.yahoo.com/news/kraken-robotics-order-wins-covelya-181214820.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-04-08</td><td><span class="badge badge-neutral">presse</span></td><td>Assessing Kraken Robotics (TSXV:PNG) Valuation After Strong Multi-Year Returns And Premium P/S Multiple</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/assessing-kraken-robotics-tsxv-png-221052734.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-04-09</td><td><span class="badge badge-neutral">presse</span></td><td>Kraken Robotics Showcases Autonomous Tech And Plans Covelya Deal For Growth</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kraken-robotics-showcases-autonomous-tech-110731488.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-04-16</td><td><span class="badge badge-neutral">presse</span></td><td>Undiscovered Gems in Canada to Explore This April 2026</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/undiscovered-gems-canada-explore-april-123256032.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-04-18</td><td><span class="badge badge-neutral">presse</span></td><td>Kraken Robotics (TSXV:PNG) Is Up 7.8% After 2025 Results, New Orders And Chairman Appointment – What&#x27;s Changed</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kraken-robotics-tsxv-png-7-210605315.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-07-27</td><td><span class="badge badge-neutral">post de compte</span></td><td>italianinvesto opened Long Position on PNG</td><td>italianinvesto &middot; <a class="a2" href="https://x.com/italianinvesto/status/2081825398619570448" target="_blank" rel="noopener">post</a></td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li class='muted'>aucun catalyseur à venir sourcé</li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2024-10-18
-(LONG_POSITION)</p>
-<p>relances cumulees : 33
-&middot; tendance du consensus (30/60/90j) : 0 / 1 / 1 compte(s)
-(<span class="badge badge-neutral">fading</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>5</td><td>2026-01-13</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>4</td><td>2024-10-18</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>FOLLOWER</td><td>0.50</td><td>24</td><td>2025-10-05</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-27</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-07-27</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2024-10-18</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">33</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 1 / 1</span> compte(s)
+(<span class="pill b">en perte de vitesse</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>5</td><td class='mono'>2026-01-13</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>4</td><td class='mono'>2024-10-18</td></tr><tr><td><a href='/kols/PhotonBull'>PhotonBull</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>24</td><td class='mono'>2025-10-05</td></tr><tr><td><a href='/kols/RJCcapital'>RJCcapital</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-01-27</td></tr><tr><td><a href='/kols/italianinvesto'>italianinvesto</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-07-27</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour PNG: serie_prix=absente, enrichment_fetch_state=OK</p>
-<p>avertissements donnees : company_name: FIELD_NOT_PROVIDED; description: FIELD_NOT_PROVIDED; market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; trailing_pe: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; price_to_book: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED; current_price: FIELD_NOT_PROVIDED; average_volume: FIELD_NOT_PROVIDED; momentum_state: FIELD_NOT_PROVIDED</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour PNG: absente, complet</p>
+<p>avertissements données : <span title="company_name: FIELD_NOT_PROVIDED; description: FIELD_NOT_PROVIDED; market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; trailing_pe: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; price_to_book: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED; current_price: FIELD_NOT_PROVIDED; average_volume: FIELD_NOT_PROVIDED; momentum_state: FIELD_NOT_PROVIDED">FIELD_NOT_PROVIDED; description: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.646)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>1.00</td><td>0.30</td><td>0.300</td><td>5 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.06</td><td>0.10</td><td>0.006</td><td>1/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_independence: 5 distinct supporting account(s) (score 1.0); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> data_quality: 1/16 enrichment fields OK (score 0.0625)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>1.00</td><td class='mono'>0.30</td><td class='mono'>+30</td><td>5 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par CKCapitalxx, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.06</td><td class='mono'>0.10</td><td class='mono'>+1</td><td>1 informations vérifiées sur 16</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (6) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2011055793437647071" class="ep-proof"><span class="mono">2011055793437647071</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=CKCapitalxx">account=CKCapitalxx</span><span data-field="ticker" title="ticker=PNG">ticker=PNG</span></div><div data-episode-id="1847101488080080985" class="ep-proof"><span class="mono">1847101488080080985</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=PNG">ticker=PNG</span></div><div data-episode-id="1974893626225476033" class="ep-proof"><span class="mono">1974893626225476033</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=PhotonBull">account=PhotonBull</span><span data-field="ticker" title="ticker=PNG">ticker=PNG</span></div><div data-episode-id="1987625610701852828" class="ep-proof"><span class="mono">1987625610701852828</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=PhotonBull">account=PhotonBull</span><span data-field="ticker" title="ticker=PNG">ticker=PNG</span></div><div data-episode-id="2016121733623726143" class="ep-proof"><span class="mono">2016121733623726143</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=RJCcapital">account=RJCcapital</span><span data-field="ticker" title="ticker=PNG">ticker=PNG</span></div><div data-episode-id="2081825398619570448" class="ep-proof"><span class="mono">2081825398619570448</span> <span data-field="outcome" title="outcome=TICKER_NOT_IN_MARKET_DATA">outcome=TICKER_NOT_IN_MARKET_DATA</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=italianinvesto">account=italianinvesto</span><span data-field="ticker" title="ticker=PNG">ticker=PNG</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">PNG</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 52 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 1 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1847101488080080985" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

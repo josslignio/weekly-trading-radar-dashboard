@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>MUU</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>MUU <span class="h1-sub">Direxion Daily MU Bull 2X Shares</span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / broad_market_etf_index</p>
 <p>The fund, under normal circumstances, invests at least 80% of its net assets (plus any borrowings for investment purposes) in the securities of MU and financial instruments, such as swap agreements and options, that, in combination, provide 2X daily leveraged exposure to MU, consistent with the fund’s investment objective. The fund is non-diversified.</p>
 <p>capitalisation : n/d
-&middot; prix actuel : 31.43
-&middot; momentum : <span class="badge badge-neutral">UPTREND</span></p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-bad">CLOSED</span>
-(79 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">31.43</span>
+&middot; cours : en tendance haussière</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill k">call soldé</span>
+(&middot; 83 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card red liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring bad" style="--p:35" role="img" aria-label="score 35 sur 100"><i>35</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call a été soldé, il faut une nouvelle conviction pour y revenir; 1 compte indépendant soutient ce call; le cours est en tendance haussière.</b></p>
+<span class="bar bad"><span style="width:35%"></span></span>
+<p class="mono muted">score 35 / 100 &middot; risque : risque spéculatif
+&middot; call soldé
+(&middot; 83 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : track record <b>+13</b> &middot; momentum <b>+12</b> &middot; indépendance des comptes <b>+6</b> &middot; qualité des données <b>+4</b> &middot; fraîcheur <b>+0</b> = <b>35</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>momentum : le cours est en tendance haussière</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>indépendance des comptes : 1 compte indépendant soutient ce call</li><li>fraîcheur : call soldé</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="60.8" x2="310" y2="60.8" class="zero-line"/><polyline points="60.0,10.0 110.0,54.6 160.0,62.0 210.0,60.8 260.0,60.9 310.0,61.1" class="spark-line"/><circle cx="60.0" cy="10.0" r="3" fill="#2f8f4e"><title>1 an : +1590.7 %</title></circle><circle cx="110.0" cy="54.6" r="3" fill="#2f8f4e"><title>6 mois : +193.9 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#b3392c"><title>3 mois : -37.4 %</title></circle><circle cx="210.0" cy="60.8" r="3" fill="#2f8f4e"><title>2 mois : +0.5 %</title></circle><circle cx="260.0" cy="60.9" r="3" fill="#b3392c"><title>1 mois : -3.0 %</title></circle><circle cx="310.0" cy="61.1" r="3" fill="#b3392c"><title>1 semaine : -8.2 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="pos">+1590.7 %</td></tr><tr><td>6 mois</td><td class="pos">+193.9 %</td></tr><tr><td>3 mois</td><td class="neg">-37.4 %</td></tr><tr><td>2 mois</td><td class="pos">+0.5 %</td></tr><tr><td>1 mois</td><td class="neg">-3.0 %</td></tr><tr><td>1 semaine</td><td class="neg">-8.2 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="60.3" x2="310" y2="60.3" class="zero-line"/><polyline points="60.0,10.0 110.0,51.7 160.0,62.0 210.0,60.6 260.0,60.4 310.0,60.3" class="spark-line"/><circle cx="60.0" cy="10.0" r="3" fill="#3ddc85"><title>1 an : +1489.8 %</title></circle><circle cx="110.0" cy="51.7" r="3" fill="#3ddc85"><title>6 mois : +254.9 %</title></circle><circle cx="160.0" cy="62.0" r="3" fill="#ff8a8a"><title>3 mois : -49.0 %</title></circle><circle cx="210.0" cy="60.6" r="3" fill="#ff8a8a"><title>2 mois : -8.3 %</title></circle><circle cx="260.0" cy="60.4" r="3" fill="#ff8a8a"><title>1 mois : -0.4 %</title></circle><circle cx="310.0" cy="60.3" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">n/d</td></tr><tr><td>1 an</td><td class="pos mono">+1489.8 %</td></tr><tr><td>6 mois</td><td class="pos mono">+254.9 %</td></tr><tr><td>3 mois</td><td class="neg mono">-49.0 %</td></tr><tr><td>2 mois</td><td class="neg mono">-8.3 %</td></tr><tr><td>1 mois</td><td class="neg mono">-0.4 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>1 an</td><td class="pos">+1590.7 %</td><td>MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion; 5 Best Leveraged ETFs of May 2026; Investor Turned $258K to $3M This Year Using This Micron ETF; The 2x Micron ETF (MUU) Shed 26.65% in One Day When Broadcom Missed and Rates Spiked</td></tr><tr><td>6 mois</td><td class="pos">+193.9 %</td><td>MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion; 5 Best Leveraged ETFs of May 2026; Investor Turned $258K to $3M This Year Using This Micron ETF; The 2x Micron ETF (MUU) Shed 26.65% in One Day When Broadcom Missed and Rates Spiked</td></tr><tr><td>3 mois</td><td class="neg">-37.4 %</td><td>Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch; Gubloinvestor opened Long Swing on MUU; The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL; Best Performing ETFs of 2026</td></tr><tr><td>2 mois</td><td class="pos">+0.5 %</td><td>aucun catalyseur associe</td></tr><tr><td>1 mois</td><td class="neg">-3.0 %</td><td>aucun catalyseur associe</td></tr><tr><td>1 semaine</td><td class="neg">-8.2 %</td><td>aucun catalyseur associe</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>1 an</td><td class="pos mono">+1489.8 %</td><td>MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion; 5 Best Leveraged ETFs of May 2026; Investor Turned $258K to $3M This Year Using This Micron ETF; The 2x Micron ETF (MUU) Shed 26.65% in One Day When Broadcom Missed and Rates Spiked</td></tr><tr><td>6 mois</td><td class="pos mono">+254.9 %</td><td>MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion; 5 Best Leveraged ETFs of May 2026; Investor Turned $258K to $3M This Year Using This Micron ETF; The 2x Micron ETF (MUU) Shed 26.65% in One Day When Broadcom Missed and Rates Spiked</td></tr><tr><td>3 mois</td><td class="neg mono">-49.0 %</td><td>Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch; Gubloinvestor opened Long Swing on MUU; The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL; Best Performing ETFs of 2026</td></tr><tr><td>2 mois</td><td class="neg mono">-8.3 %</td><td>aucun catalyseur associé</td></tr><tr><td>1 mois</td><td class="neg mono">-0.4 %</td><td>aucun catalyseur associé</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>aucun catalyseur associé</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2026-05-28</td><td><span class="badge badge-neutral">NEWS</span></td><td>MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion</td><td><a href="http://www.etf.com/sections/features/muu-becomes-fourth-single-stock-etf-cross-5-billion?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss" target="_blank" rel="noopener">etf.com</a></td></tr><tr><td>2026-06-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>5 Best Leveraged ETFs of May 2026</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/5-best-leveraged-etfs-may-160000028.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-06-04</td><td><span class="badge badge-neutral">NEWS</span></td><td>Investor Turned $258K to $3M This Year Using This Micron ETF</td><td><a href="https://247wallst.com/investing/2026/06/04/investor-turned-258k-to-3m-this-year-using-this-micron-etf/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-06-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>The 2x Micron ETF (MUU) Shed 26.65% in One Day When Broadcom Missed and Rates Spiked</td><td><a href="https://247wallst.com/investing/2026/06/08/the-2x-micron-etf-muu-shed-26-65-in-one-day-when-broadcom-missed-and-rates-spiked/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-06-14</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on MUU</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2066228504006377839" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-25</td><td><span class="badge badge-neutral">NEWS</span></td><td>Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/micron-soars-post-q3-earnings-160000996.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-06-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Swing on MUU</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2070511231174119617" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-26</td><td><span class="badge badge-neutral">NEWS</span></td><td>The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-092800403.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-07-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>Best Performing ETFs of 2026</td><td><a href="http://www.etf.com/sections/features/best-performing-etfs-2026-0?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss" target="_blank" rel="noopener">etf.com</a></td></tr><tr><td>2026-07-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>Wall Street Upbeat in 1H 2026: Leveraged ETFs That Are Up At Least 500%</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/wall-street-upbeat-1h-2026-150000536.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-07-01</td><td><span class="badge badge-neutral">NEWS</span></td><td>Investors Plow Billions Into Leveraged ETFs — For This Good Reason</td><td><a href="https://www.investors.com/etfs-and-funds/etfs/leveraged-etfs-investors-plow-billions-into-for-this-good-reason/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td>2026-07-02</td><td><span class="badge badge-neutral">NEWS</span></td><td>ETF League Tables: Direxion Inflows Total $237M</td><td><a href="http://www.etf.com/sections/etf-league-tables/etf-league-tables-direxion-inflows-total-237m?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss" target="_blank" rel="noopener">etf.com</a></td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li class='muted'>aucun catalyseur a venir source</li></ul>
+<tbody><tr><td class='mono'>2026-05-28</td><td><span class="badge badge-neutral">presse</span></td><td>MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion</td><td><a href="http://www.etf.com/sections/features/muu-becomes-fourth-single-stock-etf-cross-5-billion?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss" target="_blank" rel="noopener">etf.com</a></td></tr><tr><td class='mono'>2026-06-01</td><td><span class="badge badge-neutral">presse</span></td><td>5 Best Leveraged ETFs of May 2026</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/5-best-leveraged-etfs-may-160000028.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-06-04</td><td><span class="badge badge-neutral">presse</span></td><td>Investor Turned $258K to $3M This Year Using This Micron ETF</td><td><a href="https://247wallst.com/investing/2026/06/04/investor-turned-258k-to-3m-this-year-using-this-micron-etf/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-06-08</td><td><span class="badge badge-neutral">presse</span></td><td>The 2x Micron ETF (MUU) Shed 26.65% in One Day When Broadcom Missed and Rates Spiked</td><td><a href="https://247wallst.com/investing/2026/06/08/the-2x-micron-etf-muu-shed-26-65-in-one-day-when-broadcom-missed-and-rates-spiked/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-06-14</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Position on MUU</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2066228504006377839" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-25</td><td><span class="badge badge-neutral">presse</span></td><td>Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/micron-soars-post-q3-earnings-160000996.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-06-26</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Swing on MUU</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2070511231174119617" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-26</td><td><span class="badge badge-neutral">presse</span></td><td>The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-092800403.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-07-01</td><td><span class="badge badge-neutral">presse</span></td><td>Best Performing ETFs of 2026</td><td><a href="http://www.etf.com/sections/features/best-performing-etfs-2026-0?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss" target="_blank" rel="noopener">etf.com</a></td></tr><tr><td class='mono'>2026-07-01</td><td><span class="badge badge-neutral">presse</span></td><td>Wall Street Upbeat in 1H 2026: Leveraged ETFs That Are Up At Least 500%</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/wall-street-upbeat-1h-2026-150000536.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-07-01</td><td><span class="badge badge-neutral">presse</span></td><td>Investors Plow Billions Into Leveraged ETFs — For This Good Reason</td><td><a href="https://www.investors.com/etfs-and-funds/etfs/leveraged-etfs-investors-plow-billions-into-for-this-good-reason/?src=A00220&amp;yptr=yahoo" target="_blank" rel="noopener">Investor&#x27;s Business Daily</a></td></tr><tr><td class='mono'>2026-07-02</td><td><span class="badge badge-neutral">presse</span></td><td>ETF League Tables: Direxion Inflows Total $237M</td><td><a href="http://www.etf.com/sections/etf-league-tables/etf-league-tables-direxion-inflows-total-237m?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss" target="_blank" rel="noopener">etf.com</a></td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li class='muted'>aucun catalyseur à venir sourcé</li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : Gubloinvestor le 2026-06-14
-(LONG_POSITION)</p>
-<p>relances cumulees : 9
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 1 compte(s)
-(<span class="badge badge-neutral">fading</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>ORIGINATOR</td><td>1.00</td><td>9</td><td>2026-06-14</td></tr></tbody></table>
+<p>premier call : Gubloinvestor le <span class="mono">2026-06-14</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">9</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 1</span> compte(s)
+(<span class="pill b">en perte de vitesse</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>9</td><td class='mono'>2026-06-14</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">AVOID</span>
-&middot; lifecycle.state=CLOSED: la these KOL sur MUU a deja ete cloturee par ses auteurs</p>
-<p>avertissements donnees : market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; price_to_book: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED</p>
-<p>avertissements liquidite : aucun</p>
+<p><span class="pill o">à éviter</span>
+&middot; Le dernier call a été soldé, il faut une nouvelle conviction pour y revenir; 1 compte indépendant soutient ce call; le cours est en tendance haussière</p>
+<p>avertissements données : <span title="market_country: FIELD_NOT_PROVIDED; market_cap: FIELD_NOT_PROVIDED; forward_pe: FIELD_NOT_PROVIDED; price_to_book: FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; revenue_growth: FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED">FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; revenue: FIELD_NOT_PROVIDED; FIELD_NOT_PROVIDED; cash: FIELD_NOT_PROVIDED; debt: FIELD_NOT_PROVIDED; profitability: FIELD_NOT_PROVIDED</span></p>
+<p>avertissements liquidité : aucun</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.349)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Gubloinvestor tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.00</td><td>0.20</td><td>0.000</td><td>lifecycle=&#x27;CLOSED&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.80</td><td>0.15</td><td>0.120</td><td>momentum_state=&#x27;UPTREND&#x27;</td></tr><tr><td>data_quality</td><td>0.44</td><td>0.10</td><td>0.044</td><td>7/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> momentum_not_overextended: momentum_state=&#x27;UPTREND&#x27; (score 0.8)</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;CLOSED&#x27; (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.20</td><td class='mono'>0.30</td><td class='mono'>+6</td><td>1 compte indépendant soutient ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par Gubloinvestor, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.00</td><td class='mono'>0.20</td><td class='mono'>+0</td><td>call soldé</td></tr><tr><td>momentum</td><td class='mono'>0.80</td><td class='mono'>0.15</td><td class='mono'>+12</td><td>le cours est en tendance haussière</td></tr><tr><td>qualité des données</td><td class='mono'>0.44</td><td class='mono'>0.10</td><td class='mono'>+4</td><td>7 informations vérifiées sur 16</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (2) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2066228504006377839" class="ep-proof"><span class="mono">2066228504006377839</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=MUU">ticker=MUU</span></div><div data-episode-id="2070511231174119617" class="ep-proof"><span class="mono">2070511231174119617</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=MUU">ticker=MUU</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">MUU</h3>
+<p class="co">Direxion Daily MU Bull 2X Shares</p>
+<div class="kv"><span>Source &middot; Gubloinvestor</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix vérifié en bourse</span><span><span class="tag tV">VÉRIFIÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 83 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 7 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/Gubloinvestor/status/2066228504006377839" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

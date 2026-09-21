@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>BMNR</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>BMNR <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
-(267 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill o">dernier call déjà ancien</span>
+(&middot; 221 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:56" role="img" aria-label="score 56 sur 100"><i>56</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call date déjà de plusieurs semaines; 5 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:56%"></span></span>
+<p class="mono muted">score 56 / 100 &middot; risque : risque spéculatif
+&middot; dernier call déjà ancien
+(&middot; 221 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+30</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+6</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>56</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 5 comptes indépendants soutiennent ce call</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>fraîcheur : dernier call déjà ancien</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="36.9" x2="310" y2="36.9" class="zero-line"/><polyline points="60.0,62.0 110.0,33.7 160.0,15.6 210.0,10.0 260.0,19.2 310.0,36.8" class="spark-line"/><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -54.6 %</title></circle><circle cx="110.0" cy="33.7" r="3" fill="#2f8f4e"><title>6 mois : +7.0 %</title></circle><circle cx="160.0" cy="15.6" r="3" fill="#2f8f4e"><title>3 mois : +46.3 %</title></circle><circle cx="210.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 mois : +58.5 %</title></circle><circle cx="260.0" cy="19.2" r="3" fill="#2f8f4e"><title>1 mois : +38.4 %</title></circle><circle cx="310.0" cy="36.8" r="3" fill="#2f8f4e"><title>1 semaine : +0.2 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">n/d</td></tr><tr><td>1 an</td><td class="neg">-54.6 %</td></tr><tr><td>6 mois</td><td class="pos">+7.0 %</td></tr><tr><td>3 mois</td><td class="pos">+46.3 %</td></tr><tr><td>2 mois</td><td class="pos">+58.5 %</td></tr><tr><td>1 mois</td><td class="pos">+38.4 %</td></tr><tr><td>1 semaine</td><td class="pos">+0.2 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="35.7" x2="310" y2="35.7" class="zero-line"/><polyline points="60.0,62.0 110.0,27.8 160.0,10.0 210.0,17.4 260.0,31.4 310.0,35.7" class="spark-line"/><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -59.2 %</title></circle><circle cx="110.0" cy="27.8" r="3" fill="#3ddc85"><title>6 mois : +17.7 %</title></circle><circle cx="160.0" cy="10.0" r="3" fill="#3ddc85"><title>3 mois : +57.8 %</title></circle><circle cx="210.0" cy="17.4" r="3" fill="#3ddc85"><title>2 mois : +41.1 %</title></circle><circle cx="260.0" cy="31.4" r="3" fill="#3ddc85"><title>1 mois : +9.6 %</title></circle><circle cx="310.0" cy="35.7" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">n/d</td></tr><tr><td>1 an</td><td class="neg mono">-59.2 %</td></tr><tr><td>6 mois</td><td class="pos mono">+17.7 %</td></tr><tr><td>3 mois</td><td class="pos mono">+57.8 %</td></tr><tr><td>2 mois</td><td class="pos mono">+41.1 %</td></tr><tr><td>1 mois</td><td class="pos mono">+9.6 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>1 an</td><td class="neg">-54.6 %</td><td>Gubloinvestor opened Long Position on BMNR; Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH; XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom; Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana</td></tr><tr><td>6 mois</td><td class="pos">+7.0 %</td><td>Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH; XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom; Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana; Bitmine Surges 8% on Ethereum Strength After Cantor Fitzgerald Doubles Its Target, SharpLink Advances 9%, Strategy Gains 4%</td></tr><tr><td>3 mois</td><td class="pos">+46.3 %</td><td>Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH; XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom; Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana; Bitmine Surges 8% on Ethereum Strength After Cantor Fitzgerald Doubles Its Target, SharpLink Advances 9%, Strategy Gains 4%</td></tr><tr><td>2 mois</td><td class="pos">+58.5 %</td><td>Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH; XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom; Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana; Bitmine Surges 8% on Ethereum Strength After Cantor Fitzgerald Doubles Its Target, SharpLink Advances 9%, Strategy Gains 4%</td></tr><tr><td>1 mois</td><td class="pos">+38.4 %</td><td>Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH; XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom; Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana; Bitmine Surges 8% on Ethereum Strength After Cantor Fitzgerald Doubles Its Target, SharpLink Advances 9%, Strategy Gains 4%</td></tr><tr><td>1 semaine</td><td class="pos">+0.2 %</td><td>Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH; XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom; Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana; Bitmine Surges 8% on Ethereum Strength After Cantor Fitzgerald Doubles Its Target, SharpLink Advances 9%, Strategy Gains 4%</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>1 an</td><td class="neg mono">-59.2 %</td><td>StonkChris opened Long Position on BMNR; aleabitoreddit opened Long Position on BMNR; Gubloinvestor opened Long Position on BMNR; ThematicTrader opened Long Position on BMNR</td></tr><tr><td>6 mois</td><td class="pos mono">+17.7 %</td><td>Crypto stocks fall as Senate blocks landmark digital asset bill; Cathie Wood dumps $65 million in crypto ahead of CLARITY vote; Bitcoin Slides, Crypto Stocks Decline As Trump-Backed CLARITY Act Fails To Pass Senate Vote; Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs?</td></tr><tr><td>3 mois</td><td class="pos mono">+57.8 %</td><td>Crypto stocks fall as Senate blocks landmark digital asset bill; Cathie Wood dumps $65 million in crypto ahead of CLARITY vote; Bitcoin Slides, Crypto Stocks Decline As Trump-Backed CLARITY Act Fails To Pass Senate Vote; Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs?</td></tr><tr><td>2 mois</td><td class="pos mono">+41.1 %</td><td>Crypto stocks fall as Senate blocks landmark digital asset bill; Cathie Wood dumps $65 million in crypto ahead of CLARITY vote; Bitcoin Slides, Crypto Stocks Decline As Trump-Backed CLARITY Act Fails To Pass Senate Vote; Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs?</td></tr><tr><td>1 mois</td><td class="pos mono">+9.6 %</td><td>Crypto stocks fall as Senate blocks landmark digital asset bill; Cathie Wood dumps $65 million in crypto ahead of CLARITY vote; Bitcoin Slides, Crypto Stocks Decline As Trump-Backed CLARITY Act Fails To Pass Senate Vote; Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs?</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Crypto stocks fall as Senate blocks landmark digital asset bill; Cathie Wood dumps $65 million in crypto ahead of CLARITY vote; Bitcoin Slides, Crypto Stocks Decline As Trump-Backed CLARITY Act Fails To Pass Senate Vote; Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs?</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2025-08-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on BMNR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1960912256818143723" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-12-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on BMNR</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2002483426943726005" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-09</td><td><span class="badge badge-neutral">NEWS</span></td><td>Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH</td><td><a href="https://247wallst.com/investing/cryptocurrency/2026/09/09/bitmines-ethereum-holdings-near-15-billion-after-buying-28086-more-eth/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>XYZ Stock Upgraded To ‘Buy,’ Cantor Raises Targets On Crypto Plays, Sees Bear-Market Bottom</td><td><a href="https://stocktwits.com/news-articles/markets/cryptocurrency/xyz-stock-upgraded-buy-cantor-raises-targets-on-crypto-plays-bear-market-bottom/cZtaht9RJ6I" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Ethereum’s Price Surges Past $2,600 For First Time In 8 Months: Outruns Bitcoin, XRP, Solana</td><td><a href="https://stocktwits.com/news-articles/markets/equity/ethereum-price-surges-past-2600-for-first-time-in-8-months-outruns-bitcoin/cZtXNRKRBGU" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Bitmine Surges 8% on Ethereum Strength After Cantor Fitzgerald Doubles Its Target, SharpLink Advances 9%, Strategy Gains 4%</td><td><a href="https://247wallst.com/investing/2026/09/11/bitmine-surges-8-on-ethereum-strength-after-cantor-fitzgerald-doubles-its-target-sharplink-advances-9-strategy-gains-4/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Bitmine Just Made Its Largest Ethereum Purchase Since June. Here&#x27;s Why That Matters For Ethereum Investors.</td><td><a href="https://www.fool.com/investing/2026/09/11/bitmine-just-made-its-largest-ethereum-purchase-si/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Ethereum On Track To Snap Its Longest Quarterly Losing Streak On Record</td><td><a href="https://stocktwits.com/news-articles/markets/cryptocurrency/ethereum-on-track-to-snap-its-longest-quarterly-losing-streak-on-record/cZt16UWRBbz" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Bitmine Purchases Another $68 Million Of Ethereum</td><td><a href="https://www.cryptoprowl.com/releases/bitmine-purchases-another-68-million-of-ethereum-7053" target="_blank" rel="noopener">CryptoProwl</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>Tom Lee Explains Ethereum&#x27;s Killer Application as ETH Bucks Market Downturn</td><td><a href="https://beincrypto.com/ethereum-killer-app-wall-street-ai/" target="_blank" rel="noopener">BeInCrypto</a></td></tr><tr><td>2026-11-20</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>BMNR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-20 &middot; BMNR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2025-08-28</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on BMNR</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1960912256818143723" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-10-02</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on BMNR</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/1973788297169105180" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-11-18</td><td><span class="badge badge-neutral">post de compte</span></td><td>aleabitoreddit opened Long Position on BMNR</td><td>aleabitoreddit &middot; <a class="a2" href="https://x.com/aleabitoreddit/status/1990736540532887956" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-12-20</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Position on BMNR</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2002483426943726005" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-01-27</td><td><span class="badge badge-neutral">post de compte</span></td><td>ThematicTrader opened Long Position on BMNR</td><td>ThematicTrader &middot; <a class="a2" href="https://x.com/ThematicTrader/status/2016195718482903239" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-02-08</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Swing on BMNR</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/2020534250701733941" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Crypto stocks fall as Senate blocks landmark digital asset bill</td><td><a href="https://finance.yahoo.com/markets/crypto/articles/crypto-stocks-fall-senate-blocks-200859690.html" target="_blank" rel="noopener">Investing.com</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Cathie Wood dumps $65 million in crypto ahead of CLARITY vote</td><td><a href="https://www.thestreet.com/crypto/markets/cathie-wood-dumps-65-million-in-crypto-ahead-of-clarity-vote" target="_blank" rel="noopener">TheStreet</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Bitcoin Slides, Crypto Stocks Decline As Trump-Backed CLARITY Act Fails To Pass Senate Vote</td><td><a href="https://stocktwits.com/news-articles/markets/equity/bitcoin-slides-crypto-stocks-decline-as-trump-backed-clarity-act-fails-to-pass-senate-vote/cZto6VyRB2G" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Tom Lee Says Q4 Could Bring One of the Biggest Rallies of Our Lifetime. Can Bitcoin, Ethereum, and XRP Reach New Highs?</td><td><a href="https://247wallst.com/investing/cryptocurrency/2026/09/17/tom-lee-says-q4-could-bring-one-of-the-biggest-rallies-of-our-lifetime-can-bitcoin-ethereum-and-xrp-reach-new-highs/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>This Ethereum Treasury Company Is Close to Owning 5% of All ETH in Circulation. Does That Make It a Buy?</td><td><a href="https://www.fool.com/investing/2026/09/16/is-this-ethereum-treasury-company-a-buy/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Weekly Wrap: Bitcoin Climbs Back Above $80,000</td><td><a href="https://www.cryptoprowl.com/releases/weekly-wrap-bitcoin-climbs-back-above-80000-7093" target="_blank" rel="noopener">CryptoProwl</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>The ARK Trade Watch: Cathie Wood Cuts Crypto Exposure, Then Reverses Course On CoreWeave</td><td><a href="https://stocktwits.com/news-articles/markets/equity/crwv-arkb-crcl-coin-cathie-wood-biggest-ark-invest-trades-week/cZtH7mZRBEg" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Bitmine Climbs 4% as Ethereum Rallies Despite CLARITY Act Failure; Sharplink Gains 3%</td><td><a href="https://247wallst.com/investing/2026/09/18/bitmine-climbs-4-as-ethereum-rallies-despite-clarity-act-failure-sharplink-gains-3/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Tom Lee Says Crypto Is A &#x27;Huge Winner&#x27; As Banks Move Toward Tech-Style Valuations, While Dan Ives Calls AI A &#x27;Two-Horse Race&#x27;</td><td><a href="https://stocktwits.com/news-articles/markets/equity/tom-lee-crypto-huge-winner-banks-tech-style-valuations-dan-ives-calls-ai-a-two-horse-race/cZtxTOcRBEY" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/bitmine-immersion-technologies-bmnr-stock-021020555.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-11-21</td><td><span class="badge badge-neutral">résultats</span></td><td>BMNR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-21</span> &middot; BMNR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2025-08-28
-(LONG_POSITION)</p>
-<p>relances cumulees : 5
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>FOLLOWER</td><td>0.50</td><td>3</td><td>2025-12-20</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>2</td><td>2025-08-28</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2025-08-28</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">15</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>3</td><td class='mono'>2025-12-20</td></tr><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>2</td><td class='mono'>2025-08-28</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>7</td><td class='mono'>2025-10-02</td></tr><tr><td><a href='/kols/ThematicTrader'>ThematicTrader</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-01-27</td></tr><tr><td><a href='/kols/aleabitoreddit'>aleabitoreddit</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>3</td><td class='mono'>2025-11-18</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour BMNR: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour BMNR: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.380)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.40</td><td>0.30</td><td>0.120</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Gubloinvestor tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: Gubloinvestor tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>1.00</td><td class='mono'>0.30</td><td class='mono'>+30</td><td>5 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par Gubloinvestor, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.30</td><td class='mono'>0.20</td><td class='mono'>+6</td><td>dernier call déjà ancien</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (6) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2002483426943726005" class="ep-proof"><span class="mono">2002483426943726005</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=BMNR">ticker=BMNR</span></div><div data-episode-id="1960912256818143723" class="ep-proof"><span class="mono">1960912256818143723</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=BMNR">ticker=BMNR</span></div><div data-episode-id="1973788297169105180" class="ep-proof"><span class="mono">1973788297169105180</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=BMNR">ticker=BMNR</span></div><div data-episode-id="2020534250701733941" class="ep-proof"><span class="mono">2020534250701733941</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=BMNR">ticker=BMNR</span></div><div data-episode-id="2016195718482903239" class="ep-proof"><span class="mono">2016195718482903239</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=ThematicTrader">account=ThematicTrader</span><span data-field="ticker" title="ticker=BMNR">ticker=BMNR</span></div><div data-episode-id="1990736540532887956" class="ep-proof"><span class="mono">1990736540532887956</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=aleabitoreddit">account=aleabitoreddit</span><span data-field="ticker" title="ticker=BMNR">ticker=BMNR</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">BMNR</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 221 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1960912256818143723" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

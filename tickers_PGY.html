@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>PGY</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>PGY <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
-(236 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill o">dernier call déjà ancien</span>
+(&middot; 240 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring bad" style="--p:38" role="img" aria-label="score 38 sur 100"><i>38</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call date déjà de plusieurs semaines; 2 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar bad"><span style="width:38%"></span></span>
+<p class="mono muted">score 38 / 100 &middot; risque : risque spéculatif
+&middot; dernier call déjà ancien
+(&middot; 240 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+12</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+6</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>38</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>track record : porté surtout par CKCapitalxx, compte encore en phase de premières preuves (le point le plus solide, sans toutefois franchir le seuil d&#x27;un signal net)</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>fraîcheur : dernier call déjà ancien</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="42.3" x2="310" y2="42.3" class="zero-line"/><polyline points="10.0,18.9 60.0,62.0 110.0,10.0 160.0,31.5 210.0,37.9 260.0,45.3 310.0,47.5" class="spark-line"/><circle cx="10.0" cy="18.9" r="3" fill="#2f8f4e"><title>2 ans : +59.1 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -49.6 %</title></circle><circle cx="110.0" cy="10.0" r="3" fill="#2f8f4e"><title>6 mois : +81.7 %</title></circle><circle cx="160.0" cy="31.5" r="3" fill="#2f8f4e"><title>3 mois : +27.4 %</title></circle><circle cx="210.0" cy="37.9" r="3" fill="#2f8f4e"><title>2 mois : +11.2 %</title></circle><circle cx="260.0" cy="45.3" r="3" fill="#b3392c"><title>1 mois : -7.4 %</title></circle><circle cx="310.0" cy="47.5" r="3" fill="#b3392c"><title>1 semaine : -13.1 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+59.1 %</td></tr><tr><td>1 an</td><td class="neg">-49.6 %</td></tr><tr><td>6 mois</td><td class="pos">+81.7 %</td></tr><tr><td>3 mois</td><td class="pos">+27.4 %</td></tr><tr><td>2 mois</td><td class="pos">+11.2 %</td></tr><tr><td>1 mois</td><td class="neg">-7.4 %</td></tr><tr><td>1 semaine</td><td class="neg">-13.1 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="39.8" x2="310" y2="39.8" class="zero-line"/><polyline points="10.0,13.7 60.0,62.0 110.0,10.0 160.0,26.1 210.0,32.0 260.0,43.1 310.0,39.8" class="spark-line"/><circle cx="10.0" cy="13.7" r="3" fill="#3ddc85"><title>2 ans : +62.0 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -52.8 %</title></circle><circle cx="110.0" cy="10.0" r="3" fill="#3ddc85"><title>6 mois : +70.7 %</title></circle><circle cx="160.0" cy="26.1" r="3" fill="#3ddc85"><title>3 mois : +32.3 %</title></circle><circle cx="210.0" cy="32.0" r="3" fill="#3ddc85"><title>2 mois : +18.4 %</title></circle><circle cx="260.0" cy="43.1" r="3" fill="#ff8a8a"><title>1 mois : -7.9 %</title></circle><circle cx="310.0" cy="39.8" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+62.0 %</td></tr><tr><td>1 an</td><td class="neg mono">-52.8 %</td></tr><tr><td>6 mois</td><td class="pos mono">+70.7 %</td></tr><tr><td>3 mois</td><td class="pos mono">+32.3 %</td></tr><tr><td>2 mois</td><td class="pos mono">+18.4 %</td></tr><tr><td>1 mois</td><td class="neg mono">-7.9 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+59.1 %</td><td>Gubloinvestor opened Long Position on PGY; CKCapitalxx opened Long Position on PGY; Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?; What Is Driving Attention Around Pagaya Technologies (PGY) Today?</td></tr><tr><td>1 an</td><td class="neg">-49.6 %</td><td>Gubloinvestor opened Long Position on PGY; CKCapitalxx opened Long Position on PGY; Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?; What Is Driving Attention Around Pagaya Technologies (PGY) Today?</td></tr><tr><td>6 mois</td><td class="pos">+81.7 %</td><td>Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?; What Is Driving Attention Around Pagaya Technologies (PGY) Today?; Pagaya (PGY) Stock May Be Undervalued As Earnings Support The Case; Tricolor Fallout Fuels Boom in Business for Collateral Checkers</td></tr><tr><td>3 mois</td><td class="pos">+27.4 %</td><td>Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?; What Is Driving Attention Around Pagaya Technologies (PGY) Today?; Pagaya (PGY) Stock May Be Undervalued As Earnings Support The Case; Tricolor Fallout Fuels Boom in Business for Collateral Checkers</td></tr><tr><td>2 mois</td><td class="pos">+11.2 %</td><td>Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?; What Is Driving Attention Around Pagaya Technologies (PGY) Today?; Pagaya (PGY) Stock May Be Undervalued As Earnings Support The Case; Tricolor Fallout Fuels Boom in Business for Collateral Checkers</td></tr><tr><td>1 mois</td><td class="neg">-7.4 %</td><td>Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?; What Is Driving Attention Around Pagaya Technologies (PGY) Today?; Pagaya (PGY) Stock May Be Undervalued As Earnings Support The Case; Tricolor Fallout Fuels Boom in Business for Collateral Checkers</td></tr><tr><td>1 semaine</td><td class="neg">-13.1 %</td><td>New Strong Buy Stocks for September 10th</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+62.0 %</td><td>Gubloinvestor opened Long Position on PGY; CKCapitalxx opened Long Position on PGY; Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?</td></tr><tr><td>1 an</td><td class="neg mono">-52.8 %</td><td>Gubloinvestor opened Long Position on PGY; CKCapitalxx opened Long Position on PGY; Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?</td></tr><tr><td>6 mois</td><td class="pos mono">+70.7 %</td><td>Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?; Pagaya&#x27;s AI Lending Flywheel Gains Speed: What&#x27;s Next for PGY?; Pagaya Technologies Ltd. (PGY) Upgraded to Strong Buy: Here&#x27;s What You Should Know</td></tr><tr><td>3 mois</td><td class="pos mono">+32.3 %</td><td>Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?; Pagaya&#x27;s AI Lending Flywheel Gains Speed: What&#x27;s Next for PGY?; Pagaya Technologies Ltd. (PGY) Upgraded to Strong Buy: Here&#x27;s What You Should Know</td></tr><tr><td>2 mois</td><td class="pos mono">+18.4 %</td><td>Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?; Pagaya&#x27;s AI Lending Flywheel Gains Speed: What&#x27;s Next for PGY?; Pagaya Technologies Ltd. (PGY) Upgraded to Strong Buy: Here&#x27;s What You Should Know</td></tr><tr><td>1 mois</td><td class="neg mono">-7.9 %</td><td>Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?; Pagaya&#x27;s AI Lending Flywheel Gains Speed: What&#x27;s Next for PGY?; Pagaya Technologies Ltd. (PGY) Upgraded to Strong Buy: Here&#x27;s What You Should Know</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know; PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?; Pagaya&#x27;s AI Lending Flywheel Gains Speed: What&#x27;s Next for PGY?; Pagaya Technologies Ltd. (PGY) Upgraded to Strong Buy: Here&#x27;s What You Should Know</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2026-01-06</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on PGY</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2008585328555421872" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-01-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>CKCapitalxx opened Long Position on PGY</td><td>CKCapitalxx &middot; <a href="https://x.com/CKCapitalxx/status/2013755742994456979" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-08-19</td><td><span class="badge badge-neutral">NEWS</span></td><td>Can Network Volume Strength Keep PGY&#x27;s Top-Line Growth on Track?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/network-volume-strength-keep-pgys-142700480.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-08-19</td><td><span class="badge badge-neutral">NEWS</span></td><td>What Is Driving Attention Around Pagaya Technologies (PGY) Today?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/driving-attention-around-pagaya-technologies-101407948.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-08-20</td><td><span class="badge badge-neutral">NEWS</span></td><td>Pagaya (PGY) Stock May Be Undervalued As Earnings Support The Case</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pagaya-pgy-stock-may-undervalued-032402879.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-08-21</td><td><span class="badge badge-neutral">NEWS</span></td><td>Tricolor Fallout Fuels Boom in Business for Collateral Checkers</td><td><a href="https://finance.yahoo.com/small-business/articles/tricolor-fallout-fuels-boom-business-090000623.html" target="_blank" rel="noopener">Bloomberg</a></td></tr><tr><td>2026-08-26</td><td><span class="badge badge-neutral">NEWS</span></td><td>AI Small Cap Stocks Outside Big Tech That Could Shape The Next Growth Cycle</td><td><a href="https://finance.yahoo.com/technology/ai/articles/ai-small-cap-stocks-outside-141542626.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-08-26</td><td><span class="badge badge-neutral">NEWS</span></td><td>Wall Street Analysts See a 30.86% Upside in Pagaya Technologies Ltd. (PGY): Can the Stock Really Move This High?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-see-30-135505186.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-08-31</td><td><span class="badge badge-neutral">NEWS</span></td><td>PGY Shares Surge 93.8% in 6 Months: Should You Buy It Now?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pgy-shares-surge-93-8-152200077.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>Broadcom upgraded, Ultragenyx downgraded: Wall Street&#x27;s top analyst calls</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/broadcom-upgraded-ultragenyx-downgraded-wall-133157671.html" target="_blank" rel="noopener">The Fly</a></td></tr><tr><td>2026-09-05</td><td><span class="badge badge-neutral">NEWS</span></td><td>Pagaya Posted a Record $45 Million Profit. Is AI Lending Finally Working?</td><td><a href="https://finance.yahoo.com/technology/ai/articles/pagaya-posted-record-45-million-060006555.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>New Strong Buy Stocks for September 10th</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/strong-buy-stocks-september-10th-091500611.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-11-10</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>PGY earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-10 &middot; PGY earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2026-01-06</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Position on PGY</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2008585328555421872" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-01-20</td><td><span class="badge badge-neutral">post de compte</span></td><td>CKCapitalxx opened Long Position on PGY</td><td>CKCapitalxx &middot; <a class="a2" href="https://x.com/CKCapitalxx/status/2013755742994456979" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Pagaya Technologies Ltd. (PGY) Falls More Steeply Than Broader Market: What Investors Need to Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pagaya-technologies-ltd-pgy-falls-221503111.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>PGY vs. ENVA: Which Technology-Driven Lending Stock Is the Better Buy?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pgy-vs-enva-technology-driven-135400713.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-15</td><td><span class="badge badge-neutral">presse</span></td><td>Pagaya&#x27;s AI Lending Flywheel Gains Speed: What&#x27;s Next for PGY?</td><td><a href="https://finance.yahoo.com/technology/ai/articles/pagayas-ai-lending-flywheel-gains-135100010.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Pagaya Technologies Ltd. (PGY) Upgraded to Strong Buy: Here&#x27;s What You Should Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pagaya-technologies-ltd-pgy-upgraded-160005252.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Will Pagaya&#x27;s $700M Neuberger Deal Help Accelerate Auto Growth?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pagayas-700m-neuberger-deal-help-125700682.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>New Strong Buy Stocks for September 18th</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/strong-buy-stocks-september-18th-083800743.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Best Value Stocks to Buy for September 18th</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/best-value-stocks-buy-september-073600378.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Pagaya Technologies (PGY) Could Be 68% Below Fair Value As Zacks Rank Improves</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pagaya-technologies-pgy-could-68-141024269.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>The Bull Case For Pagaya Technologies (PGY) Could Change Following Addition Of Marqeta Founder To Board</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/bull-case-pagaya-technologies-pgy-080839197.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-09-20</td><td><span class="badge badge-neutral">presse</span></td><td>Can Pagaya Technologies (PGY) Stay Cheap After Its $700 Million Deal?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/pagaya-technologies-pgy-stay-cheap-032054787.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-11-10</td><td><span class="badge badge-neutral">résultats</span></td><td>PGY earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-10</span> &middot; PGY earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : Gubloinvestor le 2026-01-06
-(LONG_POSITION)</p>
-<p>relances cumulees : 16
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-01-20</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>ORIGINATOR</td><td>1.00</td><td>16</td><td>2026-01-06</td></tr></tbody></table>
+<p>premier call : Gubloinvestor le <span class="mono">2026-01-06</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">16</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/CKCapitalxx'>CKCapitalxx</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-01-20</td></tr><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>16</td><td class='mono'>2026-01-06</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour PGY: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour PGY: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.380)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.40</td><td>0.30</td><td>0.120</td><td>2 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: CKCapitalxx tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.40</td><td class='mono'>0.30</td><td class='mono'>+12</td><td>2 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par CKCapitalxx, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.30</td><td class='mono'>0.20</td><td class='mono'>+6</td><td>dernier call déjà ancien</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (2) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2013755742994456979" class="ep-proof"><span class="mono">2013755742994456979</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=CKCapitalxx">account=CKCapitalxx</span><span data-field="ticker" title="ticker=PGY">ticker=PGY</span></div><div data-episode-id="2008585328555421872" class="ep-proof"><span class="mono">2008585328555421872</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=PGY">ticker=PGY</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">PGY</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; Gubloinvestor</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 240 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/Gubloinvestor/status/2008585328555421872" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

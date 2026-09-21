@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>NU</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>NU <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> Nu propose une application pour gérer son compte, payer, épargner et emprunter, notamment au Brésil, au Mexique et en Colombie.</p><p><strong>Depuis :</strong> Créée en 2013, Nu vend des services bancaires, des cartes et des assurances ; sa date de cotation manque.</p><p><strong>L&#x27;argent :</strong> Dette : 5,9 Md$ ; argent restant après investissements : -1,7 Md$.</p><p><strong>Pourquoi ça bouge :</strong> Le recul récent accompagne des nouvelles sur les bénéfices, l’intelligence artificielle et l’entrée aux États-Unis, sans cause certaine établie.</p><p><strong>Edge ou vague :</strong> surfe sur : l’essor des services bancaires sur mobile, mais les faits fournis ne prouvent pas un avantage durable.</p>
+<p class="muted">confiance : moyenne : l’activité est claire, mais les titres seuls expliquent mal les mouvements de l’action.
+ &middot; sources : faits yfinance &middot; catalyseurs du dossier &middot; variations fournies</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(79 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 83 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:52" role="img" aria-label="score 52 sur 100"><i>52</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par HyperTechInvest le 2024-09-28; 3 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:52%"></span></span>
+<p class="mono muted">score 52 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 83 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+18</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>52</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>indépendance des comptes : 3 comptes indépendants soutiennent ce call</li><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="47.5" x2="310" y2="47.5" class="zero-line"/><polyline points="10.0,49.2 60.0,62.0 110.0,42.3 160.0,10.0 210.0,36.1 260.0,56.0 310.0,57.9" class="spark-line"/><circle cx="10.0" cy="49.2" r="3" fill="#b3392c"><title>2 ans : -0.8 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -6.8 %</title></circle><circle cx="110.0" cy="42.3" r="3" fill="#2f8f4e"><title>6 mois : +2.5 %</title></circle><circle cx="160.0" cy="10.0" r="3" fill="#2f8f4e"><title>3 mois : +17.6 %</title></circle><circle cx="210.0" cy="36.1" r="3" fill="#2f8f4e"><title>2 mois : +5.3 %</title></circle><circle cx="260.0" cy="56.0" r="3" fill="#b3392c"><title>1 mois : -4.0 %</title></circle><circle cx="310.0" cy="57.9" r="3" fill="#b3392c"><title>1 semaine : -4.9 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">-0.8 %</td></tr><tr><td>1 an</td><td class="neg">-6.8 %</td></tr><tr><td>6 mois</td><td class="pos">+2.5 %</td></tr><tr><td>3 mois</td><td class="pos">+17.6 %</td></tr><tr><td>2 mois</td><td class="pos">+5.3 %</td></tr><tr><td>1 mois</td><td class="neg">-4.0 %</td></tr><tr><td>1 semaine</td><td class="neg">-4.9 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="41.1" x2="310" y2="41.1" class="zero-line"/><polyline points="10.0,41.3 60.0,62.0 110.0,42.0 160.0,10.0 210.0,39.5 260.0,40.5 310.0,41.1" class="spark-line"/><circle cx="10.0" cy="41.3" r="3" fill="#ff8a8a"><title>2 ans : -0.1 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -9.6 %</title></circle><circle cx="110.0" cy="42.0" r="3" fill="#ff8a8a"><title>6 mois : -0.4 %</title></circle><circle cx="160.0" cy="10.0" r="3" fill="#3ddc85"><title>3 mois : +14.3 %</title></circle><circle cx="210.0" cy="39.5" r="3" fill="#3ddc85"><title>2 mois : +0.8 %</title></circle><circle cx="260.0" cy="40.5" r="3" fill="#3ddc85"><title>1 mois : +0.3 %</title></circle><circle cx="310.0" cy="41.1" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">-0.1 %</td></tr><tr><td>1 an</td><td class="neg mono">-9.6 %</td></tr><tr><td>6 mois</td><td class="neg mono">-0.4 %</td></tr><tr><td>3 mois</td><td class="pos mono">+14.3 %</td></tr><tr><td>2 mois</td><td class="pos mono">+0.8 %</td></tr><tr><td>1 mois</td><td class="pos mono">+0.3 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="neg">-0.8 %</td><td>HyperTechInvest opened Long Position on NU; HyperTechInvest opened Long Swing on NU; StonkChris opened Long Position on NU; LiebermanAustin opened Long Position on NU</td></tr><tr><td>1 an</td><td class="neg">-6.8 %</td><td>LiebermanAustin opened Long Position on NU; Here’s What Weighed on Nu Holdings (NU) in Q2; 3 Top AI Stocks With Revenue Growth Over 26%; Nu Holdings Cleared $1 Billion in Quarterly Net Income With 139 Million Customers</td></tr><tr><td>6 mois</td><td class="pos">+2.5 %</td><td>LiebermanAustin opened Long Position on NU; Here’s What Weighed on Nu Holdings (NU) in Q2; 3 Top AI Stocks With Revenue Growth Over 26%; Nu Holdings Cleared $1 Billion in Quarterly Net Income With 139 Million Customers</td></tr><tr><td>3 mois</td><td class="pos">+17.6 %</td><td>LiebermanAustin opened Long Position on NU; Here’s What Weighed on Nu Holdings (NU) in Q2; 3 Top AI Stocks With Revenue Growth Over 26%; Nu Holdings Cleared $1 Billion in Quarterly Net Income With 139 Million Customers</td></tr><tr><td>2 mois</td><td class="pos">+5.3 %</td><td>Here’s What Weighed on Nu Holdings (NU) in Q2; 3 Top AI Stocks With Revenue Growth Over 26%; Nu Holdings Cleared $1 Billion in Quarterly Net Income With 139 Million Customers; Brazilian Banks Expand Crypto Offerings as Regulation Takes Hold</td></tr><tr><td>1 mois</td><td class="neg">-4.0 %</td><td>Here’s What Weighed on Nu Holdings (NU) in Q2; 3 Top AI Stocks With Revenue Growth Over 26%; Nu Holdings Cleared $1 Billion in Quarterly Net Income With 139 Million Customers; Brazilian Banks Expand Crypto Offerings as Regulation Takes Hold</td></tr><tr><td>1 semaine</td><td class="neg">-4.9 %</td><td>Brazilian Banks Expand Crypto Offerings as Regulation Takes Hold; NU Holdings AI Push: Can NuFormer Strengthen Its Competitive Edge?; SoFi vs. Nu: Which Digital Banking Stock Will Lead the Pack for Now?; Nu Enters the US Market: Can Its Latin American Playbook Travel?</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="neg mono">-0.1 %</td><td>HyperTechInvest opened Long Position on NU; HyperTechInvest opened Long Swing on NU; StonkChris opened Long Position on NU; LiebermanAustin opened Long Position on NU</td></tr><tr><td>1 an</td><td class="neg mono">-9.6 %</td><td>LiebermanAustin opened Long Position on NU; Nu Holdings Cut to Market Perform on Brazil Credit Risk; Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls; JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year</td></tr><tr><td>6 mois</td><td class="neg mono">-0.4 %</td><td>LiebermanAustin opened Long Position on NU; Nu Holdings Cut to Market Perform on Brazil Credit Risk; Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls; JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year</td></tr><tr><td>3 mois</td><td class="pos mono">+14.3 %</td><td>LiebermanAustin opened Long Position on NU; Nu Holdings Cut to Market Perform on Brazil Credit Risk; Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls; JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year</td></tr><tr><td>2 mois</td><td class="pos mono">+0.8 %</td><td>Nu Holdings Cut to Market Perform on Brazil Credit Risk; Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls; JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year; Here Are Wednesday’s Top Wall Street Analyst Research Calls: Airbnb, Booking Holdings, Credicorp, Dutch Bros, Expedia, Hartford Financial Services, Group, Meritage Homes, Patchex, Yum! Brands, and More</td></tr><tr><td>1 mois</td><td class="pos mono">+0.3 %</td><td>Nu Holdings Cut to Market Perform on Brazil Credit Risk; Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls; JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year; Here Are Wednesday’s Top Wall Street Analyst Research Calls: Airbnb, Booking Holdings, Credicorp, Dutch Bros, Expedia, Hartford Financial Services, Group, Meritage Homes, Patchex, Yum! Brands, and More</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>Nu Holdings Cut to Market Perform on Brazil Credit Risk; Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls; JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year; Here Are Wednesday’s Top Wall Street Analyst Research Calls: Airbnb, Booking Holdings, Credicorp, Dutch Bros, Expedia, Hartford Financial Services, Group, Meritage Homes, Patchex, Yum! Brands, and More</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2024-09-28</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on NU</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1840150990533599585" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-02-20</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Swing on NU</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1892724653342244975" target="_blank" rel="noopener">post</a></td></tr><tr><td>2025-06-11</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>StonkChris opened Long Position on NU</td><td>StonkChris &middot; <a href="https://x.com/StonkChris/status/1932638871801450497" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-06-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>LiebermanAustin opened Long Position on NU</td><td>LiebermanAustin &middot; <a href="https://x.com/LiebermanAustin/status/2070538076548460914" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-02</td><td><span class="badge badge-neutral">NEWS</span></td><td>Here’s What Weighed on Nu Holdings (NU) in Q2</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/weighed-nu-holdings-nu-q2-141129976.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>3 Top AI Stocks With Revenue Growth Over 26%</td><td><a href="https://finance.yahoo.com/technology/ai/articles/3-top-ai-stocks-revenue-161835070.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-09-03</td><td><span class="badge badge-neutral">NEWS</span></td><td>Nu Holdings Cleared $1 Billion in Quarterly Net Income With 139 Million Customers</td><td><a href="https://www.fool.com/investing/2026/09/03/nu-holdings-cleared-1-billion-quarterly-net-income/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-07</td><td><span class="badge badge-neutral">NEWS</span></td><td>Brazilian Banks Expand Crypto Offerings as Regulation Takes Hold</td><td><a href="https://decrypt.co/377621/brazilian-banks-expand-crypto-offerings" target="_blank" rel="noopener">decrypt</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>NU Holdings AI Push: Can NuFormer Strengthen Its Competitive Edge?</td><td><a href="https://finance.yahoo.com/technology/ai/articles/nu-holdings-ai-push-nuformer-155100027.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>SoFi vs. Nu: Which Digital Banking Stock Will Lead the Pack for Now?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/sofi-vs-nu-digital-banking-164400073.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Nu Enters the US Market: Can Its Latin American Playbook Travel?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nu-enters-us-market-latin-145200691.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>3 Growth Stocks to Add to Your Roster</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/3-growth-stocks-add-roster-000904957.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Warren Buffett&#x27;s old favorite bank enters stablecoin business</td><td><a href="https://www.thestreet.com/crypto/markets/warren-buffetts-old-favorite-bank-enters-stablecoin-business" target="_blank" rel="noopener">TheStreet</a></td></tr><tr><td>2026-09-13</td><td><span class="badge badge-neutral">NEWS</span></td><td>Is Nu Holdings Stock a Buy, Sell, or Hold With Shares 20% Below Their 52-Week High?</td><td><a href="https://www.fool.com/investing/2026/09/12/is-nu-holdings-stock-a-buy-sell-or-hold-with-share/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-11-12</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>NU earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-12 &middot; NU earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2024-09-28</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on NU</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1840150990533599585" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-02-20</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Swing on NU</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1892724653342244975" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2025-06-11</td><td><span class="badge badge-neutral">post de compte</span></td><td>StonkChris opened Long Position on NU</td><td>StonkChris &middot; <a class="a2" href="https://x.com/StonkChris/status/1932638871801450497" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-06-26</td><td><span class="badge badge-neutral">post de compte</span></td><td>LiebermanAustin opened Long Position on NU</td><td>LiebermanAustin &middot; <a class="a2" href="https://x.com/LiebermanAustin/status/2070538076548460914" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Nu Holdings Cut to Market Perform on Brazil Credit Risk</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nu-holdings-cut-market-perform-165559776.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Starbucks initiated, Expedia downgraded: Wall Street&#x27;s top analyst calls</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/starbucks-initiated-expedia-downgraded-wall-134246447.html" target="_blank" rel="noopener">The Fly</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>JPMorgan Chase Stock Is Beating Nu This Year, but Only One of Them Had Positive Free Cash Flow Last Year</td><td><a href="https://www.fool.com/coverage/better-buy/2026/09/16/jpmorgan-chase-stock-is-beating-nu-this-year-but-only-one-of-them-had-positive-free-cash-flow-last-year/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-09-16</td><td><span class="badge badge-neutral">presse</span></td><td>Here Are Wednesday’s Top Wall Street Analyst Research Calls: Airbnb, Booking Holdings, Credicorp, Dutch Bros, Expedia, Hartford Financial Services, Group, Meritage Homes, Patchex, Yum! Brands, and More</td><td><a href="https://247wallst.com/investing/2026/09/16/here-are-wednesdays-top-wall-street-analyst-research-calls-airbnb-booking-holdings-credicorp-dutch-bros-expedia-hartford-financial-services-group-meritage-homes-patchex-yum-brands/" target="_blank" rel="noopener">24/7 Wall St.</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Investors Heavily Search Nu Holdings Ltd. (NU): Here is What You Need to Know</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-nu-holdings-130003993.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>3 Charts That Reveal the State of the U.S.-China Trade Relationship</td><td><a href="https://www.barrons.com/articles/us-china-trade-relationship-charts-894c3c49?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td class='mono'>2026-09-17</td><td><span class="badge badge-neutral">presse</span></td><td>Is Nu Holdings (NYSE:NU) Still A Bargain After Its US Launch?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nu-holdings-nyse-nu-still-001725511.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Nu Holdings Ltd. (NU) Stock Declines While Market Improves: Some Information for Investors</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/nu-holdings-ltd-nu-stock-214504003.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>Some Brazilian voters are feeling burned by fintech revolution  </td><td><a href="https://finance.yahoo.com/economy/policy/articles/brazilian-voters-feeling-burned-fintech-100209273.html" target="_blank" rel="noopener">Reuters</a></td></tr><tr><td class='mono'>2026-11-13</td><td><span class="badge badge-neutral">résultats</span></td><td>NU earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-13</span> &middot; NU earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2024-09-28
-(LONG_POSITION)</p>
-<p>relances cumulees : 24
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 1 compte(s)
-(<span class="badge badge-neutral">fading</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>24</td><td>2024-09-28</td></tr><tr><td><a href='/kols/LiebermanAustin'>LiebermanAustin</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2026-06-26</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>FOLLOWER</td><td>0.50</td><td>0</td><td>2025-06-11</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2024-09-28</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">30</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 1</span> compte(s)
+(<span class="pill b">en perte de vitesse</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>24</td><td class='mono'>2024-09-28</td></tr><tr><td><a href='/kols/LiebermanAustin'>LiebermanAustin</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-06-26</td></tr><tr><td><a href='/kols/StonkChris'>StonkChris</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>6</td><td class='mono'>2025-06-11</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour NU: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour NU: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.520)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.60</td><td>0.30</td><td>0.180</td><td>3 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_independence: 3 distinct supporting account(s) (score 0.6); conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.60</td><td class='mono'>0.30</td><td class='mono'>+18</td><td>3 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par HyperTechInvest, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (4) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="1840150990533599585" class="ep-proof"><span class="mono">1840150990533599585</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=NU">ticker=NU</span></div><div data-episode-id="1892724653342244975" class="ep-proof"><span class="mono">1892724653342244975</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_SWING">thesis=LONG_SWING</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=NU">ticker=NU</span></div><div data-episode-id="2070538076548460914" class="ep-proof"><span class="mono">2070538076548460914</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=LiebermanAustin">account=LiebermanAustin</span><span data-field="ticker" title="ticker=NU">ticker=NU</span></div><div data-episode-id="1932638871801450497" class="ep-proof"><span class="mono">1932638871801450497</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=StonkChris">account=StonkChris</span><span data-field="ticker" title="ticker=NU">ticker=NU</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">NU</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 83 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1840150990533599585" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

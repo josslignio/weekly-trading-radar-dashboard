@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>KULR</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>KULR <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p class="muted">Fiche pas encore générée pour ce ticker (pas de call actif ou génération en attente).</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +33,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-neutral">OLD_CALL</span>
-(656 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill o">dernier call déjà ancien</span>
+(&middot; 242 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring bad" style="--p:38" role="img" aria-label="score 38 sur 100"><i>38</i></span><div>
+<p class="why"><b>Pourquoi ce call : Le dernier call date déjà de plusieurs semaines; 2 comptes indépendants soutiennent ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar bad"><span style="width:38%"></span></span>
+<p class="mono muted">score 38 / 100 &middot; risque : risque spéculatif
+&middot; dernier call déjà ancien
+(&middot; 242 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+12</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+6</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>38</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>track record : porté surtout par HyperTechInvest, compte encore en phase de premières preuves (le point le plus solide, sans toutefois franchir le seuil d&#x27;un signal net)</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>fraîcheur : dernier call déjà ancien</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="16.1" x2="310" y2="16.1" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,30.1 160.0,56.4 210.0,33.0 260.0,25.7 310.0,22.6" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#2f8f4e"><title>2 ans : +6.2 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -47.1 %</title></circle><circle cx="110.0" cy="30.1" r="3" fill="#b3392c"><title>6 mois : -14.4 %</title></circle><circle cx="160.0" cy="56.4" r="3" fill="#b3392c"><title>3 mois : -41.4 %</title></circle><circle cx="210.0" cy="33.0" r="3" fill="#b3392c"><title>2 mois : -17.4 %</title></circle><circle cx="260.0" cy="25.7" r="3" fill="#b3392c"><title>1 mois : -9.8 %</title></circle><circle cx="310.0" cy="22.6" r="3" fill="#b3392c"><title>1 semaine : -6.7 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos">+6.2 %</td></tr><tr><td>1 an</td><td class="neg">-47.1 %</td></tr><tr><td>6 mois</td><td class="neg">-14.4 %</td></tr><tr><td>3 mois</td><td class="neg">-41.4 %</td></tr><tr><td>2 mois</td><td class="neg">-17.4 %</td></tr><tr><td>1 mois</td><td class="neg">-9.8 %</td></tr><tr><td>1 semaine</td><td class="neg">-6.7 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="18.7" x2="310" y2="18.7" class="zero-line"/><polyline points="10.0,10.0 60.0,62.0 110.0,22.9 160.0,53.4 210.0,34.6 260.0,24.8 310.0,18.7" class="spark-line"/><circle cx="10.0" cy="10.0" r="3" fill="#3ddc85"><title>2 ans : +10.2 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -50.4 %</title></circle><circle cx="110.0" cy="22.9" r="3" fill="#ff8a8a"><title>6 mois : -4.8 %</title></circle><circle cx="160.0" cy="53.4" r="3" fill="#ff8a8a"><title>3 mois : -40.4 %</title></circle><circle cx="210.0" cy="34.6" r="3" fill="#ff8a8a"><title>2 mois : -18.5 %</title></circle><circle cx="260.0" cy="24.8" r="3" fill="#ff8a8a"><title>1 mois : -7.0 %</title></circle><circle cx="310.0" cy="18.7" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="pos mono">+10.2 %</td></tr><tr><td>1 an</td><td class="neg mono">-50.4 %</td></tr><tr><td>6 mois</td><td class="neg mono">-4.8 %</td></tr><tr><td>3 mois</td><td class="neg mono">-40.4 %</td></tr><tr><td>2 mois</td><td class="neg mono">-18.5 %</td></tr><tr><td>1 mois</td><td class="neg mono">-7.0 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="pos">+6.2 %</td><td>HyperTechInvest opened Long Position on KULR; KULR Technology Group, Inc. Q1 2026 Earnings Call Summary; A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans; Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract</td></tr><tr><td>1 an</td><td class="neg">-47.1 %</td><td>KULR Technology Group, Inc. Q1 2026 Earnings Call Summary; A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans; Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract; KULR Technology Group (KULR) Is Down 20.3% After Securing Defense Drone Battery Prototype Deal – Has The Bull Case Changed?</td></tr><tr><td>6 mois</td><td class="neg">-14.4 %</td><td>KULR Technology Group, Inc. Q1 2026 Earnings Call Summary; A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans; Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract; KULR Technology Group (KULR) Is Down 20.3% After Securing Defense Drone Battery Prototype Deal – Has The Bull Case Changed?</td></tr><tr><td>3 mois</td><td class="neg">-41.4 %</td><td>KULR Technology Group, Inc. Q2 2026 Earnings Call Summary; KULR Technology Group Q2 Earnings Call Highlights; KULR Technology Group Inc (KULR) (Q2 2026) Earnings Call Highlights: Strategic Pivot to Core ...; KULR (KULR) Q2 2026 Earnings Call Transcript</td></tr><tr><td>2 mois</td><td class="neg">-17.4 %</td><td>KULR Technology Group, Inc. Q2 2026 Earnings Call Summary; KULR Technology Group Q2 Earnings Call Highlights; KULR Technology Group Inc (KULR) (Q2 2026) Earnings Call Highlights: Strategic Pivot to Core ...; KULR (KULR) Q2 2026 Earnings Call Transcript</td></tr><tr><td>1 mois</td><td class="neg">-9.8 %</td><td>KULR (KULR) Q2 2026 Earnings Call Transcript; KULR Tech (KULR) Bets Big On Drones While Bitcoin Losses Bite</td></tr><tr><td>1 semaine</td><td class="neg">-6.7 %</td><td>aucun catalyseur associe</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="pos mono">+10.2 %</td><td>HyperTechInvest opened Long Position on KULR; aleabitoreddit opened Long Position on KULR; KULR Technology Group, Inc. Q1 2026 Earnings Call Summary; A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans</td></tr><tr><td>1 an</td><td class="neg mono">-50.4 %</td><td>aleabitoreddit opened Long Position on KULR; KULR Technology Group, Inc. Q1 2026 Earnings Call Summary; A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans; Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract</td></tr><tr><td>6 mois</td><td class="neg mono">-4.8 %</td><td>KULR Technology Group, Inc. Q1 2026 Earnings Call Summary; A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans; Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract; KULR Technology Group (KULR) Is Down 20.3% After Securing Defense Drone Battery Prototype Deal – Has The Bull Case Changed?</td></tr><tr><td>3 mois</td><td class="neg mono">-40.4 %</td><td>KULR Technology Group, Inc. Q2 2026 Earnings Call Summary; KULR Technology Group Q2 Earnings Call Highlights; KULR Technology Group Inc (KULR) (Q2 2026) Earnings Call Highlights: Strategic Pivot to Core ...; KULR (KULR) Q2 2026 Earnings Call Transcript</td></tr><tr><td>2 mois</td><td class="neg mono">-18.5 %</td><td>KULR Technology Group, Inc. Q2 2026 Earnings Call Summary; KULR Technology Group Q2 Earnings Call Highlights; KULR Technology Group Inc (KULR) (Q2 2026) Earnings Call Highlights: Strategic Pivot to Core ...; KULR (KULR) Q2 2026 Earnings Call Transcript</td></tr><tr><td>1 mois</td><td class="neg mono">-7.0 %</td><td>KULR Tech (KULR) Bets Big On Drones While Bitcoin Losses Bite</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>aucun catalyseur associé</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2024-11-26</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>HyperTechInvest opened Long Position on KULR</td><td>HyperTechInvest &middot; <a href="https://x.com/HyperTechInvest/status/1861446361016602893" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-05-15</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR Technology Group, Inc. Q1 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-kulr-technology-group-inc-q1-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td>2026-05-17</td><td><span class="badge badge-neutral">NEWS</span></td><td>A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/look-kulr-technology-group-kulr-161253138.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-05-23</td><td><span class="badge badge-neutral">NEWS</span></td><td>Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/why-kulr-technology-group-kulr-091328046.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-06-07</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR Technology Group (KULR) Is Down 20.3% After Securing Defense Drone Battery Prototype Deal – Has The Bull Case Changed?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kulr-technology-group-kulr-down-031051781.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td>2026-06-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Can KULR Benefit From Key Expertise in the Expanding Drone Market?</td><td><a href="https://finance.yahoo.com/sectors/technology/articles/kulr-benefit-key-expertise-expanding-155500125.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td>2026-08-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR Technology Group, Inc. Q2 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-kulr-technology-group-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td>2026-08-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR Technology Group Q2 Earnings Call Highlights</td><td><a href="https://www.marketbeat.com/instant-alerts/kulr-technology-group-q2-earnings-call-highlights-2026-08-14/?utm_source=yahoofinance&amp;utm_medium=yahoofinance" target="_blank" rel="noopener">MarketBeat</a></td></tr><tr><td>2026-08-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR Technology Group Inc (KULR) (Q2 2026) Earnings Call Highlights: Strategic Pivot to Core ...</td><td><a href="https://finance.yahoo.com/technology/articles/kulr-technology-group-inc-kulr-050246136.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td>2026-08-20</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR (KULR) Q2 2026 Earnings Call Transcript</td><td><a href="https://www.fool.com/earnings/call-transcripts/2026/08/20/kulr-kulr-q2-2026-earnings-call-transcript/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-08-27</td><td><span class="badge badge-neutral">NEWS</span></td><td>KULR Tech (KULR) Bets Big On Drones While Bitcoin Losses Bite</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kulr-tech-kulr-bets-big-201130320.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td>2026-11-16</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>KULR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-16 &middot; KULR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2024-11-26</td><td><span class="badge badge-neutral">post de compte</span></td><td>HyperTechInvest opened Long Position on KULR</td><td>HyperTechInvest &middot; <a class="a2" href="https://x.com/HyperTechInvest/status/1861446361016602893" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-01-18</td><td><span class="badge badge-neutral">post de compte</span></td><td>aleabitoreddit opened Long Position on KULR</td><td>aleabitoreddit &middot; <a class="a2" href="https://x.com/aleabitoreddit/status/2012957864026087525" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-05-15</td><td><span class="badge badge-neutral">presse</span></td><td>KULR Technology Group, Inc. Q1 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-kulr-technology-group-inc-q1-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td class='mono'>2026-05-17</td><td><span class="badge badge-neutral">presse</span></td><td>A Look At KULR Technology Group’s (KULR) Valuation After Mixed Q1 Results And Growth Expansion Plans</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/look-kulr-technology-group-kulr-161253138.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-05-23</td><td><span class="badge badge-neutral">presse</span></td><td>Why KULR Technology Group (KULR) Is Up 28.1% After Winning Argo Space Battery Contract</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/why-kulr-technology-group-kulr-091328046.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-06-07</td><td><span class="badge badge-neutral">presse</span></td><td>KULR Technology Group (KULR) Is Down 20.3% After Securing Defense Drone Battery Prototype Deal – Has The Bull Case Changed?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kulr-technology-group-kulr-down-031051781.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-06-11</td><td><span class="badge badge-neutral">presse</span></td><td>Can KULR Benefit From Key Expertise in the Expanding Drone Market?</td><td><a href="https://finance.yahoo.com/sectors/technology/articles/kulr-benefit-key-expertise-expanding-155500125.html" target="_blank" rel="noopener">Zacks</a></td></tr><tr><td class='mono'>2026-08-14</td><td><span class="badge badge-neutral">presse</span></td><td>KULR Technology Group, Inc. Q2 2026 Earnings Call Summary</td><td><a href="https://app.moby.co/home/research/tools/earningsCalendar/earnings-kulr-technology-group-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&amp;utm_medium=rss" target="_blank" rel="noopener">Moby</a></td></tr><tr><td class='mono'>2026-08-14</td><td><span class="badge badge-neutral">presse</span></td><td>KULR Technology Group Q2 Earnings Call Highlights</td><td><a href="https://www.marketbeat.com/instant-alerts/kulr-technology-group-q2-earnings-call-highlights-2026-08-14/?utm_source=yahoofinance&amp;utm_medium=yahoofinance" target="_blank" rel="noopener">MarketBeat</a></td></tr><tr><td class='mono'>2026-08-14</td><td><span class="badge badge-neutral">presse</span></td><td>KULR Technology Group Inc (KULR) (Q2 2026) Earnings Call Highlights: Strategic Pivot to Core ...</td><td><a href="https://finance.yahoo.com/technology/articles/kulr-technology-group-inc-kulr-050246136.html" target="_blank" rel="noopener">GuruFocus.com</a></td></tr><tr><td class='mono'>2026-08-20</td><td><span class="badge badge-neutral">presse</span></td><td>KULR (KULR) Q2 2026 Earnings Call Transcript</td><td><a href="https://www.fool.com/earnings/call-transcripts/2026/08/20/kulr-kulr-q2-2026-earnings-call-transcript/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td class='mono'>2026-08-27</td><td><span class="badge badge-neutral">presse</span></td><td>KULR Tech (KULR) Bets Big On Drones While Bitcoin Losses Bite</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/kulr-tech-kulr-bets-big-201130320.html" target="_blank" rel="noopener">Insider Monkey</a></td></tr><tr><td class='mono'>2026-11-17</td><td><span class="badge badge-neutral">résultats</span></td><td>KULR earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-17</span> &middot; KULR earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : HyperTechInvest le 2024-11-26
-(LONG_POSITION)</p>
-<p>relances cumulees : 12
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 0 compte(s)
-(<span class="badge badge-neutral">flat</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>ORIGINATOR</td><td>1.00</td><td>12</td><td>2024-11-26</td></tr></tbody></table>
+<p>premier call : HyperTechInvest le <span class="mono">2024-11-26</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">12</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 0</span> compte(s)
+(<span class="pill b">stable</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/HyperTechInvest'>HyperTechInvest</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>12</td><td class='mono'>2024-11-26</td></tr><tr><td><a href='/kols/aleabitoreddit'>aleabitoreddit</a></td><td>en relais du call</td><td class='mono'>0.50</td><td class='mono'>0</td><td class='mono'>2026-01-18</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour KULR: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour KULR: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.320)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.30</td><td>0.20</td><td>0.060</td><td>lifecycle=&#x27;OLD_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> kol_track_record: HyperTechInvest tier=EARLY_EVIDENCE confidence=1.0 (score 0.5) — highest-scoring factor, no component cleared the &gt;=0.6 bar</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); conviction_recency: lifecycle=&#x27;OLD_CALL&#x27; (score 0.3); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.40</td><td class='mono'>0.30</td><td class='mono'>+12</td><td>2 comptes indépendants soutiennent ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par HyperTechInvest, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.30</td><td class='mono'>0.20</td><td class='mono'>+6</td><td>dernier call déjà ancien</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (2) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="1861446361016602893" class="ep-proof"><span class="mono">1861446361016602893</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=HyperTechInvest">account=HyperTechInvest</span><span data-field="ticker" title="ticker=KULR">ticker=KULR</span></div><div data-episode-id="2012957864026087525" class="ep-proof"><span class="mono">2012957864026087525</span> <span data-field="outcome" title="outcome=OK">outcome=OK</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=aleabitoreddit">account=aleabitoreddit</span><span data-field="ticker" title="ticker=KULR">ticker=KULR</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">KULR</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; HyperTechInvest</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 242 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/HyperTechInvest/status/1861446361016602893" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>FLUT</h1>
-<p><a href="tickers.html">&larr; retour au classement</a></p>
+<div class="kicker">Dossier ticker</div>
+<h1>FLUT <span class="h1-sub"></span></h1>
+<p><a class="a3" href="tickers.html">&larr; retour au classement</a></p>
+
+<section class="section company-clear">
+<h2>L'entreprise en clair</h2>
+<p><strong>Ce qu&#x27;ils font :</strong> Flutter propose des paris sportifs et des jeux de casino en ligne via des marques comme FanDuel, Betfair et PokerStars.</p><p><strong>Depuis :</strong> Créée en 1958 selon la description fournie, elle propose des paris et des jeux d’argent ; sa date de cotation manque.</p><p><strong>L&#x27;argent :</strong> La dette totale atteint 12,6 Md$, l’activité génère 1,3 Md$ de trésorerie, mais après investissements le solde est de -990,0 M$.</p><p><strong>Pourquoi ça bouge :</strong> La vente de FLUT par Michael Burry et les articles critiques ont pu peser sur l’action, sans lien causal confirmé.</p><p><strong>Edge ou vague :</strong> edge : ses marques connues constituent un atout, mais les faits fournis ne prouvent pas un avantage durable face aux concurrents.</p>
+<p class="muted">confiance : moyenne : l’activité et les montants sont documentés, mais les causes du mouvement de l’action restent incertaines.
+ &middot; sources : faits yfinance &middot; description fournisseur &middot; catalyseurs du dossier</p>
+</section>
 
 <section class="section">
 <h2>Snapshot</h2>
@@ -26,61 +35,102 @@
 &mdash; &mdash; / &mdash;</p>
 <p></p>
 <p>capitalisation : n/d
-&middot; prix actuel : n/d
-&middot; momentum : n/d</p>
-<p>risque : <span class="badge badge-bad">SPECULATIVE</span>
-&middot; cycle de vie de la these : <span class="badge badge-good">ACTIVE_CALL</span>
-(67 jour(s) depuis le dernier call)</p>
+&middot; prix actuel : <span class="mono">n/d</span>
+&middot; cours : n/d</p>
+<p>risque : <span class="pill o">risque spéculatif</span>
+&middot; cycle de vie de la thèse : <span class="pill b">call toujours actif</span>
+(&middot; 71 jour(s) depuis le dernier call)</p>
+</section>
+
+<div class="wrap">
+<div class="list">
+
+<section class="section card amber liserleft">
+<h2>Le call en un coup d'œil</h2>
+<div class="scoreline"><span class="ring warn" style="--p:40" role="img" aria-label="score 40 sur 100"><i>40</i></span><div>
+<p class="why"><b>Pourquoi ce call : Un call encore vivant, lancé par Gubloinvestor le 2026-07-08; 1 compte indépendant soutient ce call; mais presque aucune information n&#x27;est vérifiée.</b></p>
+<span class="bar warn"><span style="width:40%"></span></span>
+<p class="mono muted">score 40 / 100 &middot; risque : risque spéculatif
+&middot; call toujours actif
+(&middot; 71 jour(s) depuis le dernier call)</p>
+</div></div>
+<p class="decomp">SCORE &mdash; DÉCOMPOSITION (jamais gonflé) : indépendance des comptes <b>+6</b> &middot; track record <b>+12</b> &middot; fraîcheur <b>+14</b> &middot; momentum <b>+8</b> &middot; qualité des données <b>+0</b> = <b>40</b></p>
+<div class="g2">
+<div class="card green lisertop"><h3>Pour &mdash; ce qui matche</h3><ul class="match"><li>fraîcheur : call toujours actif</li></ul></div>
+<div class="card red lisertop"><h3>Contre &mdash; ce qui manque (honnête)</h3><ul class="match"><li>indépendance des comptes : 1 compte indépendant soutient ce call</li><li>qualité des données : aucune information vérifiée (0 champ sur 16)</li></ul></div>
+</div>
 </section>
 
 <section class="section">
 <h2>Prix par horizon (2 ans &rarr; 1 semaine)</h2>
-<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="10.4" x2="310" y2="10.4" class="zero-line"/><polyline points="10.0,54.3 60.0,62.0 110.0,16.4 160.0,16.6 210.0,17.3 260.0,11.0 310.0,10.0" class="spark-line"/><circle cx="10.0" cy="54.3" r="3" fill="#b3392c"><title>2 ans : -54.6 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#b3392c"><title>1 an : -64.2 %</title></circle><circle cx="110.0" cy="16.4" r="3" fill="#b3392c"><title>6 mois : -7.5 %</title></circle><circle cx="160.0" cy="16.6" r="3" fill="#b3392c"><title>3 mois : -7.7 %</title></circle><circle cx="210.0" cy="17.3" r="3" fill="#b3392c"><title>2 mois : -8.6 %</title></circle><circle cx="260.0" cy="11.0" r="3" fill="#b3392c"><title>1 mois : -0.8 %</title></circle><circle cx="310.0" cy="10.0" r="3" fill="#2f8f4e"><title>1 semaine : +0.4 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
-<table><thead><tr><th>fenetre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg">-54.6 %</td></tr><tr><td>1 an</td><td class="neg">-64.2 %</td></tr><tr><td>6 mois</td><td class="neg">-7.5 %</td></tr><tr><td>3 mois</td><td class="neg">-7.7 %</td></tr><tr><td>2 mois</td><td class="neg">-8.6 %</td></tr><tr><td>1 mois</td><td class="neg">-0.8 %</td></tr><tr><td>1 semaine</td><td class="pos">+0.4 %</td></tr></tbody></table>
+<svg viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="courbe de performance" class="sparkline"><line x1="10" y1="12.5" x2="310" y2="12.5" class="zero-line"/><polyline points="10.0,55.9 60.0,62.0 110.0,18.6 160.0,10.0 210.0,11.9 260.0,14.0 310.0,12.5" class="spark-line"/><circle cx="10.0" cy="55.9" r="3" fill="#ff8a8a"><title>2 ans : -56.6 %</title></circle><circle cx="60.0" cy="62.0" r="3" fill="#ff8a8a"><title>1 an : -64.7 %</title></circle><circle cx="110.0" cy="18.6" r="3" fill="#ff8a8a"><title>6 mois : -8.1 %</title></circle><circle cx="160.0" cy="10.0" r="3" fill="#3ddc85"><title>3 mois : +3.2 %</title></circle><circle cx="210.0" cy="11.9" r="3" fill="#3ddc85"><title>2 mois : +0.8 %</title></circle><circle cx="260.0" cy="14.0" r="3" fill="#ff8a8a"><title>1 mois : -2.0 %</title></circle><circle cx="310.0" cy="12.5" r="3" fill="#3ddc85"><title>1 semaine : 0.0 %</title></circle><text x="10.0" y="71" class="spark-label" text-anchor="middle">2 ans</text><text x="60.0" y="71" class="spark-label" text-anchor="middle">1 an</text><text x="110.0" y="71" class="spark-label" text-anchor="middle">6 mois</text><text x="160.0" y="71" class="spark-label" text-anchor="middle">3 mois</text><text x="210.0" y="71" class="spark-label" text-anchor="middle">2 mois</text><text x="260.0" y="71" class="spark-label" text-anchor="middle">1 mois</text><text x="310.0" y="71" class="spark-label" text-anchor="middle">1 semaine</text></svg>
+<table><thead><tr><th>fenêtre</th><th>variation</th></tr></thead><tbody><tr><td>2 ans</td><td class="neg mono">-56.6 %</td></tr><tr><td>1 an</td><td class="neg mono">-64.7 %</td></tr><tr><td>6 mois</td><td class="neg mono">-8.1 %</td></tr><tr><td>3 mois</td><td class="pos mono">+3.2 %</td></tr><tr><td>2 mois</td><td class="pos mono">+0.8 %</td></tr><tr><td>1 mois</td><td class="neg mono">-2.0 %</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Timeline &mdash; pourquoi ca a bouge</h2>
-<table><thead><tr><th>fenetre</th><th>variation</th><th>catalyseurs coincidents</th></tr></thead>
-<tbody><tr><td>2 ans</td><td class="neg">-54.6 %</td><td>Gubloinvestor opened Long Position on FLUT; CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS</td></tr><tr><td>1 an</td><td class="neg">-64.2 %</td><td>Gubloinvestor opened Long Position on FLUT; CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS</td></tr><tr><td>6 mois</td><td class="neg">-7.5 %</td><td>Gubloinvestor opened Long Position on FLUT; CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS</td></tr><tr><td>3 mois</td><td class="neg">-7.7 %</td><td>Gubloinvestor opened Long Position on FLUT; CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS</td></tr><tr><td>2 mois</td><td class="neg">-8.6 %</td><td>CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of</td></tr><tr><td>1 mois</td><td class="neg">-0.8 %</td><td>CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of</td></tr><tr><td>1 semaine</td><td class="pos">+0.4 %</td><td>CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000; Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of</td></tr></tbody></table>
+<h2>Timeline &mdash; pourquoi ça a bougé</h2>
+<table><thead><tr><th>fenêtre</th><th>variation</th><th>catalyseurs coïncidents</th></tr></thead>
+<tbody><tr><td>2 ans</td><td class="neg mono">-56.6 %</td><td>Gubloinvestor opened Long Position on FLUT; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of; The Tech Selloff Is About More Than AI Slowdown Fears</td></tr><tr><td>1 an</td><td class="neg mono">-64.7 %</td><td>Gubloinvestor opened Long Position on FLUT; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of; The Tech Selloff Is About More Than AI Slowdown Fears</td></tr><tr><td>6 mois</td><td class="neg mono">-8.1 %</td><td>Gubloinvestor opened Long Position on FLUT; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of; The Tech Selloff Is About More Than AI Slowdown Fears</td></tr><tr><td>3 mois</td><td class="pos mono">+3.2 %</td><td>Gubloinvestor opened Long Position on FLUT; Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of; The Tech Selloff Is About More Than AI Slowdown Fears</td></tr><tr><td>2 mois</td><td class="pos mono">+0.8 %</td><td>Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of; The Tech Selloff Is About More Than AI Slowdown Fears; DraftKings Dips Have Usually Paid, But Does This Drop Count?</td></tr><tr><td>1 mois</td><td class="neg mono">-2.0 %</td><td>Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS; 3 Cash-Producing Stocks We’re Skeptical Of; The Tech Selloff Is About More Than AI Slowdown Fears; DraftKings Dips Have Usually Paid, But Does This Drop Count?</td></tr><tr><td>1 semaine</td><td class="pos mono">0.0 %</td><td>The Tech Selloff Is About More Than AI Slowdown Fears; DraftKings Dips Have Usually Paid, But Does This Drop Count?; Flutter Entertainment (FLUT) Sees Strong NFL App Demand, Is The Stock Still Cheap?</td></tr></tbody></table>
 </section>
 
 <section class="section">
-<h2>Catalyseurs dates</h2>
+<h2>Catalyseurs datés</h2>
 <table><thead><tr><th>date</th><th>type</th><th>titre</th><th>source</th></tr></thead>
-<tbody><tr><td>2026-07-08</td><td><span class="badge badge-neutral">KOL_POST</span></td><td>Gubloinvestor opened Long Position on FLUT</td><td>Gubloinvestor &middot; <a href="https://x.com/Gubloinvestor/status/2074931547170394217" target="_blank" rel="noopener">post</a></td></tr><tr><td>2026-09-08</td><td><span class="badge badge-neutral">NEWS</span></td><td>CEO Ditches 1,762 Shares of Gaming Stock Valued at More Than $172,000</td><td><a href="https://www.fool.com/coverage/filings/2026/09/08/ceo-ditches-1-762-shares-of-gaming-stock-valued-at-more-than-usd172-000/" target="_blank" rel="noopener">Motley Fool</a></td></tr><tr><td>2026-09-10</td><td><span class="badge badge-neutral">NEWS</span></td><td>Buy the Stocks Dip or Foldable iPhone? How to Spend Trump’s $5,000 Handout.</td><td><a href="https://www.barrons.com/articles/stock-market-things-to-know-today-69b0702b?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td>2026-09-11</td><td><span class="badge badge-neutral">NEWS</span></td><td>Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS</td><td><a href="https://stocktwits.com/news-articles/markets/equity/michael-burry-sells-flutter-to-pile-into-lulu-under-100-plus-a-new-bet-on-zts/cZtXHCxRBbi" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td>2026-09-12</td><td><span class="badge badge-neutral">NEWS</span></td><td>3 Cash-Producing Stocks We’re Skeptical Of</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/3-cash-producing-stocks-skeptical-005105649.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td>2026-09-14</td><td><span class="badge badge-neutral">NEWS</span></td><td>The Tech Selloff Is About More Than AI Slowdown Fears</td><td><a href="https://www.barrons.com/articles/stock-market-things-to-know-today-085dbefb?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td>2026-11-12</td><td><span class="badge badge-neutral">EARNINGS</span></td><td>FLUT earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
-<h3>A venir</h3>
-<ul><li>2026-11-12 &middot; FLUT earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
+<tbody><tr><td class='mono'>2026-07-08</td><td><span class="badge badge-neutral">post de compte</span></td><td>Gubloinvestor opened Long Position on FLUT</td><td>Gubloinvestor &middot; <a class="a2" href="https://x.com/Gubloinvestor/status/2074931547170394217" target="_blank" rel="noopener">post</a></td></tr><tr><td class='mono'>2026-09-11</td><td><span class="badge badge-neutral">presse</span></td><td>Michael Burry Sells FLUT To Pile Into LULU Under $100 — Plus A New Bet On ZTS</td><td><a href="https://stocktwits.com/news-articles/markets/equity/michael-burry-sells-flutter-to-pile-into-lulu-under-100-plus-a-new-bet-on-zts/cZtXHCxRBbi" target="_blank" rel="noopener">Stocktwits</a></td></tr><tr><td class='mono'>2026-09-12</td><td><span class="badge badge-neutral">presse</span></td><td>3 Cash-Producing Stocks We’re Skeptical Of</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/3-cash-producing-stocks-skeptical-005105649.html" target="_blank" rel="noopener">StockStory</a></td></tr><tr><td class='mono'>2026-09-14</td><td><span class="badge badge-neutral">presse</span></td><td>The Tech Selloff Is About More Than AI Slowdown Fears</td><td><a href="https://www.barrons.com/articles/stock-market-things-to-know-today-085dbefb?siteid=yhoof2&amp;yptr=yahoo" target="_blank" rel="noopener">Barrons.com</a></td></tr><tr><td class='mono'>2026-09-18</td><td><span class="badge badge-neutral">presse</span></td><td>DraftKings Dips Have Usually Paid, But Does This Drop Count?</td><td><a href="https://www.trefis.com/articles/615851/draftkings-dips-have-usually-paid-but-does-this-drop-count/2026-09-18" target="_blank" rel="noopener">Trefis</a></td></tr><tr><td class='mono'>2026-09-19</td><td><span class="badge badge-neutral">presse</span></td><td>Flutter Entertainment (FLUT) Sees Strong NFL App Demand, Is The Stock Still Cheap?</td><td><a href="https://finance.yahoo.com/markets/stocks/articles/flutter-entertainment-flut-sees-strong-011134611.html" target="_blank" rel="noopener">Simply Wall St.</a></td></tr><tr><td class='mono'>2026-11-12</td><td><span class="badge badge-neutral">résultats</span></td><td>FLUT earnings date</td><td>yfinance Ticker.calendar</td></tr></tbody></table>
+<h3>À venir</h3>
+<ul><li><span class='mono'>2026-11-12</span> &middot; FLUT earnings date <span class='muted' title='yfinance Ticker.calendar'>(Estimation fournisseur (yfinance calendar) ; date sujette a changement ou confirmation officielle ulterieure.)</span></li></ul>
 </section>
 
 <section class="section">
 <h2>Consensus KOL</h2>
-<p>premier call : Gubloinvestor le 2026-07-08
-(LONG_POSITION)</p>
-<p>relances cumulees : 0
-&middot; tendance du consensus (30/60/90j) : 0 / 0 / 1 compte(s)
-(<span class="badge badge-neutral">fading</span>)</p>
-<table><thead><tr><th>compte</th><th>role</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
-<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>ORIGINATOR</td><td>1.00</td><td>0</td><td>2026-07-08</td></tr></tbody></table>
+<p>premier call : Gubloinvestor le <span class="mono">2026-07-08</span>
+(position long terme)</p>
+<p>relances cumulées : <span class="mono">0</span>
+&middot; tendance du consensus (30/60/90j) : <span class="mono">0 / 0 / 1</span> compte(s)
+(<span class="pill b">en perte de vitesse</span>)</p>
+<table><thead><tr><th>compte</th><th>rôle</th><th>poids</th><th>relances</th><th>1er post</th></tr></thead>
+<tbody><tr><td><a href='/kols/Gubloinvestor'>Gubloinvestor</a></td><td>à l&#x27;origine du call</td><td class='mono'>1.00</td><td class='mono'>0</td><td class='mono'>2026-07-08</td></tr></tbody></table>
 </section>
 
 <section class="section">
 <h2>Risques</h2>
-<p><span class="badge badge-neutral">INSUFFICIENT_DATA</span>
-&middot; Donnees insuffisantes pour FLUT: serie_prix=presente, enrichment_fetch_state=PROVIDER_UNAVAILABLE</p>
-<p>avertissements donnees : company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE</p>
-<p>avertissements liquidite : average trading volume unavailable from provider</p>
+<p><span class="pill o">données insuffisantes</span>
+&middot; Donnees insuffisantes pour FLUT: presente, PROVIDER_UNAVAILABLE</p>
+<p>avertissements données : <span title="company_name: PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; ai_subindustry: PROVIDER_UNAVAILABLE; market_country: PROVIDER_UNAVAILABLE; market_cap: PROVIDER_UNAVAILABLE; trailing_pe: PROVIDER_UNAVAILABLE; forward_pe: PROVIDER_UNAVAILABLE; price_to_book: PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; revenue_growth: PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; current_price: PROVIDER_UNAVAILABLE; momentum_state: PROVIDER_UNAVAILABLE; average_volume: PROVIDER_UNAVAILABLE">PROVIDER_UNAVAILABLE; description: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; revenue: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; cash: PROVIDER_UNAVAILABLE; debt: PROVIDER_UNAVAILABLE; profitability: PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE; PROVIDER_UNAVAILABLE</span></p>
+<p>avertissements liquidité : average trading volume unavailable from provider</p>
 </section>
 
 <section class="section">
-<h2>Decomposition du score d'opportunite (0.400)</h2>
+<h2>Score en composants (brut, pour vérification)</h2>
 <table><thead><tr><th>composant</th><th>valeur</th><th>poids</th>
-<th>contribution</th><th>detail</th></tr></thead><tbody><tr><td>kol_independence</td><td>0.20</td><td>0.30</td><td>0.060</td><td>1 distinct supporting account(s)</td></tr><tr><td>kol_track_record</td><td>0.50</td><td>0.25</td><td>0.125</td><td>Gubloinvestor tier=EARLY_EVIDENCE confidence=1.0</td></tr><tr><td>conviction_recency</td><td>0.70</td><td>0.20</td><td>0.140</td><td>lifecycle=&#x27;ACTIVE_CALL&#x27;</td></tr><tr><td>momentum_not_overextended</td><td>0.50</td><td>0.15</td><td>0.075</td><td>momentum_state unavailable — neutral fallback, flagged degraded</td></tr><tr><td>data_quality</td><td>0.00</td><td>0.10</td><td>0.000</td><td>0/16 enrichment fields OK</td></tr></tbody></table>
-<p><strong>Pour :</strong> conviction_recency: lifecycle=&#x27;ACTIVE_CALL&#x27; (score 0.7)</p>
-<p><strong>Contre :</strong> kol_independence: 1 distinct supporting account(s) (score 0.2); data_quality: 0/16 enrichment fields OK (score 0.0)</p>
+<th>points /100</th><th>en clair</th></tr></thead><tbody><tr><td>indépendance des comptes</td><td class='mono'>0.20</td><td class='mono'>0.30</td><td class='mono'>+6</td><td>1 compte indépendant soutient ce call</td></tr><tr><td>track record</td><td class='mono'>0.50</td><td class='mono'>0.25</td><td class='mono'>+12</td><td>porté surtout par Gubloinvestor, compte encore en phase de premières preuves</td></tr><tr><td>fraîcheur</td><td class='mono'>0.70</td><td class='mono'>0.20</td><td class='mono'>+14</td><td>call toujours actif</td></tr><tr><td>momentum</td><td class='mono'>0.50</td><td class='mono'>0.15</td><td class='mono'>+8</td><td>l&#x27;allure récente du prix est inconnue, note neutre par prudence</td></tr><tr><td>qualité des données</td><td class='mono'>0.00</td><td class='mono'>0.10</td><td class='mono'>+0</td><td>aucune information vérifiée (0 champ sur 16)</td></tr></tbody></table>
 </section>
+
+
+<section class="section">
+<details class="why-details">
+<summary>&Eacute;pisodes du registre d&rsquo;appels (1) &mdash; preuves techniques</summary>
+<p class="muted">Lecture crois&eacute;e compte &harr; ticker : chaque &eacute;pisode porte ses identifiants
+de fa&ccedil;on identique des deux c&ocirc;t&eacute;s (les valeurs brutes sont des codes producteur,
+pas du fran&ccedil;ais visible).</p>
+<div data-episode-id="2074931547170394217" class="ep-proof"><span class="mono">2074931547170394217</span> <span data-field="outcome" title="outcome=PARTIAL_HORIZONS_TRUNCATED">outcome=PARTIAL_HORIZONS_TRUNCATED</span><span data-field="thesis" title="thesis=LONG_POSITION">thesis=LONG_POSITION</span><span data-field="account" title="account=Gubloinvestor">account=Gubloinvestor</span><span data-field="ticker" title="ticker=FLUT">ticker=FLUT</span></div>
+</details>
+</section>
+
+</div>
+<aside class="panel">
+<h3 class="mono">FLUT</h3>
+<p class="co"></p>
+<div class="kv"><span>Source &middot; Gubloinvestor</span><span><span class="tag tV">SOURCE</span></span></div><div class="kv"><span>Prix non vérifié</span><span><span class="tag tA">ESTIMÉ</span></span></div><div class="kv"><span>Fraîcheur du call : 71 jour(s)</span><span><span class="tag tA">ANCIEN</span></span></div><div class="kv"><span>Qualité des données : 0 / 16 champs</span><span><span class="tag tA">FRAGILE</span></span></div>
+<div class="sub">ACTIONS</div>
+<div class="acts"><a class="a1" href="https://x.com/Gubloinvestor/status/2074931547170394217" target="_blank" rel="noopener">ouvrir le tweet</a> <a class="a2" href="tickers.html">voir le classement</a></div>
+</aside>
+</div>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {

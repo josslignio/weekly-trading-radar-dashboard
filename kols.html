@@ -7,208 +7,301 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">Twitter Radar</a>
-<nav>
+<header class="top">
+<a class="brand" href="index.html">Twitter <b>Radar</b><span>recherche LONG, jamais un conseil en investissement</span></a>
+<div class="spacer"></div>
+<nav class="topnav">
 <a href="index.html">Brief hebdo</a>
 <a href="kols.html">Comptes KOL</a>
 <a href="tickers.html">Tickers</a>
-<a href="coverage.html">Couverture</a>
 </nav>
+<span class="refresh"></span>
 </header>
 <main>
-<h1>Classement des comptes KOL</h1>
-<p class="muted">Trie par score final decroissant (moyenne des rendements LONG realises, ajustes marche,
-sur les fenetres ou au moins 3 calls sont evaluables). Cliquer un en-tete trie la table cote client.</p>
+<div class="kicker">Classement des comptes</div>
+<h1>Qui bat vraiment le march&eacute;</h1>
+<p class="muted">Tri&eacute; par score d&eacute;croissant (moyenne des rendements LONG r&eacute;alis&eacute;s, ajust&eacute;s march&eacute;,
+sur les fen&ecirc;tres o&ugrave; au moins 3 calls sont &eacute;valuables). Cliquer un en-t&ecirc;te trie la table c&ocirc;t&eacute; client.</p>
+<div class="pipe"><span class="stage">Découvert</span><span class="arrow">&rarr;</span><span class="stage">Suivi</span><span class="arrow">&rarr;</span><span class="stage">Évalué</span></div>
 <div class="toolbar"><input type="search" placeholder="Filtrer par compte..." data-filter-target="kol-table"></div>
 <table id="kol-table" data-sortable>
 <thead><tr>
 <th data-key="handle">compte</th><th data-key="lifecycle">suivi</th><th data-key="tier">confiance</th>
-<th data-key="score">score final</th><th data-key="2y">2 ans (2y)</th><th data-key="1y">1 an (1y)</th><th data-key="6m">6 mois (6m)</th><th data-key="3m">3 mois (3m)</th><th data-key="2m">2 mois (2m)</th><th data-key="1m">1 mois (1m)</th><th data-key="1w">1 semaine (1w)</th><th data-key="good">calls gagnants / perdants (2 ans)</th>
+<th data-key="specialty">specialite</th><th data-key="repris">reconnaissance</th>
+<th data-key="score">score / 100</th><th data-key="2y">2 ans (2y)</th><th data-key="1y">1 an (1y)</th><th data-key="6m">6 mois (6m)</th><th data-key="3m">3 mois (3m)</th><th data-key="2m">2 mois (2m)</th><th data-key="1m">1 mois (1m)</th><th data-key="1w">1 semaine (1w)</th><th data-key="good">calls gagnants / perdants (2 ans)</th><th>lecture</th>
 </tr></thead>
 <tbody>
-<tr>
-<td data-sort="BryzonX"><a href="kols_BryzonX.html">BryzonX</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="0.07616175">0.076</td>
-<td data-sort="0.23557804" class="pos">+23.6 %</td><td data-sort="0.10353607" class="pos">+10.4 %</td><td data-sort="0.09141418" class="pos">+9.1 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="20">20 / 14</td>
-</tr><tr>
-<td data-sort="LiebermanAustin"><a href="kols_LiebermanAustin.html">LiebermanAustin</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="0.06924478">0.069</td>
-<td data-sort="0.23677348" class="pos">+23.7 %</td><td data-sort="0.11142261" class="pos">+11.1 %</td><td data-sort="0.33936925" class="pos">+33.9 %</td><td data-sort="-0.04437838" class="neg">-4.4 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="23">23 / 19</td>
-</tr><tr>
-<td data-sort="HyperTechInvest"><a href="kols_HyperTechInvest.html">HyperTechInvest</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="0.04229951">0.042</td>
-<td data-sort="0.54220162" class="pos">+54.2 %</td><td data-sort="-0.01677279" class="neg">-1.7 %</td><td data-sort="-0.00787047" class="neg">-0.8 %</td><td data-sort="0.01800895" class="pos">+1.8 %</td><td data-sort="0.04028587" class="pos">+4.0 %</td><td data-sort="-0.01458424" class="neg">-1.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="46">46 / 35</td>
-</tr><tr>
-<td data-sort="DeepValueBagger"><a href="kols_DeepValueBagger.html">DeepValueBagger</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="0.03530543">0.035</td>
-<td data-sort="0.08008703" class="pos">+8.0 %</td><td data-sort="0.08008703" class="pos">+8.0 %</td><td data-sort="0.08008703" class="pos">+8.0 %</td><td data-sort="0.04637379" class="pos">+4.6 %</td><td data-sort="0.02287885" class="pos">+2.3 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="21">21 / 17</td>
-</tr><tr>
-<td data-sort="RJCcapital"><a href="kols_RJCcapital.html">RJCcapital</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="0.01145358">0.011</td>
-<td data-sort="0.24429954" class="pos">+24.4 %</td><td data-sort="0.25967156" class="pos">+26.0 %</td><td data-sort="-0.11563944" class="neg">-11.6 %</td><td data-sort="-0.0351005" class="neg">-3.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="28">28 / 30</td>
-</tr><tr>
-<td data-sort="StonkChris"><a href="kols_StonkChris.html">StonkChris</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="0.0037452">0.004</td>
-<td data-sort="0.36484205" class="pos">+36.5 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="0.00325104" class="pos">+0.3 %</td><td data-sort="-0.04164654" class="neg">-4.2 %</td><td data-sort="-0.01634245" class="neg">-1.6 %</td>
-<td data-sort="44">44 / 36</td>
-</tr><tr>
-<td data-sort="italianinvesto"><a href="kols_italianinvesto.html">italianinvesto</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="-0.05835716">-0.058</td>
-<td data-sort="0.04868919" class="pos">+4.9 %</td><td data-sort="0.02558772" class="pos">+2.6 %</td><td data-sort="-0.05165685" class="neg">-5.2 %</td><td data-sort="-0.06769334" class="neg">-6.8 %</td><td data-sort="-0.06253391" class="neg">-6.3 %</td><td data-sort="0.0053038" class="pos">+0.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="38">38 / 52</td>
-</tr><tr>
-<td data-sort="Frenchie"><a href="kols_Frenchie.html">Frenchie</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="-0.07700717">-0.077</td>
-<td data-sort="0.00747456" class="pos">+0.7 %</td><td data-sort="0.02483674" class="pos">+2.5 %</td><td data-sort="0.03515299" class="pos">+3.5 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="20">20 / 16</td>
-</tr><tr>
-<td data-sort="Gubloinvestor"><a href="kols_Gubloinvestor.html">Gubloinvestor</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="-0.07892364">-0.079</td>
-<td data-sort="0.13162048" class="pos">+13.2 %</td><td data-sort="0.00020472" class="pos">+0.0 %</td><td data-sort="-0.01769978" class="neg">-1.8 %</td><td data-sort="-0.1219024" class="neg">-12.2 %</td><td data-sort="-0.08247916" class="neg">-8.2 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="76">76 / 101</td>
-</tr><tr>
-<td data-sort="citrini"><a href="kols_citrini.html">citrini</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="-0.09936722">-0.099</td>
-<td data-sort="0.20016927" class="pos">+20.0 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="5">5 / 3</td>
-</tr><tr>
-<td data-sort="PhotonBull"><a href="kols_PhotonBull.html">PhotonBull</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="-0.10973768">-0.110</td>
-<td data-sort="-0.10711528" class="neg">-10.7 %</td><td data-sort="-0.10711528" class="neg">-10.7 %</td><td data-sort="-0.10915379" class="neg">-10.9 %</td><td data-sort="-0.06947343" class="neg">-6.9 %</td><td data-sort="0.04257689" class="pos">+4.3 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="27">27 / 53</td>
-</tr><tr>
-<td data-sort="CKCapitalxx"><a href="kols_CKCapitalxx.html">CKCapitalxx</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="EARLY_EVIDENCE"><span class="badge badge-good">EARLY_EVIDENCE</span></td>
-<td data-sort="-0.13004352">-0.130</td>
-<td data-sort="-0.01796002" class="neg">-1.8 %</td><td data-sort="-0.01796002" class="neg">-1.8 %</td><td data-sort="-0.07271691" class="neg">-7.3 %</td><td data-sort="-0.17641691" class="neg">-17.6 %</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="27">27 / 51</td>
-</tr><tr>
-<td data-sort="BoubouSGC"><a href="kols_BoubouSGC.html">BoubouSGC</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
-<td data-sort="JulienTechInvst"><a href="kols_JulienTechInvst.html">JulienTechInvst</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
-<td data-sort="LysandreBL"><a href="kols_LysandreBL.html">LysandreBL</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
-<td data-sort="NighthawkTradez"><a href="kols_NighthawkTradez.html">NighthawkTradez</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
+<tr data-row="1">
 <td data-sort="ParadisLabs"><a href="kols_ParadisLabs.html">ParadisLabs</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="100"><span class="cell-score"><span class="ring good" style="--p:100" role="img" aria-label="score 100 sur 100"><i>100</i></span><b class="mono">100&nbsp;/&nbsp;100</b></span><span class="bar good"><span style="width:100%"></span></span></td>
+<td data-sort="0.23765227" class="pos mono">+23.8 %</td><td data-sort="0.23765227" class="pos mono">+23.8 %</td><td data-sort="0.23765227" class="pos mono">+23.8 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="23" class="mono">23 / 13</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>36 calls évalués à deux ans dont 23 gagnants, rendement moyen +23.8 %</li><li>à deux ans il dépasse le marché de 14.2 %</li><li>3 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="HyperTechInvest"><a href="kols_HyperTechInvest.html">HyperTechInvest</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="technologie">technologie</td>
+<td><span class="badge badge-good" title="56 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 56</span></td>
+<td data-sort="82"><span class="cell-score"><span class="ring good" style="--p:82" role="img" aria-label="score 82 sur 100"><i>82</i></span><b class="mono">82&nbsp;/&nbsp;100</b></span><span class="bar good"><span style="width:82%"></span></span></td>
+<td data-sort="0.61640358" class="pos mono">+61.6 %</td><td data-sort="-0.02583307" class="neg mono">-2.6 %</td><td data-sort="-0.0503528" class="neg mono">-5.0 %</td><td data-sort="0.04672367" class="pos mono">+4.7 %</td><td data-sort="0.04028587" class="pos mono">+4.0 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="48" class="mono">48 / 32</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>80 calls évalués à deux ans dont 48 gagnants, rendement moyen +61.6 %</li><li>à deux ans il dépasse le marché de 41.6 %</li><li>5 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="LiebermanAustin"><a href="kols_LiebermanAustin.html">LiebermanAustin</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="74 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 74</span></td>
+<td data-sort="81"><span class="cell-score"><span class="ring good" style="--p:81" role="img" aria-label="score 81 sur 100"><i>81</i></span><b class="mono">81&nbsp;/&nbsp;100</b></span><span class="bar good"><span style="width:81%"></span></span></td>
+<td data-sort="0.21244169" class="pos mono">+21.2 %</td><td data-sort="0.07830082" class="pos mono">+7.8 %</td><td data-sort="0.33936925" class="pos mono">+33.9 %</td><td data-sort="-0.01798331" class="neg mono">-1.8 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="22" class="mono">22 / 20</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>42 calls évalués à deux ans dont 22 gagnants, rendement moyen +21.2 %</li><li>à deux ans il dépasse le marché de 6.0 %</li><li>4 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="DeepValueBagger"><a href="kols_DeepValueBagger.html">DeepValueBagger</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="136 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 136</span></td>
+<td data-sort="75"><span class="cell-score"><span class="ring good" style="--p:75" role="img" aria-label="score 75 sur 100"><i>75</i></span><b class="mono">75&nbsp;/&nbsp;100</b></span><span class="bar good"><span style="width:75%"></span></span></td>
+<td data-sort="0.10563496" class="pos mono">+10.6 %</td><td data-sort="0.10563496" class="pos mono">+10.6 %</td><td data-sort="0.10563496" class="pos mono">+10.6 %</td><td data-sort="0.04501869" class="pos mono">+4.5 %</td><td data-sort="0.01779721" class="pos mono">+1.8 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="21" class="mono">21 / 17</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>38 calls évalués à deux ans dont 21 gagnants, rendement moyen +10.6 %</li><li>à deux ans il dépasse le marché de 6.6 %</li><li>5 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="BryzonX"><a href="kols_BryzonX.html">BryzonX</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="35 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 35</span></td>
+<td data-sort="69"><span class="cell-score"><span class="ring warn" style="--p:69" role="img" aria-label="score 69 sur 100"><i>69</i></span><b class="mono">69&nbsp;/&nbsp;100</b></span><span class="bar warn"><span style="width:69%"></span></span></td>
+<td data-sort="0.19804021" class="pos mono">+19.8 %</td><td data-sort="0.05784306" class="pos mono">+5.8 %</td><td data-sort="0.06003317" class="pos mono">+6.0 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="18" class="mono">18 / 15</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>33 calls évalués à deux ans dont 18 gagnants, rendement moyen +19.8 %</li><li>à deux ans il dépasse le marché de 11.3 %</li><li>3 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="RJCcapital"><a href="kols_RJCcapital.html">RJCcapital</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="92 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 92</span></td>
+<td data-sort="61"><span class="cell-score"><span class="ring warn" style="--p:61" role="img" aria-label="score 61 sur 100"><i>61</i></span><b class="mono">61&nbsp;/&nbsp;100</b></span><span class="bar warn"><span style="width:61%"></span></span></td>
+<td data-sort="0.28464946" class="pos mono">+28.5 %</td><td data-sort="0.24994943" class="pos mono">+25.0 %</td><td data-sort="-0.10276266" class="neg mono">-10.3 %</td><td data-sort="-0.03752966" class="neg mono">-3.8 %</td><td data-sort="-0.00500257" class="neg mono">-0.5 %</td><td data-sort="0.02122672" class="pos mono">+2.1 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="28" class="mono">28 / 32</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>60 calls évalués à deux ans dont 28 gagnants, rendement moyen +28.5 %</li><li>à deux ans il dépasse le marché de 16.4 %</li><li>6 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="citrini"><a href="kols_citrini.html">citrini</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="technologie">technologie</td>
+<td><span class="badge badge-good" title="59 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 59</span></td>
+<td data-sort="43"><span class="cell-score"><span class="ring warn" style="--p:43" role="img" aria-label="score 43 sur 100"><i>43</i></span><b class="mono">43&nbsp;/&nbsp;100</b></span><span class="bar warn"><span style="width:43%"></span></span></td>
+<td data-sort="0.34426276" class="pos mono">+34.4 %</td><td data-sort="-0.01404372" class="neg mono">-1.4 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="8" class="mono">8 / 6</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>14 calls évalués à deux ans dont 8 gagnants, rendement moyen +34.4 %</li><li>à deux ans il dépasse le marché de 10.9 %</li><li>2 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
 <td data-sort="ThematicTrader"><a href="kols_ThematicTrader.html">ThematicTrader</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
-<td data-sort="TristanMacinnes"><a href="kols_TristanMacinnes.html">TristanMacinnes</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="43"><span class="cell-score"><span class="ring warn" style="--p:43" role="img" aria-label="score 43 sur 100"><i>43</i></span><b class="mono">43&nbsp;/&nbsp;100</b></span><span class="bar warn"><span style="width:43%"></span></span></td>
+<td data-sort="0.05203926" class="pos mono">+5.2 %</td><td data-sort="0.05203926" class="pos mono">+5.2 %</td><td data-sort="-0.01822696" class="neg mono">-1.8 %</td><td data-sort="-0.0215891" class="neg mono">-2.2 %</td><td data-sort="0.04697794" class="pos mono">+4.7 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="23" class="mono">23 / 21</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>44 calls évalués à deux ans dont 23 gagnants, rendement moyen +5.2 %</li><li>à deux ans il ne dépasse pas le marché de 2.1 %</li><li>5 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
 <td data-sort="aleabitoreddit"><a href="kols_aleabitoreddit.html">aleabitoreddit</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
-<td data-sort="closenberger"><a href="kols_closenberger.html">closenberger</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="UNRANKED"><span class="badge badge-neutral">UNRANKED</span></td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 1</td>
-</tr><tr>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="37"><span class="cell-score"><span class="ring bad" style="--p:37" role="img" aria-label="score 37 sur 100"><i>37</i></span><b class="mono">37&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:37%"></span></span></td>
+<td data-sort="0.0967277" class="pos mono">+9.7 %</td><td data-sort="0.10743052" class="pos mono">+10.7 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="50" class="mono">50 / 54</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>104 calls évalués à deux ans dont 50 gagnants, rendement moyen +9.7 %</li><li>à deux ans il ne dépasse pas le marché de 3.2 %</li><li>2 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="italianinvesto"><a href="kols_italianinvesto.html">italianinvesto</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="3 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 3</span></td>
+<td data-sort="28"><span class="cell-score"><span class="ring bad" style="--p:28" role="img" aria-label="score 28 sur 100"><i>28</i></span><b class="mono">28&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:28%"></span></span></td>
+<td data-sort="0.1084999" class="pos mono">+10.8 %</td><td data-sort="0.0634726" class="pos mono">+6.3 %</td><td data-sort="-0.06997975" class="neg mono">-7.0 %</td><td data-sort="-0.06937547" class="neg mono">-6.9 %</td><td data-sort="-0.06314078" class="neg mono">-6.3 %</td><td data-sort="-0.01277944" class="neg mono">-1.3 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="37" class="mono">37 / 53</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>90 calls évalués à deux ans dont 37 gagnants, rendement moyen +10.8 %</li><li>à deux ans il ne dépasse pas le marché de 0.6 %</li><li>6 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
 <td data-sort="kevinxu"><a href="kols_kevinxu.html">kevinxu</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
-<td data-sort="powl_d"><a href="kols_powl_d.html">powl_d</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="25"><span class="cell-score"><span class="ring bad" style="--p:25" role="img" aria-label="score 25 sur 100"><i>25</i></span><b class="mono">25&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:25%"></span></span></td>
+<td data-sort="-0.05402153" class="neg mono">-5.4 %</td><td data-sort="-0.05402153" class="neg mono">-5.4 %</td><td data-sort="-0.05402153" class="neg mono">-5.4 %</td><td data-sort="-0.05402153" class="neg mono">-5.4 %</td><td data-sort="-0.05402153" class="neg mono">-5.4 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="1" class="mono">1 / 5</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>6 calls évalués à deux ans dont 1 gagnants, rendement moyen -5.4 %</li><li>à deux ans il ne dépasse pas le marché de 5.1 %</li><li>5 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="Gubloinvestor"><a href="kols_Gubloinvestor.html">Gubloinvestor</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="technologie">technologie</td>
+<td><span class="badge badge-good" title="46 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 46</span></td>
+<td data-sort="16"><span class="cell-score"><span class="ring bad" style="--p:16" role="img" aria-label="score 16 sur 100"><i>16</i></span><b class="mono">16&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:16%"></span></span></td>
+<td data-sort="0.03444966" class="pos mono">+3.4 %</td><td data-sort="0.00983681" class="pos mono">+1.0 %</td><td data-sort="-0.02656262" class="neg mono">-2.7 %</td><td data-sort="-0.05896023" class="neg mono">-5.9 %</td><td data-sort="-0.0412522" class="neg mono">-4.1 %</td><td data-sort="-0.01024105" class="neg mono">-1.0 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="77" class="mono">77 / 102</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>179 calls évalués à deux ans dont 77 gagnants, rendement moyen +3.4 %</li><li>à deux ans il ne dépasse pas le marché de 7.9 %</li><li>6 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="PhotonBull"><a href="kols_PhotonBull.html">PhotonBull</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="79 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 79</span></td>
+<td data-sort="8"><span class="cell-score"><span class="ring bad" style="--p:8" role="img" aria-label="score 8 sur 100"><i>8</i></span><b class="mono">8&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:8%"></span></span></td>
+<td data-sort="-0.06920113" class="neg mono">-6.9 %</td><td data-sort="-0.06920113" class="neg mono">-6.9 %</td><td data-sort="-0.08232179" class="neg mono">-8.2 %</td><td data-sort="-0.00494911" class="neg mono">-0.5 %</td><td data-sort="-0.01597902" class="neg mono">-1.6 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="29" class="mono">29 / 47</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>76 calls évalués à deux ans dont 29 gagnants, rendement moyen -6.9 %</li><li>à deux ans il ne dépasse pas le marché de 12.3 %</li><li>5 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="StonkChris"><a href="kols_StonkChris.html">StonkChris</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="services financiers">services financiers</td>
+<td><span class="badge badge-good" title="70 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 70</span></td>
+<td data-sort="7"><span class="cell-score"><span class="ring bad" style="--p:7" role="img" aria-label="score 7 sur 100"><i>7</i></span><b class="mono">7&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:7%"></span></span></td>
+<td data-sort="0.12146905" class="pos mono">+12.1 %</td><td data-sort="-0.00996835" class="neg mono">-1.0 %</td><td data-sort="-0.04184636" class="neg mono">-4.2 %</td><td data-sort="-0.0930498" class="neg mono">-9.3 %</td><td data-sort="-0.07328309" class="neg mono">-7.3 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="91" class="mono">91 / 100</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>191 calls évalués à deux ans dont 91 gagnants, rendement moyen +12.1 %</li><li>à deux ans il ne dépasse pas le marché de 4.9 %</li><li>5 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="NighthawkTradez"><a href="kols_NighthawkTradez.html">NighthawkTradez</a></td>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="2"><span class="cell-score"><span class="ring bad" style="--p:2" role="img" aria-label="score 2 sur 100"><i>2</i></span><b class="mono">2&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:2%"></span></span></td>
+<td data-sort="-0.09154679" class="neg mono">-9.2 %</td><td data-sort="-0.09154679" class="neg mono">-9.2 %</td><td data-sort="-0.03465949" class="neg mono">-3.5 %</td><td data-sort="0.0596832" class="pos mono">+6.0 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="13" class="mono">13 / 19</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>32 calls évalués à deux ans dont 13 gagnants, rendement moyen -9.2 %</li><li>à deux ans il ne dépasse pas le marché de 17.3 %</li><li>4 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="Frenchie"><a href="kols_Frenchie.html">Frenchie</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="9 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 9</span></td>
+<td data-sort="0"><span class="cell-score"><span class="ring bad" style="--p:0" role="img" aria-label="score 0 sur 100"><i>0</i></span><b class="mono">0&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:2%"></span></span></td>
+<td data-sort="-0.01972227" class="neg mono">-2.0 %</td><td data-sort="0.00659075" class="pos mono">+0.7 %</td><td data-sort="-0.08118292" class="neg mono">-8.1 %</td><td data-sort="-0.04334196" class="neg mono">-4.3 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="17" class="mono">17 / 23</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>40 calls évalués à deux ans dont 17 gagnants, rendement moyen -2.0 %</li><li>à deux ans il ne dépasse pas le marché de 12.2 %</li><li>4 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="CKCapitalxx"><a href="kols_CKCapitalxx.html">CKCapitalxx</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="214 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 214</span></td>
+<td data-sort="0"><span class="cell-score"><span class="ring bad" style="--p:0" role="img" aria-label="score 0 sur 100"><i>0</i></span><b class="mono">0&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:2%"></span></span></td>
+<td data-sort="-0.03108845" class="neg mono">-3.1 %</td><td data-sort="-0.03108845" class="neg mono">-3.1 %</td><td data-sort="-0.10252483" class="neg mono">-10.3 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="27" class="mono">27 / 51</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>78 calls évalués à deux ans dont 27 gagnants, rendement moyen -3.1 %</li><li>à deux ans il ne dépasse pas le marché de 10.7 %</li><li>3 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
 <td data-sort="thismacapital"><a href="kols_thismacapital.html">thismacapital</a></td>
-<td data-sort="SAMPLED"><span class="badge badge-neutral">SAMPLED</span></td>
-<td data-sort="&mdash;">n/d</td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 0</td>
-</tr><tr>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="0"><span class="cell-score"><span class="ring bad" style="--p:0" role="img" aria-label="score 0 sur 100"><i>0</i></span><b class="mono">0&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:2%"></span></span></td>
+<td data-sort="-0.05514176" class="neg mono">-5.5 %</td><td data-sort="-0.05514176" class="neg mono">-5.5 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="1" class="mono">1 / 4</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>5 calls évalués à deux ans dont 1 gagnants, rendement moyen -5.5 %</li><li>à deux ans il ne dépasse pas le marché de 17.8 %</li><li>2 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="closenberger"><a href="kols_closenberger.html">closenberger</a></td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="UNRANKED"><span class="pill k">non classé</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="15 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 15</span></td>
+<td data-sort="0"><span class="cell-score"><span class="ring bad" style="--p:0" role="img" aria-label="score 0 sur 100"><i>0</i></span><b class="mono">0&nbsp;/&nbsp;100</b></span><span class="bar bad"><span style="width:2%"></span></span></td>
+<td data-sort="-0.21013074" class="neg mono">-21.0 %</td><td data-sort="-0.26313937" class="neg mono">-26.3 %</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="3" class="mono">3 / 9</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>12 calls évalués à deux ans dont 3 gagnants, rendement moyen -21.0 %</li><li>à deux ans il ne dépasse pas le marché de 37.8 %</li><li>2 fenêtres d&#x27;observation sur 7 affichables</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="BoubouSGC"><a href="kols_BoubouSGC.html">BoubouSGC</a></td>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="0" class="mono">0 / 0</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>pas encore assez de calls évalués pour noter ce compte</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="JulienTechInvst"><a href="kols_JulienTechInvst.html">JulienTechInvst</a></td>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="0" class="mono">0 / 0</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>pas encore assez de calls évalués pour noter ce compte</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="LysandreBL"><a href="kols_LysandreBL.html">LysandreBL</a></td>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="0" class="mono">0 / 0</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>pas encore assez de calls évalués pour noter ce compte</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="TristanMacinnes"><a href="kols_TristanMacinnes.html">TristanMacinnes</a></td>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="0" class="mono">0 / 0</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>pas encore assez de calls évalués pour noter ce compte</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="powl_d"><a href="kols_powl_d.html">powl_d</a></td>
+<td data-sort="SAMPLED"><span class="pill b">suivi par échantillonnage</span></td>
+<td data-sort="&mdash;"><span class="muted">n/d</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="0" class="mono">0 / 0</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>pas encore assez de calls évalués pour noter ce compte</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
+</tr><tr data-row="1">
 <td data-sort="zephyr_z9"><a href="kols_zephyr_z9.html">zephyr_z9</a></td>
-<td data-sort="MONITORED"><span class="badge badge-good">MONITORED</span></td>
-<td data-sort="UNRANKED"><span class="badge badge-neutral">UNRANKED</span></td>
-<td data-sort="-1000000000.0"><span title="-999.0 : marqueur de classement, pas un rendement">n/d</span></td>
-<td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td><td data-sort="-999" title="donnees insuffisantes (INSUFFICIENT_DATA)">n/d</td>
-<td data-sort="0">0 / 1</td>
+<td data-sort="MONITORED"><span class="pill b">suivi en continu</span></td>
+<td data-sort="UNRANKED"><span class="pill k">non classé</span></td>
+<td data-sort="semi-conducteurs &amp; IA">semi-conducteurs &amp; IA</td>
+<td><span class="badge badge-good" title="75 reprises (quotes + réponses + mentions) par d&#x27;autres comptes de l&#x27;univers">repris par 75</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="0" class="mono">0 / 2</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>2 calls évalués à deux ans dont 0 gagnants</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
+</tr><tr data-row="1">
+<td data-sort="Frenchie_"><a href="kols_Frenchie_.html">Frenchie_</a></td>
+<td data-sort="DISCOVERED"><span class="pill b">découvert</span></td>
+<td data-sort="EARLY_EVIDENCE"><span class="pill o">premières preuves</span></td>
+<td class="muted" title="aucun call classé ou secteur non publié">n/d</td>
+<td><span class="muted" title="aucune reprise par un autre compte de l'univers dans le corpus">non repris</span></td>
+<td data-sort="-1"><span class="muted">n/d</span><span class="bar none"><span style="width:0"></span></span></td>
+<td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td><td data-sort="-999" class="muted" title="pas assez de calls évaluables sur cette fenêtre">n/d</td>
+<td data-sort="&mdash;" class="mono">n/d / n/d</td>
+<td><details class="why-details"><summary>pourquoi ce score</summary><ul class="match"><li>pas encore assez de calls évalués pour noter ce compte</li><li>0 fenêtre d&#x27;observation sur 7 affichable</li></ul></details></td>
 </tr>
 </tbody>
 </table>
-<p class="muted">25 compte(s). "n/d" = mois d'observation ou nombre de calls evaluables insuffisant
-sur cette fenetre (moins de 3 calls avec un prix de sortie connu) ; jamais remplace par zero.</p>
+<p class="muted">Score / 100 = 50 + rendement moyen r&eacute;alis&eacute; &times; 500, born&eacute; 0-100 ; n/d = aucune fen&ecirc;tre
+&eacute;valuable &agrave; ce jour (moins de 3 calls avec un prix de sortie connu). &laquo;&nbsp;n/d&nbsp;&raquo; n'est jamais
+remplac&eacute; par z&eacute;ro. D&eacute;plier &laquo; pourquoi ce score &raquo; pour la lecture en trois phrases.</p>
 </main>
-<footer class="site-footer">Recherche uniquement &mdash; aucun ordre automatique, aucune prediction de prix.</footer>
+<footer class="foot">
+<div>Recherche uniquement &mdash; aucun ordre automatique, aucune pr&eacute;diction de prix.</div>
+<div><a href="coverage.html">donn&eacute;es &amp; couverture</a></div>
+</footer>
 <script>
 (function() {
   function initSort() {
